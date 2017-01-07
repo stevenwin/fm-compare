@@ -1,5 +1,17 @@
 const sherdog = require("sherdog");
 const request = require("request");
+//const sherdog_links = require('./sherdog.json');
+
+// Fightmetric JSON request
+/*request({
+    url: url_fm,
+    json: true
+}, function (error, response, body) {
+
+    if (!error && response.statusCode === 200) {
+        heightz = body.FMLiveFeed.Fights[0].Fighters[0].Height // Print the json response
+    }
+});*/
 
 // Declare Variables
 var fighter_a;
@@ -74,10 +86,21 @@ var stat26= 'FIGHTERS WHO HAVE LOST BY SUBMISSION 5 OR MORE TIMES WILL MORE LIKE
 var stat27= 'FIGHTERS IN THE MIDDLEWEIGHT DIVISION WHO FOUGHT THEIR LAST FIGHT MORE RECENTLY WILL MORE LIKELY WIN  61%'
 var stat28= 'FIGHTERS IN THE LIGHTWEIGHT DIVISION FIGHTING 6 FOOT TALL FIGHTERS (OR HIGHER) WILL MORE LIKELY WIN  60%'
 
+function fight_predict(a_points, b_points) {
+  if (a_points > b_points && a_points !== b_points) {
+    fight_predict = fighter_a.name;
+  }
+  else if (a_points < b_points && a_points !== b_points){
+    fight_predict = fighter_b.name;
+  }
+  else {
+    fight_predict = "No Prediction"
+  }
+}
 
 //var url = "http://www.sherdog.com/fighter/Matt-Riddle-34072";
-var fighter_a = "http://www.sherdog.com/fighter/Donald-Cerrone-15105";
-var fighter_b = "http://www.sherdog.com/fighter/Jorge-Masvidal-7688";
+var fighter_a = "http://www.sherdog.com/fighter/Ben-Saunders-10339";
+var fighter_b = "http://www.sherdog.com/fighter/Court-McGee-34124";
 
 // Grab Sherdog stats for two fighters based on their URLs
 sherdog.getFighter(fighter_a, gotData_a);
@@ -135,10 +158,13 @@ setTimeout(function () {
   //console.log(heightz);
 }, 12000);
 
-// Log fighter_a
-function log_fightera(fighter_a) {
-	console.log(fighter_a);
-}
+
+
+
+
+
+
+
 
 function b4b_loss(fighter_a, fighter_b, points) {
 }
@@ -200,11 +226,11 @@ function zero_tko_win(fighter_a, fighter_b, points) {
 }
 
 function dec_win(fighter_a, fighter_b, points) {
-	if (fighter_a.wins.decisions%fighter_b.wins.decisions >= 3) {
+	if (fighter_a.wins.decisions/fighter_b.wins.decisions >= 3) {
 		console.log(fighter_a.name+" has 3x more dec wins. A add "+points);
 		a_points += points
 	}
-	else if(fighter_b.wins.decisions%fighter_a.wins.decisions >= 3) {
+	else if(fighter_b.wins.decisions/fighter_a.wins.decisions >= 3) {
 		console.log(fighter_b.name+" has 3x more dec wins. B add "+points);
 		b_points += points
 	} else {
@@ -212,29 +238,17 @@ function dec_win(fighter_a, fighter_b, points) {
 	}
 }
 
-function fight_predict(a_points, b_points) {
-  if (a_points > b_points && a_points !== b_points) {
-    fight_predict = fighter_a.name;
-  }
-  else if (a_points < b_points && a_points !== b_points){
-    fight_predict = fighter_b.name;
-  }
-  else {
-    fight_predict = "No Prediction"
-  }
-}
-
 function b2b_loss(fighter_a, fighter_b, points) {
-	if (fighter_a.fights[0].result === 'loss' && fighter_a.fights[1].result === 'loss' && fighter_b.fights[0].result === 'win' || fighter_b.fights[1].result === 'win') {
+	if (fighter_a.fights[0].result === 'loss' && fighter_a.fights[1].result === 'loss' && (fighter_b.fights[0].result === 'win' || fighter_b.fights[1].result === 'win')) {
 		console.log(fighter_a.name+" has b2b losses. B add "+points);
 		b_points += points;
 	}
-	else if (fighter_b.fights[0].result === 'loss' && fighter_b.fights[1].result === 'loss' && fighter_a.fights[0].result === 'win' || fighter_a.fights[1].result === 'win') {
+	else if (fighter_b.fights[0].result === 'loss' && fighter_b.fights[1].result === 'loss' && (fighter_a.fights[0].result === 'win' || fighter_a.fights[1].result === 'win')) {
 		console.log(fighter_b.name+" has b2b losses. A add "+points);
 		a_points += points;
 	}
 	else {
-		console.log("Nobody has b2b losses.")
+		console.log("Nobody has recent b2b losses.")
 	}
 }
 
@@ -333,41 +347,3 @@ return day;
 
 
 
-
-
-
-
-//if (myString.match(/regex/)) { /*Success!*/ }
-
-
-/*Fightmetric JSON
-Fightmetric JSON -- provides:
-fighter name -- FMLiveFeed.Fights[i].Fighters[i].FullName
-Fighter height --FMLiveFeed.Fights[i].Fighters[i].Height
-Fighter Stance -- FMLiveFeed.Fights[i].Fighters[i].Stance
-Fight Winner - FMLiveFeed.Fights[i].Fighters[i].Outcome
-Fight win method -- FMLiveFeed.Fights[i].Fighters[i].Outcome
-var url_fm = "http://liveapi.fightmetric.com/V1/802/Fnt.json"
-
-http://ufc-data-api.ufc.com/api/v3/us/events
-UFC events API -- provides:
-event id
-fightmetric json
-var url_ufc = "http://ufc-data-api.ufc.com/api/v3/us/events"
-
-Http://ufc-data-api.ufc.com/api/v3/us/events/602658/fights -- event id from ufc-data-api
-UFC Individual fight stats -- provides:
-fighter reach: fighter1reach
-strike landed per min -- fighter1_slpm
-var url_ufc_fightstats = "Http://ufc-data-api.ufc.com/api/v3/us/events/602658/fights"
-
-// Fightmetric JSON request
-/*request({
-    url: url_fm,
-    json: true
-}, function (error, response, body) {
-
-    if (!error && response.statusCode === 200) {
-        heightz = body.FMLiveFeed.Fights[0].Fighters[0].Height // Print the json response
-    }
-});*/
