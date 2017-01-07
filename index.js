@@ -17,7 +17,15 @@ var a_lose_total;
 var a_lastfight_date;
 var a_lose_ko_total = 0;
 
-var fightera_
+var fighterObject = {
+  fight: [{
+    fighter_name: "",
+    fighter_points: "",
+    fighter_predict: "",
+    winner: "",
+    pred_perc: ""
+  }]
+}
 
 var fighter_b;
 var b_points = 0;
@@ -33,6 +41,9 @@ var b_lose_dec;
 var b_lose_total;
 var b_lastfight_date;
 var b_lose_ko_total = 0;
+
+var fight_predict;
+var fight_winner;
 
 var stat1= 'FIGHTERS OLDER THAN 32 YEARS OF AGE WILL MORE LIKELY LOSE  62%'
 var stat2= 'FIGHTERS WITH MORE THAN 6 TKO VICTORIES FIGHTING OPPONENTS OLDER THAN 32 YEARS OF AGE WILL MORE LIKELY WIN  78%'
@@ -63,8 +74,8 @@ var stat28= 'FIGHTERS IN THE LIGHTWEIGHT DIVISION FIGHTING 6 FOOT TALL FIGHTERS 
 
 
 //var url = "http://www.sherdog.com/fighter/Matt-Riddle-34072";
-var fighter_a = "Alistair Overeem";
-var fighter_b = "Cody Garbrandt";
+var fighter_a = "TJ Dillashaw";
+var fighter_b = "John Lineker";
 
 // Grab Sherdog stats for two fighters based on their URLs
 mma.fighter(fighter_a, gotData_a);
@@ -102,21 +113,36 @@ function gotData_b(data) {
 
 // Runs the App
 setTimeout(function () {
-  compare_age(a_age, b_age, 1);
-  nationality(a_nationality, b_nationality);
-  TKO_age(a_win_ko, a_age, b_win_ko, b_age);
-  six_losses(a_lose_total, b_lose_total);
-  ko_loss(fighter_a, fighter_b);
+  compare_age(a_age, b_age, 2); // 62%, 277tf
+  nationality(a_nationality, b_nationality, 1); // 71%, 51tf
+  TKO_age(a_win_ko, a_age, b_win_ko, b_age, 1); // 78%, 60tf
+  six_losses(a_lose_total, b_lose_total, 2);// 60%, 291tf
+  ko_loss(fighter_a, fighter_b, 1); // 64%, 84tf
   console.log(fighter_a.name+" has "+a_points+" and "+fighter_b.name+" has "+b_points);
+  
+  fight_predict(a_points, b_points);
+  console.log("Fight Prediction: "+fight_predict);
+
   //console.log(b_lose_ko_total);
   //console.log(heightz);
-}, 5000);
+}, 12000);
 
 // Log fighter_a
 function log_fightera(fighter_a) {
 	console.log(fighter_a);
 }
 
+function fight_predict(a_points, b_points) {
+  if (a_points > b_points && a_points !== b_points) {
+    fight_predict = fighter_a.name;
+  }
+  else if (a_points < b_points && a_points !== b_points){
+    fight_predict = fighter_b.name;
+  }
+  else {
+    fight_predict = "No Prediction"
+  }
+}
 
 // Compare KO losses
 function ko_loss(fighter_a, fighter_b, points) {
@@ -133,45 +159,51 @@ function ko_loss(fighter_a, fighter_b, points) {
 	}
 
 	if ( a_lose_ko_total > 1 && b_lose_ko_total < 2) {
-		console.log(fighter_a.name+" lost "+a_lose_ko_total+" KOs -- loses 64% of the time");
+		console.log(fighter_a.name+" lost "+a_lose_ko_total+" KOs -- loses 64% of the time. B adds:"+points);
+    b_points += points;
 	}
 	else if ( b_lose_ko_total > 1 && a_lose_ko_total < 2) {
-		console.log(fighter_b.name+" lost "+b_lose_ko_total+" KOs -- loses 64% of the time");
-	} else {
-		console.log("Both fighters have 2 or more KOs -- no advantage");
+		console.log(fighter_b.name+" lost "+b_lose_ko_total+" KOs -- loses 64% of the time. A adds:"+points);
+    a_points += points;
+  } else {
+		console.log("Both fighters have hard chins");
 	}
 }
 
 // var stat1= 'FIGHTERS OLDER THAN 32 YEARS OF AGE WILL MORE LIKELY LOSE  62%'
 function compare_age(a_age, b_age, points) {
-  if (a_age > b_age && b_age < 32) { // b wins
-    console.log(fighter_a.name+" is older than 32 -- Will lose 62% of the time");
+  if (a_age > 32 && b_age < 32) { // b wins
+    console.log(fighter_a.name+" is older than 32 -- Will lose 62% of the time. B adds:"+points);
     b_points += points
-  } else if (b_age > a_age && a_age < 32) { // a wins
-    console.log(fighter_b.name+" is older than 32 -- Will lose 62% of the time");
+  } else if (b_age > 32 && a_age < 32) { // a wins
+    console.log(fighter_b.name+" is older than 32 -- Will lose 62% of the time. A adds:"+points);
     a_points += points
   } else {
     console.log("Both fighters are younger than 32.");
   }
 }
 
-// Compare nationality -- Japanese fighters lose 71% of the time
+// var stat3= 'FIGHTERS FROM JAPAN WILL MORE LIKELY LOSE  71%'
 function nationality(a_nationality, b_nationality, points) {
   if (a_nationality === "Japan" && b_nationality !== "Japan") {
-    console.log(fighter_a.name+ " is Japanese and will lose 71% of the time");
+    console.log(fighter_a.name+ " is Japanese and will lose 71% of the time. B adds:"+points);
+    b_points += points;
   } else if (a_nationality !== "Japan" && b_nationality === "Japan") {
-    console.log(fighter_b.name+ " is Japanese and will lose 71% of the time");
+    console.log(fighter_b.name+ " is Japanese and will lose 71% of the time. A adds:"+points);
+    a_points += points;
   } else {
-    console.log("Both fighters are Japanese and hold no advantageous");
+    console.log("Neither fighter has the Japanese Curse");
   }
 }
 
 // 6 TKOs fighting opponents older than 32 years win 78%
 function TKO_age(a_win_ko, a_age, b_win_ko, b_age, points) {
-  if (a_win_ko > 6 && a_age < 32 && b_age > 32) {
-    console.log(fighter_a.name+" has more then 6 TKOs and his opponent is older than 32 -- "+ fighter_a.name+" wins 78% of the time")
+  if (a_win_ko > 6 && a_age < b_age && b_age > 32) {
+    console.log(fighter_a.name+" has more then 6 TKOs and his opponent is older than 32 -- "+ fighter_a.name+" wins 78% of the time. A adds:"+points)
+    a_points += points;
   } else if (b_win_ko > 6 && b_age < 32 && a_age > 32) {
-    console.log(fighter_b.name+" has more then 6 TKOs and his opponent is older than 32 -- "+ fighter_b.name+" wins 78% of the time")
+    console.log(fighter_b.name+" has more then 6 TKOs and his opponent is older than 32 -- "+ fighter_b.name+" wins 78% of the time. B adds:"+points)
+    b_points += points;
   } else {
     console.log("Neither fighter has a TKO/Age advantage")
   }
@@ -179,11 +211,13 @@ function TKO_age(a_win_ko, a_age, b_win_ko, b_age, points) {
 
 function six_losses(a_lose_total, b_lose_total, points) {
   if (a_lose_total > 5 && b_lose_total < 6) {
-    console.log(fighter_a.name+ " has more than 6 losses while his opponent has fewer than 6 -- "+ fighter_a.name+ " loses 60% of the time")
+    console.log(fighter_a.name+ " has more than 6 losses while his opponent has fewer than 6 -- "+ fighter_a.name+ " loses 60% of the time. B adds:"+points)
+    b_points += points;
   } else if (a_lose_total < 6 && b_lose_total > 5) {
-    console.log(fighter_b.name+ " has more than 6 losses while his opponent has fewer than 6 -- "+ fighter_b.name+ " loses 60% of the time")
+    console.log(fighter_b.name+ " has more than 6 losses while his opponent has fewer than 6 -- "+ fighter_b.name+ " loses 60% of the time. A adds:"+points)
+    a_points += points;
   } else {
-    console.log("Both fighters have less than 6 losses and holds no advantage over the other.")
+    console.log("Neither fighters have lossed a bunch")
   }
 }
 
