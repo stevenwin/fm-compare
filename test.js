@@ -14,6 +14,7 @@ const request = require("request");
 });*/
 
 // Declare Variables
+var todayDate = 'Jan/09/2017'
 var fighter_a;
 var a_points = 0;
 var a_age;
@@ -59,17 +60,17 @@ var b_lose_ko_total = 0;
 var fight_predict;
 var fight_winner;
 
-var stat1= 'FIGHTERS OLDER THAN 32 YEARS OF AGE WILL MORE LIKELY LOSE  62%'
-var stat2= 'FIGHTERS WITH MORE THAN 6 TKO VICTORIES FIGHTING OPPONENTS OLDER THAN 32 YEARS OF AGE WILL MORE LIKELY WIN  78%'
-var stat3= 'FIGHTERS FROM JAPAN WILL MORE LIKELY LOSE  71%'
-var stat4= 'FIGHTERS WHO HAVE LOST 2 OR MORE KOS WILL MORE LIKELY LOSE  64%'
-var stat5= 'FIGHTERS WITH 3X OR MORE DECISION WINS AND ARE GREATER THAN 3% TALLER THAN THEIR OPPONENTS WILL MORE LIKELY WIN  84%'
-var stat6= 'FIGHTERS WHO HAVE WON 3X OR MORE DECISIONS THAN THEIR OPPONENT WILL MORE LIKELY WIN  60%'
-var stat7= 'FIGHTERS WITH NO WRESTLING BACKGROUND VS FIGHTERS WHO DO HAVE ONE MORE LIKELY LOSE  64%'
-var stat8= 'FIGHTERS FIGHTING OPPONENTS WITH 3X OR LESS DECISION WINS AND ARE ON A 6 FIGHT (OR BETTER) WINNING STREAK MORE LIKELY WIN  77%'
-var stat9= 'FIGHTERS YOUNGER THAN THEIR OPPONENTS BY 3 OR MORE YEARS IN AGE WILL MORE LIKELY WIN  58%'
-var stat10= 'FIGHTERS WHO HAVEN’T FOUGHT IN MORE THAN 210 DAYS WILL MORE LIKELY LOSE  59%'
-var stat11= 'FIGHTERS TALLER THAN THEIR OPPONENTS BY 3% WILL MORE LIKELY WIN  58%'
+var stat1= 'FIGHTERS OLDER THAN 32 YEARS OF AGE WILL MORE LIKELY LOSE  62%'  //yes
+var stat2= 'FIGHTERS WITH MORE THAN 6 TKO VICTORIES FIGHTING OPPONENTS OLDER THAN 32 YEARS OF AGE WILL MORE LIKELY WIN  78%' //yes
+var stat3= 'FIGHTERS FROM JAPAN WILL MORE LIKELY LOSE  71%' //yes
+var stat4= 'FIGHTERS WHO HAVE LOST 2 OR MORE KOS WILL MORE LIKELY LOSE  64%' //yes
+var stat5= 'FIGHTERS WITH 3X OR MORE DECISION WINS AND ARE GREATER THAN 3% TALLER THAN THEIR OPPONENTS WILL MORE LIKELY WIN  84%' //no
+var stat6= 'FIGHTERS WHO HAVE WON 3X OR MORE DECISIONS THAN THEIR OPPONENT WILL MORE LIKELY WIN  60%' //yes
+var stat7= 'FIGHTERS WITH NO WRESTLING BACKGROUND VS FIGHTERS WHO DO HAVE ONE MORE LIKELY LOSE  64%' //no
+var stat8= 'FIGHTERS FIGHTING OPPONENTS WITH 3X OR LESS DECISION WINS AND ARE ON A 6 FIGHT (OR BETTER) WINNING STREAK MORE LIKELY WIN  77%' //no
+var stat9= 'FIGHTERS YOUNGER THAN THEIR OPPONENTS BY 3 OR MORE YEARS IN AGE WILL MORE LIKELY WIN  58%' //yes
+var stat10= 'FIGHTERS WHO HAVEN’T FOUGHT IN MORE THAN 210 DAYS WILL MORE LIKELY LOSE  59%' //yes
+var stat11= 'FIGHTERS TALLER THAN THEIR OPPONENTS BY 3% WILL MORE LIKELY WIN  58%' //no
 var stat12= 'FIGHTERS WHO HAVE LOST LESS BY SUBMISSION THAN THEIR OPPONENTS WILL MORE LIKELY WIN  57%'
 var stat13= 'FIGHTERS WHO HAVE LOST 6 OR MORE FIGHTS WILL MORE LIKELY LOSE  60%'
 var stat14= 'FIGHTERS WHO HAVE 18 OR MORE WINS AND NEVER HAD A 2 FIGHT LOSING STREAK MORE LIKELY WIN  63%'
@@ -99,8 +100,8 @@ function fight_predict(a_points, b_points) {
 }
 
 //var url = "http://www.sherdog.com/fighter/Matt-Riddle-34072";
-var fighter_a = "http://www.sherdog.com/fighter/Ben-Saunders-10339";
-var fighter_b = "http://www.sherdog.com/fighter/Court-McGee-34124";
+var fighter_a = "http://www.sherdog.com/fighter/Cyril-Asker-94411";
+var fighter_b = "http://www.sherdog.com/fighter/Dmitry-Smoliakov-125781";
 
 // Grab Sherdog stats for two fighters based on their URLs
 sherdog.getFighter(fighter_a, gotData_a);
@@ -149,6 +150,9 @@ setTimeout(function () {
   win_loss_compare(fighter_a, fighter_b, 3); // 78%, 307tf
   win_loss_compare2(fighter_a, fighter_b, 3); // 68%, 1049tf
   sub_loss(fighter_a, fighter_b, 1); // 59%, 1982tf
+  ringrust(fighter_a, fighter_b, 1); // 59%, 276tf
+  youngerThanThree(fighter_a, fighter_b, 1); // 58%, 274tf
+  lessSubLoss(fighter_a, fighter_b, 1); // 57%, 522tf
   console.log(fighter_a.name+":"+a_points+"  "+fighter_b.name+":"+b_points);
   
   fight_predict(a_points, b_points);
@@ -161,10 +165,33 @@ setTimeout(function () {
 
 
 
+function lessSubLoss(fighter_a, fighter_b, points) {
+  if (fighter_a.losses.submissions < fighter_b.losses.submissions) {
+    console.log(fighter_a.name+" has fewer sub losses than "+fighter_b.name+". A add "+points);
+    a_points += points;
+  }
+  else if (fighter_b.losses.submissions < fighter_a.losses.submissions) {
+    console.log(fighter_b.name+" has fewer sub losses than "+fighter_a.name+". B add "+points);
+    b_points += points;
+  }
+  else {
+    console.log("No sub loss advantage");
+  }
+}
 
-
-
-
+function youngerThanThree(fighter_a, fighter_b, points) {
+  if (a_age - b_age > 3) {
+    console.log(fighter_b.name+" is at least 3 years younger than "+fighter_a.name+". B adds "+points);
+    b_points += points;
+  }
+  else if (b_age - a_age >3) {
+    console.log(fighter_a.name+" is at least 3 years younger than "+fighter_b.name+". A adds "+points);
+    a_points += points;
+  }
+  else {
+    console.log("No age advantage");
+  }
+}
 
 function b4b_loss(fighter_a, fighter_b, points) {
 }
@@ -256,13 +283,13 @@ function b2b_loss(fighter_a, fighter_b, points) {
 function ko_loss(fighter_a, fighter_b, points) {
 	for (i=0;i<fighter_b.fights.length;i++) {
 		if (fighter_b.fights[i].result === 'loss' && fighter_b.fights[i].method.match(/\bKO\b/)) {
-			b_lose_ko_total += 1;
+			b_lose_ko_total += points;
 		}
 	}
 
 	for (i=0;i<fighter_a.fights.length;i++) {
 		if (fighter_a.fights[i].result === 'loss' && fighter_a.fights[i].method.match(/\bKO\b/)) {
-			a_lose_ko_total += 1;
+			a_lose_ko_total += points;
 		}
 	}
 
@@ -329,15 +356,27 @@ function six_losses(a_lose_total, b_lose_total, points) {
   }
 }
 
-// Date string parser into int(date)
-var dateToDay = function(date) {
-	var d = Date.parse(date);
-var minutes = 1000 * 60;
-var hours = minutes * 60;
-var days = hours * 24;
-var years = days * 365;
 
-	var minute = d / minutes
+function ringrust(fighter_a, fighter_b, points) {
+  if ((dateToDay(todayDate) - dateToDay(fighter_a.fights[0].date) > 210 && (dateToDay(todayDate) - dateToDay(fighter_b.fights[0].date) < 210))) {
+    console.log(fighter_a.name+" hasn't fought in over 210 days. B add "+points);
+    b_points += points;
+  }
+  else if ((dateToDay(todayDate) - dateToDay(fighter_b.fights[0].date) > 210 && (dateToDay(todayDate) - dateToDay(fighter_a.fights[0].date) < 210))) {
+    console.log(fighter_b.name+" hasn't fought in over 210 days. A add "+points);
+    a_points += points;
+  }
+  else {
+    console.log("Both fighters have fought recently.  No ring rust advantage");
+  }
+}
+
+
+// Date string parser into int(date)
+function dateToDay(date) {
+var d = Date.parse(date);
+var minutes = 1000 * 60;
+var minute = d / minutes
 var hour = minute / 60
 var day = hour / 24
 var year = day / 365
