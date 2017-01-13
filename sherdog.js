@@ -1,26 +1,56 @@
 var sherdog = require('sherdog');
-var url = "http://www.sherdog.com/fighter/Conor-McGregor-29688";
+var urlA = "http://www.sherdog.com/fighter/Cody-Garbrandt-50381";
+var urlB = "http://www.sherdog.com/fighter/Conor-McGregor-29688";
 var todayDate = 'Jan/09/2013'
 
 var fighterA;
-var fighterA_KO = 0;
+var fighterA_KO_wins = 0;
+var fighterA_TKO_wins = 0;
+var fighterA_sub_wins = 0;
+var fighterA_dec_wins = 0;
+var fighterA_TKO_losses = 0;
+var fighterA_KO_losses = 0;
+var fighterA_sub_losses = 0;
+var fighterA_dec_losses = 0;
 var fighterA_wins = 0;
 var fighterA_losses = 0;
+
+var fighterB;
+var fighterB_KO_wins = 0;
+var fighterB_TKO_wins = 0;
+var fighterB_sub_wins = 0;
+var fighterB_dec_wins = 0;
+var fighterB_TKO_losses = 0;
+var fighterB_KO_losses = 0;
+var fighterB_sub_losses = 0;
+var fighterB_dec_losses = 0;
+var fighterB_wins = 0;
+var fighterB_losses = 0;
+
 var wait = "#";
 var waitTime = 1;
 var timeOut = 6;
 
-sherdog.getFighter(url, getData);
+// Get FighterA Data from Sherdog
+sherdog.getFighter(urlA, getData);
 function getData(data) {
 	fighterA = data;
 }
+
+// Get FighterB Data from Sherdog
+sherdog.getFighter(urlB, getData);
+function getData(data) {
+	fighterB = data;
+}
+
+// Get FighterB Data from Sherdog
 
 /***
 		Main App
  ***/
 setTimeout(function () {
 	aKOwins();
-	fighterA_stats();
+	fighterA_stats(); //
 
 
 	
@@ -39,7 +69,7 @@ function fighterA_stats() {
 		else if (fighterA.fights[i].result === 'win') {
 			fighterA_wins++;
 		}
-		else {
+		else if (fighterA.fights[i].result === 'loss') {
 			fighterA_losses++;
 		}
 	}
@@ -49,7 +79,7 @@ function fighterA_stats() {
 function aKOwins() {
 	for (i=0;i<fighterA.fights.length;i++) {
 		if (fighterA.fights[i].result === 'win' && fighterA.fights[i].method.match(/\bKO\b/)) {
-			fighterA_KO += 1;
+			fighterA_KO_wins++;
 		}
 	}
 	console.log(fighterA.name+" has "+fighterA_KO+" KO wins");
