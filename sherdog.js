@@ -38,10 +38,10 @@ function getData(data) {
 }
 
 // Get FighterB Data from Sherdog
-sherdog.getFighter(urlB, getData);
+/*sherdog.getFighter(urlB, getData);
 function getData(data) {
 	fighterB = data;
-}
+}*/
 
 // Get FighterB Data from Sherdog
 
@@ -68,12 +68,24 @@ function fighterA_stats() {
 		}
 		else if (fighterA.fights[i].result === 'win') {
 			fighterA_wins++;
+			if (fighterA.fights[i].method.match(/\bKO\b/)) {
+				fighterA_KO_wins++;
+			}
+			else if (fighterA.fights[i].method.match(/\bDecision\b/)) {
+				fighterA_dec_wins++;
+			}
+			else if (fighterA.fights[i].method.match(/\bTKO\b/)) {
+				fighterA_TKO_wins++;
+			}
+			else if (fighterA.fights[i].method.match(/\bSubmission\b/)) {
+				fighterA_sub_wins++;
+			}
 		}
 		else if (fighterA.fights[i].result === 'loss') {
 			fighterA_losses++;
 		}
 	}
-	console.log(fighterA.name+" has \n"+fighterA_wins+" wins and\n"+fighterA_losses+" losses.");
+	console.log(fighterA.name+" has \n"+fighterA_wins+" wins and\n"+fighterA_losses+" losses. KO:"+fighterA_KO_wins);
 }
 
 function aKOwins() {
@@ -82,7 +94,7 @@ function aKOwins() {
 			fighterA_KO_wins++;
 		}
 	}
-	console.log(fighterA.name+" has "+fighterA_KO+" KO wins");
+	console.log(fighterA.name+" has "+fighterA_KO_wins+" KO wins");
 }
 
 
