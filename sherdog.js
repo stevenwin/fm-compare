@@ -1,4 +1,26 @@
-var sherdog = require('sherdog');
+// Date string parser into int(date) in years
+function dateToDay(date) {
+var d = Date.parse(date);
+var minutes = 1000 * 60;
+var minute = d / minutes
+var hour = minute / 60
+var day = hour / 24
+var year = day / 365
+return day;
+}
+
+// Date string parser into int(date) in days
+function dateToYear(date) {
+var d = Date.parse(date);
+var minutes = 1000 * 60;
+var minute = d / minutes
+var hour = minute / 60
+var day = hour / 24
+var year = day / 365
+return year;
+}
+
+
 var fighter_url = [
  {
    "name": "Conor McGregor",
@@ -6246,27 +6268,135 @@ var fighter_url = [
  }
 ]
 
-
-
+var sherdog = require('sherdog');
 var Table = require('cli-table');
+var request = require('request')
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* XXXXXXXX   TABLE STUFF   XXXXXXXXXXXX
 // instantiate 
 var table = new Table({
-    head: ['Fighter Name', 'Age', 'Nationality', 'Win Streak']
+    head: ['Fighter Name', 'Age', 'Height', 'Win Streak']
   , colWidths: [20, 10, 15, 15]
 });
+
+// For the request body
+         body.FMLiveFeed.Fights[0].Fighters[0].FullName,
+         body.FMLiveFeed.Fights[0].Fighters[0].DOB,
+         body.FMLiveFeed.Fights[0].Fighters[0].Height
+
+table.push(
+    ['First', 'Second', 'Third', 'Fourth']
+  , ['First', 'Second', 'Third', 'Fourth']
+);
+
+setTimeout(function () {
+   console.log(table.toString());
+}, 4000);*/
+
+
+
+
+
+
+
+
  
 // table is an Array, so you can `push`, `unshift`, `splice` and friends 
 
  
 
-
+var url_fm = 'http://liveapi.fightmetric.com/V1/802/Fnt.json';
 var urlA = "http://www.sherdog.com/fighter/Conor-McGregor-29688";
 var urlB;
 var todayDate = 'Jan/09/2013'
+var fightDate;
 var fighterA = 'Marcus Davis';
 var fighterB;
+var fighters = [];
 
+function findSherdogURL (fighterName) {
+   for (i=0;i<fighter_url.length;i++) {
+   for (var name in fighter_url[i]) {
+      if (fighter_url[i][name] == fighterName) {
+         return "http://www.sherdog.com"+fighter_url[i].url;
+         //console.log('fighter_url.'+name, '=', fighter_url[i][name]);
+      }
+   }
+}
+
+}
+
+
+// Pull all fighter information from Fightmetric API
+// and put them into 'fighters'
+for (i=801;i<803;i++) {
+   request({
+       url: 'http://liveapi.fightmetric.com/V1/802/Fnt.json', //'http://liveapi.fightmetric.com/V1/'+i+'/Fnt.json',
+       json: true
+   }, function (error, response, body) {
+
+       if (!error && response.statusCode === 200) {
+           // Print the json response
+           
+           // Grab Fighters
+           for (i=0;i<body.FMLiveFeed.Fights.length;i++) {
+            for (j=0;j<body.FMLiveFeed.Fights[j].Fighters.length;j++) {
+                 fighters.push({
+                     fightDate: body.FMLiveFeed.Date,
+                     name: body.FMLiveFeed.Fights[i].Fighters[j].FullName,
+                     height: body.FMLiveFeed.Fights[i].Fighters[j].Height,
+                     dob: body.FMLiveFeed.Fights[i].Fighters[j].DOB,
+                     outcome: body.FMLiveFeed.Fights[i].Fighters[j].Outcome,
+                     // Grab URLs
+                     fighterURL: findSherdogURL(body.FMLiveFeed.Fights[i].Fighters[j].FullName)
+                  })
+              }
+            }
+       }
+   })
+}
+/*var fighter = {
+   name: "",
+   winTotal: 0,
+   loseTotal: 0,
+   KO_win: 0,
+   TKO_win: 0,
+   sub_win: 0,
+   dec_win: 0,
+   KO_lose: 0,
+   TKO_lose: 0,
+   sub_lose: 0,
+   dec_lose: 0,
+   points: 0,
+   japanese: false,
+   lastFightDate: "",
+   age: ""
+}*/
 
 var fighterA_data;
 var fighterA_KO = 0;
@@ -6278,7 +6408,7 @@ var timeOut = 6;
 
 
 // Grab URL of fighter
-for (i=0;i<fighter_url.length;i++) {
+/*for (i=0;i<fighter_url.length;i++) {
 	for (var name in fighter_url[i]) {
 		if (fighter_url[i][name] == fighterA) {
          table.push([fighter_url[i].name]);
@@ -6286,15 +6416,43 @@ for (i=0;i<fighter_url.length;i++) {
 			//console.log('fighter_url.'+name, '=', fighter_url[i][name]);
 		}
 	}
+}*/
+sherdog.getFighter(fighter_a, gotData_a);
+sherdog.getFighter(fighter_b, gotData_b);
+
+function gotData_a(data) {
+  fighter_a = data;
+  a_age = Number(fighter_a.age);
+  a_nationality = fighter_a.nationality;
+  a_win_ko = fighter_a.wins.knockouts;
+  a_win_dec = fighter_a.wins.decisions;
+  a_win_sub = fighter_a.wins.submissions;
+  a_win_total = fighter_a.wins.total;
+  a_lose_ko = fighter_a.losses.knockouts;
+  a_lose_sub = fighter_a.losses.submissions;
+  a_lose_dec = fighter_a.losses.decisions;
+  a_lose_total = fighter_a.losses.total;
+  a_lastfight_date = dateToDay(fighter_a.fights.date);
 }
 
+function gotData_b(data) {
+  fighter_b = data;
+  b_age = Number(fighter_b.age);
+  b_nationality = fighter_b.nationality;
+  b_win_ko = fighter_b.wins.knockouts;
+  b_win_dec = fighter_b.wins.decisions;
+  b_win_sub = fighter_b.wins.submissions;
+  b_win_total = fighter_b.wins.total;
+  b_lose_ko = fighter_b.losses.knockouts;
+  b_lose_sub = fighter_b.losses.submissions;
+  b_lose_dec = fighter_b.losses.decisions;
+  b_lose_total = fighter_b.losses.total;
+  b_lastfight_date = dateToDay(fighter_b.fights.date);
+}
 
-
-/*table.push(
-    ['First', 'Second', 'Third', 'Fourth']
-  , ['First', 'Second', 'Third', 'Fourth']
-);*/
-console.log(table.toString());
+setTimeout(function () {
+   console.log(fighters);
+}, 6000);
 
 // Grab fighter data
 sherdog.getFighter(urlA, getData);
@@ -6361,24 +6519,3 @@ setTimeout(function() {
 	clearInterval(waiting)
 }, timeOut*1000);*/
 
-// Date string parser into int(date) in years
-var dateToDay = function(date) {
-var d = Date.parse(date);
-var minutes = 1000 * 60;
-var minute = d / minutes
-var hour = minute / 60
-var day = hour / 24
-var year = day / 365
-return day;
-}
-
-// Date string parser into int(date) in days
-var dateToYear = function(date) {
-var d = Date.parse(date);
-var minutes = 1000 * 60;
-var minute = d / minutes
-var hour = minute / 60
-var day = hour / 24
-var year = day / 365
-return year;
-}
