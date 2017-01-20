@@ -6273,30 +6273,6 @@ var Table = require('cli-table');
 var request = require('request')
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* XXXXXXXX   TABLE STUFF   XXXXXXXXXXXX
 // instantiate 
 var table = new Table({
@@ -6318,17 +6294,45 @@ setTimeout(function () {
    console.log(table.toString());
 }, 4000);*/
 
-
-
-
-
-
-
-
  
 // table is an Array, so you can `push`, `unshift`, `splice` and friends 
 
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 var url_fm = 'http://liveapi.fightmetric.com/V1/802/Fnt.json';
 var urlA = "http://www.sherdog.com/fighter/Conor-McGregor-29688";
@@ -6339,7 +6343,21 @@ var fighterA = 'Marcus Davis';
 var fighterB;
 var fighters = [];
 var fighter_a;
+var fighterurl = [];
 
+
+/***
+      Helper Functions
+***/
+
+function aKOwins() {
+   for (i=0;i<fighterA.fights.length;i++) {
+      if (fighterA.fights[i].result === 'win' && fighterA.fights[i].method.match(/\bKO\b/)) {
+         fighterA_KO += 1;
+      }
+   }
+   console.log(fighterA.name+" has "+fighterA_KO+" KO wins");
+}
 function findSherdogURL (fighterName) {
    for (i=0;i<fighter_url.length;i++) {
 	   for (var name in fighter_url[i]) {
@@ -6370,7 +6388,7 @@ function fighterA_stats() {
 
 // Pull all fighter information from Fightmetric API
 // and put them into 'fighters'
-for (i=801;i<803;i++) {
+
    request({
        url: 'http://liveapi.fightmetric.com/V1/802/Fnt.json', //'http://liveapi.fightmetric.com/V1/'+i+'/Fnt.json',
        json: true
@@ -6380,8 +6398,8 @@ for (i=801;i<803;i++) {
            // Print the json response
            
            // Grab Fighters
-           for (i=0;i<body.FMLiveFeed.Fights.length;i++) {
-            for (j=0;j<body.FMLiveFeed.Fights[j].Fighters.length;j++) {
+         for (var i=0;i<body.FMLiveFeed.Fights.length;i++) {
+            for (var j=0;j<body.FMLiveFeed.Fights[0].Fighters.length;j++) {
                  fighters.push({
                      fightDate: body.FMLiveFeed.Date,
                      name: body.FMLiveFeed.Fights[i].Fighters[j].FullName,
@@ -6391,12 +6409,11 @@ for (i=801;i<803;i++) {
                      stance: body.FMLiveFeed.Fights[i].Fighters[j].Stance,
                      // Grab URLs
                      fighterURL: findSherdogURL(body.FMLiveFeed.Fights[i].Fighters[j].FullName)
-                  })
+                  });
               }
-            }
+           }
        }
    })
-}
 /*var fighter = {
    name: "",
    winTotal: 0,
@@ -6414,7 +6431,8 @@ for (i=801;i<803;i++) {
    lastFightDate: "",
    age: ""
 }*/
-
+var fighterCompare = [];
+var fighterSherdog;
 var fighterA_data;
 var fighterA_KO = 0;
 var fighterA_wins = 0;
@@ -6422,7 +6440,6 @@ var fighterA_losses = 0;
 var wait = "#";
 var waitTime = 1;
 var timeOut = 6;
-
 
 // Grab URL of fighter
 /*for (i=0;i<fighter_url.length;i++) {
@@ -6434,15 +6451,20 @@ var timeOut = 6;
 		}
 	}
 }*/
-setTimeout( function() {sherdog.getFighter(fighters[0].fighterURL, gotData_a);
 
-function gotData_a(data) {
-  fighter_a = data;
-}
-											 }, 4000);
-setTimeout( function () {
-	console.log(fighter_a);
-}, 5000);
+// Need to iterate over the request results and add more stats into fighter *********************************************************************************************************
+setTimeout( function() {
+   sherdog.getFighter(fighters[0].fighterURL, getData)
+   function getData(data) {
+      fighterSherdog = data;
+   }
+
+   setTimeout( function() {
+   fighters[0].age = fighterSherdog.name;
+   console.log(fighters);
+   }, 12000);
+}, 6000);
+
 /*function gotData_b(data) {
   fighter_b = data;
   b_age = Number(fighter_b.age);
@@ -6484,20 +6506,7 @@ function getData(data) {
 	timeOut*1000);
 */
 
-/***
-		Helper Functions
-***/
 
-
-
-function aKOwins() {
-	for (i=0;i<fighterA.fights.length;i++) {
-		if (fighterA.fights[i].result === 'win' && fighterA.fights[i].method.match(/\bKO\b/)) {
-			fighterA_KO += 1;
-		}
-	}
-	console.log(fighterA.name+" has "+fighterA_KO+" KO wins");
-}
 
 
 
