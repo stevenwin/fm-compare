@@ -6338,17 +6338,33 @@ var fightDate;
 var fighterA = 'Marcus Davis';
 var fighterB;
 var fighters = [];
+var fighter_a;
 
 function findSherdogURL (fighterName) {
    for (i=0;i<fighter_url.length;i++) {
-   for (var name in fighter_url[i]) {
-      if (fighter_url[i][name] == fighterName) {
-         return "http://www.sherdog.com"+fighter_url[i].url;
-         //console.log('fighter_url.'+name, '=', fighter_url[i][name]);
-      }
-   }
+	   for (var name in fighter_url[i]) {
+	      if (fighter_url[i][name] == fighterName) {
+	         return "http://www.sherdog.com"+fighter_url[i].url;
+	         //console.log('fighter_url.'+name, '=', fighter_url[i][name]);
+	      }
+	   }
+	}
 }
 
+
+function fighterA_stats() {
+	for (i=0;i<fighterA.fights.length;i++) {
+		if (dateToDay(fighterA.fights[i].date) > dateToDay(todayDate)) {
+			console.log("Minus one win");
+		}
+		else if (fighterA.fights[i].result === 'win') {
+			fighterA_wins++;
+		}
+		else {
+			fighterA_losses++;
+		}
+	}
+	console.log(fighterA.name+" has \n"+fighterA_wins+" wins and\n"+fighterA_losses+" losses.");
 }
 
 
@@ -6372,6 +6388,7 @@ for (i=801;i<803;i++) {
                      height: body.FMLiveFeed.Fights[i].Fighters[j].Height,
                      dob: body.FMLiveFeed.Fights[i].Fighters[j].DOB,
                      outcome: body.FMLiveFeed.Fights[i].Fighters[j].Outcome,
+                     stance: body.FMLiveFeed.Fights[i].Fighters[j].Stance,
                      // Grab URLs
                      fighterURL: findSherdogURL(body.FMLiveFeed.Fights[i].Fighters[j].FullName)
                   })
@@ -6417,25 +6434,16 @@ var timeOut = 6;
 		}
 	}
 }*/
-sherdog.getFighter(fighter_a, gotData_a);
-sherdog.getFighter(fighter_b, gotData_b);
+setTimeout( function() {sherdog.getFighter(fighters[0].fighterURL, gotData_a);
 
 function gotData_a(data) {
   fighter_a = data;
-  a_age = Number(fighter_a.age);
-  a_nationality = fighter_a.nationality;
-  a_win_ko = fighter_a.wins.knockouts;
-  a_win_dec = fighter_a.wins.decisions;
-  a_win_sub = fighter_a.wins.submissions;
-  a_win_total = fighter_a.wins.total;
-  a_lose_ko = fighter_a.losses.knockouts;
-  a_lose_sub = fighter_a.losses.submissions;
-  a_lose_dec = fighter_a.losses.decisions;
-  a_lose_total = fighter_a.losses.total;
-  a_lastfight_date = dateToDay(fighter_a.fights.date);
 }
-
-function gotData_b(data) {
+											 }, 4000);
+setTimeout( function () {
+	console.log(fighter_a);
+}, 5000);
+/*function gotData_b(data) {
   fighter_b = data;
   b_age = Number(fighter_b.age);
   b_nationality = fighter_b.nationality;
@@ -6448,11 +6456,11 @@ function gotData_b(data) {
   b_lose_dec = fighter_b.losses.decisions;
   b_lose_total = fighter_b.losses.total;
   b_lastfight_date = dateToDay(fighter_b.fights.date);
-}
+}*/
 
-setTimeout(function () {
-   console.log(fighters);
-}, 6000);
+/*setTimeout(function () {
+   console.log(fighters[0].fighterURL);
+}, 6000);*/
 
 // Grab fighter data
 sherdog.getFighter(urlA, getData);
@@ -6480,20 +6488,7 @@ function getData(data) {
 		Helper Functions
 ***/
 
-function fighterA_stats() {
-	for (i=0;i<fighterA.fights.length;i++) {
-		if (dateToDay(fighterA.fights[i].date) > dateToDay(todayDate)) {
-			console.log("Minus one win");
-		}
-		else if (fighterA.fights[i].result === 'win') {
-			fighterA_wins++;
-		}
-		else {
-			fighterA_losses++;
-		}
-	}
-	console.log(fighterA.name+" has \n"+fighterA_wins+" wins and\n"+fighterA_losses+" losses.");
-}
+
 
 function aKOwins() {
 	for (i=0;i<fighterA.fights.length;i++) {
