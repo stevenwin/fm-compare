@@ -2175,7 +2175,7 @@ var fighter_url = [
    "url": "/fighter/Roger-Huerta-10089"
  },
  {
-   "name": "Ikuhisa Minowa",
+   "name": "Iku Minowa",
    "url": "/fighter/Ikuhisa-Minowa-250"
  },
  {
@@ -6360,29 +6360,29 @@ function aKOwins() {
 }
 function findSherdogURL (fighterName) {
    for (i=0;i<fighter_url.length;i++) {
-	   for (var name in fighter_url[i]) {
-	      if (fighter_url[i][name] == fighterName) {
-	         return "http://www.sherdog.com"+fighter_url[i].url;
-	         //console.log('fighter_url.'+name, '=', fighter_url[i][name]);
-	      }
-	   }
-	}
+      for (var name in fighter_url[i]) {
+         if (fighter_url[i][name] == fighterName) {
+            return "http://www.sherdog.com"+fighter_url[i].url;
+            //console.log('fighter_url.'+name, '=', fighter_url[i][name]);
+         }
+      }
+   }
 }
 
 
 function fighterA_stats() {
-	for (i=0;i<fighterA.fights.length;i++) {
-		if (dateToDay(fighterA.fights[i].date) > dateToDay(todayDate)) {
-			console.log("Minus one win");
-		}
-		else if (fighterA.fights[i].result === 'win') {
-			fighterA_wins++;
-		}
-		else {
-			fighterA_losses++;
-		}
-	}
-	console.log(fighterA.name+" has \n"+fighterA_wins+" wins and\n"+fighterA_losses+" losses.");
+   for (i=0;i<fighterA.fights.length;i++) {
+      if (dateToDay(fighterA.fights[i].date) > dateToDay(todayDate)) {
+         console.log("Minus one win");
+      }
+      else if (fighterA.fights[i].result === 'win') {
+         fighterA_wins++;
+      }
+      else {
+         fighterA_losses++;
+      }
+   }
+   console.log(fighterA.name+" has \n"+fighterA_wins+" wins and\n"+fighterA_losses+" losses.");
 }
 
 
@@ -6443,13 +6443,13 @@ var timeOut = 6;
 
 // Grab URL of fighter
 /*for (i=0;i<fighter_url.length;i++) {
-	for (var name in fighter_url[i]) {
-		if (fighter_url[i][name] == fighterA) {
+   for (var name in fighter_url[i]) {
+      if (fighter_url[i][name] == fighterA) {
          table.push([fighter_url[i].name]);
-			console.log("http://www.sherdog.com"+fighter_url[i].url);
-			//console.log('fighter_url.'+name, '=', fighter_url[i][name]);
-		}
-	}
+         console.log("http://www.sherdog.com"+fighter_url[i].url);
+         //console.log('fighter_url.'+name, '=', fighter_url[i][name]);
+      }
+   }
 }*/
 
 // Need to iterate over the request results and add more stats into fighter *********************************************************************************************************
@@ -6487,23 +6487,23 @@ setTimeout( function() {
 // Grab fighter data
 sherdog.getFighter(urlA, getData);
 function getData(data) {
-	fighterA_data = data;
+   fighterA_data = data;
 }
 
 
 
 /***
-		Main App
+      Main App
  ***/
 
 /*setTimeout(function () {
-	aKOwins();
-	fighterA_stats();
+   aKOwins();
+   fighterA_stats();
 
 
-	
+   
 },
-	timeOut*1000);
+   timeOut*1000);
 */
 
 
@@ -6511,15 +6511,15 @@ function getData(data) {
 
 
 /***
-		Outro
+      Outro
 ***/
 
 /*var waiting = setInterval(function() {
-	console.log(wait)
-	wait += "#";
+   console.log(wait)
+   wait += "#";
 }, waitTime*1000)
 
 setTimeout(function() {
-	clearInterval(waiting)
+   clearInterval(waiting)
 }, timeOut*1000);*/
 
