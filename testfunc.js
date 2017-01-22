@@ -28,7 +28,7 @@ console.log(dateToYear(date1)-dateToYear(date2));*/
 
 
 
-fm_stats = [{
+/*fm_stats = [{
   "FMLiveFeed": {
     "EventID": "802",
     "Timestamp": "2016/12/30 22:09:44",
@@ -53,3 +53,7 @@ testis = map(fm_stats, function() {
 	addOne
 });
 
+*/
+var fighter_url = require('./sherdogurl.js')
+
+console.log(fighter_url.length)
