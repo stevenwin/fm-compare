@@ -54,6 +54,25 @@ testis = map(fm_stats, function() {
 });
 
 */
+<<<<<<< HEAD
 var fighter_url = require('./sherdogurl.js')
 
 console.log(fighter_url.length)
+=======
+
+
+var b = function() {
+    console.log("Hi from var b")
+}
+
+function c() {
+    return 5
+}
+
+function d(b) {
+    console.log("Hi from function d and " +b())
+}
+
+b();
+d(b);
+>>>>>>> 816d5c9597027844459f7331d83b1df16da676f4
