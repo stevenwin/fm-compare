@@ -41,66 +41,6 @@ var fighter_a;
 var fighterurl = [];
 
 
-/***
-      Helper Functions
-***/
-// Date string parser into int(date) in years
-function dateToDay(date) {
-var d = Date.parse(date);
-var minutes = 1000 * 60;
-var minute = d / minutes
-var hour = minute / 60
-var day = hour / 24
-var year = day / 365
-return day;
-}
-
-// Date string parser into int(date) in days
-function dateToYear(date) {
-var d = Date.parse(date);
-var minutes = 1000 * 60;
-var minute = d / minutes
-var hour = minute / 60
-var day = hour / 24
-var year = day / 365
-return year;
-}
-
-function aKOwins() {
-   for (i=0;i<fighterA.fights.length;i++) {
-      if (fighterA.fights[i].result === 'win' && fighterA.fights[i].method.match(/\bKO\b/)) {
-         fighterA_KO += 1;
-      }
-   }
-   console.log(fighterA.name+" has "+fighterA_KO+" KO wins");
-}
-function findSherdogURL (fighterName) {
-   for (i=0;i<fighter_url.length;i++) {
-      for (var name in fighter_url[i]) {
-         if (fighter_url[i][name] == fighterName) {
-            return "http://www.sherdog.com"+fighter_url[i].url;
-            //console.log('fighter_url.'+name, '=', fighter_url[i][name]);
-         }
-      }
-   }
-}
-
-
-function fighterA_stats() {
-   for (i=0;i<fighterA.fights.length;i++) {
-      if (dateToDay(fighterA.fights[i].date) > dateToDay(todayDate)) {
-         console.log("Minus one win");
-      }
-      else if (fighterA.fights[i].result === 'win') {
-         fighterA_wins++;
-      }
-      else {
-         fighterA_losses++;
-      }
-   }
-   console.log(fighterA.name+" has \n"+fighterA_wins+" wins and\n"+fighterA_losses+" losses.");
-}
-
 
 // Pull all fighter information from Fightmetric API
 // and put them into 'fighters'
@@ -222,7 +162,65 @@ function getData(data) {
    timeOut*1000);
 */
 
+/***
+      Helper Functions
+***/
+// Date string parser into int(date) in years
+function dateToDay(date) {
+var d = Date.parse(date);
+var minutes = 1000 * 60;
+var minute = d / minutes
+var hour = minute / 60
+var day = hour / 24
+var year = day / 365
+return day;
+}
 
+// Date string parser into int(date) in days
+function dateToYear(date) {
+var d = Date.parse(date);
+var minutes = 1000 * 60;
+var minute = d / minutes
+var hour = minute / 60
+var day = hour / 24
+var year = day / 365
+return year;
+}
+
+function aKOwins() {
+   for (i=0;i<fighterA.fights.length;i++) {
+      if (fighterA.fights[i].result === 'win' && fighterA.fights[i].method.match(/\bKO\b/)) {
+         fighterA_KO += 1;
+      }
+   }
+   console.log(fighterA.name+" has "+fighterA_KO+" KO wins");
+}
+function findSherdogURL (fighterName) {
+   for (i=0;i<fighter_url.length;i++) {
+      for (var name in fighter_url[i]) {
+         if (fighter_url[i][name] == fighterName) {
+            return "http://www.sherdog.com"+fighter_url[i].url;
+            //console.log('fighter_url.'+name, '=', fighter_url[i][name]);
+         }
+      }
+   }
+}
+
+
+function fighterA_stats() {
+   for (i=0;i<fighterA.fights.length;i++) {
+      if (dateToDay(fighterA.fights[i].date) > dateToDay(todayDate)) {
+         console.log("Minus one win");
+      }
+      else if (fighterA.fights[i].result === 'win') {
+         fighterA_wins++;
+      }
+      else {
+         fighterA_losses++;
+      }
+   }
+   console.log(fighterA.name+" has \n"+fighterA_wins+" wins and\n"+fighterA_losses+" losses.");
+}
 
 
 
