@@ -1,0 +1,29 @@
+{
+  "name": "fm-compare",
+  "version": "1.0.0",
+  "description": "MMA Fighter Comparison",
+  "main": "index.js",
+  "dependencies": {
+    "cli-table": "^0.3.1",
+    "mma": "^0.2.0",
+    "sherdog": "^0.1.9",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevenwin/fm-compare.git"
+  },
+  "keywords": [
+    "mma"
+  ],
+  "author": "stevenwin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevenwin/fm-compare/issues"
+  },
+  "homepage": "https://github.com/stevenwin/fm-compare#readme"
+}
