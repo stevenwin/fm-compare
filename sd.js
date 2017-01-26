@@ -32,8 +32,17 @@ var waitTime = 1;
 var timeOut = 6;
 
 // Get FighterA Data from Sherdog
-sherdog.getFighter(urlA, getData);
-function getData(data) {
-	fighterA = data;
-  console.log(fighterA);
-}
+sherdog.getFighter(urlA, function(data) {
+	//console.log(data.name); // Cody
+	function getName() {
+		console.log(data.name);
+	}
+	getName();
+
+	function getFights() {
+		for(var i=0;i<data.fights.length;i++) {
+			console.log(data.fights[i].opponent);
+		}
+	}
+	getFights();
+});
