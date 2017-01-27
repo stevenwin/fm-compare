@@ -100,8 +100,8 @@ function fight_predict(a_points, b_points) {
 }
 
 //var url = "http://www.sherdog.com/fighter/Matt-Riddle-34072";
-var fighter_a = "http://www.sherdog.com/fighter/Georgi-Karakhanyan-19472";
-var fighter_b = "http://www.sherdog.com/fighter/Emmanuel-Sanchez-29839";
+var fighter_a = "http://www.sherdog.com/fighter/Francis-Ngannou-152341";
+var fighter_b = "http://www.sherdog.com/fighter/Andrei-Arlovski-270";
 
 // Grab Sherdog stats for two fighters based on their URLs
 sherdog.getFighter(fighter_a, gotData_a);
@@ -139,15 +139,15 @@ function gotData_b(data) {
 
 // Runs the App
 setTimeout(function () {
-  compare_age(a_age, b_age, 2); // 62%, 277tf
+  compare_age(a_age, b_age, 1); // 62%, 277tf
   nationality(a_nationality, b_nationality, 1); // 71%, 51tf
   TKO_age(a_win_ko, a_age, b_win_ko, b_age, 1); // 78%, 60tf
   six_losses(a_lose_total, b_lose_total, 2);// 60%, 291tf
   ko_loss(fighter_a, fighter_b, 1); // 64%, 84tf
-  dec_win(fighter_a, fighter_b, 2); // 60%, 235tf
+  dec_win(fighter_a, fighter_b, 1); // 60%, 235tf
   b2b_loss(fighter_a, fighter_b, 1); // 57%, 906tf
   zero_tko_win(fighter_a, fighter_b, 1); // 55%, 164tf
-  win_loss_compare(fighter_a, fighter_b, 3); // 78%, 307tf
+  win_loss_compare(fighter_a, fighter_b, 2); // 78%, 307tf
   //win_loss_compare2(fighter_a, fighter_b, 3); // 68%, 1049tf
   sub_loss(fighter_a, fighter_b, 1); // 59%, 1982tf
   ringrust(fighter_a, fighter_b, 1); // 59%, 276tf
