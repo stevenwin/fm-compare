@@ -45,6 +45,7 @@ var fighterurl = [];
 // Pull all fighter information from Fightmetric API
 // and put them into 'fighters'
 
+function fightmetricRequest() {
 request({
   url: 'http://liveapi.fightmetric.com/V1/802/Fnt.json', //'http://liveapi.fightmetric.com/V1/'+i+'/Fnt.json',
   json: true
@@ -68,6 +69,7 @@ request({
     }
   }
 })
+}
 
 var fighterCompare = [];
 var fighterSherdog;
@@ -203,7 +205,6 @@ function fighterA_stats() {
    }
    console.log(fighterA.name+" has \n"+fighterA_wins+" wins and\n"+fighterA_losses+" losses.");
 }
-
 
 
 /***
