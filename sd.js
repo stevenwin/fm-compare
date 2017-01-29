@@ -2,6 +2,21 @@ const sherdog = require('sherdog');
 const request = require('request');
 var fighter_url = require('./sherdogurl.js')
 var fighters = []
+var url_fm = 'http://liveapi.fightmetric.com/V1/802/Fnt.json';
+var urlA = "http://www.sherdog.com/fighter/Conor-McGregor-29688";
+
+function getEvent(urlfm, callback) {
+  request({
+   url: urlfm,
+   json: true
+ }, function(error, response, body) {
+    if (!error && response.statusCode == 200) {
+      var events = []
+      events.push(body.FMLiveFeed.City);
+      callback(events)
+   }
+})
+}
 
 function findSherdogURL (fighterName) {
    for (var i=0;i<fighter_url.length;i++) {
@@ -12,4 +27,9 @@ function findSherdogURL (fighterName) {
          }
       }
    }
+}
+
+getEvent(url_fm, gotData);
+function gotData(data) {
+   console.log(data);
 }

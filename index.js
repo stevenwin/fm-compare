@@ -45,30 +45,30 @@ var fighterurl = [];
 // Pull all fighter information from Fightmetric API
 // and put them into 'fighters'
 
-function fightmetricRequest() {
+function fightmetricRequest(url_fm, url_ufc) {
 request({
   url: 'http://liveapi.fightmetric.com/V1/802/Fnt.json', //'http://liveapi.fightmetric.com/V1/'+i+'/Fnt.json',
   json: true
   }, function (error, response, body) {
-  if (!error && response.statusCode === 200) {
-    // Print the json response
-    // Grab Fighters
-    for (var i=0;i<body.FMLiveFeed.Fights.length;i++) {
-      for (var j=0;j<body.FMLiveFeed.Fights[0].Fighters.length;j++) {
-        fighters.push({
-        fightDate: body.FMLiveFeed.Date,
-        name: body.FMLiveFeed.Fights[i].Fighters[j].FullName,
-        height: body.FMLiveFeed.Fights[i].Fighters[j].Height,
-        dob: body.FMLiveFeed.Fights[i].Fighters[j].DOB,
-        outcome: body.FMLiveFeed.Fights[i].Fighters[j].Outcome,
-        stance: body.FMLiveFeed.Fights[i].Fighters[j].Stance,
-        // Grab URLs
-        fighterURL: findSherdogURL(body.FMLiveFeed.Fights[i].Fighters[j].FullName)
-        });
+    if (!error && response.statusCode === 200) {
+      // Print the json response
+      // Grab Fighters
+      for (var i=0;i<body.FMLiveFeed.Fights.length;i++) {
+        for (var j=0;j<body.FMLiveFeed.Fights[0].Fighters.length;j++) {
+          fighters.push({
+          fightDate: body.FMLiveFeed.Date,
+          name: body.FMLiveFeed.Fights[i].Fighters[j].FullName,
+          height: body.FMLiveFeed.Fights[i].Fighters[j].Height,
+          dob: body.FMLiveFeed.Fights[i].Fighters[j].DOB,
+          outcome: body.FMLiveFeed.Fights[i].Fighters[j].Outcome,
+          stance: body.FMLiveFeed.Fights[i].Fighters[j].Stance,
+          // Grab URLs
+          fighterURL: findSherdogURL(body.FMLiveFeed.Fights[i].Fighters[j].FullName)
+          });
+        }
       }
     }
-  }
-})
+  })
 }
 
 var fighterCompare = [];

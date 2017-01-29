@@ -100,8 +100,8 @@ function fight_predict(a_points, b_points) {
 }
 
 //var url = "http://www.sherdog.com/fighter/Matt-Riddle-34072";
-var fighter_a = "http://www.sherdog.com/fighter/Francis-Ngannou-152341";
-var fighter_b = "http://www.sherdog.com/fighter/Andrei-Arlovski-270";
+var fighter_a = "http://www.sherdog.com/fighter/JC-Cottrell-43874";
+var fighter_b = "http://www.sherdog.com/fighter/Jason-Gonzalez-66736";
 
 // Grab Sherdog stats for two fighters based on their URLs
 sherdog.getFighter(fighter_a, gotData_a);
