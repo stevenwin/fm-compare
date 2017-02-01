@@ -10,64 +10,104 @@ var url_fm = 'http://liveapi.fightmetric.com/V1/802/Fnt.json';
 var url_fmLinkSource 
 var url_fighterA = "http://www.sherdog.com/fighter/Conor-McGregor-29688";
 var url_fighterB = "";
-fightCompare = {
 
+for (var i=0;i<3;i++) {
+  getEvent(fm_list[i].fm_url, getFightData)
 }
 
-var functionStack = [];
+setTimeout(function() {
+  for (var i=0;i<2;i++) {
+    getSherdog(fights[i].fighter1_url, getFighter1Data(data, combineFighters))
+  }
+}, 10000)
 
-async.series(functionStack, function finalRun(data) {
-  // do something with final data
-});
-
-
-
-functionStack.push(getEvent);
-
-
-
-
-function getEvent(callback) {
-  for (var i=0; i<fm_list.length;i++) {
+// fightmetric main stats
+function getEvent(urlfm, callback) {
     request({
-      url: fm_list[i].fm_url,
+      url: /*fm_list[i].fm_url*/urlfm,
       json: true
     }, function getFights(error, response, body) {
-      /*if (error || response.statusCode != 200) {
-        console.log("error");
-      }*/
       if (!error && response.statusCode == 200) {
-        callback(body);
+        callback(null, body);
       }
     })
-  }
 }
 
-function compareFighters(data) {
-  var compare = {
-
+// callback function to push to fights
+function getFightData(err, data) {
+  if (err) {
+    console.log(err);
   }
-  sherdog.getFighter(fights.fight.fighter1_url, fighter1)
-}
 
-function getFightData(data) {
-  var fight = {
+  for (var i=0;i<data.FMLiveFeed.Fights.length;i++) {
+    var fight = {
     date: data.FMLiveFeed.Date,
     fighter1_name: "",
     fighter1_url: "",
     fighter1_outcome: "",
     fighter2_name: "",
     fighter2_url: ""
-  }
+    }
 
-  for (var i=0;i<data.FMLiveFeed.Fights.length;i++) {
-      fight.fighter1_name = data.FMLiveFeed.Fights[i].Fighters[0].FullName
-      fight.fighter1_outcome = data.FMLiveFeed.Fights[i].Fighters[0].Outcome
-      fight.fighter1_url = findSherdogURL(data.FMLiveFeed.Fights[i].Fighters[0].FullName)
-      fight.fighter2_name = data.FMLiveFeed.Fights[i].Fighters[1].FullName
-      fight.fighter2_url = findSherdogURL(data.FMLiveFeed.Fights[i].Fighters[1].FullName)
+    fight.fighter2_name = data.FMLiveFeed.Fights[i].Fighters[1].FullName
+    fight.fighter2_url = findSherdogURL(data.FMLiveFeed.Fights[i].Fighters[1].FullName)
+    fight.fighter1_name = data.FMLiveFeed.Fights[i].Fighters[0].FullName
+    fight.fighter1_outcome = data.FMLiveFeed.Fights[i].Fighters[0].Outcome
+    fight.fighter1_url = findSherdogURL(data.FMLiveFeed.Fights[i].Fighters[0].FullName)
+    fights.push(fight);
   }
-  fights.push(fight);
+  //console.log(data.FMLiveFeed.Fights.length)
+}
+
+function getSherdog(url, callback) {
+    sherdog.getFighter(url, function (data) {
+      callback(data);
+    })
+}
+
+function getFighter1Data(data) {
+  
+  var fighter_a = data
+  var fighter1 = {
+    a_name: "",
+    a_points : 0,
+    a_age : "",
+    a_nationality : "",
+    a_win_ko : "",
+    a_win_dec : "",
+    a_win_sub : "",
+    a_win_total : "",
+    a_win_dec_total : 0,
+    a_lose_ko : "",
+    a_lose_sub : "",
+    a_lose_dec : "",
+    a_lose_total : "",
+    a_lastfight_date : "",
+    a_lose_ko_total : 0
+  }
+  
+  fighter1.a_name = fighter_a.name;
+  fighter1.a_age = Number(fighter_a.age);
+  fighter1.a_nationality = fighter_a.nationality;
+  fighter1.a_win_ko = fighter_a.wins.knockouts;
+  fighter1.a_win_dec = fighter_a.wins.decisions;
+  fighter1.a_win_sub = fighter_a.wins.submissions;
+  fighter1.a_win_total = fighter_a.wins.total;
+  fighter1.a_lose_ko = fighter_a.losses.knockouts;
+  fighter1.a_lose_sub = fighter_a.losses.submissions;
+  fighter1.a_lose_dec = fighter_a.losses.decisions;
+  fighter1.a_lose_total = fighter_a.losses.total;
+  fighter1.a_lastfight_date = dateToDay(fighter_a.fights.date);
+
+
+}
+
+function getFighter2Data(data, callback) {
+
+}
+
+function combineFighters(data) {
+  console.log(fighter1);
 }
 
 function findSherdogURL (fighterName) {

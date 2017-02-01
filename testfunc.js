@@ -54,25 +54,21 @@ testis = map(fm_stats, function() {
 });
 
 */
-<<<<<<< HEAD
-var fighter_url = require('./sherdogurl.js')
+const async = require('async')
 
-console.log(fighter_url.length)
-=======
+functionStack = []
 
-
-var b = function() {
-    console.log("Hi from var b")
+function firstRun(callback) {
+    callback(null, "From the first function")
 }
 
-function c() {
-    return 5
+function secondRun(callback) {
+    callback(null, "From the second function")
 }
 
-function d(b) {
-    console.log("Hi from function d and " +b())
-}
+functionStack.push(firstRun)
+functionStack.push(secondRun)
 
-b();
-d(b);
->>>>>>> 816d5c9597027844459f7331d83b1df16da676f4
+async.series(functionStack, function(err, result) {
+    
+})
