@@ -476,6 +476,10 @@ module.exports = [
    "url": "/fighter/Falaniko-Vitale-370"
  },
  {
+   "name": "Niko Price",
+   "url": "/fighter/Niko-Price-96921"
+ },
+ {
    "name": "Pete Spratt",
    "url": "/fighter/Pete-Spratt-3195"
  },
@@ -3408,7 +3412,7 @@ module.exports = [
    "url": "/fighter/Roxanne-Modafferi-8785"
  },
  {
-   "name": "Antonio Carlos Jr.",
+   "name": "Antonio Carlos Junior",
    "url": "/fighter/Antonio-Carlos-Jr-143157"
  },
  {
@@ -3964,6 +3968,10 @@ module.exports = [
    "url": "/fighter/Justin-Buchholz-18062"
  },
  {
+   "name": "Marvin Vettori",
+   "url": "/fighter/Marvin-Vettori-80421"
+ },
+ {
    "name": "Felipe Olivieri",
    "url": "/fighter/Felipe-Olivieri-28181"
  },
@@ -3984,7 +3992,7 @@ module.exports = [
    "url": "/fighter/Masanori-Kanehara-13767"
  },
  {
-   "name": "T.J. Dillashaw",
+   "name": "TJ Dillashaw",
    "url": "/fighter/TJ-Dillashaw-62507"
  },
  {
