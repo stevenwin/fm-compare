@@ -240,7 +240,7 @@ module.exports = [
    "url": "/fighter/Ilir-Latifi-40207"
  },
  {
-   "name": "Alexey Oleinik",
+   "name": "Aleksei Oleinik",
    "url": "/fighter/Alexey-Oleinik-2027"
  },
  {
@@ -672,7 +672,7 @@ module.exports = [
    "url": "/fighter/Gray-Maynard-15835"
  },
  {
-   "name": "B.J. Penn",
+   "name": "BJ Penn",
    "url": "/fighter/BJ-Penn-1307"
  },
  {
@@ -808,6 +808,10 @@ module.exports = [
    "url": "/fighter/Tony-Sims-30021"
  },
  {
+   "name": "Volkan Oezdemir",
+   "url": "/fighter/Volkan-Oezdemir-58503"
+ },
+ {
    "name": "Leigh Remedios",
    "url": "/fighter/Leigh-Remedios-3071"
  },
@@ -916,7 +920,7 @@ module.exports = [
    "url": "/fighter/Antonio-Mendes-7110"
  },
  {
-   "name": "Ovince St. Preux",
+   "name": "Ovince Saint Preux",
    "url": "/fighter/Ovince-St-Preux-38842"
  },
  {
@@ -926,6 +930,10 @@ module.exports = [
  {
    "name": "Fabio Maldonado",
    "url": "/fighter/Fabio-Maldonado-16426"
+ },
+ {
+   "name": "Marcel Fortuna",
+   "url": "/fighter/Marcel-Fortuna-79995"
  },
  {
    "name": "Rameau Thierry Sokoudjou",
@@ -1122,6 +1130,10 @@ module.exports = [
  {
    "name": "Eric Schafer",
    "url": "/fighter/Eric-Schafer-13275"
+ },
+ {
+   "name": "Viviane Pereira",
+   "url": "/fighter/Viviane-Pereira-136367"
  },
  {
    "name": "Alessio Sakara",
@@ -1424,6 +1436,10 @@ module.exports = [
    "url": "/fighter/Richie-Vaculik-21798"
  },
  {
+   "name": "Matthew Lopez",
+   "url": "/fighter/Matthew-Lopez-136139"
+ },
+ {
    "name": "Jake Matthews",
    "url": "/fighter/Jake-Matthews-122139"
  },
@@ -1604,6 +1620,14 @@ module.exports = [
    "url": "/fighter/Jared-Hamman-15949"
  },
  {
+   "name": "Josh Emmett",
+   "url": "/fighter/Josh-Emmett-85885"
+ },
+ {
+   "name": "Irene Aldana",
+   "url": "/fighter/Irene-Aldana-148377"
+ },
+ {
    "name": "Josh Hendricks",
    "url": "/fighter/Josh-Hendricks-7652"
  },
@@ -1774,6 +1798,10 @@ module.exports = [
  {
    "name": "Claudio Henrique da Silva",
    "url": "/fighter/Claudio-Henrique-da-Silva-25830"
+ },
+ {
+   "name": "Henrique da Silva",
+   "url": "/fighter/Luis-Henrique-da-Silva-175493"
  },
  {
    "name": "Samy Schiavo",
@@ -2416,6 +2444,14 @@ module.exports = [
    "url": "/fighter/James-Krause-31766"
  },
  {
+   "name": "Adam Milstead",
+   "url": "/fighter/Adam-Milstead-60258"
+ },
+ {
+   "name": "Curtis Blaydes",
+   "url": "/fighter/Curtis-Blaydes-172939"
+ },
+ {
    "name": "Ramiro Hernandez",
    "url": "/fighter/Ramiro-Hernandez-26934"
  },
@@ -2808,7 +2844,7 @@ module.exports = [
    "url": "/fighter/Shunichi-Shimizu-22677"
  },
  {
-   "name": "Doo Ho Choi",
+   "name": "Dooho Choi",
    "url": "/fighter/Doo-Ho-Choi-56689"
  },
  {
@@ -3042,6 +3078,10 @@ module.exports = [
  {
    "name": "Davey Grant",
    "url": "/fighter/Davey-Grant-30564"
+ },
+ {
+   "name": "Alexa Grasso",
+   "url": "/fighter/Alexa-Grasso-1428454"
  },
  {
    "name": "Gilbert Burns",
@@ -3392,6 +3432,10 @@ module.exports = [
    "url": "/fighter/Andreas-Stahl-57322"
  },
  {
+   "name": "Marcin Held",
+   "url": "/fighter/Marcin-Held-47065"
+ },
+ {
    "name": "Paul Redmond",
    "url": "/fighter/Paul-Redmond-56615"
  },
@@ -3646,6 +3690,10 @@ module.exports = [
  {
    "name": "Sako Chivitchyan",
    "url": "/fighter/Sako-Chivitchyan-6527"
+ },
+ {
+   "name": "Khalil Rountree Jr.",
+   "url": "/fighter/Khalil-Rountree-77674"
  },
  {
    "name": "Alex Morono",
@@ -4028,6 +4076,10 @@ module.exports = [
    "url": "/fighter/Neil-Magny-69166"
  },
  {
+   "name": "Emil Meek",
+   "url": "/fighter/Emil-Weber-Meek-66143"
+ },
+ {
    "name": "Amir Sadollah",
    "url": "/fighter/Amir-Sadollah-34071"
  },
@@ -4118,6 +4170,10 @@ module.exports = [
  {
    "name": "Renzo Gracie",
    "url": "/fighter/Renzo-Gracie-290"
+ },
+ {
+   "name": "Ricardo Ramos",
+   "url": "/fighter/Ricardo-Ramos-154541"
  },
  {
    "name": "Gil Castillo",
@@ -4582,6 +4638,14 @@ module.exports = [
  {
    "name": "Takenori Sato",
    "url": "/fighter/Takenori-Sato-12196"
+ },
+ {
+   "name": "Drakkar Klose",
+   "url": "/fighter/Drakkar-Klose-84568"
+ },
+ {
+   "name": "Lando Vannata",
+   "url": "/fighter/Lando-Vannata-82446"
  },
  {
    "name": "Hernani Perpetuo",
@@ -5148,6 +5212,10 @@ module.exports = [
    "url": "/fighter/Edgar-Garcia-23108"
  },
  {
+   "name": "Chase Sherman",
+   "url": "/fighter/Chase-Sherman-159319"
+ },
+ {
    "name": "Lisa Ellis",
    "url": "/fighter/Lisa-Ward-10071"
  },
@@ -5256,6 +5324,14 @@ module.exports = [
    "url": "/fighter/Joey-Gilbert-1306"
  },
  {
+   "name": "Joachim Christensen",
+   "url": "/fighter/Joachim-Christensen-31777"
+ },
+ {
+   "name": "Bojan Mihajlovic",
+   "url": "/fighter/Bojan-Mihajlovic-12400"
+ },
+ {
    "name": "Shane Primm",
    "url": "/fighter/Shane-Primm-18304"
  },
@@ -5268,8 +5344,20 @@ module.exports = [
    "url": "/fighter/Joseph-Sandoval-63897"
  },
  {
+   "name": "Fredy Serrano",
+   "url": "/fighter/Fredy-Serrano-112413"
+ },
+ {
+   "name": "Bojan Velickovic",
+   "url": "/fighter/Bojan-Velickovic-76620"
+ },
+ {
    "name": "Joey Gomez",
    "url": "/fighter/Joey-Gomez-64975"
+ },
+ {
+   "name": "Hector Sandoval",
+   "url": "/fighter/Hector-Sandoval-35409"
  },
  {
    "name": "Yaotzin Meza",
@@ -5422,6 +5510,10 @@ module.exports = [
  {
    "name": "Tom Murphy",
    "url": "/fighter/Tom-Murphy-12284"
+ },
+ {
+   "name": "Devin Powell",
+   "url": "/fighter/Devin-Powell-64166"
  },
  {
    "name": "Yusuke Kasuya",
@@ -5636,8 +5728,16 @@ module.exports = [
    "url": "/fighter/Scott-Askham-40518"
  },
  {
+   "name": "Cyril Asker",
+   "url": "/fighter/Cyril-Asker-94411"
+ },
+ {
    "name": "Rex Holman",
    "url": "/fighter/Rex-Holman-13745"
+ },
+ {
+   "name": "Dmitrii Smoliakov",
+   "url": "/fighter/Dmitry-Smoliakov-125781"
  },
  {
    "name": "Andrew Holbrook",
@@ -5832,12 +5932,12 @@ module.exports = [
    "url": "/fighter/Edson-Mendes-Barboza-Jr-46259"
  },
  {
-   "name": "Steve Byrnes",
-   "url": "/fighter/Steve-Byrnes-12079"
+   "name": "Mike Perry",
+   "url": "/fighter/Mike-Perry-176179"
  },
  {
-   "name": "Bec Rawlings",
-   "url": "/fighter/Bec-Hyatt-84964"
+   "name": "Steve Byrnes",
+   "url": "/fighter/Steve-Byrnes-12079"
  },
  {
    "name": "Joaquim Silva",
@@ -6110,6 +6210,10 @@ module.exports = [
  {
    "name": "Scott Adams",
    "url": "/fighter/Scott-Adams-241"
+ },
+ {
+   "name": "Paul Craig",
+   "url": "/fighter/Paul-Craig-110167"
  },
  {
    "name": "Chris Condo",
