@@ -18,7 +18,7 @@ module.exports = [
    "fm_url": "http://liveapi.fightmetric.com/V1/629/Fnt.json",
    "main_event_fighter1_id": 1161,
    "main_event_fighter2_id": 285939
- }/*,
+ },
  {
    "id": 302493,
    "event_date": "2013-08-03T00:00:00Z",
@@ -298,7 +298,7 @@ module.exports = [
    "fm_url": "http://liveapi.fightmetric.com/V1/662/Fnt.json",
    "main_event_fighter1_id": 524,
    "main_event_fighter2_id": 63
- },
+ }/*,
  {
    "id": 470515,
    "event_date": "2014-04-16T00:00:00Z",

@@ -4,6 +4,18 @@ module.exports = [
    "url": "/fighter/Conor-McGregor-29688"
  },
  {
+   "name": "Justin Willis",
+   "url": "/fighter/Justin-Willis-63873"
+ },
+ {
+   "name": "Rick Glenn",
+   "url": "/fighter/Rick-Glenn-20171"
+ },
+ {
+   "name": "Marcin Tybura",
+   "url": "/fighter/Marcin-Tybura-86928"
+ },
+ {
    "name": "Jon Jones",
    "url": "/fighter/Jon-Jones-27944"
  },
