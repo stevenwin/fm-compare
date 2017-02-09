@@ -104,7 +104,7 @@ module.exports = [
    "url": "/fighter/Lyoto-Machida-7513"
  },
  {
-   "name": "Quinton Jackson",
+   "name": "Rampage Jackson",
    "url": "/fighter/Quinton-Jackson-348"
  },
  {
@@ -180,11 +180,11 @@ module.exports = [
    "url": "/fighter/Tim-Boetsch-19544"
  },
  {
-   "name": "Ronaldo Souza",
+   "name": "Jacare Souza",
    "url": "/fighter/Ronaldo-Souza-8394"
  },
  {
-   "name": "Junior dos Santos",
+   "name": "Junior Dos Santos",
    "url": "/fighter/Junior-dos-Santos-17272"
  },
  {
@@ -562,6 +562,46 @@ module.exports = [
  {
    "name": "Mairbek Taisumov",
    "url": "/fighter/Mairbek-Taisumov-33161"
+ },
+ {
+   "name": "Mirsad Bektic",
+   "url": "/fighter/Mirsad-Bektic-59766"
+ },
+ {
+   "name": "Marc Diakiese",
+   "url": "/fighter/Marc-Diakiese-111545"
+ },
+ {
+   "name": "Katlyn Chookagian",
+   "url": "/fighter/Katlyn-Chookagian-119071"
+ },
+ {
+   "name": "Stevie Ray",
+   "url": "/fighter/Steven-Ray-59838"
+ },
+ {
+   "name": "Alexander Volkov",
+   "url": "/fighter/Alexander-Volkov-40951"
+ },
+ {
+   "name": "Tim Johnson",
+   "url": "/fighter/Timothy-Johnson-72706"
+ },
+ {
+   "name": "Jack Marshman",
+   "url": "/fighter/Jack-Marshman-47545"
+ },
+ {
+   "name": "Amanda Cooper",
+   "url": "/fighter/Amanda-Bobby-Cooper-138223"
+ },
+ {
+   "name": "Anna Elmose",
+   "url": "/fighter/Anna-Elmose-162539"
+ },
+ {
+   "name": "Mark Godbeer",
+   "url": "/fighter/Mark-Godbeer-54637"
  },
  {
    "name": "Chan Sung Jung",
@@ -1340,7 +1380,7 @@ module.exports = [
    "url": "/fighter/Mike-Ricci-33532"
  },
  {
-   "name": "K.J. Noons",
+   "name": "KJ Noons",
    "url": "/fighter/KJ-Noons-6727"
  },
  {
@@ -3093,7 +3133,7 @@ module.exports = [
  },
  {
    "name": "Alexa Grasso",
-   "url": "/fighter/Alexa-Grasso-1428454"
+   "url": "/fighter/Alexa-Grasso-142845"
  },
  {
    "name": "Gilbert Burns",
@@ -3800,7 +3840,7 @@ module.exports = [
    "url": "/fighter/Richardson-Moreira-72825"
  },
  {
-   "name": "Rafael dos Anjos",
+   "name": "Rafael Dos Anjos",
    "url": "/fighter/Rafael-dos-Anjos-11675"
  },
  {
@@ -5692,6 +5732,18 @@ module.exports = [
    "url": "/fighter/Izabela-Badurek-122349"
  },
  {
+   "name": "Belal Muhammad",
+   "url": "/fighter/Belal-Muhammad-108315"
+ },
+ {
+   "name": "Jarred Brooks",
+   "url": "/fighter/Jarred-Brooks-174665"
+ },
+ {
+   "name": "Ulka Sasaki",
+   "url": "/fighter/Yuta-Sasaki-63070"
+ },
+ {
    "name": "Lauren Murphy",
    "url": "/fighter/Lauren-Taylor-66725"
  },
@@ -5936,7 +5988,7 @@ module.exports = [
    "url": "/fighter/Jason-Saggo-58213"
  },
  {
-   "name": "Marco Polo Reyes",
+   "name": "Polo Reyes",
    "url": "/fighter/Marco-Polo-Reyes-114125"
  },
  {
@@ -6092,7 +6144,7 @@ module.exports = [
    "url": "/fighter/Daniel-Omielanczuk-54303"
  },
  {
-   "name": "Luis Henrique Barbosa de Oliveira",
+   "name": "Luis Henrique",
    "url": "/fighter/Luis-Henrique-Barbosa-de-Oliveira-6608"
  },
  {

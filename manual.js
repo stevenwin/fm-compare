@@ -13,27 +13,25 @@ var fighters = []
 startProgram()
 
 function startProgram() {
+  var eventURL = [
+        {"name1": "Holly Holm","name2": "Germaine de Randamie"},
+        {"name1": "Anderson Silva","name2": "Derek Brunson"},
+        {"name1": "Ronaldo Souza","name2": "Tim Boetsch"},
+        {"name1": "Glover Teixeira","name2": "Jared Cannonier"},
+        {"name1": "Dustin Poirier","name2": "Jim Miller"},
+        {"name1": "Randy Brown","name2": "Belal Muhammad"},
+        {"name1": "Wilson Reis","name2": "Ulka Sasaki"},
+        {"name1": "Nik Lentz","name2": "Islam Makhachev"},
+        {"name1": "Ian McCall","name2": "Jarred Brooks"},
+        {"name1": "Marcin Tybura","name2": "Justin Willis"},
+        {"name1": "Ryan LaFlare","name2": "Roan Carneiro"},
+        {"name1": "Phillipe Nover","name2": "Rick Glenn"},
+
+        ]
+
   async.waterfall([
-     // Grab event data from fm json
-     //function (callback) {
-     //   callback('first', eventURL)
-     //},
      // Find and pass sherdog URL
      function (callback) {
-       var eventURL = [
-        {name1: "Yair Rodríguez",name2: "B.J. Penn"},
-        {name1: "Joe Lauzon",name2: "Marcin Held"},
-        {name1: "Ben Saunders",name2: "Court McGee"},
-        {name1: "Sergio Pettis",name2: "John Moraga"},
-        {name1: "Drakkar Klose",name2: "Devin Powell"},
-        {name1: "Augusto Mendes",name2: "Frankie Saenz"},
-        {name1: "Oleksiy Oliynyk",name2: "Viktor Pešta"},
-        {name1: "Tony Martin",name2: "Alex White"},
-        {name1: "Nina Ansaroff",name2: "Jocelyn Jones-Lybarger"},
-        {name1: "Walt Harris",name2: "Chase Sherman"},
-        {name1: "Joachim Christensen",name2: "Bojan Mihajlović"},
-        {name1: "Cyril Asker",name2: "Dmitri Smoliakov"}
-        ]
         var f_urls = []
         for (var i=0;i<eventURL.length;i++) {
            var f_url = {
@@ -42,14 +40,14 @@ function startProgram() {
            }
            f_urls.push(f_url)
         }
-        callback('second', f_urls)
+        callback(null, f_urls)
      },
      function(f_urls, callback) {
         async.eachLimit(f_urls, 1, function(url, eachCallback) {
            async.waterfall([
               function(wfCallback) {
                  sherdog.getFighter(url.url1, function(fighter1_data) {
-                       wfCallback('nested first', fighter1_data)
+                       wfCallback(null, fighter1_data)
                     })
               },
               function(fighter1_data, wfCallback) {
@@ -127,15 +125,12 @@ function startProgram() {
                  eachCallback()
            })
         }, function(error) {
-           callback('third', "finished")
+           callback(null, "finished")
            }
         )
      }], function (error, result) {
-        if (error) {console.log(error+'hi')}
-        else {console.log(result)}
-
+        if (error) {console.log(error)}
         compareFighters(fighters)
-        
      })
 }
 

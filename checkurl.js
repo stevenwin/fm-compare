@@ -1,28 +1,34 @@
 const sherdog = require('sherdog');
 const request = require('request');
 const async = require('async');
-var fighter_url = require('./sherdogurl.js')
+var fighter_url = require('./sherdogurl2.js')
 var fm_list = require('./fm_list.js')
 var fighterMissing = []
 var eventURL = [
-{name1: "Holly Holm",name2: "Germaine de Randamie"},
-{name1: "Anderson Silva",name2: "Derek Brunson"},
-{name1: "Ronaldo Souza",name2: "Tim Boetsch"},
-{name1: "Glover Teixeira",name2: "Jared Cannonier"},
-{name1: "Dustin Poirier",name2: "Jim Miller"},
-{name1: "Marcin Tybura",name2: "Justin Willis"},
-{name1: "Ryan LaFlare",name2: "Roan Carneiro"},
-{name1: "Phillipe Nover",name2: "Rick Glenn"},
+{"name1": "Holly Holm","name2": "Germaine de Randamie"},
+{"name1": "Anderson Silva","name2": "Derek Brunson"},
+{"name1": "Ronaldo Souza","name2": "Tim Boetsch"},
+{"name1": "Glover Teixeira","name2": "Jared Cannonier"},
+{"name1": "Dustin Poirier","name2": "Jim Miller"},
+{"name1": "Randy Brown","name2": "Belal Muhammad"},
+{"name1": "Wilson Reis","name2": "Ulka Sasaki"},
+{"name1": "Nik Lentz","name2": "Islam Makhachev"},
+{"name1": "Ian McCall","name2": "Jarred Brooks"},
+{"name1": "Marcin Tybura","name2": "Justin Willis"},
+{"name1": "Ryan LaFlare","name2": "Roan Carneiro"},
+{"name1": "Phillipe Nover","name2": "Rick Glenn"}
 ]
 
-/*for (var j=80;j<99;j++) {
-  request({
-      url: 'http://liveapi.fightmetric.com/V1/7'+j+'/Fnt.json',
-      json: true
-    }, function(err, response, data) {
-      checkName(data)
-    });
-}*/
+//for (var s=90; s<100;s++) {
+request({
+    url: 'http://liveapi.fightmetric.com/V1/806/Fnt.json',
+    json: true
+  }, function(err, response, data) {
+    if (!err && response.statusCode == 200) {
+      parseFM(data)
+    }
+  });
+//}
 
 function findSherdogURL (fighterName) {
    for (var i=0;i<fighter_url.length;i++) {
@@ -35,25 +41,24 @@ function findSherdogURL (fighterName) {
    }
 }
 
-/*function checkName(data) {
+function parseFM(data) {
   var namesToCheck = []
   var names = []
   var fmdata = data
 
   for (var x=0; x<fmdata.FMLiveFeed.Fights.length;x++) {
     namesToCheck.push(fmdata.FMLiveFeed.Fights[x].Fighters[0].FullName)
+    namesToCheck.push(fmdata.FMLiveFeed.Fights[x].Fighters[1].FullName)
   }
   
   for (var i=0; i<fighter_url.length; i++) {
       names.push(fighter_url[i].name)
   }
 
-  finalCheck(namesToCheck, names)
-}*/
+  nameCheck(namesToCheck, names)
+}
 
-checkName(eventURL)
-
-function checkName(data) {
+/*function checkName(data) {
   var namesToCheck = []
   var names = []
   var fmdata = data
@@ -67,10 +72,10 @@ function checkName(data) {
       names.push(fighter_url[i].name)
   }
 
-  finalCheck(namesToCheck, names)
-}
+  nameCheck(namesToCheck, names)
+}*/
 
-function finalCheck(arrCheck, arrSrc) {
+function nameCheck(arrCheck, arrSrc) {
   var checked = arrCheck.filter(function(val) {
   return arrSrc.indexOf(val) === -1;
   })
@@ -86,4 +91,4 @@ setTimeout(function() {
   for (var x=0;x<fighterMissing.length;x++) {
   console.log(fighterMissing[x]+" "+[x])
 }
-}, 4000)
+}, 10000)
