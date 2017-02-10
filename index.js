@@ -16,7 +16,7 @@ function startProgram() {
      // Grab event data from fm json
      function (callback) {
         request({
-          url: 'http://liveapi.fightmetric.com/V1/806/Fnt.json',
+          url: 'http://liveapi.fightmetric.com/V1/789/Fnt.json',
           json: true
           }, function (err, response, data) {
            if (!err && response.statusCode == 200) {

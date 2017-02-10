@@ -21,7 +21,7 @@ var eventURL = [
 
 //for (var s=90; s<100;s++) {
 request({
-    url: 'http://liveapi.fightmetric.com/V1/806/Fnt.json',
+    url: 'http://liveapi.fightmetric.com/V1/789/Fnt.json',
     json: true
   }, function(err, response, data) {
     if (!err && response.statusCode == 200) {

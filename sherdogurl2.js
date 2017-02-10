@@ -44,7 +44,7 @@ module.exports = [
    "url": "/fighter/Alan-Omer-23437"
  },
  {
-   "name": "Alan Patrick Silva Alves",
+   "name": "Alan Patrick",
    "url": "/fighter/Alan-Patrick-Silva-Alves-31096"
  },
  {
@@ -656,6 +656,10 @@ module.exports = [
    "url": "/fighter/Cristiane-Justino-14477"
  },
  {
+   "name": "Cris Cyborg",
+   "url": "/fighter/Cristiane-Justino-14477"
+ },
+ {
    "name": "Cristina Stanciu",
    "url": "/fighter/Cristina-Stanciu-179481"
  },
@@ -960,7 +964,7 @@ module.exports = [
    "url": "/fighter/Enrique-Barzola-129351"
  },
  {
-   "name": "Enrique Briones",
+   "name": "Henry Briones",
    "url": "/fighter/Enrique-Briones-20939"
  },
  {
@@ -1152,7 +1156,7 @@ module.exports = [
    "url": "/fighter/Glover-Teixeira-4655"
  },
  {
-   "name": "Godofredo Castro",
+   "name": "Godofredo Pepey",
    "url": "/fighter/Godofredo-Castro-40623"
  },
  {
@@ -1192,7 +1196,7 @@ module.exports = [
    "url": "/fighter/Hayder-Hassan-46033"
  },
  {
-   "name": "Heather Clark",
+   "name": "Heather Jo Clark",
    "url": "/fighter/Heather-Clark-67132"
  },
  {
@@ -1584,7 +1588,7 @@ module.exports = [
    "url": "/fighter/Jorge-Masvidal-7688"
  },
  {
-   "name": "Jose Alberto Quinonez",
+   "name": "Jose Quinonez",
    "url": "/fighter/Jose-Alberto-Quinonez-152627"
  },
  {
@@ -1836,6 +1840,10 @@ module.exports = [
    "url": "/fighter/Leonardo-Guimaraes-14971"
  },
  {
+   "name": "Leonardo Augusto Leleco",
+   "url": "/fighter/Leonardo-Guimaraes-14971"
+ },
+ {
    "name": "Leonardo Mafra Texeira",
    "url": "/fighter/Leonardo-Mafra-Texeira-76653"
  },
@@ -1964,6 +1972,10 @@ module.exports = [
    "url": "/fighter/Marcel-Fortuna-79995"
  },
  {
+   "name": "Jussier Formiga",
+   "url": "/fighter/Jussier-da-Silva-36939"
+ },
+ {
    "name": "Marcelo Guimaraes",
    "url": "/fighter/Marcelo-Guimaraes-20277"
  },
@@ -1992,7 +2004,7 @@ module.exports = [
    "url": "/fighter/Marco-Beltran-40285"
  },
  {
-   "name": "Marco Polo Reyes",
+   "name": "Polo Reyes",
    "url": "/fighter/Marco-Polo-Reyes-114125"
  },
  {
@@ -2400,7 +2412,7 @@ module.exports = [
    "url": "/fighter/Rafael-Cavalcante-16161"
  },
  {
-   "name": "Rafael dos Anjos",
+   "name": "Rafael Dos Anjos",
    "url": "/fighter/Rafael-dos-Anjos-11675"
  },
  {
