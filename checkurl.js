@@ -1,7 +1,7 @@
 const sherdog = require('sherdog');
 const request = require('request');
 const async = require('async');
-var fighter_url = require('./sherdogurl2.js')
+var fighter_url = require('./sherdogurl.js')
 var fm_list = require('./fm_list.js')
 var fighterMissing = []
 var eventURL = [
@@ -19,16 +19,37 @@ var eventURL = [
 {"name1": "Phillipe Nover","name2": "Rick Glenn"}
 ]
 
-//for (var s=90; s<100;s++) {
-request({
-    url: 'http://liveapi.fightmetric.com/V1/789/Fnt.json',
-    json: true
-  }, function(err, response, data) {
-    if (!err && response.statusCode == 200) {
-      parseFM(data)
-    }
-  });
-//}
+//for (var s=90; s<100;s++) {}
+
+manualCheck()
+
+function autoCheck() {
+  request({
+      url: 'http://liveapi.fightmetric.com/V1/789/Fnt.json',
+      json: true
+    }, function(err, response, data) {
+      if (!err && response.statusCode == 200) {
+        parseFM(data)
+      }
+    });
+}
+
+
+function manualCheck() {
+  var namesToCheck = []
+  var names =[]
+
+  for (var i=0;i<eventURL.length;i++) {
+    namesToCheck.push(eventURL[i].name1)
+    namesToCheck.push(eventURL[i].name2)
+  }
+
+  for (var i=0; i<fighter_url.length; i++) {
+      names.push(fighter_url[i].name)
+  }
+
+  nameCheck(namesToCheck, names)
+}
 
 function findSherdogURL (fighterName) {
    for (var i=0;i<fighter_url.length;i++) {

@@ -2,11 +2,11 @@ const sherdog = require('sherdog');
 const request = require('request');
 const async = require('async');
 const colors = require('colors');
-var fighter_url = require('./sherdogurl2.js')
+var fighter_url = require('./sherdogurl.js')
 var fm_list = require('./fm_list.js')
 
 var today = new Date()
-
+var fmURL = 'http://liveapi.fightmetric.com/V1/789/Fnt.json'
 var fighters = []
 
 startProgram()
@@ -16,7 +16,7 @@ function startProgram() {
      // Grab event data from fm json
      function (callback) {
         request({
-          url: 'http://liveapi.fightmetric.com/V1/789/Fnt.json',
+          url: fmURL,
           json: true
           }, function (err, response, data) {
            if (!err && response.statusCode == 200) {
@@ -168,11 +168,11 @@ function compareFighters(fighters) {
       // Twice as many wins and opponents lost last fight
       if (fighters[c].fighter1_win_total/fighters[c].fighter2_win_total >= 2 && fighters[c].fighter2_lastfight == "loss") {
          fighter1_points += 1
-         console.log('2x Wins OpponentLoseLast add 2 to '+fighters[c].fighter1_name)
+         console.log('2x Wins OpponentLoseLast add 1 to '+fighters[c].fighter1_name)
       }
       else if (fighters[c].fighter2_win_total/fighters[c].fighter1_win_total >= 2 && fighters[c].fighter1_lastfight == "loss") {
          fighter2_points += 1
-         console.log('2x Wins OpponentLoseLast add 2 to '+fighters[c].fighter2_name)
+         console.log('2x Wins OpponentLoseLast add 1 to '+fighters[c].fighter2_name)
       }
 
       // 3x Decision wins
@@ -184,40 +184,9 @@ function compareFighters(fighters) {
          fighter2_points += 1
          console.log('3x Dec wins add 1 to '+fighters[c].fighter2_name)
       }
-
-      /*// B2B losses in their record
-      for (var x=0; x<fighters[c].fighter1_fights.length; x++) {
-         for (var y=x+1; y<fighters[c].fighter1_fights.length; y++) {
-            if (fighters[c].fighter1_fights[x].result === 'loss' && fighters[c].fighter1_fights[y].result === 'loss') {
-               fighter2_points += 1
-               console.log('B2B Losses add 1 to '+fighters[c].fighter2_name)
-               break;
-            }
-         }
-      }
-      for (var x=0; x<fighters[c].fighter2_fights.length; x++) {
-         for (var y=x+1; y<fighters[c].fighter2_fights.length; y++) {
-            if (fighters[c].fighter2_fights[x].result === 'loss' && fighters[c].fighter2_fights[y].result === 'loss') {
-               fighter1_points += 1
-               console.log('B2B Losses add 1 to '+fighters[c].fighter1_name)
-               break;
-            }
-         }
-      }*/
-
-      // Looking for 2 or more KOs
       
       console.log(fighters[c].fighter1_name.green+": ".green+fighter1_points+"  ".green+fighters[c].fighter2_name.green+": ".green+fighter2_points)
    }
-}
-
-function subLossCompare(c) {
-  if (fighters[c].fighter1_lose_sub - fighters[c].fighter2_lose_sub > 0) {
-   return fighter1_points += 1
-  }
-  else if (fighters[c].fighter1_lose_sub - fighters[c].fighter2_lose_sub < 0) {
-   return fighter2_points += 1
-  }
 }
 
 function findSherdogURL (fighterName) {
