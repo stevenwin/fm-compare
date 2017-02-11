@@ -12,18 +12,18 @@ var fighterMissing = []
 collectNames();
 
 setTimeout(function() {
+   // filter only unique names from source data
    var fm_fighters_unique = fm_fighters.filter(function(elem, index, self) {
       return index == self.indexOf(elem)
    })
 
    setTimeout(function() {
-   /*for (var j=0;j<fm_fighters_unique.length;j++) {
-      console.log(fm_fighters_unique[j]+" "+j)
-   }*/
+   // check source data against local repository
    nameCheck(fm_fighters_unique, sherdog_fighters)
    }, 5000)
 
    setTimeout(function() {
+   // show missing names between the two repositories
      for (var x=0;x<fighterMissing.length;x++) {
      console.log(fighterMissing[x]+" "+[x])
       }
