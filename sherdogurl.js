@@ -1640,7 +1640,7 @@ module.exports = [
    "url": "/fighter/Josh-Thomson-2394"
  },
  {
-   "name": "Joshua Burkman",
+   "name": "Josh Burkman",
    "url": "/fighter/Joshua-Burkman-10003"
  },
  {
@@ -1872,7 +1872,7 @@ module.exports = [
    "url": "/fighter/Lina-Lansberg-122387"
  },
  {
-   "name": "Lipeng Zhang",
+   "name": "Zhanh Lipeng",
    "url": "/fighter/Lipeng-Zhang-50416"
  },
  {
@@ -2005,6 +2005,10 @@ module.exports = [
  },
  {
    "name": "Polo Reyes",
+   "url": "/fighter/Marco-Polo-Reyes-114125"
+ },
+ {
+   "name": "Marco Polo Reyes",
    "url": "/fighter/Marco-Polo-Reyes-114125"
  },
  {
@@ -2412,6 +2416,10 @@ module.exports = [
    "url": "/fighter/Quinton-Jackson-348"
  },
  {
+   "name": "Rampage Jackson",
+   "url": "/fighter/Quinton-Jackson-348"
+ },
+ {
    "name": "Rafael Cavalcante",
    "url": "/fighter/Rafael-Cavalcante-16161"
  },
@@ -2573,6 +2581,10 @@ module.exports = [
  },
  {
    "name": "Ronaldo Souza",
+   "url": "/fighter/Ronaldo-Souza-8394"
+ },
+ {
+   "name": "Jacare Souza",
    "url": "/fighter/Ronaldo-Souza-8394"
  },
  {
