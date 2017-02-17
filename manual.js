@@ -14,19 +14,17 @@ startProgram()
 
 function startProgram() {
   var eventURL = [
-        {"name1": "Holly Holm","name2": "Germaine de Randamie"},
-        {"name1": "Anderson Silva","name2": "Derek Brunson"},
-        {"name1": "Ronaldo Souza","name2": "Tim Boetsch"},
-        {"name1": "Glover Teixeira","name2": "Jared Cannonier"},
-        {"name1": "Dustin Poirier","name2": "Jim Miller"},
-        {"name1": "Randy Brown","name2": "Belal Muhammad"},
-        {"name1": "Wilson Reis","name2": "Ulka Sasaki"},
-        {"name1": "Nik Lentz","name2": "Islam Makhachev"},
-        {"name1": "Ian McCall","name2": "Jarred Brooks"},
-        {"name1": "Marcin Tybura","name2": "Justin Willis"},
-        {"name1": "Ryan LaFlare","name2": "Roan Carneiro"},
-        {"name1": "Phillipe Nover","name2": "Rick Glenn"},
-
+        {"name1": "Derrick Lewis","name2": "Travis Browne"},
+        {"name1": "Johny Hendricks","name2": "Hector Lombard"},
+        {"name1": "Sam Sicilia","name2": "Gavin Tucker"},
+        {"name1": "Elias Theodorou","name2": "Cezar Ferreira"},
+        {"name1": "Sara McMann","name2": "Gina Mazany"},
+        {"name1": "Alessandro Ricci","name2": "Paul Felder"},
+        {"name1": "Nordine Taleb","name2": "Santiago Ponzinibbio"},
+        {"name1": "Carla Esparza","name2": "Randa Markos"},
+        {"name1": "Aiemann Zahabi","name2": "Reginaldo Vieira"},
+        {"name1": "Jack Marshman","name2": "Thiago Santos"},
+        {"name1": "Gerald Meerschaert","name2": "Ryan Janes"}
         ]
 
   async.waterfall([
@@ -138,54 +136,64 @@ function compareFighters(fighters) {
    for (var c=0;c<fighters.length;c++) {
       var fighter1_points = 0
       var fighter2_points = 0
-      // subLossCompare
+      // subLossCompare 57% -- 1.75
       if (fighters[c].fighter1_lose_sub - fighters[c].fighter2_lose_sub < 0) {
          fighter1_points += 1
-         console.log('Sub loss add 1 to '+fighters[c].fighter1_name)
+         console.log('1.75 Sub loss add 1 to '+fighters[c].fighter1_name)
       }
       else if (fighters[c].fighter1_lose_sub - fighters[c].fighter2_lose_sub > 0) {
          fighter2_points += 1
-         console.log('Sub loss add 1 to '+fighters[c].fighter2_name)
+         console.log('1.75 Sub loss add 1 to '+fighters[c].fighter2_name)
       }
 
-      // youngerThanThree
+      // youngerThanThree 58% -- 1.72
       if (fighters[c].fighter1_age - fighters[c].fighter2_age > 3) {
          fighter2_points += 1
-         console.log('youngerThanThree add 1 to '+fighters[c].fighter2_name)
+         console.log('1.72 youngerThanThree add 1 to '+fighters[c].fighter2_name)
       }
       else if (fighters[c].fighter2_age - fighters[c].fighter1_age > 3) {
          fighter1_points+= 1
-         console.log('youngerThanThree 1 to '+fighters[c].fighter1_name)
+         console.log('1.72 youngerThanThree 1 to '+fighters[c].fighter1_name)
       }
 
-      // 15 more wins and half as many losses
+      // older than 32 62% -- 1.61
+      if (fighters[c].fighter1_age >= 32 && fighters[c].fighter2_age < 32) {
+        //fighter2_points += 1
+        console.log('FYI 1.61 older than 32')
+      }
+      else if (fighters[c].fighter2_age >= 32 && fighters[c].fighter1_age <32) {
+        //fighter1_points += 1
+        console.log('FYI 1.61 older than 32')
+      }
+
+      // 15 more wins and half as many losses 78% -- 1.28
       if (fighters[c].fighter1_win_total > 14 && fighters[c].fighter2_lose_total/fighters[c].fighter1_lose_total >= 2) {
          fighter1_points += 2
-         console.log('15 Wins 50% Losses add 2 to '+fighters[c].fighter1_name)
+         console.log('1.28 15 Wins 50% Losses add 2 to '+fighters[c].fighter1_name)
       }
       else if (fighters[c].fighter2_win_total > 14 && fighters[c].fighter1_lose_total/fighters[c].fighter2_lose_total >= 2) {
          fighter2_points += 2
-         console.log('15 Wins 50% Losses add 2 to '+fighters[c].fighter2_name)
+         console.log('1.28 15 Wins 50% Losses add 2 to '+fighters[c].fighter2_name)
       }
 
-      // Twice as many wins and opponents lost last fight
+      // Twice as many wins and opponents lost last fight 68% -- 1.47
       if (fighters[c].fighter1_win_total/fighters[c].fighter2_win_total >= 2 && fighters[c].fighter2_lastfight == "loss") {
          fighter1_points += 1
-         console.log('2x Wins OpponentLoseLast add 2 to '+fighters[c].fighter1_name)
+         console.log('1.47 2x Wins OpponentLoseLast add 1 to '+fighters[c].fighter1_name)
       }
       else if (fighters[c].fighter2_win_total/fighters[c].fighter1_win_total >= 2 && fighters[c].fighter1_lastfight == "loss") {
          fighter2_points += 1
-         console.log('2x Wins OpponentLoseLast add 2 to '+fighters[c].fighter2_name)
+         console.log('1.47 2x Wins OpponentLoseLast add 1 to '+fighters[c].fighter2_name)
       }
 
-      // 3x Decision wins
+      // 3x Decision wins 60% 
       if (fighters[c].fighter1_win_dec/fighters[c].fighter2_win_dec >=3) {
          fighter1_points += 1
-         console.log('3x Dec wins add 1 to '+fighters[c].fighter1_name)
+         console.log('1.66 3x Dec wins add 1 to '+fighters[c].fighter1_name)
       }
       else if (fighters[c].fighter2_win_dec/fighters[c].fighter1_win_dec >=3) {
          fighter2_points += 1
-         console.log('3x Dec wins add 1 to '+fighters[c].fighter2_name)
+         console.log('1.66 3x Dec wins add 1 to '+fighters[c].fighter2_name)
       }
 
       /*// B2B losses in their record

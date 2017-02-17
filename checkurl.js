@@ -5,18 +5,17 @@ var fighter_url = require('./sherdogurl.js')
 var fm_list = require('./fm_list.js')
 var fighterMissing = []
 var eventURL = [
-{"name1": "Holly Holm","name2": "Germaine de Randamie"},
-{"name1": "Anderson Silva","name2": "Derek Brunson"},
-{"name1": "Ronaldo Souza","name2": "Tim Boetsch"},
-{"name1": "Glover Teixeira","name2": "Jared Cannonier"},
-{"name1": "Dustin Poirier","name2": "Jim Miller"},
-{"name1": "Randy Brown","name2": "Belal Muhammad"},
-{"name1": "Wilson Reis","name2": "Ulka Sasaki"},
-{"name1": "Nik Lentz","name2": "Islam Makhachev"},
-{"name1": "Ian McCall","name2": "Jarred Brooks"},
-{"name1": "Marcin Tybura","name2": "Justin Willis"},
-{"name1": "Ryan LaFlare","name2": "Roan Carneiro"},
-{"name1": "Phillipe Nover","name2": "Rick Glenn"}
+{"name1": "Derrick Lewis","name2": "Travis Browne"},
+{"name1": "Johny Hendricks","name2": "Hector Lombard"},
+{"name1": "Sam Sicilia","name2": "Gavin Tucker"},
+{"name1": "Elias Theodorou","name2": "Cezar Ferreira"},
+{"name1": "Sara McMann","name2": "Gina Mazany"},
+{"name1": "Alessandro Ricci","name2": "Paul Felder"},
+{"name1": "Nordine Taleb","name2": "Santiago Ponzinibbio"},
+{"name1": "Carla Esparza","name2": "Randa Markos"},
+{"name1": "Aiemann Zahabi","name2": "Reginaldo Vieira"},
+{"name1": "Jack Marshman","name2": "Thiago Santos"},
+{"name1": "Gerald Meerschaert","name2": "Ryan Janes"}
 ]
 
 //for (var s=90; s<100;s++) {}

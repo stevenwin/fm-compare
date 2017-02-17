@@ -1860,6 +1860,18 @@ module.exports = [
    "url": "/fighter/Leslie-Smith-46542"
  },
  {
+   "name": "Gavin Tucker",
+   "url": "/fighter/Gavin-Tucker-78469"
+ },
+ {
+   "name": "Gina Mazany",
+   "url": "/fighter/Gina-Mazany-36287"
+ },
+ {
+   "name": "Aiemann Zahabi",
+   "url": "/fighter/Aiemann-Zahabi-121009"
+ },
+ {
    "name": "Levan Makashvili",
    "url": "/fighter/Levan-Makashvili-126881"
  },
