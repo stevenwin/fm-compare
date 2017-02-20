@@ -2,8 +2,8 @@ const sherdog = require('sherdog');
 const request = require('request');
 const async = require('async');
 const colors = require('colors');
-var fighter_url = require('./sherdogurl.js')
-var fm_list = require('./fm_list.js')
+var fighter_url = require('./helpers/sherdogurl.js')
+var fm_list = require('./helpers/fm_list.js')
 
 var today = new Date()
 var fmURL = 'http://liveapi.fightmetric.com/V1/807/Fnt.json'

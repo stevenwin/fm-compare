@@ -1,0 +1,19 @@
+http://ufc-data-api.ufc.com/api/v3/us/events
+UFC events API -- provides:
+event id
+fightmetric json
+
+
+http://liveapi.fightmetric.com/V1/802/Fnt.json
+Fightmetric JSON -- provides:
+fighter name -- FMLiveFeed.Fights[i].Fighters[i].FullName
+Fighter height --FMLiveFeed.Fights[i].Fighters[i].Height
+Fighter Stance -- FMLiveFeed.Fights[i].Fighters[i].Stance
+Fight Winner - FMLiveFeed.Fights[i].Fighters[i].Outcome
+Fight win method -- FMLiveFeed.Fights[i].Fighters[i].Outcome
+
+
+http://ufc-data-api.ufc.com/api/v3/us/events/602658/fights -- event id from ufc-data-api
+UFC Individual fight stats -- provides:
+fighter reach: fighter1reach
+strike landed per min -- fighter1_slpm
