@@ -193,7 +193,7 @@ for (i=0; i<fights.length; i++) {
          }
       },
       function(data, callback) {
-         fs.appendFileSync("./indivFightStat.js", JSON.stringify(data, null, "\t"))
+         fs.writeFileSync("./indivFightStat.js", JSON.stringify(data, null, "\t"))
       }
    ])
 }

@@ -1,23 +1,63 @@
 var fighter_url = require('./helpers/sherdogdata.js')
 var fm_list = require('./helpers/fm_list.js')
-var fights = require('./fights.js')
+var indivFightStat = require('./indivFightStat.js')
 var sherdogdata = require('./helpers/sherdogdata')
+var fights = require('./fights.js')
 
 /*console.log(fighter_url.length)
 console.log(fm_list.length)*/
 
 var name = "Anderson Silva"
+var fighter1 = {
+   name: "",
+   wins: {
+      "total": 0,
+      "knockouts": 0,
+      "submissions": 0,
+      "decisions": 0,
+      "others": 0
+   },
+   losses: {
+      "total": 0,
+      "knockouts": 0,
+      "submissions": 0,
+      "decisions": 0,
+      "others": 0
+   },
+   last_fight: false,
+   }
 
+var fighter2 = {
+    wins: {
+      "total": "",
+      "knockouts": "",
+      "submissions": "",
+      "decisions": "",
+      "others": ""
+   },
+   losses: {
+      "total": "",
+      "knockouts": "",
+      "submissions": "",
+      "decisions": "",
+      "others": ""
+   },
+   last_fight: false,
+}
 
-for (var i=0;i<2;i++) {
-   fighter1 = fights[i].fighter1_name
-   fighter2 = fights[i].fighter2_name
+function compareFighter(i, j) {
+   fighter1.name = indivFightStat[i].fighter1_name
 
-   for (var i=0;i<sherdogdata.length;i++) {
-      for (var k in sherdogdata[i]) {
-         if (sherdogdata[i][k] === fighter1) {
-            console.log(sherdogdata[i].nickname)
-            console.log(fighter1)
+   for (var x=0;x<sherdogdata[j].fights.length;x++) {
+      if (dateToDay(sherdogdata[j].fights[x].date) < dayToDay(indivFightStat[i].date) && sherdogdata[j].fights[x].result = "loss") {
+         if (sherdogdata[j].fights[x].method.match(/\bKO\b/) || sherdogdata[j].fights[x].method.match(/\bTKO\b/)) {
+            fighter1.losses.knockouts += 1
+         }
+         else if (sherdogdata[j].fights[x].method.match(/\bSubmission\b/)) {
+            fighter1.losses.submissions += 1
+         }
+         else if (sherdogdata[j].fights[x].method.match(/\bDecision\b/)) {
+            fighter1.losses.decisions += 1
          }
       }
    }
@@ -26,8 +66,34 @@ for (var i=0;i<2;i++) {
 
 
 
+   /*for (var i=0;i<sherdogdata.length;i++) {
+      for (var k in sherdogdata[i]) {
+         if (sherdogdata[i][k] === fighter1) {
+            console.log(sherdogdata[i].nickname)
+            console.log(fighter1)
+         }
+      }
+   }*/
+
+
+
+
 sherdogdata[i].name
 sherdogdata[i].losses.submissions
+sherdogdata[i].age
+
+
+
+
+function dateToDay(date) {
+  var d = today.getTime() - Date.parse(date);
+  var minutes = 1000 * 60;
+  var minute = d / minutes
+  var hour = minute / 60
+  var day = hour / 24
+  var year = day / 365
+  return day;
+}
 
 
 
@@ -35,12 +101,7 @@ sherdogdata[i].losses.submissions
 
 
 
-
-
-
-
-
-function compareFighters(fighters) {
+function compareFighters2(fighters) {
    for (var c=0;c<fighters.length;c++) {
       var fighter1_points = 0
       var fighter2_points = 0
