@@ -4,28 +4,31 @@ var indivFightStat = require('./indivFightStat.js')
 var sherdogdata = require('./helpers/sherdogdata')
 var fights = require('./fights.js')
 
+var today = new Date()
+
 /*console.log(fighter_url.length)
 console.log(fm_list.length)*/
 
 var name = "Anderson Silva"
+
 var fighter1 = {
    name: "",
    wins: {
-      "total": 0,
-      "knockouts": 0,
-      "submissions": 0,
-      "decisions": 0,
-      "others": 0
+      total: 0,
+      knockouts: 0,
+      submissions: 0,
+      decisions: 0,
+      others: 0
    },
    losses: {
-      "total": 0,
-      "knockouts": 0,
-      "submissions": 0,
-      "decisions": 0,
-      "others": 0
+      total: 0,
+      knockouts: 0,
+      submissions: 0,
+      decisions: 0,
+      others: 0
    },
-   last_fight: false,
-   }
+   last_fight: false
+}
 
 var fighter2 = {
     wins: {
@@ -45,23 +48,59 @@ var fighter2 = {
    last_fight: false,
 }
 
-function compareFighter(i, j) {
-   fighter1.name = indivFightStat[i].fighter1_name
+console.log(dateToDay("11:51:06 08/05/2013"))
 
-   for (var x=0;x<sherdogdata[j].fights.length;x++) {
-      if (dateToDay(sherdogdata[j].fights[x].date) < dayToDay(indivFightStat[i].date) && sherdogdata[j].fights[x].result = "loss") {
-         if (sherdogdata[j].fights[x].method.match(/\bKO\b/) || sherdogdata[j].fights[x].method.match(/\bTKO\b/)) {
-            fighter1.losses.knockouts += 1
-         }
-         else if (sherdogdata[j].fights[x].method.match(/\bSubmission\b/)) {
-            fighter1.losses.submissions += 1
-         }
-         else if (sherdogdata[j].fights[x].method.match(/\bDecision\b/)) {
-            fighter1.losses.decisions += 1
+compareFighters("Chris Weidman", "Anderson Silva", "11:51:06 08/05/2013")
+
+setTimeout(function() {
+   console.log("ko loss: "+fighter1.losses.knockouts+"\n"+"ko wins: "+fighter1.wins.knockouts+"\n"+"sub wins: "+fighter1.wins.submissions)
+}, 5000)
+
+function compareFighters(fighterA, fighterB, dateTime) {
+   fighter1.name = fighterA
+   fighter2.name = fighterB
+   var date = dateToDay(dateTime)
+
+
+   // find fighter1 in sherdog data list
+   for (var i=0;i<sherdogdata.length;i++) {
+      for (var k in sherdogdata[i]) {
+         if (sherdogdata[i][k] === fighterA) {
+            // calculate record of fighter 1 based on data snapshot for relevant dates
+            for (var x=0;x<sherdogdata[i].fights.length;x++) {
+               // calculate losses from snapshot
+               if (dateToDay(sherdogdata[i].fights[x].date) > date && sherdogdata[i].fights[x].result === "loss") {
+                  if (sherdogdata[i].fights[x].method.match(/\bKO\b/) || sherdogdata[i].fights[x].method.match(/\bTKO\b/)) {
+                     fighter1.losses.knockouts += 1
+                  }
+                  else if (sherdogdata[i].fights[x].method.match(/\bSubmission\b/)) {
+                     fighter1.losses.submissions += 1
+                  }
+                  else if (sherdogdata[i].fights[x].method.match(/\bDecision\b/)) {
+                     fighter1.losses.decisions += 1
+                  }
+               }
+
+               // calculate wins from snapshot
+               if (dateToDay(sherdogdata[i].fights[x].date) > date && sherdogdata[i].fights[x].result === "win") {
+                  if (sherdogdata[i].fights[x].method.match(/\bKO\b/) || sherdogdata[i].fights[x].method.match(/\bTKO\b/)) {
+                     fighter1.wins.knockouts += 1
+                  }
+                  else if (sherdogdata[i].fights[x].method.match(/\bSubmission\b/) || sherdogdata[i].fights[x].method.match(/\bTechnical Submission\b/)) {
+                     fighter1.wins.submissions += 1
+                  }
+                  else if (sherdogdata[i].fights[x].method.match(/\bDecision\b/)) {
+                     fighter1.wins.decisions += 1
+                  }
+               }
+
+            }
          }
       }
    }
+
 }
+
 
 
 
@@ -77,10 +116,6 @@ function compareFighter(i, j) {
 
 
 
-
-sherdogdata[i].name
-sherdogdata[i].losses.submissions
-sherdogdata[i].age
 
 
 
