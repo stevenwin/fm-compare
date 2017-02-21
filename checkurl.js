@@ -1,21 +1,21 @@
-const sherdog = require('sherdog');
+//const sherdog = require('sherdog');
 const request = require('request');
 const async = require('async');
 var fighter_url = require('./helpers/sherdogurl.js')
 var fm_list = require('./helpers/fm_list.js')
 var fighterMissing = []
 var eventURL = [
-{"name1": "Derrick Lewis","name2": "Travis Browne"},
-{"name1": "Johny Hendricks","name2": "Hector Lombard"},
-{"name1": "Sam Sicilia","name2": "Gavin Tucker"},
-{"name1": "Elias Theodorou","name2": "Cezar Ferreira"},
-{"name1": "Sara McMann","name2": "Gina Mazany"},
-{"name1": "Alessandro Ricci","name2": "Paul Felder"},
-{"name1": "Nordine Taleb","name2": "Santiago Ponzinibbio"},
-{"name1": "Carla Esparza","name2": "Randa Markos"},
-{"name1": "Aiemann Zahabi","name2": "Reginaldo Vieira"},
-{"name1": "Jack Marshman","name2": "Thiago Santos"},
-{"name1": "Gerald Meerschaert","name2": "Ryan Janes"}
+{"name1":"Tyron Woodley","name2":"Stephen Thompson"},
+{"name1":"Khabib Nurmagomedov","name2":"Tony Ferguson"},
+{"name1":"Rashad Evans","name2":"Dan Kelly"},
+{"name1":"Lando Vannata","name2":"David Teymur"},
+{"name1":"Alistair Overeem","name2":"Mark Hunt"},
+{"name1":"Mark Godbeer","name2":"Daniel Spitz"},
+{"name1":"Marcin Tybura","name2":"Luis Henrique"},
+{"name1":"Darren Elkins","name2":"Mirsad Bektic"},
+{"name1":"Luke Sanders","name2":"Iuri Alcantara"},
+{"name1":"Tyson Pedro","name2":"Paul Craig"},
+
 ]
 
 //for (var s=90; s<100;s++) {}

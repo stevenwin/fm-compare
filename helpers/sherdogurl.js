@@ -12,6 +12,14 @@ module.exports = [
    "url": "/fighter/Abner-Lloveras-11729"
  },
  {
+   "name": "Dan Kelly",
+   "url": "/fighter/Daniel-Kelly-49516"
+ },
+ {
+   "name": "Daniel Spitz",
+   "url": "/fighter/Daniel-Spitz-172211"
+ },
+ {
    "name": "Adam Milstead",
    "url": "/fighter/Adam-Milstead-60258"
  },

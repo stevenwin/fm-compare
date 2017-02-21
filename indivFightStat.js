@@ -1,4 +1,4 @@
-[
+module.exports = [
 	{
 		"date": "11:55:03 08/05/2013",
 		"referee": "Mario Yamasaki",
