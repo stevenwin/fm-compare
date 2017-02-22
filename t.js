@@ -9,7 +9,6 @@ var today = new Date()
 /*console.log(fighter_url.length)
 console.log(fm_list.length)*/
 
-var name = "Anderson Silva"
 var relevant_fight_bucket = []
 
 var fighter1 = {
