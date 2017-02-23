@@ -74,7 +74,7 @@ var fighter2 = {
 console.log(dateToDay("11:51:06 08/05/2013"))
 
 
-compareFighters("Frank Mir", "Anderson Silva", "11:51:06 08/05/2013")
+compareFighters("Frank Mir", "Anderson Silva", "11:51:06 08/05/2013", calcWinner)
 
 setTimeout(function() {
    console.log(
@@ -107,7 +107,7 @@ setTimeout(function() {
       "b2b loss?"+fighter2.b2b_loss+"\n")
 }, 5000)
 
-function compareFighters(fighterA, fighterB, dateTime) {
+function compareFighters(fighterA, fighterB, dateTime, callback) {
 
    fighter1.name = fighterA
    fighter2.name = fighterB
@@ -164,17 +164,14 @@ function compareFighters(fighterA, fighterB, dateTime) {
                      fighter1.wins.total += 1
                   }
                }
-
-               // calculate b2b loss
-               for (var z=0;z<fighter1_bucket.length;z++) {
-                  for (var y=1;y<fighter1_bucket.length;y++) {
-                     if (fighter1_bucket[z].result === "loss" && fighter1_bucket[y].result == "loss") {
-                     fighter1.b2b_loss = true
-                  }
-                  }
-               }
-
             }
+            // calculate b2b loss
+            for (var z=0;z<fighter1_bucket.length;z++) {
+               if (fighter1_bucket[z].result === "loss" && fighter1_bucket[z+1].result === "loss") {
+               fighter1.b2b_loss = true
+               }
+            }
+
             // calculate age
             fighter1.age = dateToYear(sherdogdata[i].birthday) - dateToYear(fighter1_bucket[0].date)
             if (dateToYear(sherdogdata[i].birthday) - dateToYear(fighter1_bucket[0].date) > 32) {
@@ -182,16 +179,11 @@ function compareFighters(fighterA, fighterB, dateTime) {
             }
 
             // calculate ring rust
-            //console.log(fighter1_bucket[0].date)
             if (dateToDay(fighter1_bucket[0].date) - date >= 210) {
                   fighter1.ring_rust = true
                }
             
-
             // calculate last fight win
-            //for (var p=0;p<fighter1_bucket.length;p++) {
-            //console.log(fighter1_bucket[p].date)
-            //}
             if (fighter1_bucket[0].result === "win") {
                fighter1.last_fight_win = true
             }
@@ -251,15 +243,12 @@ function compareFighters(fighterA, fighterB, dateTime) {
                   }
                }
 
-               // calculate b2b loss
-               for (var z=0;z<fighter2_bucket.length;z++) {
-                  for (var y=1;y<fighter2_bucket.length;y++) {
-                     if (fighter2_bucket[z].result === "loss" && fighter2_bucket[y].result == "loss") {
-                     fighter2.b2b_loss = true
-                  }
-                  }
+            }
+            // calculate b2b loss
+            for (var z=0;z<fighter2_bucket.length;z++) {
+               if (fighter2_bucket[z].result === "loss" && fighter2_bucket[z+1].result === "loss") {
+               fighter2.b2b_loss = true
                }
-
             }
             // calculate age
             fighter2.age = dateToYear(sherdogdata[i].birthday) - dateToYear(fighter2_bucket[0].date)
@@ -279,32 +268,92 @@ function compareFighters(fighterA, fighterB, dateTime) {
          }
       }
    }
+
+   callback(fighter1, fighter2)
 }
 
 
-function calcWinner(f1, f2, callback) {
+function calcWinner(f1, f2) {
    var f1_points = 0
    var f2_points = 0
 
    // age compare
-   if (f1.older_32 === true) {
+   if (f1.older_32 === true && f2.older_32 != true) {
       f2_points += 1
    }
-   else if (f2.older_32 === true) {
+   if (f2.older_32 === true && f1.older_32 != true) {
+      f1_points += 1
+   }
+
+   // 6 tko & opponent > 32yo
+   if (f1.older_32 === true && f2.wins.knockouts > 6) {
+      f2_points += 1
+   }
+   if (f2.older_32 === true && f1.wins.knockouts >6) {
+      f1_points += 1
+   }
+
+   // 2 or more KO loss
+   if (f1.losses.knockouts >= 2 && f2.losses.knockouts < 2) {
+      f2_points += 1
+   }
+   if (f2.losses.knockouts >= 2 && f1.losses.knockouts < 2) {
+      f1_points += 1
+   }
+
+   // lost less subs
+   if (f1.losses.submissions < f2.losses.submissions) {
+      f1_points += 1
+   }
+   if (f2.losses.submissions < f1.losses.submissions) {
+      f2_points += 1
+   }
+
+   // lost 6 or more
+   if (f1.losses.total >= 6) {
+      f2_points += 1
+   }
+   if (f2.losses.total >= 6) {
+      f1_points += 1
+   }
+
+   // 18+ wins and no b2b loss
+   if (f1.wins.total >= 18 && f1.b2b_loss === false) {
+      f1_points += 1
+   }
+   if (f2.wins.total >= 18 && f2.b2b_loss === false) {
+      f2_points += 1
+   }
+
+   // b2b loss
+   if (f1.b2b_loss === true) {
+      f2_points += 1
+   }
+   if (f2.b2b_loss === true) {
+      f2_points += 1
+   }
+
+   // no tkos
+   if (f1.wins.knockouts === 0) {
+      f2_points += 1
+   }
+   if (f2.wins.knockouts === 0) {
       f1_points += 1
    }
 
    // 
-
-   callback(f1_points, f2_points)
+   console.log(
+      "f1: "+f1_points+"\n"+
+      "f2: "+f2_points+"\n"
+      )
 }
 
 
-function win_ratio(p1, p2) {
+/*function win_ratio(p1, p2) {
    if (p1>p2)
 
 
-}
+}*/
 
 
 
@@ -327,78 +376,4 @@ function dateToYear(date) {
   var day = hour / 24
   var year = day / 365
   return year;
-}
-
-
-
-
-
-
-
-function compareFighters2(fighters) {
-   for (var c=0;c<fighters.length;c++) {
-      var fighter1_points = 0
-      var fighter2_points = 0
-      // subLossCompare 57% -- 1.75
-      if (fighters[c].fighter1_lose_sub - fighters[c].fighter2_lose_sub < 0) {
-         fighter1_points += 1
-         console.log('1.75 Sub loss add 1 to '+fighters[c].fighter1_name)
-      }
-      else if (fighters[c].fighter1_lose_sub - fighters[c].fighter2_lose_sub > 0) {
-         fighter2_points += 1
-         console.log('1.75 Sub loss add 1 to '+fighters[c].fighter2_name)
-      }
-
-      // youngerThanThree 58% -- 1.72
-      if (fighters[c].fighter1_age - fighters[c].fighter2_age > 3) {
-         fighter2_points += 1
-         console.log('1.72 youngerThanThree add 1 to '+fighters[c].fighter2_name)
-      }
-      else if (fighters[c].fighter2_age - fighters[c].fighter1_age > 3) {
-         fighter1_points+= 1
-         console.log('1.72 youngerThanThree 1 to '+fighters[c].fighter1_name)
-      }
-
-      // older than 32 62% -- 1.61
-      if (fighters[c].fighter1_age >= 32 && fighters[c].fighter2_age < 32) {
-        //fighter2_points += 1
-        console.log('FYI 1.61 older than 32')
-      }
-      else if (fighters[c].fighter2_age >= 32 && fighters[c].fighter1_age <32) {
-        //fighter1_points += 1
-        console.log('FYI 1.61 older than 32')
-      }
-
-      // 15 more wins and half as many losses 78% -- 1.28
-      if (fighters[c].fighter1_win_total > 14 && fighters[c].fighter2_lose_total/fighters[c].fighter1_lose_total >= 2) {
-         fighter1_points += 2
-         console.log('1.28 15 Wins 50% Losses add 2 to '+fighters[c].fighter1_name)
-      }
-      else if (fighters[c].fighter2_win_total > 14 && fighters[c].fighter1_lose_total/fighters[c].fighter2_lose_total >= 2) {
-         fighter2_points += 2
-         console.log('1.28 15 Wins 50% Losses add 2 to '+fighters[c].fighter2_name)
-      }
-
-      // Twice as many wins and opponents lost last fight 68% -- 1.47
-      if (fighters[c].fighter1_win_total/fighters[c].fighter2_win_total >= 2 && fighters[c].fighter2_lastfight == "loss") {
-         fighter1_points += 1
-         console.log('1.47 2x Wins OpponentLoseLast add 1 to '+fighters[c].fighter1_name)
-      }
-      else if (fighters[c].fighter2_win_total/fighters[c].fighter1_win_total >= 2 && fighters[c].fighter1_lastfight == "loss") {
-         fighter2_points += 1
-         console.log('1.47 2x Wins OpponentLoseLast add 1 to '+fighters[c].fighter2_name)
-      }
-
-      // 3x Decision wins 60% 
-      if (fighters[c].fighter1_win_dec/fighters[c].fighter2_win_dec >=3) {
-         fighter1_points += 1
-         console.log('1.66 3x Dec wins add 1 to '+fighters[c].fighter1_name)
-      }
-      else if (fighters[c].fighter2_win_dec/fighters[c].fighter1_win_dec >=3) {
-         fighter2_points += 1
-         console.log('1.66 3x Dec wins add 1 to '+fighters[c].fighter2_name)
-      }
-      
-      console.log(fighters[c].fighter1_name.green+": ".green+fighter1_points+"  ".green+fighters[c].fighter2_name.green+": ".green+fighter2_points)
-   }
 }
