@@ -3,6 +3,7 @@ var fm_list = require('./helpers/fm_list.js')
 var indivFightStat = require('./indivFightStat.js')
 var sherdogdata = require('./helpers/sherdogdata')
 var fights = require('./fights.js')
+const async = require('async')
 
 var today = new Date()
 
