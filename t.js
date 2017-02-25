@@ -3,22 +3,155 @@ var fm_list = require('./helpers/fm_list.js')
 var indivFightStat = require('./indivFightStat.js')
 var sherdogdata = require('./helpers/sherdogdata')
 var fights = require('./fights.js')
+var fm_api = require('./api/fm_api.js')
+var manual_test = require('./api/manual_test.js')
 const async = require('async')
 
 var today = new Date()
 
 /*console.log(fighter_url.length)
 console.log(fm_list.length)*/
-
+var err_count = 0
 var fighter1_bucket = []
 var fighter2_bucket = []
 var score = {
+   total: {
       win: 0,
       lose: 0,
+      na: 0,
+      total: 0
+   },
+   stat1: {
+      win: 0,
+      lose: 0,
+      na: 0,
+      total: 0
+   },
+   stat2: {
+      win: 0,
+      lose: 0,
+      na: 0,
+      total: 0
+   },
+   stat3: {
+      win: 0,
+      lose: 0,
+      na: 0,
+      total: 0
+   },
+   stat4: {
+      win: 0,
+      lose: 0,
+      na: 0,
+      total: 0
+   },
+   stat5: {
+      win: 0,
+      lose: 0,
+      na: 0,
+      total: 0
+   },
+   stat6: {
+      win: 0,
+      lose: 0,
+      na: 0,
+      total: 0
+   },
+   stat7: {
+      win: 0,
+      lose: 0,
+      na: 0,
+      total: 0
+   },
+   stat8: {
+      win: 0,
+      lose: 0,
+      na: 0,
+      total: 0
+   },
+   stat9: {
+      win: 0,
+      lose: 0,
+      na: 0,
+      total: 0
+   },
+   stat10: {
+      win: 0,
+      lose: 0,
+      na: 0,
+      total: 0
+   },
+   stat11: {
+      win: 0,
+      lose: 0,
+      na: 0,
       total: 0
    }
+}
 
-var fighter1 = {
+//console.log(dateToDay("11:51:06 08/05/2013"))
+for (var d=0;d<manual_test.length;d++) {
+   for (var f=0;f<manual_test[d].FMLiveFeed.Fights.length;f++) {
+      try {
+      compareFighters(manual_test[d].FMLiveFeed.Fights[f].Fighters[0].FullName, manual_test[d].FMLiveFeed.Fights[f].Fighters[1].FullName, manual_test[d].FMLiveFeed.Timestamp, manual_test[d].FMLiveFeed.Fights[f].Fighters[0].Outcome, calcWinner)
+      }
+
+      catch(e) {
+         err_count += 1
+         console.log("error: "+err_count+"\n"+e+"\n")
+         for (var i=0;i<sherdogdata.length;i++) {
+            for (var k in sherdogdata[i]) {
+               if (sherdogdata[i][k] === manual_test[d].FMLiveFeed.Fights[f].Fighters[0].FullName) {
+                  console.log("Matched: "+manual_test[d].FMLiveFeed.Fights[f].Fighters[0].FullName+" "+sherdogdata[i].name+"\n")
+               }
+            }
+         }
+         for (var i=0;i<sherdogdata.length;i++) {
+            for (var k in sherdogdata[i]) {
+               if (sherdogdata[i][k] === manual_test[d].FMLiveFeed.Fights[f].Fighters[1].FullName) {
+                  console.log("Matched: "+manual_test[d].FMLiveFeed.Fights[f].Fighters[1].FullName+""+sherdogdata[i].name+"\n")
+               }
+            }
+         }
+      }
+   }
+}
+//compareFighters("Chris Weidman", "Anderson Silva", "11:51:06 08/05/2013", "Win", calcWinner)
+
+// Output Fighter Stats
+/*setTimeout(function() {
+   console.log(
+      "name: "+fighter1.name+"\n"+
+      "age: "+fighter1.age+"\n"+
+      "total wins: "+fighter1.wins.total+"\n"+
+      "ko wins: "+fighter1.wins.knockouts+"\n"+
+      "sub wins: "+fighter1.wins.submissions+"\n"+
+      "dec wins: "+fighter1.wins.decisions+"\n"+"\n"+
+      "total losses: "+fighter1.losses.total+"\n"+
+      "ko loss: "+fighter1.losses.knockouts+"\n"+
+      "sub loss: "+fighter1.losses.submissions+"\n"+
+      "dec loss: "+fighter1.losses.decisions+"\n"+"\n"+
+      "win last fight? "+fighter1.last_fight_win+"\n"+
+      "ring rust? "+fighter1.ring_rust+"\n"+
+      "b2b loss?"+fighter1.b2b_loss+"\n"+"\n"+"\n"+
+
+      "name: "+fighter2.name+"\n"+
+      "age: "+fighter2.age+"\n"+
+      "total wins: "+fighter2.wins.total+"\n"+
+      "ko wins: "+fighter2.wins.knockouts+"\n"+
+      "sub wins: "+fighter2.wins.submissions+"\n"+
+      "dec wins: "+fighter2.wins.decisions+"\n"+"\n"+
+      "total losses: "+fighter2.losses.total+"\n"+
+      "ko loss: "+fighter2.losses.knockouts+"\n"+
+      "sub loss: "+fighter2.losses.submissions+"\n"+
+      "dec loss: "+fighter2.losses.decisions+"\n"+"\n"+
+      "win last fight? "+fighter2.last_fight_win+"\n"+
+      "ring rust? "+fighter2.ring_rust+"\n"+
+      "b2b loss?"+fighter2.b2b_loss+"\n")
+}, 5000)*/
+
+function compareFighters(fighterA, fighterB, dateTime, outcome, callback) {
+   var fighter1 = {
    name: "",
    age: "",
    height: "",
@@ -72,46 +205,9 @@ var fighter2 = {
 
 }
 
-console.log(dateToDay("11:51:06 08/05/2013"))
-
-
-compareFighters("Frank Mir", "Anderson Silva", "11:51:06 08/05/2013", calcWinner)
-
-setTimeout(function() {
-   console.log(
-      "name: "+fighter1.name+"\n"+
-      "age: "+fighter1.age+"\n"+
-      "total wins: "+fighter1.wins.total+"\n"+
-      "ko wins: "+fighter1.wins.knockouts+"\n"+
-      "sub wins: "+fighter1.wins.submissions+"\n"+
-      "dec wins: "+fighter1.wins.decisions+"\n"+"\n"+
-      "total losses: "+fighter1.losses.total+"\n"+
-      "ko loss: "+fighter1.losses.knockouts+"\n"+
-      "sub loss: "+fighter1.losses.submissions+"\n"+
-      "dec loss: "+fighter1.losses.decisions+"\n"+"\n"+
-      "win last fight? "+fighter1.last_fight_win+"\n"+
-      "ring rust? "+fighter1.ring_rust+"\n"+
-      "b2b loss?"+fighter1.b2b_loss+"\n"+"\n"+"\n"+
-
-      "name: "+fighter2.name+"\n"+
-      "age: "+fighter2.age+"\n"+
-      "total wins: "+fighter2.wins.total+"\n"+
-      "ko wins: "+fighter2.wins.knockouts+"\n"+
-      "sub wins: "+fighter2.wins.submissions+"\n"+
-      "dec wins: "+fighter2.wins.decisions+"\n"+"\n"+
-      "total losses: "+fighter2.losses.total+"\n"+
-      "ko loss: "+fighter2.losses.knockouts+"\n"+
-      "sub loss: "+fighter2.losses.submissions+"\n"+
-      "dec loss: "+fighter2.losses.decisions+"\n"+"\n"+
-      "win last fight? "+fighter2.last_fight_win+"\n"+
-      "ring rust? "+fighter2.ring_rust+"\n"+
-      "b2b loss?"+fighter2.b2b_loss+"\n")
-}, 5000)
-
-function compareFighters(fighterA, fighterB, dateTime, callback) {
-
    fighter1.name = fighterA
    fighter2.name = fighterB
+   var f1_outcome = outcome
    var date = dateToDay(dateTime)
    var year = dateToYear(dateTime)
    
@@ -270,83 +366,525 @@ function compareFighters(fighterA, fighterB, dateTime, callback) {
       }
    }
 
-   callback(fighter1, fighter2)
+   // Output fighter statistics
+   /*console.log(
+      "name: "+fighter1.name+"\n"+
+      "age: "+fighter1.age+"\n"+
+      "total wins: "+fighter1.wins.total+"\n"+
+      "ko wins: "+fighter1.wins.knockouts+"\n"+
+      "sub wins: "+fighter1.wins.submissions+"\n"+
+      "dec wins: "+fighter1.wins.decisions+"\n"+"\n"+
+      "total losses: "+fighter1.losses.total+"\n"+
+      "ko loss: "+fighter1.losses.knockouts+"\n"+
+      "sub loss: "+fighter1.losses.submissions+"\n"+
+      "dec loss: "+fighter1.losses.decisions+"\n"+"\n"+
+      "win last fight? "+fighter1.last_fight_win+"\n"+
+      "ring rust? "+fighter1.ring_rust+"\n"+
+      "b2b loss?"+fighter1.b2b_loss+"\n"+"\n"+"\n"+
+
+      "name: "+fighter2.name+"\n"+
+      "age: "+fighter2.age+"\n"+
+      "total wins: "+fighter2.wins.total+"\n"+
+      "ko wins: "+fighter2.wins.knockouts+"\n"+
+      "sub wins: "+fighter2.wins.submissions+"\n"+
+      "dec wins: "+fighter2.wins.decisions+"\n"+"\n"+
+      "total losses: "+fighter2.losses.total+"\n"+
+      "ko loss: "+fighter2.losses.knockouts+"\n"+
+      "sub loss: "+fighter2.losses.submissions+"\n"+
+      "dec loss: "+fighter2.losses.decisions+"\n"+"\n"+
+      "win last fight? "+fighter2.last_fight_win+"\n"+
+      "ring rust? "+fighter2.ring_rust+"\n"+
+      "b2b loss?"+fighter2.b2b_loss+"\n")*/
+
+   callback(fighter1, fighter2, f1_outcome)
 }
 
 
-function calcWinner(f1, f2) {
-   var f1_points = 0
-   var f2_points = 0
+function calcWinner(f1, f2, outcome) {
+   var p = {
+      f1: {
+         total: 0,
+         stat1: 0,
+         stat2: 0,
+         stat3: 0,
+         stat4: 0,
+         stat5: 0,
+         stat6: 0,
+         stat7: 0,
+         stat8: 0,
+         stat9: 0,
+         stat10: 0,
+         stat11: 0
+      },
+
+      f2: {
+         total: 0,
+         stat1: 0,
+         stat2: 0,
+         stat3: 0,
+         stat4: 0,
+         stat5: 0,
+         stat6: 0,
+         stat7: 0,
+         stat8: 0,
+         stat9: 0,
+         stat10: 0,
+         stat11: 0
+      }
+   }
 
    // age compare
    if (f1.older_32 === true && f2.older_32 != true) {
-      f2_points += 1
+      p.f2.total += 1
+      p.f2.stat1 += 1
    }
    if (f2.older_32 === true && f1.older_32 != true) {
-      f1_points += 1
+      p.f1.total += 1
+      p.f1.stat1 += 1
    }
 
    // 6 tko & opponent > 32yo
-   if (f1.older_32 === true && f2.wins.knockouts > 6) {
-      f2_points += 1
+   /*if (f1.older_32 === true && f2.wins.knockouts > 6) {
+      p.f2.total += 1
+      p.f2.stat2 += 1
    }
    if (f2.older_32 === true && f1.wins.knockouts >6) {
-      f1_points += 1
-   }
+      p.f1.total += 1
+      p.f1.stat2 += 1
+   }*/
 
    // 2 or more KO loss
-   if (f1.losses.knockouts >= 2 && f2.losses.knockouts < 2) {
-      f2_points += 1
+   /*if (f1.losses.knockouts >= 2 && f2.losses.knockouts < 2) {
+      p.f2.total += 1
+      p.f2.stat3 += 1
    }
    if (f2.losses.knockouts >= 2 && f1.losses.knockouts < 2) {
-      f1_points += 1
-   }
+      p.f1.total += 1
+      p.f1.stat3 += 1
+   }*/
 
    // lost less subs
    if (f1.losses.submissions < f2.losses.submissions) {
-      f1_points += 1
+      p.f1.total += 1
+      p.f1.stat4 += 1
    }
    if (f2.losses.submissions < f1.losses.submissions) {
-      f2_points += 1
+      p.f2.total += 1
+      p.f2.stat4 += 1
    }
 
    // lost 6 or more
-   if (f1.losses.total >= 6) {
-      f2_points += 1
+   /*if (f1.losses.total >= 6) {
+      p.f2.total += 1
+      p.f2.stat5 += 1
    }
    if (f2.losses.total >= 6) {
-      f1_points += 1
-   }
+      p.f1.total += 1
+      p.f1.stat5 += 1
+   }*/
 
    // 18+ wins and no b2b loss
-   if (f1.wins.total >= 18 && f1.b2b_loss === false) {
-      f1_points += 1
+   /*if (f1.wins.total >= 18 && f1.b2b_loss === false) {
+      p.f1.total += 1
+      p.f1.stat6 += 1
    }
    if (f2.wins.total >= 18 && f2.b2b_loss === false) {
-      f2_points += 1
-   }
+      p.f2.total += 1
+      p.f2.stat6 += 1
+   }*/
 
    // b2b loss
-   if (f1.b2b_loss === true) {
-      f2_points += 1
+   /*if (f1.b2b_loss === true) {
+      p.f2.total += 1
+      p.f2.stat7 += 1
    }
    if (f2.b2b_loss === true) {
-      f2_points += 1
-   }
+      p.f1.total += 1
+      p.f1.stat7 += 1
+   }*/
 
    // no tkos
-   if (f1.wins.knockouts === 0) {
-      f2_points += 1
+   /*if (f1.wins.knockouts === 0) {
+      p.f2.total += 1
+      p.f2.stat8 += 1
    }
    if (f2.wins.knockouts === 0) {
-      f1_points += 1
+      p.f1.total += 1
+      p.f1.stat8 += 1
+   }*/
+
+   // 15+ wins and 50% of opponent losses
+   if (f1.wins.total > 14 && f2.losses.total/f1.losses.total >= 2) {
+      p.f1.total += 2
+      p.f1.stat9 += 2
+   }
+   if (f2.wins.total > 14 && f1.losses.total/f2.losses.total >= 2) {
+      p.f2.total += 2
+      p.f2.stat9 += 2
    }
 
-   // 
+   // 2x more wins than opponent and opponent lost last
+   if (f1.wins.total/f2.wins.total >= 2 && f2.last_fight_win === false) {
+      p.f1.total += 1
+      p.f1.stat10 += 1
+   }
+   if (f2.wins.total/f1.wins.total >= 2 && f1.last_fight_win === false) {
+      p.f2.total += 1
+      p.f1.stat10 += 1
+   }
+
+   // 3x decisions wins as opponent
+   if (f1.wins.decisions/f2.wins.decisions >= 3) {
+      p.f1.total += 1
+      p.f1.stat11 += 1
+   }
+   if (f2.wins.decisions/f1.wins.decisions >= 3) {
+      p.f2.total += 1
+      p.f2.stat11 += 1
+   }
+
+   // Calc results
+   if (f1.wins.total != 0 && f2.wins.total != 0) {
+      if (outcome === "Win") {
+         if (p.f1.total > p.f2.total) {
+            score.total.win += 1
+            score.total.total += 1
+            console.log(
+               "Prediction: "+f1.name+"\n"+
+               "Outcome: "+f1.name)
+         }
+         else if (p.f2.total > p.f1.total) {
+            score.total.lose += 1
+            score.total.total += 1
+            console.log(
+               "Prediction: "+f2.name+"\n"+
+               "Outcome: "+f1.name)
+         }
+         else {
+            score.total.na += 1
+            console.log("Prediction: No Prediction")
+         }
+         // Older than 32
+         if (p.f1.stat1 > p.f2.stat1) {
+            score.stat1.win += 1
+            score.stat1.total += 1
+         }
+         else if (p.f2.stat1 > p.f1.stat1) {
+            score.stat1.lose += 1
+            score.stat1.total += 1
+         }
+         else {
+            score.stat1.na += 1
+         }
+         // More than 6 KOs and opponent older than 32
+         if (p.f1.stat2 > p.f2.stat2) {
+            score.stat2.win += 1
+            score.stat2.total
+         }
+         else if (p.f2.stat2 > p.f1.stat2) {
+            score.stat2.lose += 1
+            score.stat2.total += 1
+         }
+         else {
+            score.stat2.na += 1
+         }
+         // Lose 2 or more KOs
+         if (p.f1.stat3 > p.f2.stat3) {
+            score.stat3.win += 1
+            score.stat3.total += 1
+         }
+         else if(p.f2.stat3 > p.f1.stat3) {
+            score.stat3.lose += 1
+            score.stat3.total += 1
+         }
+         else {
+            score.stat3.na += 1
+         }
+         // Lose less by subs
+         if (p.f1.stat4 > p.f2.stat4) {
+            score.stat4.win += 1
+            score.stat4.total += 1
+         }
+         else if (p.f2.stat4 > p.f1.stat4) {
+            score.stat4.lose += 1
+            score.stat4.total +=1
+         }
+         else {
+            score.stat4.na += 1
+         }
+         // Lose more than 6 fights
+         if (p.f1.stat5 > p.f2.stat5) {
+            score.stat5.win += 1
+            score.stat5.total += 1
+         }
+         else if (p.f2.stat5 > p.f1.stat5) {
+            score.stat5.lose += 1
+            score.stat5.total += 1
+         }
+         else {
+            score.stat5.na += 1
+         }
+         // 18 or more wins and no b2b lose
+         if (p.f1.stat6 > p.f2.stat6) {
+            score.stat6.win += 1
+            score.stat6.total += 1
+         }
+         else if (p.f2.stat6 > p.f1.stat6) {
+            score.stat6.lose += 1
+            score.stat6.total += 1
+         }
+         else {
+            score.stat6.na += 1
+         }
+         // b2b losses
+         if (p.f1.stat7 > p.f2.stat7) {
+            score.stat7.win += 1
+            score.stat7.total += 1
+         }
+         else if (p.f2.stat7 > p.f1.stat7) {
+            score.stat7.lose += 1
+            score.stat7.total += 1
+         }
+         else {
+            score.stat7.na += 1
+         }
+         // no KOs
+         if (p.f1.stat8 > p.f2.stat8) {
+            score.stat8.win += 1
+            score.stat8.total += 1
+         }
+         else if (p.f2.stat8 > p.f1.stat8) {
+            score.stat8.lose += 1
+            score.stat8.total += 1
+         }
+         else {
+            score.stat8.na += 1
+         }
+         // 15+ wins and 50% of opponent losses
+         if (p.f1.stat9 > p.f2.stat9) {
+            score.stat9.win += 1
+            score.stat9.total += 1
+         }
+         else if (p.f2.stat9 > p.f1.stat9) {
+            score.stat9.lose += 1
+            score.stat9.total += 1
+         }
+         else {
+            score.stat9.na += 1
+         }
+         // 2x more wins than opponent and opponent lost last
+         if (p.f1.stat10 > p.f2.stat10) {
+            score.stat10.win += 1
+            score.stat10.total += 1
+         }
+         else if (p.f2.stat10 > p.f1.stat10) {
+            score.stat10.lose += 1
+            score.stat10.total += 1
+         }
+         else {
+            score.stat10.na += 1
+         }
+         // 3x decisions wins as opponent
+         if (p.f1.stat11 > p.f2.stat11) {
+            score.stat11.win += 1
+            score.stat11.total += 1
+         }
+         else if (p.f2.stat11 > p.f1.stat11) {
+            score.stat11.lose += 1
+            score.stat11.total += 1
+         }
+         else {
+            score.stat11.na += 1
+         }
+      }
+
+      if (outcome === "Loss") {
+         if (p.f1.total > p.f2.total) {
+            score.total.lose += 1
+            score.total.total += 1
+            console.log(
+               "Prediction: "+f1.name+"\n"+
+               "Outcome: "+f2.name)
+         }
+         else if (p.f2.total > p.f1.total) {
+            score.total.win += 1
+            score.total.total += 1
+            console.log(
+               "Prediction: "+f2.name+"\n"+
+               "Outcome: "+f2.name)
+         }
+         else {
+            score.total.na += 1
+            console.log("Prediction: No Prediction")
+         }
+         // Older than 32
+         if (p.f1.stat1 > p.f2.stat1) {
+            score.stat1.lose += 1
+            score.stat1.total += 1
+         }
+         else if (p.f2.stat1 > p.f1.stat1) {
+            score.stat1.win += 1
+            score.stat1.total += 1
+         }
+         else {
+            score.stat1.na += 1
+         }
+         // More than 6 KOs and opponent older than 32
+         if (p.f1.stat2 > p.f2.stat2) {
+            score.stat2.lose += 1
+            score.stat2.total
+         }
+         else if (p.f2.stat2 > p.f1.stat2) {
+            score.stat2.win += 1
+            score.stat2.total += 1
+         }
+         else {
+            score.stat2.na += 1
+         }
+         // Lose 2 or more KOs
+         if (p.f1.stat3 > p.f2.stat3) {
+            score.stat3.lose += 1
+            score.stat3.total += 1
+         }
+         else if(p.f2.stat3 > p.f1.stat3) {
+            score.stat3.win += 1
+            score.stat3.total += 1
+         }
+         else {
+            score.stat3.na += 1
+         }
+         // Lose less by subs
+         if (p.f1.stat4 > p.f2.stat4) {
+            score.stat4.lose += 1
+            score.stat4.total += 1
+         }
+         else if (p.f2.stat4 > p.f1.stat4) {
+            score.stat4.win += 1
+            score.stat4.total +=1
+         }
+         else {
+            score.stat4.na += 1
+         }
+         // Lose more than 6 fights
+         if (p.f1.stat5 > p.f2.stat5) {
+            score.stat5.lose += 1
+            score.stat5.total += 1
+         }
+         else if (p.f2.stat5 > p.f1.stat5) {
+            score.stat5.win += 1
+            score.stat5.total += 1
+         }
+         else {
+            score.stat5.na += 1
+         }
+         // 18 or more wins and no b2b lose
+         if (p.f1.stat6 > p.f2.stat6) {
+            score.stat6.lose += 1
+            score.stat6.total += 1
+         }
+         else if (p.f2.stat6 > p.f1.stat6) {
+            score.stat6.win += 1
+            score.stat6.total += 1
+         }
+         else {
+            score.stat6.na += 1
+         }
+         // b2b losses
+         if (p.f1.stat7 > p.f2.stat7) {
+            score.stat7.lose += 1
+            score.stat7.total += 1
+         }
+         else if (p.f2.stat7 > p.f1.stat7) {
+            score.stat7.win += 1
+            score.stat7.total += 1
+         }
+         else {
+            score.stat7.na += 1
+         }
+         // no KOs
+         if (p.f1.stat8 > p.f2.stat8) {
+            score.stat8.lose += 1
+            score.stat8.total += 1
+         }
+         else if (p.f2.stat8 > p.f1.stat8) {
+            score.stat8.win += 1
+            score.stat8.total += 1
+         }
+         else {
+            score.stat8.na += 1
+         }
+         // 15+ wins and 50% of opponent losses
+         if (p.f1.stat9 > p.f2.stat9) {
+            score.stat9.lose += 1
+            score.stat9.total += 1
+         }
+         else if (p.f2.stat9 > p.f1.stat9) {
+            score.stat9.win += 1
+            score.stat9.total += 1
+         }
+         else {
+            score.stat9.na += 1
+         }
+         // 2x more wins than opponent and opponent lost last
+         if (p.f1.stat10 > p.f2.stat10) {
+            score.stat10.lose += 1
+            score.stat10.total += 1
+         }
+         else if (p.f2.stat10 > p.f1.stat10) {
+            score.stat10.win += 1
+            score.stat10.total += 1
+         }
+         else {
+            score.stat10.na += 1
+         }
+         // 3x decisions wins as opponent
+         if (p.f1.stat11 > p.f2.stat11) {
+            score.stat11.lose += 1
+            score.stat11.total += 1
+         }
+         else if (p.f2.stat11 > p.f1.stat11) {
+            score.stat11.win += 1
+            score.stat11.total += 1
+         }
+         else {
+            score.stat11.na += 1
+         }
+      }
+   }
+   // Output Fight stats points
+   /*console.log(
+      // Output Comparison Points for each fight
+      "f1 total point: "+p.f1.total+"\n"+
+      "f1 stat 1: "+p.f1.stat1+"\n"+
+      "f1 stat 2: "+p.f1.stat2+"\n"+
+      "f1 stat 3: "+p.f1.stat3+"\n"+
+      "f1 stat 4: "+p.f1.stat4+"\n"+
+      "f1 stat 5: "+p.f1.stat5+"\n"+
+      "f1 stat 6: "+p.f1.stat6+"\n"+
+      "f1 stat 7: "+p.f1.stat7+"\n"+
+      "f1 stat 8: "+p.f1.stat+"\n"+"\n"+
+
+
+      "f2 total point: "+p.f2.total+"\n"+
+      "f2 stat 1: "+p.f2.stat1+"\n"+
+      "f2 stat 2: "+p.f2.stat2+"\n"+
+      "f2 stat 3: "+p.f2.stat3+"\n"+
+      "f2 stat 4: "+p.f2.stat4+"\n"+
+      "f2 stat 5: "+p.f2.stat5+"\n"+
+      "f2 stat 6: "+p.f2.stat6+"\n"+
+      "f2 stat 7: "+p.f2.stat7+"\n"+
+      "f2 stat 8: "+p.f2.stat8+"\n"
+      )*/
+   
+   // Output Prediction Stats
+   var prediction_p = (score.total.win/score.total.total)*100
    console.log(
-      "f1: "+f1_points+"\n"+
-      "f2: "+f2_points+"\n"
+      "Predictions Total: "+score.total.total+"\n"+
+      "Predictions Right: "+score.total.win+"\n"+
+      "Predictions Wrong: "+score.total.lose+"\n"+
+      "Prediction Percentage: "+prediction_p+"%"
       )
+
 }
 
 

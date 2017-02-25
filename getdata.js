@@ -6,7 +6,7 @@ var fights =require('./fights.js')
 const request = require('request');
 const async = require('async');
 var events = require('./api/events_api.js')
-var data_test = require('./data_test.js')
+//var data_test = require('./data_test.js')
 var indFights = []
 /*for (var i=0; i<fighter_url.length; i++) {
    sherdog.getFighter(fighter_url[i].fighter_url, writeData)
@@ -258,7 +258,7 @@ for (var i=0; i<fm_list.length; i++) {
           json: true
           }, function (err, response, data) {
            if (!err && response.statusCode == 200) {
-              callback(null, data, fm_list[i].event_date);
+              callback(null, data);
            }
          })
          },
@@ -335,20 +335,27 @@ for (var i=0; i<fm_list.length; i++) {
          }
          callback(null, indFights)
       },
-      function(data, callback) {
+      function(data_c, callback) {
+        var data_cb = data_c
+        for (var q=0; q<data_cb.length; q++) {
          request({
-          url: data.fm_stats_feed_url,
+          url: data_cb[q].fm_stats_feed_url,
           json: true
           }, function (err, response, data) {
            if (!err && response.statusCode == 200) {
-              callback(null, data, fm_list[i].event_date);
+              data_cb[q].time_stamp = data.Timestamp
            }
          })
-      },
-      function(data, callback) {
-
+        }
+        callback(null, data_cb)
       }
 
-
-   ])
+   ], function(err, data_cb) {
+    if (err) {console.log('error happened')}
+    fs.writeFileSync("./fights_test.js", JSON.stringify(data_cb, null, "\t"))
+   }) 
 }
+
+
+
+/*fs.writeFileSync("./fights.js", JSON.stringify(data, null, "\t"))*/
