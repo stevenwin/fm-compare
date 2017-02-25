@@ -6,6 +6,7 @@ var fights = require('./fights.js')
 var fm_api = require('./api/fm_api.js')
 var manual_test = require('./api/manual_test.js')
 const async = require('async')
+const fs = require('fs')
 
 var today = new Date()
 
@@ -972,6 +973,9 @@ function calcWinner(f1, f2, outcome) {
       "stat11 Percentage: "+stat11_p+"%"+"\n"
       )
 
+   fs.appendFileSync("./f_results.js", JSON.stringify(f1, null, "\t"))
+   fs.appendFileSync("./f_results.js", ","+"\n")
+   fs.appendFileSync("./f_results.js", JSON.stringify(f2, null, "\t"))
 }
 
 
