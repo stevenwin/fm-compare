@@ -13,8 +13,6 @@ var today = new Date()
 /*console.log(fighter_url.length)
 console.log(fm_list.length)*/
 var err_count = 0
-var fighter1_bucket = []
-var fighter2_bucket = []
 var score = {
    total: {
       win: 0,
@@ -87,6 +85,12 @@ var score = {
       lose: 0,
       na: 0,
       total: 0
+   },
+   stat12: {
+      win: 0,
+      lose: 0,
+      na: 0,
+      total: 0
    }
 }
 
@@ -126,7 +130,7 @@ for (var d=0;d<fm_api.length;d++) {
 
       catch(e) {
          err_count += 1
-         console.log("error: "+err_count)
+         fs.appendFileSync("./error.js", "error: "+err_count+"\n")
       }
    }
 }
@@ -191,10 +195,9 @@ function compareFighters(fighterA, fighterB, dateTime, outcome, callback) {
    ring_rust: false,
    b2b_loss: false,
    older_32: false
+   }
 
-}
-
-var fighter2 = {
+   var fighter2 = {
    name: "",
    age: "",
    height: "",
@@ -218,8 +221,10 @@ var fighter2 = {
    ring_rust: false,
    b2b_loss: false,
    older_32: false
+   }
 
-}
+   var fighter1_bucket = []
+   var fighter2_bucket = []
 
    fighter1.name = fighterA
    fighter2.name = fighterB
@@ -279,14 +284,13 @@ var fighter2 = {
                }
             }
             // calculate b2b loss
-            for (var z=0;z<fighter1_bucket.length;z++) {
-               try{
-                  if (fighter1_bucket[z].result === "loss" && fighter1_bucket[z+1].result === "loss") {
-                  fighter1.b2b_loss = true
-                  }
+            for (var z=0;z<fighter1_bucket.length-1;z++) {
+               if (fighter1_bucket[z].result === "loss" && fighter1_bucket[z+1].result === "loss") {
+               fighter1.b2b_loss = true
                }
-               catch(e) {    
-               }
+               /*catch(e) {    
+                  fs.appendFileSync("./error.js", "b2b error1"+"\n")
+               }*/
             }
 
             // calculate age
@@ -296,9 +300,14 @@ var fighter2 = {
             }
 
             // calculate ring rust
-            if (dateToDay(fighter1_bucket[0].date) - date >= 210) {
+            var dateCalc1a = dateToDay(fighter1_bucket[0].date)-date
+            var dateCalc1b = dateToDay(fighter1_bucket[1].date)-date
+            if (dateToDay(fighter1_bucket[1].date) - date >= 210) {
                   fighter1.ring_rust = true
                }
+            else {
+               fs.appendFileSync("./score.result.js", "date: "+date+"   bucket1[0]_date: "+dateToDay(fighter1_bucket[0].date)+" Diff: "+dateCalc1a+"\n"+"date: "+date+"   bucket1[1]_date: "+dateToDay(fighter1_bucket[1].date)+" Diff: "+dateCalc1b+"\n"+"\n")
+            }
             
             // calculate last fight win
             if (fighter1_bucket[0].result === "win") {
@@ -362,15 +371,13 @@ var fighter2 = {
 
             }
             // calculate b2b loss
-            for (var z=0;z<fighter2_bucket.length;z++) {
-               try{
-                  if (fighter2_bucket[z].result === "loss" && fighter2_bucket[z+1].result === "loss") {
-                  fighter2.b2b_loss = true
-                  }
+            for (var z=0;z<fighter2_bucket.length-1;z++) {
+               if (fighter2_bucket[z].result === "loss" && fighter2_bucket[z+1].result === "loss") {
+               fighter2.b2b_loss = true
                }
-               catch(e) {
-
-               }
+               /*catch(e) {
+                  fs.appendFileSync("./error.js", "b2b error2"+"\n")
+               }*/
             }
             // calculate age
             fighter2.age = dateToYear(sherdogdata[i].birthday) - dateToYear(fighter2_bucket[0].date)
@@ -379,9 +386,14 @@ var fighter2 = {
             }
 
             // calculate ring rust
-            if (dateToDay(fighter2_bucket[0].date) - date >= 210) {
+            var dateCalc2a = dateToDay(fighter2_bucket[0].date)-date
+            var dateCalc2b = dateToDay(fighter2_bucket[1].date)-date
+            if (dateToDay(fighter2_bucket[1].date) - date >= 210) {
                   fighter2.ring_rust = true
                }
+            else {
+               fs.appendFileSync("./score.result.js", "date: "+date+"   bucket2[0]_date: "+dateToDay(fighter2_bucket[0].date)+" Diff: "+dateCalc2a+"\n"+"date: "+date+"   bucket2[1]_date: "+dateToDay(fighter2_bucket[1].date)+" Diff: "+dateCalc2b+"\n"+"\n")
+            }
             
             // calculate last fight win
             if (fighter2_bucket[0].result === "win") {
@@ -421,6 +433,13 @@ var fighter2 = {
       "ring rust? "+fighter2.ring_rust+"\n"+
       "b2b loss?"+fighter2.b2b_loss+"\n")*/
 
+   // Write Bucket List items  
+   /*fs.writeFileSync("./bucket_list.js", JSON.stringify(fighter1_bucket, null, "\t")+"\n"+JSON.stringify(fighter1_bucket, null, "\t"))*/
+   /*fs.appendFileSync("./score.result.js", JSON.stringify(fighter1_bucket, null, "\t"))
+   fs.appendFileSync("./score.result.js", ","+"\n")
+   fs.appendFileSync("./score.result.js", JSON.stringify(fighter2_bucket, null, "\t"))*/
+
+
    callback(fighter1, fighter2, f1_outcome)
 }
 
@@ -439,7 +458,8 @@ function calcWinner(f1, f2, outcome) {
          stat8: 0,
          stat9: 0,
          stat10: 0,
-         stat11: 0
+         stat11: 0,
+         stat12: 0
       },
 
       f2: {
@@ -454,7 +474,8 @@ function calcWinner(f1, f2, outcome) {
          stat8: 0,
          stat9: 0,
          stat10: 0,
-         stat11: 0
+         stat11: 0,
+         stat12: 0
       }
    }
 
@@ -509,14 +530,14 @@ function calcWinner(f1, f2, outcome) {
    }
 
    // 18+ wins and no b2b loss
-   /*if (f1.wins.total >= 18 && f1.b2b_loss === false) {
-      p.f1.total += 1
+   if (f1.wins.total >= 18 && f1.b2b_loss === false) {
+      //p.f1.total += 1
       p.f1.stat6 += 1
    }
    if (f2.wins.total >= 18 && f2.b2b_loss === false) {
-      p.f2.total += 1
+      //p.f2.total += 1
       p.f2.stat6 += 1
-   }*/
+   }
 
    // b2b loss
    if (f1.b2b_loss === true) {
@@ -566,6 +587,16 @@ function calcWinner(f1, f2, outcome) {
    if (f2.wins.decisions/f1.wins.decisions >= 3) {
       p.f2.total += 1
       p.f2.stat11 += 1
+   }
+
+   // Ring Rust
+   if (f1.ring_rust === true) {
+      p.f2.total += 1
+      p.f2.stat12 += 1
+   }
+   if (f2.ring_rust === true) {
+      p.f1.total += 1
+      p.f1.stat12 += 1
    }
 
    // Calc results
@@ -671,7 +702,7 @@ function calcWinner(f1, f2, outcome) {
             score.stat7.total += 1
          }
          else {
-            score.stat7.na += 1
+            score.stat7.lose += 1
          }
          // no KOs
          if (p.f1.stat8 > p.f2.stat8) {
@@ -720,6 +751,19 @@ function calcWinner(f1, f2, outcome) {
          }
          else {
             score.stat11.na += 1
+         }
+         // Ring Rust
+         if (p.f1.stat12 > p.f2.stat12) {
+            score.stat12.win += 1
+            score.stat12.total += 1
+         }
+         else if (p.f2.stat12 > p.f1.stat12) {
+            score.stat12.lose += 1
+            score.stat12.total += 1
+         }
+         else {
+            score.stat12.na += 1
+            //fs.appendFileSync("./score.result.js", f1.name+" "+f1.ring_rust+"   "+f2.name+" "+f2.ring_rust+"\n")
          }
       }
 
@@ -874,10 +918,24 @@ function calcWinner(f1, f2, outcome) {
          else {
             score.stat11.na += 1
          }
+         // Ring Rust
+         if (p.f1.stat12 > p.f2.stat12) {
+            score.stat12.lose += 1
+            score.stat12.total += 1
+         }
+         else if (p.f2.stat12 > p.f1.stat12) {
+            score.stat12.win += 1
+            score.stat12.total += 1
+         }
+         else {
+            score.stat12.na += 1
+            //fs.appendFileSync("./score.result.js", f1.name+" "+f1.ring_rust+"   "+f2.name+" "+f2.ring_rust+"\n")
+         }
       }
    }
+   // "\n"+"name error: "+f1.name+"\n"+f2.name
    else {
-      console.log("name error: "+f1.name+" "+f2.name)
+      fs.appendFileSync("./error.js", f1.name+","+"\n"+f2.name+","+"\n")
    }
    // Output Fight stats points
    /*console.log(
@@ -903,6 +961,39 @@ function calcWinner(f1, f2, outcome) {
       "f2 stat 7: "+p.f2.stat7+"\n"+
       "f2 stat 8: "+p.f2.stat8+"\n"
       )*/
+
+      /*fs.appendFileSync('./stat_result.js', 
+         "f1 name: "+f1.name+" outcome: "+outcome+"\n"+
+         "f1 total point: "+p.f1.total+"\n"+
+         "yes f1 stat 1: "+p.f1.stat1+"\n"+
+         "f1 stat 2: "+p.f1.stat2+"\n"+
+         "f1 stat 3: "+p.f1.stat3+"\n"+
+         "yes f1 stat 4: "+p.f1.stat4+"\n"+
+         "f1 stat 5: "+p.f1.stat5+"\n"+
+         "f1 stat 6: "+p.f1.stat6+"\n"+
+         "f1 stat 7: "+p.f1.stat7+"\n"+
+         "f1 stat 8: "+p.f1.stat8+"\n"+
+         "yes f1 stat 9: "+p.f1.stat9+"\n"+
+         "yes f1 stat 10: "+p.f1.stat10+"\n"+
+         "yes f1 stat 11: "+p.f1.stat11+"\n"+
+         "f1 stat 12: "+p.f1.stat12+"\n"+
+
+         "f2 total point: "+p.f2.total+"\n"+
+         "f2 stat 1: "+p.f2.stat1+"\n"+
+         "f2 stat 2: "+p.f2.stat2+"\n"+
+         "f2 stat 3: "+p.f2.stat3+"\n"+
+         "f2 stat 4: "+p.f2.stat4+"\n"+
+         "f2 stat 5: "+p.f2.stat5+"\n"+
+         "f2 stat 6: "+p.f2.stat6+"\n"+
+         "f2 stat 7: "+p.f2.stat7+"\n"+
+         "f2 stat 8: "+p.f2.stat8+"\n"+
+         "f2 stat 9: "+p.f2.stat9+"\n"+
+         "f2 stat 10: "+p.f2.stat10+"\n"+
+         "f2 stat 11: "+p.f2.stat11+"\n"+
+         "f2 stat 12: "+p.f2.stat12+"\n"+"\n"
+         )*/
+
+         fs.writeFileSync("./score_result.js", JSON.stringify(score, null, "\t"))
    
    // Output Prediction Stats
    var prediction_p = (score.total.win/score.total.total)*100
@@ -911,11 +1002,13 @@ function calcWinner(f1, f2, outcome) {
    var stat3_p = (score.stat3.win/score.stat3.total)*100
    var stat4_p = (score.stat4.win/score.stat4.total)*100
    var stat5_p = (score.stat5.win/score.stat5.total)*100
+   var stat6_p = (score.stat6.win/score.stat6.total)*100
    var stat7_p = (score.stat7.win/score.stat7.total)*100
    var stat8_p = (score.stat8.win/score.stat8.total)*100
    var stat9_p = (score.stat9.win/score.stat9.total)*100
    var stat10_p = (score.stat10.win/score.stat10.total)*100
    var stat11_p = (score.stat11.win/score.stat11.total)*100
+   var stat12_p = (score.stat12.win/score.stat12.total)*100
    console.log(
       "Predictions Total: "+score.total.total+"\n"+
       "Predictions Right: "+score.total.win+"\n"+
@@ -947,6 +1040,11 @@ function calcWinner(f1, f2, outcome) {
       "stat5 Wrong: "+score.stat5.lose+"\n"+
       "stat5 Percentage: "+stat5_p+"%"+"\n"+
 
+      "stat6 Total: "+score.stat6.total+"\n"+
+      "stat6 Right: "+score.stat6.win+"\n"+
+      "stat6 Wrong: "+score.stat6.lose+"\n"+
+      "stat6 Percentage: "+stat6_p+"%"+"\n"+
+
       "stat7 Total: "+score.stat7.total+"\n"+
       "stat7 Right: "+score.stat7.win+"\n"+
       "stat7 Wrong: "+score.stat7.lose+"\n"+
@@ -970,12 +1068,20 @@ function calcWinner(f1, f2, outcome) {
       "stat11 Total: "+score.stat11.total+"\n"+
       "stat11 Right: "+score.stat11.win+"\n"+
       "stat11 Wrong: "+score.stat11.lose+"\n"+
-      "stat11 Percentage: "+stat11_p+"%"+"\n"
+      "stat11 Percentage: "+stat11_p+"%"+"\n"+
+
+      "stat12 Total: "+score.stat12.total+"\n"+
+      "stat12 Right: "+score.stat12.win+"\n"+
+      "stat12 Wrong: "+score.stat12.lose+"\n"+
+      "stat12 Percentage: "+stat12_p+"%"+"\n"
       )
 
+   // Write results to f_results
+   /*fs.appendFileSync("./f_results.js", "["+"\n")
    fs.appendFileSync("./f_results.js", JSON.stringify(f1, null, "\t"))
    fs.appendFileSync("./f_results.js", ","+"\n")
    fs.appendFileSync("./f_results.js", JSON.stringify(f2, null, "\t"))
+   fs.appendFileSync("./f_results.js", "]"+","+"\n")*/
 }
 
 
