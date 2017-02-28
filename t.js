@@ -624,6 +624,7 @@ function calcWinner(f1, f2, outcome) {
          if (p.f1.stat1 > p.f2.stat1) {
             score.stat1.win += 1
             score.stat1.total += 1
+            fs.appendFileSync("./test/stat1.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else if (p.f2.stat1 > p.f1.stat1) {
             score.stat1.lose += 1
@@ -636,6 +637,7 @@ function calcWinner(f1, f2, outcome) {
          if (p.f1.stat2 > p.f2.stat2) {
             score.stat2.win += 1
             score.stat2.total += 1
+            fs.appendFileSync("./test/stat2.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else if (p.f2.stat2 > p.f1.stat2) {
             score.stat2.lose += 1
@@ -648,6 +650,7 @@ function calcWinner(f1, f2, outcome) {
          if (p.f1.stat3 > p.f2.stat3) {
             score.stat3.win += 1
             score.stat3.total += 1
+            fs.appendFileSync("./test/stat3.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else if(p.f2.stat3 > p.f1.stat3) {
             score.stat3.lose += 1
@@ -660,6 +663,7 @@ function calcWinner(f1, f2, outcome) {
          if (p.f1.stat4 > p.f2.stat4) {
             score.stat4.win += 1
             score.stat4.total += 1
+            fs.appendFileSync("./test/stat4.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else if (p.f2.stat4 > p.f1.stat4) {
             score.stat4.lose += 1
@@ -672,6 +676,7 @@ function calcWinner(f1, f2, outcome) {
          if (p.f1.stat5 > p.f2.stat5) {
             score.stat5.win += 1
             score.stat5.total += 1
+            fs.appendFileSync("./test/stat5.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else if (p.f2.stat5 > p.f1.stat5) {
             score.stat5.lose += 1
@@ -684,6 +689,7 @@ function calcWinner(f1, f2, outcome) {
          if (p.f1.stat6 > p.f2.stat6) {
             score.stat6.win += 1
             score.stat6.total += 1
+            fs.appendFileSync("./test/stat6.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else if (p.f2.stat6 > p.f1.stat6) {
             score.stat6.lose += 1
@@ -696,6 +702,7 @@ function calcWinner(f1, f2, outcome) {
          if (p.f1.stat7 > p.f2.stat7) {
             score.stat7.win += 1
             score.stat7.total += 1
+            fs.appendFileSync("./test/stat7.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else if (p.f2.stat7 > p.f1.stat7) {
             score.stat7.lose += 1
@@ -708,6 +715,7 @@ function calcWinner(f1, f2, outcome) {
          if (p.f1.stat8 > p.f2.stat8) {
             score.stat8.win += 1
             score.stat8.total += 1
+            fs.appendFileSync("./test/stat8.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else if (p.f2.stat8 > p.f1.stat8) {
             score.stat8.lose += 1
@@ -720,6 +728,7 @@ function calcWinner(f1, f2, outcome) {
          if (p.f1.stat9 > p.f2.stat9) {
             score.stat9.win += 1
             score.stat9.total += 1
+            fs.appendFileSync("./test/stat9.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else if (p.f2.stat9 > p.f1.stat9) {
             score.stat9.lose += 1
@@ -732,6 +741,7 @@ function calcWinner(f1, f2, outcome) {
          if (p.f1.stat10 > p.f2.stat10) {
             score.stat10.win += 1
             score.stat10.total += 1
+            fs.appendFileSync("./test/stat10.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else if (p.f2.stat10 > p.f1.stat10) {
             score.stat10.lose += 1
@@ -744,6 +754,7 @@ function calcWinner(f1, f2, outcome) {
          if (p.f1.stat11 > p.f2.stat11) {
             score.stat11.win += 1
             score.stat11.total += 1
+            fs.appendFileSync("./test/stat11.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else if (p.f2.stat11 > p.f1.stat11) {
             score.stat11.lose += 1
