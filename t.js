@@ -946,7 +946,7 @@ function calcWinner(f1, f2, outcome) {
    }
    // "\n"+"name error: "+f1.name+"\n"+f2.name
    else {
-      fs.appendFileSync("./error.js", f1.name+","+"\n"+f2.name+","+"\n")
+      fs.appendFileSync("./error.js", '"'+f1.name+'"'+","+"\n"+'"'+f2.name+'"'+","+"\n")
    }
    // Output Fight stats points
    /*console.log(

@@ -1,12 +1,14 @@
 const request = require('request');
-var fighter_url = require('./sherdogurl.js')
-var fm_list = require('./fm_list.js')
+var fighter_url = require('./helpers/sherdogurl.js')
+var fm_list = require('./helpers/fm_list.js')
+var fm_api = require('./api/fm_api.js')
+var error_list = require('./error.js')
 
 var fm_fighters = []
 var sherdog_fighters = []
 var fighterMissing = []
 
-collectNames();
+//collectNames();
 
 setTimeout(function() {
    // filter only unique names from source data
@@ -17,7 +19,7 @@ setTimeout(function() {
    setTimeout(function() {
    // check source data against local repository
    nameCheck(fm_fighters_unique, sherdog_fighters)
-   }, 5000)
+   }, 1000)
 
    setTimeout(function() {
    // show missing names between the two repositories
@@ -27,10 +29,20 @@ setTimeout(function() {
       console.log(fm_fighters_unique.length)
       console.log(fm_fighters.length)
       console.log(sherdog_fighters.length)
-   }, 15000)
-}, 30000)
+   }, 2000)
+}, 3000)
 
-function collectNames() {
+
+for (var i=0;i<fm_api.length;i++) {
+  fm_fighters.push(fm_api.FMLiveFeed.Fights[x].Fighters[0].FullName)
+  fm_fighters.push(fm_api.FMLiveFeed.Fights[x].Fighters[1].FullName)
+}
+
+for (var z=0;z<error_list.length;z++) {
+  sherdog_fighters.push(error_list[z])
+}
+
+/*function collectNames() {
    for (var i=0;i<fm_list.length;i++) {
       request({
              url: fm_list[i].fm_url,
@@ -49,7 +61,7 @@ function collectNames() {
       sherdog_fighters.push(fighter_url[z].name)
    }
 
-}
+}*/
 
 function nameCheck(arrCheck, arrSrc) {
   var checked = arrCheck.filter(function(val) {
