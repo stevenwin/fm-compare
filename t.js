@@ -125,12 +125,12 @@ var score = {
 for (var d=0;d<fm_api.length;d++) {
    for (var f=0;f<fm_api[d].FMLiveFeed.Fights.length;f++) {
       try {
-      compareFighters(fm_api[d].FMLiveFeed.Fights[f].Fighters[0].FullName, fm_api[d].FMLiveFeed.Fights[f].Fighters[1].FullName, fm_api[d].FMLiveFeed.Timestamp, fm_api[d].FMLiveFeed.Fights[f].Fighters[0].Outcome, calcWinner)
+      compareFighters(fm_api[d].FMLiveFeed.Fights[f].Fighters[0].FullName, fm_api[d].FMLiveFeed.Fights[f].Fighters[1].FullName, fm_api[d].FMLiveFeed.Date, fm_api[d].FMLiveFeed.Fights[f].Fighters[0].Outcome, calcWinner)
       }
 
       catch(e) {
          err_count += 1
-         fs.appendFileSync("./error.js", "error: "+err_count+"\n")
+         //fs.appendFileSync("./error.js", "error: "+err_count+"\n")
       }
    }
 }
@@ -241,6 +241,8 @@ function compareFighters(fighterA, fighterB, dateTime, outcome, callback) {
             // calculate record of fighter 1 based on data snapshot for relevant dates
             for (var x=0;x<sherdogdata[i].fights.length;x++) {
                // add to fight bucket
+               /*fs.appendFileSync("./datee.js", sherdogdata[i].name+"  "+dateToDay(sherdogdata[i].fights[x].date)+"  "+date)
+               fs.appendFileSync("./datee.js", "\n")*/
                if (dateToDay(sherdogdata[i].fights[x].date) > date) {
                   var bucket = {
                      date: "",
@@ -306,7 +308,7 @@ function compareFighters(fighterA, fighterB, dateTime, outcome, callback) {
                   fighter1.ring_rust = true
                }
             else {
-               fs.appendFileSync("./score.result.js", "date: "+date+"   bucket1[0]_date: "+dateToDay(fighter1_bucket[0].date)+" Diff: "+dateCalc1a+"\n"+"date: "+date+"   bucket1[1]_date: "+dateToDay(fighter1_bucket[1].date)+" Diff: "+dateCalc1b+"\n"+"\n")
+               //fs.appendFileSync("./score.result.js", "date: "+date+"   bucket1[0]_date: "+dateToDay(fighter1_bucket[0].date)+" Diff: "+dateCalc1a+"\n"+"date: "+date+"   bucket1[1]_date: "+dateToDay(fighter1_bucket[1].date)+" Diff: "+dateCalc1b+"\n"+"\n")
             }
             
             // calculate last fight win
@@ -392,7 +394,7 @@ function compareFighters(fighterA, fighterB, dateTime, outcome, callback) {
                   fighter2.ring_rust = true
                }
             else {
-               fs.appendFileSync("./score.result.js", "date: "+date+"   bucket2[0]_date: "+dateToDay(fighter2_bucket[0].date)+" Diff: "+dateCalc2a+"\n"+"date: "+date+"   bucket2[1]_date: "+dateToDay(fighter2_bucket[1].date)+" Diff: "+dateCalc2b+"\n"+"\n")
+               //fs.appendFileSync("./score.result.js", "date: "+date+"   bucket2[0]_date: "+dateToDay(fighter2_bucket[0].date)+" Diff: "+dateCalc2a+"\n"+"date: "+date+"   bucket2[1]_date: "+dateToDay(fighter2_bucket[1].date)+" Diff: "+dateCalc2b+"\n"+"\n")
             }
             
             // calculate last fight win
@@ -591,11 +593,11 @@ function calcWinner(f1, f2, outcome) {
 
    // Ring Rust
    if (f1.ring_rust === true) {
-      p.f2.total += 1
+      //p.f2.total += 1
       p.f2.stat12 += 1
    }
    if (f2.ring_rust === true) {
-      p.f1.total += 1
+      //p.f1.total += 1
       p.f1.stat12 += 1
    }
 
@@ -605,26 +607,26 @@ function calcWinner(f1, f2, outcome) {
          if (p.f1.total > p.f2.total) {
             score.total.win += 1
             score.total.total += 1
-            console.log(
+            /*console.log(
                "Prediction: "+f1.name+"\n"+
-               "Outcome: "+f1.name)
+               "Outcome: "+f1.name)*/
          }
          else if (p.f2.total > p.f1.total) {
             score.total.lose += 1
             score.total.total += 1
-            console.log(
+            /*console.log(
                "Prediction: "+f2.name+"\n"+
-               "Outcome: "+f1.name)
+               "Outcome: "+f1.name)*/
          }
          else {
             score.total.na += 1
-            console.log("Prediction: No Prediction")
+            //console.log("Prediction: No Prediction")
          }
          // Older than 32
          if (p.f1.stat1 > p.f2.stat1) {
             score.stat1.win += 1
             score.stat1.total += 1
-            fs.appendFileSync("./test/stat1.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            //fs.appendFileSync("./test/stat1.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else if (p.f2.stat1 > p.f1.stat1) {
             score.stat1.lose += 1
@@ -637,7 +639,7 @@ function calcWinner(f1, f2, outcome) {
          if (p.f1.stat2 > p.f2.stat2) {
             score.stat2.win += 1
             score.stat2.total += 1
-            fs.appendFileSync("./test/stat2.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            //fs.appendFileSync("./test/stat2.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else if (p.f2.stat2 > p.f1.stat2) {
             score.stat2.lose += 1
@@ -650,7 +652,7 @@ function calcWinner(f1, f2, outcome) {
          if (p.f1.stat3 > p.f2.stat3) {
             score.stat3.win += 1
             score.stat3.total += 1
-            fs.appendFileSync("./test/stat3.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            //fs.appendFileSync("./test/stat3.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else if(p.f2.stat3 > p.f1.stat3) {
             score.stat3.lose += 1
@@ -663,7 +665,7 @@ function calcWinner(f1, f2, outcome) {
          if (p.f1.stat4 > p.f2.stat4) {
             score.stat4.win += 1
             score.stat4.total += 1
-            fs.appendFileSync("./test/stat4.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            //fs.appendFileSync("./test/stat4.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else if (p.f2.stat4 > p.f1.stat4) {
             score.stat4.lose += 1
@@ -676,7 +678,7 @@ function calcWinner(f1, f2, outcome) {
          if (p.f1.stat5 > p.f2.stat5) {
             score.stat5.win += 1
             score.stat5.total += 1
-            fs.appendFileSync("./test/stat5.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            //fs.appendFileSync("./test/stat5.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else if (p.f2.stat5 > p.f1.stat5) {
             score.stat5.lose += 1
@@ -689,7 +691,7 @@ function calcWinner(f1, f2, outcome) {
          if (p.f1.stat6 > p.f2.stat6) {
             score.stat6.win += 1
             score.stat6.total += 1
-            fs.appendFileSync("./test/stat6.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            //fs.appendFileSync("./test/stat6.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else if (p.f2.stat6 > p.f1.stat6) {
             score.stat6.lose += 1
@@ -702,7 +704,7 @@ function calcWinner(f1, f2, outcome) {
          if (p.f1.stat7 > p.f2.stat7) {
             score.stat7.win += 1
             score.stat7.total += 1
-            fs.appendFileSync("./test/stat7.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            //fs.appendFileSync("./test/stat7.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else if (p.f2.stat7 > p.f1.stat7) {
             score.stat7.lose += 1
@@ -715,7 +717,7 @@ function calcWinner(f1, f2, outcome) {
          if (p.f1.stat8 > p.f2.stat8) {
             score.stat8.win += 1
             score.stat8.total += 1
-            fs.appendFileSync("./test/stat8.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            //fs.appendFileSync("./test/stat8.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else if (p.f2.stat8 > p.f1.stat8) {
             score.stat8.lose += 1
@@ -728,7 +730,7 @@ function calcWinner(f1, f2, outcome) {
          if (p.f1.stat9 > p.f2.stat9) {
             score.stat9.win += 1
             score.stat9.total += 1
-            fs.appendFileSync("./test/stat9.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            //fs.appendFileSync("./test/stat9.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else if (p.f2.stat9 > p.f1.stat9) {
             score.stat9.lose += 1
@@ -741,7 +743,7 @@ function calcWinner(f1, f2, outcome) {
          if (p.f1.stat10 > p.f2.stat10) {
             score.stat10.win += 1
             score.stat10.total += 1
-            fs.appendFileSync("./test/stat10.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            //fs.appendFileSync("./test/stat10.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else if (p.f2.stat10 > p.f1.stat10) {
             score.stat10.lose += 1
@@ -754,7 +756,7 @@ function calcWinner(f1, f2, outcome) {
          if (p.f1.stat11 > p.f2.stat11) {
             score.stat11.win += 1
             score.stat11.total += 1
-            fs.appendFileSync("./test/stat11.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            //fs.appendFileSync("./test/stat11.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else if (p.f2.stat11 > p.f1.stat11) {
             score.stat11.lose += 1
@@ -767,6 +769,7 @@ function calcWinner(f1, f2, outcome) {
          if (p.f1.stat12 > p.f2.stat12) {
             score.stat12.win += 1
             score.stat12.total += 1
+            //fs.appendFileSync("./test/stat12.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else if (p.f2.stat12 > p.f1.stat12) {
             score.stat12.lose += 1
@@ -782,20 +785,20 @@ function calcWinner(f1, f2, outcome) {
          if (p.f1.total > p.f2.total) {
             score.total.lose += 1
             score.total.total += 1
-            console.log(
+            /*console.log(
                "Prediction: "+f1.name+"\n"+
-               "Outcome: "+f2.name)
+               "Outcome: "+f2.name)*/
          }
          else if (p.f2.total > p.f1.total) {
             score.total.win += 1
             score.total.total += 1
-            console.log(
+            /*console.log(
                "Prediction: "+f2.name+"\n"+
-               "Outcome: "+f2.name)
+               "Outcome: "+f2.name)*/
          }
          else {
             score.total.na += 1
-            console.log("Prediction: No Prediction")
+            //console.log("Prediction: No Prediction")
          }
          // Older than 32
          if (p.f1.stat1 > p.f2.stat1) {
@@ -805,6 +808,7 @@ function calcWinner(f1, f2, outcome) {
          else if (p.f2.stat1 > p.f1.stat1) {
             score.stat1.win += 1
             score.stat1.total += 1
+             //fs.appendFileSync("./test/stat1.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else {
             score.stat1.na += 1
@@ -817,6 +821,7 @@ function calcWinner(f1, f2, outcome) {
          else if (p.f2.stat2 > p.f1.stat2) {
             score.stat2.win += 1
             score.stat2.total += 1
+            //fs.appendFileSync("./test/stat2.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else {
             score.stat2.na += 1
@@ -829,6 +834,7 @@ function calcWinner(f1, f2, outcome) {
          else if(p.f2.stat3 > p.f1.stat3) {
             score.stat3.win += 1
             score.stat3.total += 1
+            //fs.appendFileSync("./test/stat3.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else {
             score.stat3.na += 1
@@ -841,6 +847,7 @@ function calcWinner(f1, f2, outcome) {
          else if (p.f2.stat4 > p.f1.stat4) {
             score.stat4.win += 1
             score.stat4.total +=1
+            //fs.appendFileSync("./test/stat4.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else {
             score.stat4.na += 1
@@ -853,6 +860,7 @@ function calcWinner(f1, f2, outcome) {
          else if (p.f2.stat5 > p.f1.stat5) {
             score.stat5.win += 1
             score.stat5.total += 1
+            //fs.appendFileSync("./test/stat5.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else {
             score.stat5.na += 1
@@ -865,6 +873,7 @@ function calcWinner(f1, f2, outcome) {
          else if (p.f2.stat6 > p.f1.stat6) {
             score.stat6.win += 1
             score.stat6.total += 1
+            //fs.appendFileSync("./test/stat6.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else {
             score.stat6.na += 1
@@ -877,6 +886,7 @@ function calcWinner(f1, f2, outcome) {
          else if (p.f2.stat7 > p.f1.stat7) {
             score.stat7.win += 1
             score.stat7.total += 1
+            //fs.appendFileSync("./test/stat7.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else {
             score.stat7.na += 1
@@ -889,6 +899,7 @@ function calcWinner(f1, f2, outcome) {
          else if (p.f2.stat8 > p.f1.stat8) {
             score.stat8.win += 1
             score.stat8.total += 1
+            //fs.appendFileSync("./test/stat8.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else {
             score.stat8.na += 1
@@ -901,6 +912,7 @@ function calcWinner(f1, f2, outcome) {
          else if (p.f2.stat9 > p.f1.stat9) {
             score.stat9.win += 1
             score.stat9.total += 1
+            //fs.appendFileSync("./test/stat9.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else {
             score.stat9.na += 1
@@ -913,6 +925,7 @@ function calcWinner(f1, f2, outcome) {
          else if (p.f2.stat10 > p.f1.stat10) {
             score.stat10.win += 1
             score.stat10.total += 1
+            //fs.appendFileSync("./test/stat10.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else {
             score.stat10.na += 1
@@ -925,6 +938,7 @@ function calcWinner(f1, f2, outcome) {
          else if (p.f2.stat11 > p.f1.stat11) {
             score.stat11.win += 1
             score.stat11.total += 1
+            //fs.appendFileSync("./test/stat11.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else {
             score.stat11.na += 1
@@ -937,6 +951,7 @@ function calcWinner(f1, f2, outcome) {
          else if (p.f2.stat12 > p.f1.stat12) {
             score.stat12.win += 1
             score.stat12.total += 1
+            //fs.appendFileSync("./test/stat12.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
          }
          else {
             score.stat12.na += 1
@@ -945,9 +960,9 @@ function calcWinner(f1, f2, outcome) {
       }
    }
    // "\n"+"name error: "+f1.name+"\n"+f2.name
-   else {
+   /*else {
       fs.appendFileSync("./error.js", '"'+f1.name+'"'+","+"\n"+'"'+f2.name+'"'+","+"\n")
-   }
+   }*/
    // Output Fight stats points
    /*console.log(
       // Output Comparison Points for each fight
@@ -1004,7 +1019,7 @@ function calcWinner(f1, f2, outcome) {
          "f2 stat 12: "+p.f2.stat12+"\n"+"\n"
          )*/
 
-         fs.writeFileSync("./score_result.js", JSON.stringify(score, null, "\t"))
+         //fs.writeFileSync("./score_result.js", JSON.stringify(score, null, "\t"))
    
    // Output Prediction Stats
    var prediction_p = (score.total.win/score.total.total)*100

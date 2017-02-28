@@ -1,3 +1,4 @@
+module.exports = [
 "Robert McDaniel",
 "Brad Tavares",
 "James Te-Huna",
@@ -116,7 +117,6 @@
 "Thiago Perpetuo",
 "Noad Lahat",
 "Godofredo Pepey",
-error: 1
 "Francimar Barroso",
 "CB Dollaway",
 "Albert Tumenov",
@@ -474,4 +474,5 @@ error: 1
 "Daniel Hooker",
 "Yair Rodriguez",
 "Ryan Jimmo",
-"Ovince Saint Preux",
+"Ovince Saint Preux"
+]
