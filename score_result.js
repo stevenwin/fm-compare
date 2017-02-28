@@ -1,80 +1,80 @@
 {
 	"total": {
-		"win": 161,
-		"lose": 57,
-		"na": 74,
-		"total": 218
+		"win": 747,
+		"lose": 356,
+		"na": 341,
+		"total": 1103
 	},
 	"stat1": {
-		"win": 73,
-		"lose": 39,
-		"na": 180,
-		"total": 112
+		"win": 332,
+		"lose": 206,
+		"na": 906,
+		"total": 538
 	},
 	"stat2": {
-		"win": 47,
-		"lose": 26,
-		"na": 219,
-		"total": 73
+		"win": 175,
+		"lose": 107,
+		"na": 1162,
+		"total": 282
 	},
 	"stat3": {
-		"win": 98,
-		"lose": 36,
-		"na": 158,
-		"total": 134
+		"win": 408,
+		"lose": 178,
+		"na": 858,
+		"total": 586
 	},
 	"stat4": {
-		"win": 135,
-		"lose": 78,
-		"na": 79,
-		"total": 213
+		"win": 619,
+		"lose": 400,
+		"na": 425,
+		"total": 1019
 	},
 	"stat5": {
-		"win": 95,
-		"lose": 29,
-		"na": 168,
-		"total": 124
+		"win": 396,
+		"lose": 173,
+		"na": 875,
+		"total": 569
 	},
 	"stat6": {
-		"win": 43,
-		"lose": 11,
-		"na": 238,
-		"total": 54
+		"win": 182,
+		"lose": 68,
+		"na": 1194,
+		"total": 250
 	},
 	"stat7": {
-		"win": 107,
-		"lose": 95,
-		"na": 90,
-		"total": 138
+		"win": 504,
+		"lose": 494,
+		"na": 446,
+		"total": 692
 	},
 	"stat8": {
-		"win": 8,
-		"lose": 12,
-		"na": 272,
-		"total": 20
+		"win": 39,
+		"lose": 46,
+		"na": 1359,
+		"total": 85
 	},
 	"stat9": {
-		"win": 49,
-		"lose": 5,
-		"na": 238,
-		"total": 54
+		"win": 194,
+		"lose": 48,
+		"na": 1202,
+		"total": 242
 	},
 	"stat10": {
-		"win": 25,
-		"lose": 4,
-		"na": 263,
-		"total": 29
+		"win": 137,
+		"lose": 5,
+		"na": 1302,
+		"total": 142
 	},
 	"stat11": {
-		"win": 55,
-		"lose": 40,
-		"na": 197,
-		"total": 95
+		"win": 277,
+		"lose": 215,
+		"na": 952,
+		"total": 492
 	},
 	"stat12": {
-		"win": 68,
-		"lose": 42,
-		"na": 182,
-		"total": 110
+		"win": 263,
+		"lose": 267,
+		"na": 914,
+		"total": 530
 	}
 }
