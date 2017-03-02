@@ -15,16 +15,16 @@ startProgram()
 function startProgram() {
   var eventURL = [
         {"name1":"Tyron Woodley","name2":"Stephen Thompson"},
-{"name1":"Khabib Nurmagomedov","name2":"Tony Ferguson"},
-{"name1":"Rashad Evans","name2":"Dan Kelly"},
-{"name1":"Lando Vannata","name2":"David Teymur"},
-{"name1":"Alistair Overeem","name2":"Mark Hunt"},
-{"name1":"Mark Godbeer","name2":"Daniel Spitz"},
-{"name1":"Marcin Tybura","name2":"Luis Henrique"},
-{"name1":"Darren Elkins","name2":"Mirsad Bektic"},
-{"name1":"Luke Sanders","name2":"Iuri Alcantara"},
-{"name1":"Tyson Pedro","name2":"Paul Craig"}
-        ]
+        {"name1":"Khabib Nurmagomedov","name2":"Tony Ferguson"},
+        {"name1":"Rashad Evans","name2":"Dan Kelly"},
+        {"name1":"Lando Vannata","name2":"David Teymur"},
+        {"name1":"Alistair Overeem","name2":"Mark Hunt"},
+        {"name1":"Mark Godbeer","name2":"Daniel Spitz"},
+        {"name1":"Marcin Tybura","name2":"Luis Henrique"},
+        {"name1":"Darren Elkins","name2":"Mirsad Bektic"},
+        {"name1":"Luke Sanders","name2":"Iuri Alcantara"},
+        {"name1":"Tyson Pedro","name2":"Paul Craig"}
+                ]
 
   async.waterfall([
      // Find and pass sherdog URL

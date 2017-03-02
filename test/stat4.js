@@ -1,3 +1,4 @@
+module.exports = [ 
 [
 {
 	"name": "Chris Weidman",
@@ -27997,4 +27998,5 @@
 	"b2b_loss": false,
 	"older_32": false
 }
-],
+]
+]

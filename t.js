@@ -91,41 +91,37 @@ var score = {
       lose: 0,
       na: 0,
       total: 0
+   },
+   stat13: {
+      win: 0,
+      lose: 0,
+      na: 0,
+      total: 0
    }
 }
 
-// **** MANUAL TESTING ****
-/*for (var d=0;d<manual_test.length;d++) {
-   for (var f=0;f<manual_test[d].FMLiveFeed.Fights.length;f++) {
-      try {
-      compareFighters(manual_test[d].FMLiveFeed.Fights[f].Fighters[0].FullName, manual_test[d].FMLiveFeed.Fights[f].Fighters[1].FullName, manual_test[d].FMLiveFeed.Timestamp, manual_test[d].FMLiveFeed.Fights[f].Fighters[0].Outcome, calcWinner)
-      }
+// parameter sC is an Array of integers representing the stats to activate 0-12
+// 1--- Older Than 32 Will Likely Lose (62%)
+// 2--- 6+ KO Wins & Opponent Older Than 32 (78%)
+// 3--- 2+ KO Loss Likely Lose (64%)
+// 4--- More Sub Losses Than Oppoenent Likely Lose (57%)
+// 5--- 6+ Losses more Likely to Lose (60%)
+// 6--- 18+ Wins and No B2B Losses Likely to Win (63%)
+// 7--- B2B Losses Likely to Lose (57%)
+// 8--- No KO Wins Likely to Lose (55%)
+// 9--- 15+ win and 50% of Opponent Losses Likely Win (78%)
+// 10--- 2x More wins and Opponent Lose Last Fight (68%)
+// 11--- 3x Decisions Wins of Opponent (60%)
+// 12--- Ring Rust 210+ Days Likely to Lose (59%)
+// 13--- Younger Than 3 (58%)
 
-      catch(e) {
-         err_count += 1
-         console.log("error: "+err_count+"\n"+e+"\n")
-         for (var i=0;i<sherdogdata.length;i++) {
-            for (var k in sherdogdata[i]) {
-               if (sherdogdata[i][k] === manual_test[d].FMLiveFeed.Fights[f].Fighters[0].FullName) {
-                  console.log("Matched: "+manual_test[d].FMLiveFeed.Fights[f].Fighters[0].FullName+" "+sherdogdata[i].name+"\n")
-               }
-            }
-         }
-         for (var i=0;i<sherdogdata.length;i++) {
-            for (var k in sherdogdata[i]) {
-               if (sherdogdata[i][k] === manual_test[d].FMLiveFeed.Fights[f].Fighters[1].FullName) {
-                  console.log("Matched: "+manual_test[d].FMLiveFeed.Fights[f].Fighters[1].FullName+""+sherdogdata[i].name+"\n")
-               }
-            }
-         }
-      }
-   }
-}*/
+var statCombo = [null, null, null, 4, null, null, null, null, 9, 10, 11, null, 13]
+
 // ****** API TESTING ******
 for (var d=0;d<fm_api.length;d++) {
    for (var f=0;f<fm_api[d].FMLiveFeed.Fights.length;f++) {
       try {
-      compareFighters(fm_api[d].FMLiveFeed.Fights[f].Fighters[0].FullName, fm_api[d].FMLiveFeed.Fights[f].Fighters[1].FullName, fm_api[d].FMLiveFeed.Date, fm_api[d].FMLiveFeed.Fights[f].Fighters[0].Outcome, calcWinner)
+      compareFighters(fm_api[d].FMLiveFeed.Fights[f].Fighters[0].FullName, fm_api[d].FMLiveFeed.Fights[f].Fighters[1].FullName, fm_api[d].FMLiveFeed.Date, fm_api[d].FMLiveFeed.Fights[f].Fighters[0].Outcome, calcWinner, statCombo)
       }
 
       catch(e) {
@@ -136,41 +132,7 @@ for (var d=0;d<fm_api.length;d++) {
 }
 
 
-//compareFighters("Chris Weidman", "Anderson Silva", "11:51:06 08/05/2013", "Win", calcWinner)
-
-// Output Fighter Stats
-/*setTimeout(function() {
-   console.log(
-      "name: "+fighter1.name+"\n"+
-      "age: "+fighter1.age+"\n"+
-      "total wins: "+fighter1.wins.total+"\n"+
-      "ko wins: "+fighter1.wins.knockouts+"\n"+
-      "sub wins: "+fighter1.wins.submissions+"\n"+
-      "dec wins: "+fighter1.wins.decisions+"\n"+"\n"+
-      "total losses: "+fighter1.losses.total+"\n"+
-      "ko loss: "+fighter1.losses.knockouts+"\n"+
-      "sub loss: "+fighter1.losses.submissions+"\n"+
-      "dec loss: "+fighter1.losses.decisions+"\n"+"\n"+
-      "win last fight? "+fighter1.last_fight_win+"\n"+
-      "ring rust? "+fighter1.ring_rust+"\n"+
-      "b2b loss?"+fighter1.b2b_loss+"\n"+"\n"+"\n"+
-
-      "name: "+fighter2.name+"\n"+
-      "age: "+fighter2.age+"\n"+
-      "total wins: "+fighter2.wins.total+"\n"+
-      "ko wins: "+fighter2.wins.knockouts+"\n"+
-      "sub wins: "+fighter2.wins.submissions+"\n"+
-      "dec wins: "+fighter2.wins.decisions+"\n"+"\n"+
-      "total losses: "+fighter2.losses.total+"\n"+
-      "ko loss: "+fighter2.losses.knockouts+"\n"+
-      "sub loss: "+fighter2.losses.submissions+"\n"+
-      "dec loss: "+fighter2.losses.decisions+"\n"+"\n"+
-      "win last fight? "+fighter2.last_fight_win+"\n"+
-      "ring rust? "+fighter2.ring_rust+"\n"+
-      "b2b loss?"+fighter2.b2b_loss+"\n")
-}, 5000)*/
-
-function compareFighters(fighterA, fighterB, dateTime, outcome, callback) {
+function compareFighters(fighterA, fighterB, dateTime, outcome, callback, statCombo) {
    var fighter1 = {
    name: "",
    age: "",
@@ -194,7 +156,8 @@ function compareFighters(fighterA, fighterB, dateTime, outcome, callback) {
    last_fight_win: false,
    ring_rust: false,
    b2b_loss: false,
-   older_32: false
+   older_32: false,
+   younger_than_three: false
    }
 
    var fighter2 = {
@@ -220,7 +183,8 @@ function compareFighters(fighterA, fighterB, dateTime, outcome, callback) {
    last_fight_win: false,
    ring_rust: false,
    b2b_loss: false,
-   older_32: false
+   older_32: false,
+   younger_than_three: false
    }
 
    var fighter1_bucket = []
@@ -301,10 +265,11 @@ function compareFighters(fighterA, fighterB, dateTime, outcome, callback) {
                fighter1.older_32 = true
             }
 
+
             // calculate ring rust
             var dateCalc1a = dateToDay(fighter1_bucket[0].date)-date
             var dateCalc1b = dateToDay(fighter1_bucket[1].date)-date
-            if (dateToDay(fighter1_bucket[1].date) - date >= 210) {
+            if (dateToDay(fighter1_bucket[1].date) - date >= 300) {
                   fighter1.ring_rust = true
                }
             else {
@@ -387,10 +352,12 @@ function compareFighters(fighterA, fighterB, dateTime, outcome, callback) {
                fighter2.older_32 = true
             }
 
+            
+
             // calculate ring rust
             var dateCalc2a = dateToDay(fighter2_bucket[0].date)-date
             var dateCalc2b = dateToDay(fighter2_bucket[1].date)-date
-            if (dateToDay(fighter2_bucket[1].date) - date >= 210) {
+            if (dateToDay(fighter2_bucket[1].date) - date >= 300) {
                   fighter2.ring_rust = true
                }
             else {
@@ -403,6 +370,14 @@ function compareFighters(fighterA, fighterB, dateTime, outcome, callback) {
             }
          }
       }
+   }
+
+   if (fighter1.age - fighter2.age > 3) {
+      fighter2.younger_than_three = true
+   }
+
+   if (fighter2.age - fighter1.age > 3) {
+      fighter1.younger_than_three = true
    }
 
    // Output fighter statistics
@@ -442,11 +417,11 @@ function compareFighters(fighterA, fighterB, dateTime, outcome, callback) {
    fs.appendFileSync("./score.result.js", JSON.stringify(fighter2_bucket, null, "\t"))*/
 
 
-   callback(fighter1, fighter2, f1_outcome)
+   callback(fighter1, fighter2, f1_outcome, statCombo)
 }
 
 
-function calcWinner(f1, f2, outcome) {
+function calcWinner(f1, f2, outcome, statCombo) {
    var p = {
       f1: {
          total: 0,
@@ -461,7 +436,8 @@ function calcWinner(f1, f2, outcome) {
          stat9: 0,
          stat10: 0,
          stat11: 0,
-         stat12: 0
+         stat12: 0,
+         stat13: 0
       },
 
       f2: {
@@ -477,32 +453,184 @@ function calcWinner(f1, f2, outcome) {
          stat9: 0,
          stat10: 0,
          stat11: 0,
-         stat12: 0
+         stat12: 0,
+         stat13: 0
       }
    }
 
+   compareStats(statCombo)
+
+   // parameter sC is an Array of integers representing the stats to activate
+   function compareStats(sC) {
+      if (sC[0] === 1) {
+         if (f1.older_32 === true && f2.older_32 != true) {
+            p.f2.total += 1
+            p.f2.stat1 += 1
+         }
+         if (f2.older_32 === true && f1.older_32 != true) {
+            p.f1.total += 1
+            p.f1.stat1 += 1
+         }
+      }
+
+      if (sC[1] === 2) {
+         if (f1.older_32 === true && f2.wins.knockouts > 6) {
+            p.f2.total += 1
+            p.f2.stat2 += 1
+         }
+         if (f2.older_32 === true && f1.wins.knockouts >6) {
+            p.f1.total += 1
+            p.f1.stat2 += 1
+         }
+      }
+
+      if (sC[2] === 3) {
+         if (f1.losses.knockouts >= 2 && f2.losses.knockouts < 2) {
+            p.f2.total += 1
+            p.f2.stat3 += 1
+         }
+         if (f2.losses.knockouts >= 2 && f1.losses.knockouts < 2) {
+            p.f1.total += 1
+            p.f1.stat3 += 1
+         }
+      }
+
+      if (sC[3] === 4) {
+         if (f1.losses.submissions < f2.losses.submissions) {
+            p.f1.total += 1
+            p.f1.stat4 += 1
+         }
+         if (f2.losses.submissions < f1.losses.submissions) {
+            p.f2.total += 1
+            p.f2.stat4 += 1
+         }
+      }
+
+      if (sC[4] === 5) {
+         if (f1.losses.total >= 6) {
+            p.f2.total += 1
+            p.f2.stat5 += 1
+         }
+         if (f2.losses.total >= 6) {
+            p.f1.total += 1
+            p.f1.stat5 += 1
+         }
+      }
+
+      if (sC[5] === 6) {
+         if (f1.wins.total >= 18 && f1.b2b_loss === false) {
+            p.f1.total += 1
+            p.f1.stat6 += 1
+         }
+         if (f2.wins.total >= 18 && f2.b2b_loss === false) {
+            p.f2.total += 1
+            p.f2.stat6 += 1
+         }
+      }
+
+      if (sC[6] === 7) {
+         if (f1.b2b_loss === true) {
+            p.f2.total += 1
+            p.f2.stat7 += 1
+         }
+         if (f2.b2b_loss === true) {
+            p.f1.total += 1
+            p.f1.stat7 += 1
+         }
+      }
+
+      if (sC[7] === 8) {
+         if (f1.wins.knockouts === 0) {
+            p.f2.total += 1
+            p.f2.stat8 += 1
+         }
+         if (f2.wins.knockouts === 0) {
+            p.f1.total += 1
+            p.f1.stat8 += 1
+         }
+      }
+
+      if (sC[8] === 9) {
+         if (f1.wins.total > 14 && f2.losses.total/f1.losses.total >= 2) {
+            p.f1.total += 2
+            p.f1.stat9 += 2
+         }
+         if (f2.wins.total > 14 && f1.losses.total/f2.losses.total >= 2) {
+            p.f2.total += 2
+            p.f2.stat9 += 2
+         }
+      }
+
+      if (sC[9] === 10) {
+         if (f1.wins.total/f2.wins.total >= 2 && f2.last_fight_win === false) {
+            p.f1.total += 1
+            p.f1.stat10 += 1
+         }
+         if (f2.wins.total/f1.wins.total >= 2 && f1.last_fight_win === false) {
+            p.f2.total += 1
+            p.f2.stat10 += 1
+         }
+      }
+
+      if (sC[10] === 11) {
+         if (f1.wins.decisions/f2.wins.decisions >= 3) {
+            p.f1.total += 1
+            p.f1.stat11 += 1
+         }
+         if (f2.wins.decisions/f1.wins.decisions >= 3) {
+            p.f2.total += 1
+            p.f2.stat11 += 1
+         }
+      }
+
+      if (sC[11] === 12) {
+         if (f1.ring_rust === true) {
+            p.f2.total += 1
+            p.f2.stat12 += 1
+         }
+         if (f2.ring_rust === true) {
+            p.f1.total += 1
+            p.f1.stat12 += 1
+         }
+      }
+
+      if (sC[12] === 13) {
+         if (f1.younger_than_three === true) {
+            p.f1.total += 1
+            p.f1.stat13 += 1
+         }
+         if (f2.younger_than_three === true) {
+            p.f2.total += 1
+            p.f2.stat13 += 1
+         }
+      }
+      calcResults(outcome, p, f1, f2)
+      outputPrediction()
+   }
+
+
    // age compare
-   if (f1.older_32 === true && f2.older_32 != true) {
+   /*if (f1.older_32 === true && f2.older_32 != true) {
       p.f2.total += 1
       p.f2.stat1 += 1
    }
    if (f2.older_32 === true && f1.older_32 != true) {
       p.f1.total += 1
       p.f1.stat1 += 1
-   }
+   }*/
 
    // 6 tko & opponent > 32yo
-   if (f1.older_32 === true && f2.wins.knockouts > 6) {
+   /*if (f1.older_32 === true && f2.wins.knockouts > 6) {
       //p.f2.total += 1
       p.f2.stat2 += 1
    }
    if (f2.older_32 === true && f1.wins.knockouts >6) {
       //p.f1.total += 1
       p.f1.stat2 += 1
-   }
+   }*/
 
    // 2 or more KO loss
-   if (f1.losses.knockouts >= 2 && f2.losses.knockouts < 2) {
+   /*if (f1.losses.knockouts >= 2 && f2.losses.knockouts < 2) {
       //p.f2.total += 1
       p.f2.stat3 += 1
    }
@@ -549,10 +677,10 @@ function calcWinner(f1, f2, outcome) {
    if (f2.b2b_loss === true) {
       //p.f1.total += 1
       p.f1.stat7 += 1
-   }
+   }*/
 
    // no tkos
-   if (f1.wins.knockouts === 0) {
+   /*if (f1.wins.knockouts === 0) {
       //p.f2.total += 1
       p.f2.stat8 += 1
    }
@@ -599,24 +727,584 @@ function calcWinner(f1, f2, outcome) {
    if (f2.ring_rust === true) {
       //p.f1.total += 1
       p.f1.stat12 += 1
-   }
+   }*/
 
    // Calc results
-   if (f1.wins.total != 0 && f2.wins.total != 0) {
+   function calcResults(outcome, p, f1, f2) {
+      if (f1.wins.total != 0 && f2.wins.total != 0) {
+         if (outcome === "Win") {
+            if (p.f1.total > p.f2.total) {
+               score.total.win += 1
+               score.total.total += 1
+               /*console.log(
+                  "Prediction: "+f1.name+"\n"+
+                  "Outcome: "+f1.name)*/
+            }
+            else if (p.f2.total > p.f1.total) {
+               score.total.lose += 1
+               score.total.total += 1
+               /*console.log(
+                  "Prediction: "+f2.name+"\n"+
+                  "Outcome: "+f1.name)*/
+            }
+            else {
+               score.total.na += 1
+               //console.log("Prediction: No Prediction")
+            }
+            // Older than 32
+            if (p.f1.stat1 > p.f2.stat1) {
+               score.stat1.win += 1
+               score.stat1.total += 1
+               //fs.appendFileSync("./test/stat1.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else if (p.f2.stat1 > p.f1.stat1) {
+               score.stat1.lose += 1
+               score.stat1.total += 1
+               fs.appendFileSync("./test/stat1w.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else {
+               score.stat1.na += 1
+            }
+            // More than 6 KOs and opponent older than 32
+            if (p.f1.stat2 > p.f2.stat2) {
+               score.stat2.win += 1
+               score.stat2.total += 1
+               //fs.appendFileSync("./test/stat2.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else if (p.f2.stat2 > p.f1.stat2) {
+               score.stat2.lose += 1
+               score.stat2.total += 1
+               fs.appendFileSync("./test/stat2w.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else {
+               score.stat2.na += 1
+            }
+            // Lose 2 or more KOs
+            if (p.f1.stat3 > p.f2.stat3) {
+               score.stat3.win += 1
+               score.stat3.total += 1
+               //fs.appendFileSync("./test/stat3.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else if(p.f2.stat3 > p.f1.stat3) {
+               score.stat3.lose += 1
+               score.stat3.total += 1
+               fs.appendFileSync("./test/stat3w.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else {
+               score.stat3.na += 1
+            }
+            // Lose less by subs
+            if (p.f1.stat4 > p.f2.stat4) {
+               score.stat4.win += 1
+               score.stat4.total += 1
+               //fs.appendFileSync("./test/stat4.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else if (p.f2.stat4 > p.f1.stat4) {
+               score.stat4.lose += 1
+               score.stat4.total +=1
+               fs.appendFileSync("./test/stat4w.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else {
+               score.stat4.na += 1
+            }
+            // Lose more than 6 fights
+            if (p.f1.stat5 > p.f2.stat5) {
+               score.stat5.win += 1
+               score.stat5.total += 1
+               //fs.appendFileSync("./test/stat5.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else if (p.f2.stat5 > p.f1.stat5) {
+               score.stat5.lose += 1
+               score.stat5.total += 1
+               fs.appendFileSync("./test/stat5w.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else {
+               score.stat5.na += 1
+            }
+            // 18 or more wins and no b2b lose
+            if (p.f1.stat6 > p.f2.stat6) {
+               score.stat6.win += 1
+               score.stat6.total += 1
+               //fs.appendFileSync("./test/stat6.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else if (p.f2.stat6 > p.f1.stat6) {
+               score.stat6.lose += 1
+               score.stat6.total += 1
+               fs.appendFileSync("./test/stat6w.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else {
+               score.stat6.na += 1
+            }
+            // b2b losses
+            if (p.f1.stat7 > p.f2.stat7) {
+               score.stat7.win += 1
+               score.stat7.total += 1
+               //fs.appendFileSync("./test/stat7.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else if (p.f2.stat7 > p.f1.stat7) {
+               score.stat7.lose += 1
+               score.stat7.total += 1
+               fs.appendFileSync("./test/stat7w.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else {
+               score.stat7.lose += 1
+            }
+            // no KOs
+            if (p.f1.stat8 > p.f2.stat8) {
+               score.stat8.win += 1
+               score.stat8.total += 1
+               //fs.appendFileSync("./test/stat8.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else if (p.f2.stat8 > p.f1.stat8) {
+               score.stat8.lose += 1
+               score.stat8.total += 1
+               fs.appendFileSync("./test/stat8w.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else {
+               score.stat8.na += 1
+            }
+            // 15+ wins and 50% of opponent losses
+            if (p.f1.stat9 > p.f2.stat9) {
+               score.stat9.win += 1
+               score.stat9.total += 1
+               //fs.appendFileSync("./test/stat9.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else if (p.f2.stat9 > p.f1.stat9) {
+               score.stat9.lose += 1
+               score.stat9.total += 1
+               fs.appendFileSync("./test/stat9w.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else {
+               score.stat9.na += 1
+            }
+            // 2x more wins than opponent and opponent lost last
+            if (p.f1.stat10 > p.f2.stat10) {
+               score.stat10.win += 1
+               score.stat10.total += 1
+               //fs.appendFileSync("./test/stat10.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else if (p.f2.stat10 > p.f1.stat10) {
+               score.stat10.lose += 1
+               score.stat10.total += 1
+               fs.appendFileSync("./test/stat10w.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else {
+               score.stat10.na += 1
+            }
+            // 3x decisions wins as opponent
+            if (p.f1.stat11 > p.f2.stat11) {
+               score.stat11.win += 1
+               score.stat11.total += 1
+               //fs.appendFileSync("./test/stat11.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else if (p.f2.stat11 > p.f1.stat11) {
+               score.stat11.lose += 1
+               score.stat11.total += 1
+               fs.appendFileSync("./test/stat11w.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else {
+               score.stat11.na += 1
+            }
+            // Ring Rust
+            if (p.f1.stat12 > p.f2.stat12) {
+               score.stat12.win += 1
+               score.stat12.total += 1
+               //fs.appendFileSync("./test/stat12.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else if (p.f2.stat12 > p.f1.stat12) {
+               score.stat12.lose += 1
+               score.stat12.total += 1
+               fs.appendFileSync("./test/stat12w.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else {
+               score.stat12.na += 1
+               //fs.appendFileSync("./score.result.js", f1.name+" "+f1.ring_rust+"   "+f2.name+" "+f2.ring_rust+"\n")
+            }
+            // Younger Than Three
+            if (p.f1.stat13 > p.f2.stat13) {
+               score.stat13.win += 1
+               score.stat13.total += 1
+               fs.appendFileSync("./test/stat13.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else if (p.f2.stat13 > p.f1.stat13) {
+               score.stat13.lose += 1
+               score.stat13.total += 1
+               fs.appendFileSync("./test/stat13w.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else {
+               score.stat13.na += 1
+               //fs.appendFileSync("./score.result.js", f1.name+" "+f1.ring_rust+"   "+f2.name+" "+f2.ring_rust+"\n")
+            }
+         }
+
+         if (outcome === "Loss") {
+            if (p.f1.total > p.f2.total) {
+               score.total.lose += 1
+               score.total.total += 1
+               /*console.log(
+                  "Prediction: "+f1.name+"\n"+
+                  "Outcome: "+f2.name)*/
+            }
+            else if (p.f2.total > p.f1.total) {
+               score.total.win += 1
+               score.total.total += 1
+               /*console.log(
+                  "Prediction: "+f2.name+"\n"+
+                  "Outcome: "+f2.name)*/
+            }
+            else {
+               score.total.na += 1
+               //console.log("Prediction: No Prediction")
+            }
+            // Older than 32
+            if (p.f1.stat1 > p.f2.stat1) {
+               score.stat1.lose += 1
+               score.stat1.total += 1
+            }
+            else if (p.f2.stat1 > p.f1.stat1) {
+               score.stat1.win += 1
+               score.stat1.total += 1
+                //fs.appendFileSync("./test/stat1.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else {
+               score.stat1.na += 1
+            }
+            // More than 6 KOs and opponent older than 32
+            if (p.f1.stat2 > p.f2.stat2) {
+               score.stat2.lose += 1
+               score.stat2.total += 1
+            }
+            else if (p.f2.stat2 > p.f1.stat2) {
+               score.stat2.win += 1
+               score.stat2.total += 1
+               //fs.appendFileSync("./test/stat2.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else {
+               score.stat2.na += 1
+            }
+            // Lose 2 or more KOs
+            if (p.f1.stat3 > p.f2.stat3) {
+               score.stat3.lose += 1
+               score.stat3.total += 1
+            }
+            else if(p.f2.stat3 > p.f1.stat3) {
+               score.stat3.win += 1
+               score.stat3.total += 1
+               //fs.appendFileSync("./test/stat3.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else {
+               score.stat3.na += 1
+            }
+            // Lose less by subs
+            if (p.f1.stat4 > p.f2.stat4) {
+               score.stat4.lose += 1
+               score.stat4.total += 1
+            }
+            else if (p.f2.stat4 > p.f1.stat4) {
+               score.stat4.win += 1
+               score.stat4.total +=1
+               //fs.appendFileSync("./test/stat4.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else {
+               score.stat4.na += 1
+            }
+            // Lose more than 6 fights
+            if (p.f1.stat5 > p.f2.stat5) {
+               score.stat5.lose += 1
+               score.stat5.total += 1
+            }
+            else if (p.f2.stat5 > p.f1.stat5) {
+               score.stat5.win += 1
+               score.stat5.total += 1
+               //fs.appendFileSync("./test/stat5.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else {
+               score.stat5.na += 1
+            }
+            // 18 or more wins and no b2b lose
+            if (p.f1.stat6 > p.f2.stat6) {
+               score.stat6.lose += 1
+               score.stat6.total += 1
+            }
+            else if (p.f2.stat6 > p.f1.stat6) {
+               score.stat6.win += 1
+               score.stat6.total += 1
+               //fs.appendFileSync("./test/stat6.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else {
+               score.stat6.na += 1
+            }
+            // b2b losses
+            if (p.f1.stat7 > p.f2.stat7) {
+               score.stat7.lose += 1
+               score.stat7.total += 1
+            }
+            else if (p.f2.stat7 > p.f1.stat7) {
+               score.stat7.win += 1
+               score.stat7.total += 1
+               //fs.appendFileSync("./test/stat7.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else {
+               score.stat7.na += 1
+            }
+            // no KOs
+            if (p.f1.stat8 > p.f2.stat8) {
+               score.stat8.lose += 1
+               score.stat8.total += 1
+            }
+            else if (p.f2.stat8 > p.f1.stat8) {
+               score.stat8.win += 1
+               score.stat8.total += 1
+               //fs.appendFileSync("./test/stat8.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else {
+               score.stat8.na += 1
+            }
+            // 15+ wins and 50% of opponent losses
+            if (p.f1.stat9 > p.f2.stat9) {
+               score.stat9.lose += 1
+               score.stat9.total += 1
+            }
+            else if (p.f2.stat9 > p.f1.stat9) {
+               score.stat9.win += 1
+               score.stat9.total += 1
+               //fs.appendFileSync("./test/stat9.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else {
+               score.stat9.na += 1
+            }
+            // 2x more wins than opponent and opponent lost last
+            if (p.f1.stat10 > p.f2.stat10) {
+               score.stat10.lose += 1
+               score.stat10.total += 1
+            }
+            else if (p.f2.stat10 > p.f1.stat10) {
+               score.stat10.win += 1
+               score.stat10.total += 1
+               //fs.appendFileSync("./test/stat10.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else {
+               score.stat10.na += 1
+            }
+            // 3x decisions wins as opponent
+            if (p.f1.stat11 > p.f2.stat11) {
+               score.stat11.lose += 1
+               score.stat11.total += 1
+            }
+            else if (p.f2.stat11 > p.f1.stat11) {
+               score.stat11.win += 1
+               score.stat11.total += 1
+               //fs.appendFileSync("./test/stat11.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else {
+               score.stat11.na += 1
+            }
+            // Ring Rust
+            if (p.f1.stat12 > p.f2.stat12) {
+               score.stat12.lose += 1
+               score.stat12.total += 1
+            }
+            else if (p.f2.stat12 > p.f1.stat12) {
+               score.stat12.win += 1
+               score.stat12.total += 1
+               //fs.appendFileSync("./test/stat12.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else {
+               score.stat12.na += 1
+               //fs.appendFileSync("./score.result.js", f1.name+" "+f1.ring_rust+"   "+f2.name+" "+f2.ring_rust+"\n")
+            }
+            // Younger Than Three
+            if (p.f1.stat13 > p.f2.stat13) {
+               score.stat13.lose += 1
+               score.stat13.total += 1
+               fs.appendFileSync("./test/stat13w.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else if (p.f2.stat13 > p.f1.stat13) {
+               score.stat13.win += 1
+               score.stat13.total += 1
+               fs.appendFileSync("./test/stat13.js", "["+"\n"+JSON.stringify(f1, null, "\t")+","+"\n"+JSON.stringify(f2, null, "\t")+"\n"+"]"+","+"\n")
+            }
+            else {
+               score.stat13.na += 1
+               //fs.appendFileSync("./score.result.js", f1.name+" "+f1.ring_rust+"   "+f2.name+" "+f2.ring_rust+"\n")
+            }
+         }
+      }
+   }
+   
+   
+
+   
+   
+   // Output Prediction Stats
+   function outputPrediction() {
+      var prediction_p = (score.total.win/score.total.total)*100
+      var stat1_p = (score.stat1.win/score.stat1.total)*100
+      var stat2_p = (score.stat2.win/score.stat2.total)*100
+      var stat3_p = (score.stat3.win/score.stat3.total)*100
+      var stat4_p = (score.stat4.win/score.stat4.total)*100
+      var stat5_p = (score.stat5.win/score.stat5.total)*100
+      var stat6_p = (score.stat6.win/score.stat6.total)*100
+      var stat7_p = (score.stat7.win/score.stat7.total)*100
+      var stat8_p = (score.stat8.win/score.stat8.total)*100
+      var stat9_p = (score.stat9.win/score.stat9.total)*100
+      var stat10_p = (score.stat10.win/score.stat10.total)*100
+      var stat11_p = (score.stat11.win/score.stat11.total)*100
+      var stat12_p = (score.stat12.win/score.stat12.total)*100
+      var stat13_p = (score.stat13.win/score.stat13.total)*100
+      console.log(
+         "Predictions Total: "+score.total.total+"\n"+
+         "Predictions Right: "+score.total.win+"\n"+
+         "Predictions Wrong: "+score.total.lose+"\n"+
+         "Prediction Percentage: "+prediction_p+"%"+"\n"+
+
+         "Stat1 Total: "+score.stat1.total+"\n"+
+         "Stat1 Right: "+score.stat1.win+"\n"+
+         "Stat1 Wrong: "+score.stat1.lose+"\n"+
+         "Stat1 Percentage: "+stat1_p+"%"+"\n"+
+
+         "stat2 Total: "+score.stat2.total+"\n"+
+         "stat2 Right: "+score.stat2.win+"\n"+
+         "stat2 Wrong: "+score.stat2.lose+"\n"+
+         "stat2 Percentage: "+stat2_p+"%"+"\n"+
+
+         "stat3 Total: "+score.stat3.total+"\n"+
+         "stat3 Right: "+score.stat3.win+"\n"+
+         "stat3 Wrong: "+score.stat3.lose+"\n"+
+         "stat3 Percentage: "+stat3_p+"%"+"\n"+
+
+         "stat4 Total: "+score.stat4.total+"\n"+
+         "stat4 Right: "+score.stat4.win+"\n"+
+         "stat4 Wrong: "+score.stat4.lose+"\n"+
+         "stat4 Percentage: "+stat4_p+"%"+"\n"+
+
+         "stat5 Total: "+score.stat5.total+"\n"+
+         "stat5 Right: "+score.stat5.win+"\n"+
+         "stat5 Wrong: "+score.stat5.lose+"\n"+
+         "stat5 Percentage: "+stat5_p+"%"+"\n"+
+
+         "stat6 Total: "+score.stat6.total+"\n"+
+         "stat6 Right: "+score.stat6.win+"\n"+
+         "stat6 Wrong: "+score.stat6.lose+"\n"+
+         "stat6 Percentage: "+stat6_p+"%"+"\n"+
+
+         "stat7 Total: "+score.stat7.total+"\n"+
+         "stat7 Right: "+score.stat7.win+"\n"+
+         "stat7 Wrong: "+score.stat7.lose+"\n"+
+         "stat7 Percentage: "+stat7_p+"%"+"\n"+
+
+         "stat8 Total: "+score.stat8.total+"\n"+
+         "stat8 Right: "+score.stat8.win+"\n"+
+         "stat8 Wrong: "+score.stat8.lose+"\n"+
+         "stat8 Percentage: "+stat8_p+"%"+"\n"+
+
+         "stat9 Total: "+score.stat9.total+"\n"+
+         "stat9 Right: "+score.stat9.win+"\n"+
+         "stat9 Wrong: "+score.stat9.lose+"\n"+
+         "stat9 Percentage: "+stat9_p+"%"+"\n"+
+
+         "stat10 Total: "+score.stat10.total+"\n"+
+         "stat10 Right: "+score.stat10.win+"\n"+
+         "stat10 Wrong: "+score.stat10.lose+"\n"+
+         "stat10 Percentage: "+stat10_p+"%"+"\n"+
+
+         "stat11 Total: "+score.stat11.total+"\n"+
+         "stat11 Right: "+score.stat11.win+"\n"+
+         "stat11 Wrong: "+score.stat11.lose+"\n"+
+         "stat11 Percentage: "+stat11_p+"%"+"\n"+
+
+         "stat12 Total: "+score.stat12.total+"\n"+
+         "stat12 Right: "+score.stat12.win+"\n"+
+         "stat12 Wrong: "+score.stat12.lose+"\n"+
+         "stat12 Percentage: "+stat12_p+"%"+"\n"+
+
+         "stat13 Total: "+score.stat13.total+"\n"+
+         "stat13 Right: "+score.stat13.win+"\n"+
+         "stat13 Wrong: "+score.stat13.lose+"\n"+
+         "stat13 Percentage: "+stat13_p+"%"+"\n"
+         )
+
+      // Write results to f_results
+      /*fs.appendFileSync("./f_results.js", "["+"\n")
+      fs.appendFileSync("./f_results.js", JSON.stringify(f1, null, "\t"))
+      fs.appendFileSync("./f_results.js", ","+"\n")
+      fs.appendFileSync("./f_results.js", JSON.stringify(f2, null, "\t"))
+      fs.appendFileSync("./f_results.js", "]"+","+"\n")*/
+   }
+}
+
+
+function dateToDay(date) {
+  var d = today.getTime() - Date.parse(date);
+  var minutes = 1000 * 60;
+  var minute = d / minutes
+  var hour = minute / 60
+  var day = hour / 24
+  var year = day / 365
+  return day;
+}
+
+function dateToYear(date) {
+  var d = today.getTime() - Date.parse(date);
+  var minutes = 1000 * 60;
+  var minute = d / minutes
+  var hour = minute / 60
+  var day = hour / 24
+  var year = day / 365
+  return year;
+}
+
+// Output Fighter Stats
+/*setTimeout(function() {
+   console.log(
+      "name: "+fighter1.name+"\n"+
+      "age: "+fighter1.age+"\n"+
+      "total wins: "+fighter1.wins.total+"\n"+
+      "ko wins: "+fighter1.wins.knockouts+"\n"+
+      "sub wins: "+fighter1.wins.submissions+"\n"+
+      "dec wins: "+fighter1.wins.decisions+"\n"+"\n"+
+      "total losses: "+fighter1.losses.total+"\n"+
+      "ko loss: "+fighter1.losses.knockouts+"\n"+
+      "sub loss: "+fighter1.losses.submissions+"\n"+
+      "dec loss: "+fighter1.losses.decisions+"\n"+"\n"+
+      "win last fight? "+fighter1.last_fight_win+"\n"+
+      "ring rust? "+fighter1.ring_rust+"\n"+
+      "b2b loss?"+fighter1.b2b_loss+"\n"+"\n"+"\n"+
+
+      "name: "+fighter2.name+"\n"+
+      "age: "+fighter2.age+"\n"+
+      "total wins: "+fighter2.wins.total+"\n"+
+      "ko wins: "+fighter2.wins.knockouts+"\n"+
+      "sub wins: "+fighter2.wins.submissions+"\n"+
+      "dec wins: "+fighter2.wins.decisions+"\n"+"\n"+
+      "total losses: "+fighter2.losses.total+"\n"+
+      "ko loss: "+fighter2.losses.knockouts+"\n"+
+      "sub loss: "+fighter2.losses.submissions+"\n"+
+      "dec loss: "+fighter2.losses.decisions+"\n"+"\n"+
+      "win last fight? "+fighter2.last_fight_win+"\n"+
+      "ring rust? "+fighter2.ring_rust+"\n"+
+      "b2b loss?"+fighter2.b2b_loss+"\n")
+}, 5000)*/
+
+
+
+
+
+/*if (f1.wins.total != 0 && f2.wins.total != 0) {
       if (outcome === "Win") {
          if (p.f1.total > p.f2.total) {
             score.total.win += 1
             score.total.total += 1
-            /*console.log(
+            console.log(
                "Prediction: "+f1.name+"\n"+
-               "Outcome: "+f1.name)*/
+               "Outcome: "+f1.name)
          }
          else if (p.f2.total > p.f1.total) {
             score.total.lose += 1
             score.total.total += 1
-            /*console.log(
+            console.log(
                "Prediction: "+f2.name+"\n"+
-               "Outcome: "+f1.name)*/
+               "Outcome: "+f1.name)
          }
          else {
             score.total.na += 1
@@ -787,14 +1475,14 @@ function calcWinner(f1, f2, outcome) {
             score.total.total += 1
             /*console.log(
                "Prediction: "+f1.name+"\n"+
-               "Outcome: "+f2.name)*/
+               "Outcome: "+f2.name)
          }
          else if (p.f2.total > p.f1.total) {
             score.total.win += 1
             score.total.total += 1
             /*console.log(
                "Prediction: "+f2.name+"\n"+
-               "Outcome: "+f2.name)*/
+               "Outcome: "+f2.name)
          }
          else {
             score.total.na += 1
@@ -958,7 +1646,9 @@ function calcWinner(f1, f2, outcome) {
             //fs.appendFileSync("./score.result.js", f1.name+" "+f1.ring_rust+"   "+f2.name+" "+f2.ring_rust+"\n")
          }
       }
-   }
+   }*/
+
+
    // "\n"+"name error: "+f1.name+"\n"+f2.name
    /*else {
       fs.appendFileSync("./error.js", '"'+f1.name+'"'+","+"\n"+'"'+f2.name+'"'+","+"\n")
@@ -1020,122 +1710,35 @@ function calcWinner(f1, f2, outcome) {
          )*/
 
          //fs.writeFileSync("./score_result.js", JSON.stringify(score, null, "\t"))
-   
-   // Output Prediction Stats
-   var prediction_p = (score.total.win/score.total.total)*100
-   var stat1_p = (score.stat1.win/score.stat1.total)*100
-   var stat2_p = (score.stat2.win/score.stat2.total)*100
-   var stat3_p = (score.stat3.win/score.stat3.total)*100
-   var stat4_p = (score.stat4.win/score.stat4.total)*100
-   var stat5_p = (score.stat5.win/score.stat5.total)*100
-   var stat6_p = (score.stat6.win/score.stat6.total)*100
-   var stat7_p = (score.stat7.win/score.stat7.total)*100
-   var stat8_p = (score.stat8.win/score.stat8.total)*100
-   var stat9_p = (score.stat9.win/score.stat9.total)*100
-   var stat10_p = (score.stat10.win/score.stat10.total)*100
-   var stat11_p = (score.stat11.win/score.stat11.total)*100
-   var stat12_p = (score.stat12.win/score.stat12.total)*100
-   console.log(
-      "Predictions Total: "+score.total.total+"\n"+
-      "Predictions Right: "+score.total.win+"\n"+
-      "Predictions Wrong: "+score.total.lose+"\n"+
-      "Prediction Percentage: "+prediction_p+"%"+"\n"+
+         //
+         //
+         //
+         
 
-      "Stat1 Total: "+score.stat1.total+"\n"+
-      "Stat1 Right: "+score.stat1.win+"\n"+
-      "Stat1 Wrong: "+score.stat1.lose+"\n"+
-      "Stat1 Percentage: "+stat1_p+"%"+"\n"+
+         // **** MANUAL TESTING ****
+         /*for (var d=0;d<manual_test.length;d++) {
+            for (var f=0;f<manual_test[d].FMLiveFeed.Fights.length;f++) {
+               try {
+               compareFighters(manual_test[d].FMLiveFeed.Fights[f].Fighters[0].FullName, manual_test[d].FMLiveFeed.Fights[f].Fighters[1].FullName, manual_test[d].FMLiveFeed.Timestamp, manual_test[d].FMLiveFeed.Fights[f].Fighters[0].Outcome, calcWinner)
+               }
 
-      "stat2 Total: "+score.stat2.total+"\n"+
-      "stat2 Right: "+score.stat2.win+"\n"+
-      "stat2 Wrong: "+score.stat2.lose+"\n"+
-      "stat2 Percentage: "+stat2_p+"%"+"\n"+
-
-      "stat3 Total: "+score.stat3.total+"\n"+
-      "stat3 Right: "+score.stat3.win+"\n"+
-      "stat3 Wrong: "+score.stat3.lose+"\n"+
-      "stat3 Percentage: "+stat3_p+"%"+"\n"+
-
-      "stat4 Total: "+score.stat4.total+"\n"+
-      "stat4 Right: "+score.stat4.win+"\n"+
-      "stat4 Wrong: "+score.stat4.lose+"\n"+
-      "stat4 Percentage: "+stat4_p+"%"+"\n"+
-
-      "stat5 Total: "+score.stat5.total+"\n"+
-      "stat5 Right: "+score.stat5.win+"\n"+
-      "stat5 Wrong: "+score.stat5.lose+"\n"+
-      "stat5 Percentage: "+stat5_p+"%"+"\n"+
-
-      "stat6 Total: "+score.stat6.total+"\n"+
-      "stat6 Right: "+score.stat6.win+"\n"+
-      "stat6 Wrong: "+score.stat6.lose+"\n"+
-      "stat6 Percentage: "+stat6_p+"%"+"\n"+
-
-      "stat7 Total: "+score.stat7.total+"\n"+
-      "stat7 Right: "+score.stat7.win+"\n"+
-      "stat7 Wrong: "+score.stat7.lose+"\n"+
-      "stat7 Percentage: "+stat7_p+"%"+"\n"+
-
-      "stat8 Total: "+score.stat8.total+"\n"+
-      "stat8 Right: "+score.stat8.win+"\n"+
-      "stat8 Wrong: "+score.stat8.lose+"\n"+
-      "stat8 Percentage: "+stat8_p+"%"+"\n"+
-
-      "stat9 Total: "+score.stat9.total+"\n"+
-      "stat9 Right: "+score.stat9.win+"\n"+
-      "stat9 Wrong: "+score.stat9.lose+"\n"+
-      "stat9 Percentage: "+stat9_p+"%"+"\n"+
-
-      "stat10 Total: "+score.stat10.total+"\n"+
-      "stat10 Right: "+score.stat10.win+"\n"+
-      "stat10 Wrong: "+score.stat10.lose+"\n"+
-      "stat10 Percentage: "+stat10_p+"%"+"\n"+
-
-      "stat11 Total: "+score.stat11.total+"\n"+
-      "stat11 Right: "+score.stat11.win+"\n"+
-      "stat11 Wrong: "+score.stat11.lose+"\n"+
-      "stat11 Percentage: "+stat11_p+"%"+"\n"+
-
-      "stat12 Total: "+score.stat12.total+"\n"+
-      "stat12 Right: "+score.stat12.win+"\n"+
-      "stat12 Wrong: "+score.stat12.lose+"\n"+
-      "stat12 Percentage: "+stat12_p+"%"+"\n"
-      )
-
-   // Write results to f_results
-   /*fs.appendFileSync("./f_results.js", "["+"\n")
-   fs.appendFileSync("./f_results.js", JSON.stringify(f1, null, "\t"))
-   fs.appendFileSync("./f_results.js", ","+"\n")
-   fs.appendFileSync("./f_results.js", JSON.stringify(f2, null, "\t"))
-   fs.appendFileSync("./f_results.js", "]"+","+"\n")*/
-}
-
-
-/*function win_ratio(p1, p2) {
-   if (p1>p2)
-
-
-}*/
-
-
-
-
-function dateToDay(date) {
-  var d = today.getTime() - Date.parse(date);
-  var minutes = 1000 * 60;
-  var minute = d / minutes
-  var hour = minute / 60
-  var day = hour / 24
-  var year = day / 365
-  return day;
-}
-
-function dateToYear(date) {
-  var d = today.getTime() - Date.parse(date);
-  var minutes = 1000 * 60;
-  var minute = d / minutes
-  var hour = minute / 60
-  var day = hour / 24
-  var year = day / 365
-  return year;
-}
+               catch(e) {
+                  err_count += 1
+                  console.log("error: "+err_count+"\n"+e+"\n")
+                  for (var i=0;i<sherdogdata.length;i++) {
+                     for (var k in sherdogdata[i]) {
+                        if (sherdogdata[i][k] === manual_test[d].FMLiveFeed.Fights[f].Fighters[0].FullName) {
+                           console.log("Matched: "+manual_test[d].FMLiveFeed.Fights[f].Fighters[0].FullName+" "+sherdogdata[i].name+"\n")
+                        }
+                     }
+                  }
+                  for (var i=0;i<sherdogdata.length;i++) {
+                     for (var k in sherdogdata[i]) {
+                        if (sherdogdata[i][k] === manual_test[d].FMLiveFeed.Fights[f].Fighters[1].FullName) {
+                           console.log("Matched: "+manual_test[d].FMLiveFeed.Fights[f].Fighters[1].FullName+""+sherdogdata[i].name+"\n")
+                        }
+                     }
+                  }
+               }
+            }
+         }*/

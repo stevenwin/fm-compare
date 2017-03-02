@@ -1,3 +1,4 @@
+module.exports = [
 [
 {
 	"name": "Jorge Masvidal",
@@ -6297,4 +6298,5 @@
 	"b2b_loss": true,
 	"older_32": true
 }
-],
+]
+]
