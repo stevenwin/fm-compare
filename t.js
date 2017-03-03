@@ -1163,7 +1163,7 @@ function calcWinner(f1, f2, outcome, statCombo) {
             )
       }
 
-      outputText("Predictions", score.total.total, score.total.win, score.total.lose, prediction_p, score)
+      /*outputText("Predictions", score.total.total, score.total.win, score.total.lose, prediction_p, score)
       outputText("Stat1", score.stat1.total, score.stat1.win, score.stat1.lose, stat1_p, score)
       outputText("Stat2", score.stat2.total, score.stat2.win, score.stat2.lose, stat2p, score)
       outputText("Stat3", score.stat3.total, score.stat3.win, score.stat3.lose, stat3_p, score)
@@ -1176,10 +1176,10 @@ function calcWinner(f1, f2, outcome, statCombo) {
       outputText("Stat10", score.stat10.total, score.stat10.win, score.stat10.lose, stat10_p, score)
       outputText("Stat11", score.stat11.total, score.stat11.win, score.stat11.lose, stat11_p, score)
       outputText("Stat12", score.stat12.total, score.stat12.win, score.stat12.lose, stat12_p, score)
-       outputText("Stat13", score.stat13.total, score.stat13.win, score.stat13.lose, stat13_p, score)
+       outputText("Stat13", score.stat13.total, score.stat13.win, score.stat13.lose, stat13_p, score)*/
 
 
-      /*console.log(
+      console.log(
          "Predictions Total: "+score.total.total+"\n"+
          "Predictions Right: "+score.total.win+"\n"+
          "Predictions Wrong: "+score.total.lose+"\n"+
@@ -1249,7 +1249,7 @@ function calcWinner(f1, f2, outcome, statCombo) {
          "stat13 Right: "+score.stat13.win+"\n"+
          "stat13 Wrong: "+score.stat13.lose+"\n"+
          "stat13 Percentage: "+stat13_p+"%"+"\n"
-         )*/
+         )
 
       // Write results to f_results
       /*fs.appendFileSync("./f_results.js", "["+"\n")
