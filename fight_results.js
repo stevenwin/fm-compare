@@ -7,9 +7,7 @@ var fs = require('fs')
 
 fights = []
 
-//var fight;
-
-/*{	
+var fight = {	
 	"fighterOne": {
 		"id": "",
 		"fighterName": "",
@@ -24,14 +22,15 @@ fights = []
 	"fighterTwo": {
 		"id": "",
 		"fighterName": "",
-		"fighterUrl": "3",
+		"fighterUrl": "",
 		"openOdds": "",
 		"closeOdds": "",
 		"bestWorseOdds": "",
 		"outcome": ""
 	},
+	"fightId": "",
 	"eventDate": ""
-}*/
+}
 
 for (var i=0;i<bfo.length;i++) {
 	for (var x=0;x<bfo[i].length;x++) {
