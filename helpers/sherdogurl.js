@@ -2404,6 +2404,10 @@ module.exports = [
    "url": "/fighter/Paulo-Thiago-13336"
  },
  {
+   "name": "Paulo Henrique Costa",
+   "url": "/fighter/Paulo-Henrique-Costa-147165"
+ },
+ {
    "name": "Pawel Pawlak",
    "url": "/fighter/Pawel-Pawlak-65543"
  },
@@ -2422,6 +2426,10 @@ module.exports = [
  {
    "name": "Phil Davis",
    "url": "/fighter/Phil-Davis-27802"
+ },
+ {
+   "name": "Davi Ramos",
+   "url": "/fighter/Davi-Ramos-101995"
  },
  {
    "name": "Phillipe Nover",
@@ -2613,6 +2621,10 @@ module.exports = [
  },
  {
    "name": "Rony Mariano Bezerra",
+   "url": "/fighter/Rony-Mariano-Bezerra-38190"
+ },
+ {
+   "name": "Rony Jason",
    "url": "/fighter/Rony-Mariano-Bezerra-38190"
  },
  {

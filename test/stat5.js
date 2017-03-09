@@ -1,684 +1,14 @@
-module.exports = [
 [
-{
-	"name": "Dennis Siver",
-	"age": 33.9269406392694,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 21,
-		"knockouts": 5,
-		"submissions": 9,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 1,
-		"submissions": 5,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Cub Swanson",
-	"age": 29.313242009132416,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 19,
-		"knockouts": 7,
-		"submissions": 7,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 5,
-		"knockouts": 1,
-		"submissions": 3,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Andrew Craig",
-	"age": 27.031050228310505,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 9,
-		"knockouts": 4,
-		"submissions": 1,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Chris Leben",
-	"age": 32.46392694063926,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 26,
-		"knockouts": 14,
-		"submissions": 6,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 11,
-		"knockouts": 4,
-		"submissions": 2,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Brian Melancon",
-	"age": 29.34326484018264,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 6,
-		"knockouts": 3,
-		"submissions": 1,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Seth Baczynski",
-	"age": 31.159817351598164,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 18,
-		"knockouts": 7,
-		"submissions": 10,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 9,
-		"knockouts": 1,
-		"submissions": 5,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Rafaello Oliveira",
-	"age": 30.466552511415518,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 4,
-		"submissions": 5,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 2,
-		"submissions": 2,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Edson Barboza",
-	"age": 27.014611872146123,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 11,
-		"knockouts": 8,
-		"submissions": 1,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Jake Ellenberger",
-	"age": 27.987100456620997,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 30,
-		"knockouts": 19,
-		"submissions": 5,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Rory MacDonald",
-	"age": 23.39817351598174,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 6,
-		"submissions": 6,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Jorge Masvidal",
-	"age": 28.45559360730593,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 24,
-		"knockouts": 10,
-		"submissions": 1,
-		"decisions": 13,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 1,
-		"submissions": 2,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Michael Chiesa",
-	"age": 25.2337899543379,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 2,
-		"submissions": 9,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Daron Cruickshank",
-	"age": 27.78162100456621,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 13,
-		"knockouts": 7,
-		"submissions": 1,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 2,
-		"submissions": 1,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Yves Edwards",
-	"age": 36.36803652968036,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 42,
-		"knockouts": 16,
-		"submissions": 17,
-		"decisions": 9,
-		"others": 0
-	},
-	"losses": {
-		"total": 19,
-		"knockouts": 4,
-		"submissions": 4,
-		"decisions": 11,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Germaine de Randamie",
-	"age": 28.337785388127852,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 3,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Julie Kedzie",
-	"age": 31.441894977168946,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 3,
-		"submissions": 3,
-		"decisions": 10,
-		"others": 0
-	},
-	"losses": {
-		"total": 11,
-		"knockouts": 0,
-		"submissions": 7,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Justin Salas",
-	"age": 30.261073059360726,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 10,
-		"knockouts": 3,
-		"submissions": 3,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 2,
-		"submissions": 2,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
 {
 	"name": "Aaron Riley",
-	"age": 30.81175799086757,
+	"age": 28.682990867579907,
 	"height": "",
 	"reach": "",
-	"wins": {
-		"total": 30,
-		"knockouts": 5,
-		"submissions": 14,
-		"decisions": 11,
-		"others": 0
-	},
-	"losses": {
-		"total": 13,
-		"knockouts": 7,
-		"submissions": 2,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Hatsu Hioki",
-	"age": 29.548858447488577,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 26,
-		"knockouts": 4,
-		"submissions": 12,
-		"decisions": 10,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 6,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Darren Elkins",
-	"age": 28.948744292237436,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 5,
-		"submissions": 5,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 2,
-		"submissions": 1,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Anthony Perosh",
-	"age": 41.261073059360726,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 5,
-		"submissions": 9,
-		"decisions": 0,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 5,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Ryan Bader",
-	"age": 30.266552511415515,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 18,
-		"knockouts": 7,
-		"submissions": 5,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 2,
-		"submissions": 2,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Soa Palelei",
-	"age": 35.756963470319626,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 19,
-		"knockouts": 15,
-		"submissions": 4,
-		"decisions": 0,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 1,
-		"submissions": 2,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-},
-{
-	"name": "Pat Barry",
-	"age": 33.96518264840182,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 8,
-		"knockouts": 7,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 3,
-		"submissions": 3,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Bethe Correia",
-	"age": 30.04189497716894,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 6,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 0,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Julie Kedzie",
-	"age": 32.381621004566206,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 3,
-		"submissions": 3,
-		"decisions": 10,
-		"others": 0
-	},
-	"losses": {
-		"total": 12,
-		"knockouts": 0,
-		"submissions": 7,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Eddie Wineland",
-	"age": 28.529680365296798,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 17,
-		"knockouts": 9,
-		"submissions": 4,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 1,
-		"submissions": 4,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Renan Barao",
-	"age": 26.06392694063927,
-	"height": "",
-	"reach": "",
+	"outcome": "loss",
+	"odds": "-172",
+	"pOdds": 63.23529411764706,
+	"potentWin": 29.069767441860467,
+	"date": "2009-11-14T05:00:00.000Z",
 	"wins": {
 		"total": 29,
 		"knockouts": 5,
@@ -687,884 +17,147 @@ module.exports = [
 		"others": 0
 	},
 	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Khabib Nurmagomedov",
-	"age": 24.693949771689503,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 20,
-		"knockouts": 7,
-		"submissions": 7,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 0,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Pat Healy",
-	"age": 29.79257990867579,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 30,
-		"knockouts": 8,
-		"submissions": 14,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 17,
-		"knockouts": 4,
-		"submissions": 6,
-		"decisions": 7,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Wilson Reis",
-	"age": 27.94063926940639,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 0,
-		"submissions": 8,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 2,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Ivan Menjivar",
-	"age": 30.759817351598166,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 23,
-		"knockouts": 7,
-		"submissions": 10,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 9,
-		"knockouts": 1,
-		"submissions": 2,
-		"decisions": 6,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Miesha Tate",
-	"age": 27.381735159817353,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 3,
-		"submissions": 8,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 3,
-		"submissions": 2,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Ronda Rousey",
-	"age": 26.92420091324201,
-	"height": "",
-	"reach": "",
-	"wins": {
 		"total": 11,
-		"knockouts": 0,
-		"submissions": 11,
-		"decisions": 0,
-		"others": 0
-	},
-	"losses": {
-		"total": 0,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Travis Browne",
-	"age": 31.472146118721454,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 12,
-		"submissions": 2,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Josh Barnett",
-	"age": 36.15707762557077,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 32,
-		"knockouts": 8,
-		"submissions": 20,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 2,
-		"submissions": 2,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": false,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Fabricio Camoes",
-	"age": 35.039269406392684,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 13,
-		"knockouts": 4,
-		"submissions": 6,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 2,
-		"submissions": 4,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Jim Miller",
-	"age": 30.351598173515974,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 23,
-		"knockouts": 3,
-		"submissions": 13,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Diego Brandao",
-	"age": 26.609132420091328,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 8,
-		"submissions": 4,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 4,
-		"submissions": 1,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": false,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Dustin Poirier",
-	"age": 24.95707762557078,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 6,
-		"submissions": 6,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Uriah Hall",
-	"age": 29.431050228310497,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 8,
-		"submissions": 2,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Chris Leben",
-	"age": 33.46118721461186,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 26,
-		"knockouts": 14,
-		"submissions": 6,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 13,
 		"knockouts": 5,
 		"submissions": 2,
-		"decisions": 6,
+		"decisions": 4,
 		"others": 0
 	},
-	"last_fight_win": false,
+	"last_fight_win": true,
 	"ring_rust": false,
 	"b2b_loss": true,
-	"older_32": true
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Ross Pearson",
+	"age": 24.748744292237436,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 8,
+		"knockouts": 2,
+		"submissions": 5,
+		"decisions": 1,
+		"others": 0
+	},
+	"losses": {
+		"total": 4,
+		"knockouts": 1,
+		"submissions": 2,
+		"decisions": 1,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": true
 }
 ],
 [
 {
-	"name": "Bobby Voelker",
-	"age": 34.69954337899543,
+	"name": "Aaron Riley",
+	"age": 28.26118721461187,
 	"height": "",
 	"reach": "",
+	"outcome": "loss",
+	"odds": "-150",
+	"pOdds": 60,
+	"potentWin": 33.333333333333336,
+	"date": "2009-08-08T04:00:00.000Z",
 	"wins": {
 		"total": 28,
-		"knockouts": 19,
-		"submissions": 4,
-		"decisions": 5,
+		"knockouts": 5,
+		"submissions": 14,
+		"decisions": 9,
 		"others": 0
 	},
 	"losses": {
 		"total": 11,
-		"knockouts": 3,
-		"submissions": 1,
-		"decisions": 7,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": false,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "William Macario",
-	"age": 22.510502283105026,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 7,
 		"knockouts": 5,
-		"submissions": 1,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Pat Healy",
-	"age": 30.19531963470319,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 30,
-		"knockouts": 8,
-		"submissions": 14,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 18,
-		"knockouts": 4,
-		"submissions": 6,
-		"decisions": 8,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Bobby Green",
-	"age": 27.178995433789957,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 18,
-		"knockouts": 5,
-		"submissions": 9,
+		"submissions": 2,
 		"decisions": 4,
 		"others": 0
 	},
-	"losses": {
-		"total": 5,
-		"knockouts": 1,
-		"submissions": 2,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
+	"last_fight_win": false,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+},
 {
-	"name": "Zach Makovsky",
-	"age": 31.420091324200904,
+	"name": "Shane Nelson",
+	"age": 25.28584474885844,
 	"height": "",
 	"reach": "",
 	"wins": {
-		"total": 16,
-		"knockouts": 1,
-		"submissions": 6,
-		"decisions": 9,
+		"total": 12,
+		"knockouts": 2,
+		"submissions": 3,
+		"decisions": 7,
 		"others": 0
 	},
 	"losses": {
 		"total": 4,
 		"knockouts": 0,
-		"submissions": 3,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Scott Jorgensen",
-	"age": 30.592579908675795,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 2,
-		"submissions": 5,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 1,
-		"submissions": 2,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Rustam Khabilov",
-	"age": 26.4966894977169,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 4,
-		"submissions": 5,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Jorge Masvidal",
-	"age": 28.72408675799086,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 25,
-		"knockouts": 10,
-		"submissions": 2,
-		"decisions": 13,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 1,
-		"submissions": 2,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Francisco Rivera",
-	"age": 31.34337899543378,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 9,
-		"knockouts": 6,
-		"submissions": 0,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 1,
 		"submissions": 1,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "George Roop",
-	"age": 31.559703196347026,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 4,
-		"submissions": 4,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 10,
-		"knockouts": 2,
-		"submissions": 5,
 		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Steven Siler",
-	"age": 26.521347031963472,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 23,
-		"knockouts": 3,
-		"submissions": 13,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 10,
-		"knockouts": 4,
-		"submissions": 5,
-		"decisions": 1,
 		"others": 0
 	},
 	"last_fight_win": true,
 	"ring_rust": false,
 	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Dennis Bermudez",
-	"age": 26.46655251141553,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 3,
-		"submissions": 3,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 0,
-		"submissions": 3,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
+	"older_32": false,
+	"younger_than_three": false
 }
 ],
 [
 {
-	"name": "Lorenz Larkin",
-	"age": 26.64737442922375,
+	"name": "Adriano Martins",
+	"age": 32.81997716894976,
 	"height": "",
 	"reach": "",
+	"outcome": "loss",
+	"odds": "-187",
+	"pOdds": 65.1567944250871,
+	"potentWin": 26.7379679144385,
+	"date": "2016-10-08T04:00:00.000Z",
 	"wins": {
-		"total": 13,
-		"knockouts": 8,
-		"submissions": 0,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Chris Camozzi",
-	"age": 26.510388127853883,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 19,
-		"knockouts": 5,
-		"submissions": 6,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 0,
-		"submissions": 4,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Yancy Medeiros",
-	"age": 25.65559360730594,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 9,
-		"knockouts": 6,
-		"submissions": 1,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Yves Edwards",
-	"age": 36.84737442922374,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 42,
-		"knockouts": 16,
-		"submissions": 17,
-		"decisions": 9,
-		"others": 0
-	},
-	"losses": {
-		"total": 20,
-		"knockouts": 4,
-		"submissions": 4,
+		"total": 26,
+		"knockouts": 11,
+		"submissions": 3,
 		"decisions": 12,
 		"others": 0
 	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Ronaldo Souza",
-	"age": 33.469292237442914,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 18,
-		"knockouts": 1,
-		"submissions": 14,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 2,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-},
-{
-	"name": "Yushin Okami",
-	"age": 31.639269406392685,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 30,
-		"knockouts": 11,
-		"submissions": 5,
-		"decisions": 14,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 3,
-		"submissions": 0,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Tor Troeng",
-	"age": 30.21723744292237,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 19,
-		"knockouts": 5,
-		"submissions": 7,
-		"decisions": 7,
-		"others": 0
-	},
 	"losses": {
 		"total": 6,
-		"knockouts": 1,
-		"submissions": 4,
-		"decisions": 1,
+		"knockouts": 2,
+		"submissions": 0,
+		"decisions": 4,
 		"others": 0
 	},
 	"last_fight_win": true,
 	"ring_rust": true,
 	"b2b_loss": true,
-	"older_32": false
+	"older_32": true,
+	"younger_than_three": true
 },
 {
-	"name": "Rafael Natal",
-	"age": 30.417237442922364,
+	"name": "Leonardo Santos",
+	"age": 35.87488584474885,
 	"height": "",
 	"reach": "",
 	"wins": {
-		"total": 15,
-		"knockouts": 3,
-		"submissions": 8,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 3,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Ivan Jorge",
-	"age": 32.663812785388124,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 23,
-		"knockouts": 3,
-		"submissions": 13,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
+		"total": 13,
 		"knockouts": 2,
+		"submissions": 9,
+		"decisions": 2,
+		"others": 0
+	},
+	"losses": {
+		"total": 3,
+		"knockouts": 1,
 		"submissions": 0,
 		"decisions": 2,
 		"others": 0
@@ -1572,213 +165,78 @@ module.exports = [
 	"last_fight_win": true,
 	"ring_rust": true,
 	"b2b_loss": false,
-	"older_32": true
-},
-{
-	"name": "Keith Wisniewski",
-	"age": 30.510388127853876,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 29,
-		"knockouts": 6,
-		"submissions": 16,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 15,
-		"knockouts": 3,
-		"submissions": 5,
-		"decisions": 7,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
+	"older_32": true,
+	"younger_than_three": false
 }
 ],
 [
 {
-	"name": "Shunichi Shimizu",
-	"age": 28.31586757990867,
+	"name": "Alessio Sakara",
+	"age": 31.2310502283105,
 	"height": "",
 	"reach": "",
+	"outcome": "loss",
+	"odds": "-175",
+	"pOdds": 63.63636363636363,
+	"potentWin": 28.571428571428573,
+	"date": "2013-10-26T04:00:00.000Z",
 	"wins": {
-		"total": 28,
+		"total": 12,
+		"knockouts": 7,
+		"submissions": 2,
+		"decisions": 3,
+		"others": 0
+	},
+	"losses": {
+		"total": 9,
 		"knockouts": 4,
-		"submissions": 19,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 1,
-		"submissions": 3,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Kyung Ho Kang",
-	"age": 25.995319634703197,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 11,
-		"knockouts": 2,
-		"submissions": 8,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 5,
-		"knockouts": 1,
-		"submissions": 1,
+		"submissions": 2,
 		"decisions": 3,
 		"others": 0
 	},
 	"last_fight_win": false,
 	"ring_rust": true,
 	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Ilir Latifi",
-	"age": 29.71312785388127,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 8,
-		"knockouts": 2,
-		"submissions": 4,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
+	"older_32": false,
+	"younger_than_three": false
 },
 {
-	"name": "Cyrille Diabate",
-	"age": 39.715981735159815,
+	"name": "Nicholas Musoke",
+	"age": 27.211757990867582,
 	"height": "",
 	"reach": "",
 	"wins": {
-		"total": 15,
-		"knockouts": 5,
-		"submissions": 6,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 2,
-		"submissions": 4,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Louis Gaudinot",
-	"age": 29.028196347031958,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 7,
-		"knockouts": 2,
-		"submissions": 3,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Phil Harris",
-	"age": 30.570662100456612,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 21,
-		"knockouts": 4,
-		"submissions": 13,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
 		"total": 10,
 		"knockouts": 4,
-		"submissions": 5,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Travis Browne",
-	"age": 30.762442922374426,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 10,
-		"submissions": 2,
+		"submissions": 4,
 		"decisions": 2,
 		"others": 0
 	},
 	"losses": {
-		"total": 1,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 0,
+		"total": 3,
+		"knockouts": 0,
+		"submissions": 1,
+		"decisions": 2,
 		"others": 0
 	},
 	"last_fight_win": true,
 	"ring_rust": true,
 	"b2b_loss": false,
-	"older_32": false
-},
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
 {
 	"name": "Alistair Overeem",
-	"age": 32.73789954337899,
+	"age": 32.737899543378994,
 	"height": "",
 	"reach": "",
+	"outcome": "loss",
+	"odds": "-150",
+	"pOdds": 60,
+	"potentWin": 33.333333333333336,
+	"date": "2013-08-17T04:00:00.000Z",
 	"wins": {
 		"total": 36,
 		"knockouts": 15,
@@ -1796,1043 +254,18 @@ module.exports = [
 	"last_fight_win": false,
 	"ring_rust": true,
 	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
+	"older_32": true,
+	"younger_than_three": false
+},
 {
-	"name": "Michael McDonald",
-	"age": 22.105022831050235,
+	"name": "Travis Browne",
+	"age": 30.762442922374422,
 	"height": "",
 	"reach": "",
 	"wins": {
 		"total": 14,
-		"knockouts": 9,
-		"submissions": 3,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Brad Pickett",
-	"age": 34.55696347031962,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 24,
-		"knockouts": 8,
-		"submissions": 10,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 1,
-		"submissions": 3,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Roy Nelson",
-	"age": 37.01175799086757,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 19,
-		"knockouts": 12,
-		"submissions": 5,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 7,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": false,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Daniel Cormier",
-	"age": 34.110388127853874,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 5,
-		"submissions": 3,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 0,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Hector Lombard",
-	"age": 35.10502283105022,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 32,
-		"knockouts": 18,
-		"submissions": 7,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-},
-{
-	"name": "Nate Marquardt",
-	"age": 33.92956621004566,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 32,
-		"knockouts": 9,
-		"submissions": 15,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 12,
-		"knockouts": 2,
-		"submissions": 2,
-		"decisions": 8,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Kyoji Horiguchi",
-	"age": 22.710388127853886,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 11,
-		"knockouts": 7,
-		"submissions": 1,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Dustin Pague",
-	"age": 25.880251141552513,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 13,
-		"knockouts": 4,
-		"submissions": 9,
-		"decisions": 0,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 3,
-		"submissions": 1,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Chael Sonnen",
-	"age": 36.39805936073059,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 28,
-		"knockouts": 7,
-		"submissions": 5,
-		"decisions": 16,
-		"others": 0
-	},
-	"losses": {
-		"total": 13,
-		"knockouts": 4,
-		"submissions": 8,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Rashad Evans",
-	"age": 33.74600456621004,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 20,
-		"knockouts": 6,
-		"submissions": 1,
-		"decisions": 13,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Tyron Woodley",
-	"age": 31.184360730593596,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 13,
-		"knockouts": 3,
-		"submissions": 6,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Josh Koscheck",
-	"age": 35.258447488584466,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 19,
-		"knockouts": 5,
-		"submissions": 6,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 2,
-		"submissions": 1,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Thales Leites",
-	"age": 31.929566210045657,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 22,
-		"knockouts": 2,
-		"submissions": 14,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Ed Herman",
-	"age": 32.83915525114155,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 27,
-		"knockouts": 7,
-		"submissions": 17,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 10,
-		"knockouts": 1,
-		"submissions": 6,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Urijah Faber",
-	"age": 34.61187214611872,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 29,
-		"knockouts": 7,
-		"submissions": 17,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 2,
-		"submissions": 0,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": true
-},
-{
-	"name": "Renan Barao",
-	"age": 26.658333333333335,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 30,
-		"knockouts": 6,
-		"submissions": 14,
-		"decisions": 10,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Ali Bagautinov",
-	"age": 28.450228310502286,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 5,
-		"submissions": 4,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "John Lineker",
-	"age": 23.389840182648406,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 20,
-		"knockouts": 9,
-		"submissions": 3,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 0,
-		"submissions": 3,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Abel Trujillo",
-	"age": 30.261187214611862,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 4,
-		"submissions": 4,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 5,
-		"knockouts": 1,
-		"submissions": 2,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Jamie Varner",
-	"age": 28.74326484018264,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 21,
-		"knockouts": 7,
-		"submissions": 11,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 0,
-		"submissions": 4,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Tom Watson",
-	"age": 31.080251141552502,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 8,
-		"submissions": 1,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 0,
-		"submissions": 2,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Nick Catone",
-	"age": 31.310502283105016,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 9,
-		"knockouts": 3,
-		"submissions": 3,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 1,
-		"submissions": 2,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Igor Pokrajac",
-	"age": 34.39257990867579,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 6,
-		"submissions": 7,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 2,
-		"submissions": 2,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Rafael Cavalcante",
-	"age": 33.20079908675798,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 11,
 		"knockouts": 10,
-		"submissions": 1,
-		"decisions": 0,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 3,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Tom Niinimaki",
-	"age": 31.181621004566203,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 17,
-		"knockouts": 4,
-		"submissions": 8,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 5,
-		"knockouts": 1,
 		"submissions": 2,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Rani Yahya",
-	"age": 28.669292237442917,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 0,
-		"submissions": 12,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 2,
-		"submissions": 1,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Raquel Pennington",
-	"age": 24.351598173515985,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 1,
-		"submissions": 7,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 5,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Roxanne Modafferi",
-	"age": 29.46118721461187,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 1,
-		"submissions": 5,
-		"decisions": 10,
-		"others": 0
-	},
-	"losses": {
-		"total": 11,
-		"knockouts": 2,
-		"submissions": 3,
-		"decisions": 6,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Chris Cariaso",
-	"age": 31.998059360730586,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 2,
-		"submissions": 2,
-		"decisions": 10,
-		"others": 0
-	},
-	"losses": {
-		"total": 5,
-		"knockouts": 1,
-		"submissions": 2,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Iliarde Santos",
-	"age": 32.877511415525106,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 27,
-		"knockouts": 12,
-		"submissions": 6,
-		"decisions": 9,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 3,
-		"submissions": 0,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": false,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Dennis Bermudez",
-	"age": 27.272031963470322,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 4,
-		"submissions": 3,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 0,
-		"submissions": 3,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Clay Guida",
-	"age": 32.36244292237442,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 30,
-		"knockouts": 4,
-		"submissions": 15,
-		"decisions": 11,
-		"others": 0
-	},
-	"losses": {
-		"total": 13,
-		"knockouts": 1,
-		"submissions": 6,
-		"decisions": 6,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Bobby Green",
-	"age": 27.28310502283105,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 19,
-		"knockouts": 5,
-		"submissions": 9,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 5,
-		"knockouts": 1,
-		"submissions": 2,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Josh Thomson",
-	"age": 35.37077625570775,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 20,
-		"knockouts": 5,
-		"submissions": 9,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Patrick Cummins",
-	"age": 33.5788812785388,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 5,
-		"knockouts": 3,
-		"submissions": 2,
-		"decisions": 0,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": true
-},
-{
-	"name": "Kyle Kingsbury",
-	"age": 30.546004566210037,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 11,
-		"knockouts": 4,
-		"submissions": 2,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 2,
-		"submissions": 3,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Tiago dos Santos e Silva",
-	"age": 26.831050228310506,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 18,
-		"knockouts": 7,
-		"submissions": 6,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 0,
-		"submissions": 3,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Akbarh Arreola",
-	"age": 31.206278538812775,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 20,
-		"knockouts": 3,
-		"submissions": 16,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 5,
-		"submissions": 0,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Noad Lahat",
-	"age": 29.809018264840176,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 7,
-		"knockouts": 2,
-		"submissions": 4,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Steven Siler",
-	"age": 27.118607305936077,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 23,
-		"knockouts": 3,
-		"submissions": 13,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 12,
-		"knockouts": 5,
-		"submissions": 5,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Gabriel Gonzaga",
-	"age": 34.447374429223736,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 7,
-		"submissions": 9,
-		"decisions": 0,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 6,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Stipe Miocic",
-	"age": 30.84463470319634,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 12,
-		"submissions": 1,
 		"decisions": 2,
 		"others": 0
 	},
@@ -2846,1775 +279,31 @@ module.exports = [
 	"last_fight_win": true,
 	"ring_rust": true,
 	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Yaotzin Meza",
-	"age": 32.496689497716886,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 19,
-		"knockouts": 4,
-		"submissions": 7,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 3,
-		"submissions": 3,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Chico Camus",
-	"age": 28.614497716894967,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 13,
-		"knockouts": 4,
-		"submissions": 3,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Shawn Jordan",
-	"age": 29.014497716894972,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 12,
-		"submissions": 2,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 4,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Matt Mitrione",
-	"age": 35.211757990867575,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 6,
-		"knockouts": 5,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Cody Pfister",
-	"age": 25.431050228310504,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 13,
-		"knockouts": 4,
-		"submissions": 3,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 0,
-		"submissions": 5,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Scott Holtzman",
-	"age": 32.280365296803645,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 4,
-		"submissions": 5,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Alex Garcia",
-	"age": 28.628310502283107,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 13,
-		"knockouts": 5,
-		"submissions": 5,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 2,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Mike Pyle",
-	"age": 40.830936073059355,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 27,
-		"knockouts": 7,
-		"submissions": 16,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 12,
-		"knockouts": 6,
-		"submissions": 4,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Tony Ferguson",
-	"age": 31.066666666666663,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 21,
-		"knockouts": 12,
-		"submissions": 6,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Josh Thomson",
-	"age": 35.86929223744291,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 20,
-		"knockouts": 5,
-		"submissions": 9,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 6,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Sean Strickland",
-	"age": 24.003652968036533,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 7,
-		"submissions": 4,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Igor Araujo",
-	"age": 33.79257990867579,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 27,
-		"knockouts": 1,
-		"submissions": 18,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 9,
-		"knockouts": 3,
-		"submissions": 1,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Ildemar Alcantara",
-	"age": 32.2283105022831,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 21,
-		"knockouts": 10,
-		"submissions": 6,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 2,
-		"submissions": 0,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Kevin Casey",
-	"age": 33.0775114155251,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 9,
-		"knockouts": 3,
-		"submissions": 4,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 5,
-		"knockouts": 4,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Tim Boetsch",
-	"age": 32.74600456621004,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 17,
-		"knockouts": 7,
-		"submissions": 5,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 2,
-		"submissions": 1,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Luke Rockhold",
-	"age": 29.26666666666666,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 11,
-		"knockouts": 3,
-		"submissions": 6,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 2,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Francisco Trinaldo",
-	"age": 37.02271689497716,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 18,
-		"knockouts": 6,
-		"submissions": 5,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 0,
-		"submissions": 2,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-},
-{
-	"name": "Ross Pearson",
-	"age": 30.962442922374425,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 17,
-		"knockouts": 7,
-		"submissions": 5,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 10,
-		"knockouts": 3,
-		"submissions": 3,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Daron Cruickshank",
-	"age": 30.140525114155253,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 17,
-		"knockouts": 9,
-		"submissions": 1,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 2,
-		"submissions": 4,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Paul Felder",
-	"age": 30.384360730593613,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 11,
-		"knockouts": 7,
-		"submissions": 0,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": false,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Sean O'Connell",
-	"age": 31.707648401826475,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 7,
-		"submissions": 3,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 3,
-		"submissions": 3,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Ilir Latifi",
-	"age": 31.99531963470319,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 11,
-		"knockouts": 4,
-		"submissions": 5,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 2,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Alan Jouban",
-	"age": 31.551484018264834,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 11,
-		"knockouts": 7,
-		"submissions": 2,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Seth Baczynski",
-	"age": 32.50216894977168,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 19,
-		"knockouts": 7,
-		"submissions": 10,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 11,
-		"knockouts": 2,
-		"submissions": 5,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Tyron Woodley",
-	"age": 32.81461187214611,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 17,
-		"knockouts": 6,
-		"submissions": 6,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-},
-{
-	"name": "Robbie Lawler",
-	"age": 33.811872146118716,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 28,
-		"knockouts": 21,
-		"submissions": 1,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 10,
-		"knockouts": 1,
-		"submissions": 5,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Ed Herman",
-	"age": 35.31598173515981,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 29,
-		"knockouts": 8,
-		"submissions": 17,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 12,
-		"knockouts": 2,
-		"submissions": 6,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Nikita Krylov",
-	"age": 24.187100456621007,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 20,
-		"knockouts": 7,
-		"submissions": 13,
-		"decisions": 0,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 1,
-		"submissions": 3,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Holly Holm",
-	"age": 32.4857305936073,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 7,
-		"knockouts": 6,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 0,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-},
-{
-	"name": "Raquel Pennington",
-	"age": 26.269406392694066,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 1,
-		"submissions": 8,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Gleison Tibau",
-	"age": 31.548858447488577,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 33,
-		"knockouts": 4,
-		"submissions": 13,
-		"decisions": 16,
-		"others": 0
-	},
-	"losses": {
-		"total": 10,
-		"knockouts": 3,
-		"submissions": 1,
-		"decisions": 6,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Tony Ferguson",
-	"age": 30.83652968036529,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 20,
-		"knockouts": 12,
-		"submissions": 5,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Valmir Lazaro",
-	"age": 29.041894977168955,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 9,
-		"submissions": 0,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "James Krause",
-	"age": 28.33504566210046,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 17,
-		"knockouts": 6,
-		"submissions": 9,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 2,
-		"submissions": 2,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Dominique Steele",
-	"age": 27.3980593607306,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 18,
-		"knockouts": 8,
-		"submissions": 3,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 3,
-		"submissions": 0,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Zak Cummings",
-	"age": 29.9816210045662,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 5,
-		"submissions": 7,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 5,
-		"knockouts": 0,
-		"submissions": 2,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Khabib Nurmagomedov",
-	"age": 25.019977168949776,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 21,
-		"knockouts": 7,
-		"submissions": 7,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 0,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Rafael dos Anjos",
-	"age": 28.85833333333333,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 19,
-		"knockouts": 2,
-		"submissions": 8,
-		"decisions": 9,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Jimmie Rivera",
-	"age": 26.37625570776256,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 20,
-		"knockouts": 4,
-		"submissions": 4,
-		"decisions": 12,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Iuri Alcantara",
-	"age": 35.01449771689497,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 30,
-		"knockouts": 12,
-		"submissions": 11,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Jake Ellenberger",
-	"age": 30.310388127853873,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 31,
-		"knockouts": 19,
-		"submissions": 6,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 10,
-		"knockouts": 3,
-		"submissions": 2,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Tarec Saffiedine",
-	"age": 28.0966894977169,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 1,
-		"submissions": 5,
-		"decisions": 9,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Randy Brown",
-	"age": 25.38721461187215,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 10,
-		"knockouts": 4,
-		"submissions": 4,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Matt Dwyer",
-	"age": 25.592579908675802,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 11,
-		"knockouts": 9,
-		"submissions": 2,
-		"decisions": 0,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 2,
-		"submissions": 1,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Takanori Gomi",
-	"age": 35.61723744292237,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 35,
-		"knockouts": 13,
-		"submissions": 6,
-		"decisions": 16,
-		"others": 0
-	},
-	"losses": {
-		"total": 9,
-		"knockouts": 0,
-		"submissions": 6,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Myles Jury",
-	"age": 25.387100456621006,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 21,
-		"knockouts": 9,
-		"submissions": 8,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Takenori Sato",
-	"age": 28.710502283105026,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 17,
-		"knockouts": 3,
-		"submissions": 6,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 9,
-		"knockouts": 6,
-		"submissions": 0,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Hyun Gyu Lim",
-	"age": 28.987214611872137,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 9,
-		"submissions": 2,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 0,
-		"submissions": 2,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Tae Hyun Bang",
-	"age": 32.644748858447485,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 17,
-		"knockouts": 8,
-		"submissions": 0,
-		"decisions": 9,
-		"others": 0
-	},
-	"losses": {
-		"total": 9,
-		"knockouts": 0,
-		"submissions": 3,
-		"decisions": 6,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Nick Hein",
-	"age": 31.444634703196343,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 13,
-		"knockouts": 1,
-		"submissions": 4,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Cole Miller",
-	"age": 29.74337899543378,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 22,
-		"knockouts": 1,
-		"submissions": 18,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 10,
-		"knockouts": 3,
-		"submissions": 1,
-		"decisions": 6,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Max Holloway",
-	"age": 22.850114155251145,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 6,
-		"submissions": 1,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "James Vick",
-	"age": 29.299429223744294,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 2,
-		"submissions": 4,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 2,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Abel Trujillo",
-	"age": 32.71860730593606,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 5,
-		"submissions": 5,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 1,
-		"submissions": 3,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Marcel Fortuna",
-	"age": 29.641894977168953,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 8,
-		"knockouts": 0,
-		"submissions": 5,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Anthony Hamilton",
-	"age": 36.68036529680364,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 17,
-		"knockouts": 9,
-		"submissions": 2,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 2,
-		"submissions": 3,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": false,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Bec Rawlings",
-	"age": 27.559703196347037,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 7,
-		"knockouts": 1,
-		"submissions": 4,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 2,
-		"submissions": 0,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Tecia Torres",
-	"age": 26.685730593607307,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 13,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Yoel Romero",
-	"age": 37.43641552511415,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 9,
-		"knockouts": 8,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-},
-{
-	"name": "Lyoto Machida",
-	"age": 36.91038812785388,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 22,
-		"knockouts": 9,
-		"submissions": 2,
-		"decisions": 11,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 1,
-		"submissions": 2,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": false,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Sirwan Kakai",
-	"age": 25.093949771689502,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 11,
-		"knockouts": 4,
-		"submissions": 6,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Danny Martinez",
-	"age": 29.000799086757997,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 17,
-		"knockouts": 8,
-		"submissions": 4,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 6,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Keita Nakamura",
-	"age": 31.367922374429213,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 31,
-		"knockouts": 6,
-		"submissions": 16,
-		"decisions": 9,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Tom Breese",
-	"age": 24.0939497716895,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 3,
-		"submissions": 11,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 0,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Yaotzin Meza",
-	"age": 34.463812785388114,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 20,
-		"knockouts": 4,
-		"submissions": 7,
-		"decisions": 9,
-		"others": 0
-	},
-	"losses": {
-		"total": 10,
-		"knockouts": 3,
-		"submissions": 3,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Arnold Allen",
-	"age": 21.436415525114157,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 10,
-		"knockouts": 5,
-		"submissions": 3,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Thales Leites",
-	"age": 32.61723744292237,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 24,
-		"knockouts": 3,
-		"submissions": 14,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Francis Carmont",
-	"age": 32.57614155251141,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 22,
-		"knockouts": 6,
-		"submissions": 10,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 1,
-		"submissions": 3,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": false,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Tom Niinimaki",
-	"age": 31.872031963470313,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 18,
-		"knockouts": 4,
-		"submissions": 8,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 1,
-		"submissions": 3,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Chas Skelly",
-	"age": 28.959703196347036,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 8,
-		"knockouts": 2,
-		"submissions": 3,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
+	"older_32": false,
+	"younger_than_three": false
 }
 ],
 [
 {
 	"name": "Alistair Overeem",
-	"age": 36.000799086757986,
+	"age": 31.64200913242009,
 	"height": "",
 	"reach": "",
+	"outcome": "loss",
+	"odds": "-400",
+	"pOdds": 80,
+	"potentWin": 12.5,
+	"date": "2013-02-02T05:00:00.000Z",
 	"wins": {
-		"total": 41,
-		"knockouts": 18,
+		"total": 36,
+		"knockouts": 15,
 		"submissions": 19,
-		"decisions": 4,
+		"decisions": 2,
 		"others": 0
 	},
 	"losses": {
-		"total": 14,
-		"knockouts": 9,
+		"total": 11,
+		"knockouts": 6,
 		"submissions": 2,
 		"decisions": 3,
 		"others": 0
@@ -4622,137 +311,183 @@ module.exports = [
 	"last_fight_win": true,
 	"ring_rust": true,
 	"b2b_loss": true,
-	"older_32": true
+	"older_32": false,
+	"younger_than_three": false
 },
 {
-	"name": "Stipe Miocic",
-	"age": 33.759703196347026,
+	"name": "Antonio Silva",
+	"age": 33.0829908675799,
 	"height": "",
 	"reach": "",
 	"wins": {
-		"total": 20,
-		"knockouts": 16,
-		"submissions": 1,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Jimmie Rivera",
-	"age": 26.60639269406393,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 21,
-		"knockouts": 4,
-		"submissions": 4,
-		"decisions": 13,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Urijah Faber",
-	"age": 37.0857305936073,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 32,
-		"knockouts": 7,
-		"submissions": 19,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 9,
-		"knockouts": 3,
-		"submissions": 0,
-		"decisions": 6,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Gegard Mousasi",
-	"age": 29.11586757990868,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 35,
-		"knockouts": 18,
-		"submissions": 12,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 5,
-		"knockouts": 0,
+		"total": 17,
+		"knockouts": 12,
 		"submissions": 3,
 		"decisions": 2,
 		"others": 0
 	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
+	"losses": {
+		"total": 4,
+		"knockouts": 3,
+		"submissions": 0,
+		"decisions": 1,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": true,
+	"younger_than_three": false
+}
+],
+[
 {
-	"name": "Dan Henderson",
-	"age": 43.77888127853881,
+	"name": "Alistair Overeem",
+	"age": 30.644748858447485,
 	"height": "",
 	"reach": "",
+	"outcome": "loss",
+	"odds": "-290",
+	"pOdds": 74.35897435897436,
+	"potentWin": 17.24137931034483,
+	"date": "2011-06-18T04:00:00.000Z",
 	"wins": {
-		"total": 30,
+		"total": 34,
 		"knockouts": 14,
-		"submissions": 2,
-		"decisions": 14,
+		"submissions": 19,
+		"decisions": 1,
 		"others": 0
 	},
 	"losses": {
-		"total": 12,
+		"total": 11,
+		"knockouts": 6,
+		"submissions": 2,
+		"decisions": 3,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Fabricio Werdum",
+	"age": 32.92956621004566,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 14,
+		"knockouts": 4,
+		"submissions": 8,
+		"decisions": 2,
+		"others": 0
+	},
+	"losses": {
+		"total": 4,
 		"knockouts": 1,
-		"submissions": 4,
-		"decisions": 7,
+		"submissions": 0,
+		"decisions": 3,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": false,
+	"older_32": true,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Andrei Arlovski",
+	"age": 33.88858447488583,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-120",
+	"pOdds": 54.54545454545454,
+	"potentWin": 41.66666666666667,
+	"date": "2013-03-23T04:00:00.000Z",
+	"wins": {
+		"total": 19,
+		"knockouts": 14,
+		"submissions": 3,
+		"decisions": 2,
+		"others": 0
+	},
+	"losses": {
+		"total": 9,
+		"knockouts": 7,
+		"submissions": 0,
+		"decisions": 2,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": true,
+	"younger_than_three": false
+},
+{
+	"name": "Anthony Johnson",
+	"age": 28.682990867579903,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 14,
+		"knockouts": 10,
+		"submissions": 0,
+		"decisions": 4,
+		"others": 0
+	},
+	"losses": {
+		"total": 4,
+		"knockouts": 1,
+		"submissions": 3,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
+{
+	"name": "Andy Ogle",
+	"age": 25.30216894977169,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-160",
+	"pOdds": 61.53846153846154,
+	"potentWin": 31.25,
+	"date": "2015-01-24T05:00:00.000Z",
+	"wins": {
+		"total": 15,
+		"knockouts": 4,
+		"submissions": 5,
+		"decisions": 6,
+		"others": 0
+	},
+	"losses": {
+		"total": 7,
+		"knockouts": 2,
+		"submissions": 2,
+		"decisions": 3,
 		"others": 0
 	},
 	"last_fight_win": false,
 	"ring_rust": true,
 	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
+	"older_32": false,
+	"younger_than_three": false
+},
 {
 	"name": "Makwan Amirkhani",
-	"age": 25.42271689497717,
+	"age": 25.422716894977167,
 	"height": "",
 	"reach": "",
 	"wins": {
@@ -4772,818 +507,51 @@ module.exports = [
 	"last_fight_win": true,
 	"ring_rust": true,
 	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Andy Ogle",
-	"age": 25.302168949771694,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 4,
-		"submissions": 5,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 2,
-		"submissions": 2,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
+	"older_32": false,
+	"younger_than_three": false
 }
 ],
 [
 {
-	"name": "Francis Ngannou",
-	"age": 30.28310502283105,
+	"name": "Anthony Hamilton",
+	"age": 36.68036529680365,
 	"height": "",
 	"reach": "",
+	"outcome": "loss",
+	"odds": "-220",
+	"pOdds": 68.75,
+	"potentWin": 22.727272727272727,
+	"date": "2017-02-04T05:00:00.000Z",
 	"wins": {
-		"total": 8,
-		"knockouts": 5,
-		"submissions": 3,
-		"decisions": 0,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Andrei Arlovski",
-	"age": 37.60627853881278,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 25,
-		"knockouts": 17,
-		"submissions": 3,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 13,
+		"total": 17,
 		"knockouts": 9,
-		"submissions": 1,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Jason Knight",
-	"age": 24.387214611872146,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 18,
-		"knockouts": 3,
-		"submissions": 11,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Alex Caceres",
-	"age": 28.148744292237446,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 2,
-		"submissions": 5,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 9,
-		"knockouts": 1,
-		"submissions": 5,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Jeremy Kimball",
-	"age": 25.81735159817352,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 17,
-		"knockouts": 13,
-		"submissions": 1,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 1,
-		"submissions": 5,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Marcos Rogerio de Lima",
-	"age": 31.42557077625571,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 10,
-		"submissions": 3,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 1,
 		"submissions": 2,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Stephen Thompson",
-	"age": 31.647374429223735,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 10,
-		"knockouts": 5,
-		"submissions": 1,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Jake Ellenberger",
-	"age": 29.943378995433783,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 31,
-		"knockouts": 19,
-		"submissions": 6,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 9,
-		"knockouts": 2,
-		"submissions": 2,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Michelle Waterson",
-	"age": 28.932420091324204,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 3,
-		"submissions": 7,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 1,
-		"submissions": 2,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Angela Magana",
-	"age": 31.384474885844742,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 11,
-		"knockouts": 2,
-		"submissions": 6,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 1,
-		"submissions": 4,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Leslie Smith",
-	"age": 31.3296803652968,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 18,
-		"knockouts": 8,
-		"submissions": 2,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 8,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Sarah Kaufman",
-	"age": 28.099429223744295,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 10,
-		"submissions": 0,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 0,
-		"submissions": 2,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Roan Carneiro",
-	"age": 36.76803652968036,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 17,
-		"knockouts": 2,
-		"submissions": 8,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 2,
-		"submissions": 4,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Derek Brunson",
-	"age": 31.614497716894967,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 8,
-		"submissions": 4,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 2,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Tatsuya Kawajiri",
-	"age": 37.62009132420091,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 34,
-		"knockouts": 12,
-		"submissions": 10,
-		"decisions": 12,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 2,
-		"submissions": 3,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-},
-{
-	"name": "Dennis Bermudez",
-	"age": 28.5953196347032,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 4,
-		"submissions": 4,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 5,
-		"knockouts": 1,
-		"submissions": 4,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Rodrigo Damm",
-	"age": 34.34600456621004,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 11,
-		"knockouts": 2,
-		"submissions": 6,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 3,
-		"submissions": 1,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": false,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Al Iaquinta",
-	"age": 27.08573059360731,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 13,
-		"knockouts": 4,
-		"submissions": 1,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 0,
-		"submissions": 3,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Conor McGregor",
-	"age": 27.661187214611875,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 20,
-		"knockouts": 18,
-		"submissions": 1,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 0,
-		"submissions": 3,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Nate Diaz",
-	"age": 30.90776255707763,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 22,
-		"knockouts": 4,
-		"submissions": 15,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 10,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 8,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Takeya Mizugaki",
-	"age": 31.800799086757984,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 21,
-		"knockouts": 5,
-		"submissions": 1,
-		"decisions": 15,
-		"others": 0
-	},
-	"losses": {
-		"total": 9,
-		"knockouts": 2,
-		"submissions": 2,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Cody Garbrandt",
-	"age": 24.91312785388128,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 13,
-		"knockouts": 11,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Cortney Casey",
-	"age": 29.211757990867582,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 11,
-		"knockouts": 4,
-		"submissions": 5,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 5,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Randa Markos",
-	"age": 30.877511415525117,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 1,
-		"submissions": 5,
 		"decisions": 6,
 		"others": 0
 	},
 	"losses": {
 		"total": 6,
-		"knockouts": 0,
-		"submissions": 2,
-		"decisions": 4,
+		"knockouts": 2,
+		"submissions": 3,
+		"decisions": 1,
 		"others": 0
 	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Jim Miller",
-	"age": 33.2283105022831,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 28,
-		"knockouts": 4,
-		"submissions": 14,
-		"decisions": 10,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 1,
-		"submissions": 2,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": true,
+	"last_fight_win": false,
 	"ring_rust": false,
 	"b2b_loss": true,
-	"older_32": true
+	"older_32": true,
+	"younger_than_three": false
 },
 {
-	"name": "Dustin Poirier",
-	"age": 27.680251141552514,
+	"name": "Marcel Fortuna",
+	"age": 29.64189497716895,
 	"height": "",
 	"reach": "",
 	"wins": {
-		"total": 21,
-		"knockouts": 10,
-		"submissions": 6,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 5,
-		"knockouts": 2,
-		"submissions": 1,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Islam Makhachev",
-	"age": 24.9925799086758,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 13,
-		"knockouts": 2,
-		"submissions": 6,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Nik Lentz",
-	"age": 32.09942922374429,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 27,
-		"knockouts": 7,
-		"submissions": 10,
-		"decisions": 10,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 2,
-		"submissions": 2,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Phillipe Nover",
-	"age": 32.663812785388124,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 1,
-		"submissions": 8,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 6,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Rick Glenn",
-	"age": 27.45285388127854,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 18,
-		"knockouts": 10,
+		"total": 8,
+		"knockouts": 0,
 		"submissions": 5,
 		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 0,
-		"submissions": 2,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Roan Carneiro",
-	"age": 38.32134703196346,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 18,
-		"knockouts": 2,
-		"submissions": 8,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 9,
-		"knockouts": 3,
-		"submissions": 4,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Ryan LaFlare",
-	"age": 32.21735159817351,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 4,
-		"submissions": 3,
-		"decisions": 5,
 		"others": 0
 	},
 	"losses": {
@@ -5596,60 +564,41 @@ module.exports = [
 	"last_fight_win": true,
 	"ring_rust": true,
 	"b2b_loss": false,
-	"older_32": true
+	"older_32": false,
+	"younger_than_three": true
 }
 ],
 [
 {
-	"name": "Dan Henderson",
-	"age": 43.60901826484018,
+	"name": "Anthony Njokuani",
+	"age": 33.15970319634703,
 	"height": "",
 	"reach": "",
+	"outcome": "loss",
+	"odds": "-250",
+	"pOdds": 71.42857142857143,
+	"potentWin": 20,
+	"date": "2014-05-24T04:00:00.000Z",
 	"wins": {
-		"total": 30,
-		"knockouts": 14,
-		"submissions": 2,
-		"decisions": 14,
-		"others": 0
-	},
-	"losses": {
-		"total": 11,
-		"knockouts": 1,
-		"submissions": 3,
+		"total": 16,
+		"knockouts": 9,
+		"submissions": 0,
 		"decisions": 7,
 		"others": 0
 	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Daniel Cormier",
-	"age": 34.95433789954337,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 6,
-		"submissions": 3,
-		"decisions": 5,
-		"others": 0
-	},
 	"losses": {
-		"total": 0,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 0,
+		"total": 7,
+		"knockouts": 1,
+		"submissions": 3,
+		"decisions": 3,
 		"others": 0
 	},
 	"last_fight_win": true,
 	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-}
-],
-[
+	"b2b_loss": true,
+	"older_32": true,
+	"younger_than_three": false
+},
 {
 	"name": "Vinc Pichel",
 	"age": 31.168036529680357,
@@ -5672,1021 +621,200 @@ module.exports = [
 	"last_fight_win": true,
 	"ring_rust": true,
 	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Anthony Njokuani",
-	"age": 33.159703196347024,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 9,
-		"submissions": 0,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 1,
-		"submissions": 3,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
+	"older_32": false,
+	"younger_than_three": false
 }
 ],
 [
 {
-	"name": "Takeya Mizugaki",
-	"age": 30.45833333333333,
+	"name": "Anthony Smith",
+	"age": 27.59269406392694,
 	"height": "",
 	"reach": "",
-	"wins": {
-		"total": 20,
-		"knockouts": 5,
-		"submissions": 1,
-		"decisions": 14,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Dominick Cruz",
-	"age": 26.093949771689502,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 19,
-		"knockouts": 6,
-		"submissions": 1,
-		"decisions": 12,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Stephen Thompson",
-	"age": 31.052968036529673,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 9,
-		"knockouts": 5,
-		"submissions": 1,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Patrick Cote",
-	"age": 34.15148401826484,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 21,
-		"knockouts": 8,
-		"submissions": 3,
-		"decisions": 10,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 1,
-		"submissions": 3,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Alex Caceres",
-	"age": 27.976141552511418,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 2,
-		"submissions": 5,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 1,
-		"submissions": 5,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Yair Rodriguez",
-	"age": 23.562442922374434,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 10,
-		"knockouts": 3,
-		"submissions": 3,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Dominique Steele",
-	"age": 28.263812785388133,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 19,
-		"knockouts": 9,
-		"submissions": 3,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 4,
-		"submissions": 0,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Court McGee",
-	"age": 31.36518264840182,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 17,
-		"knockouts": 4,
-		"submissions": 6,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 5,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Matt Brown",
-	"age": 33.56244292237442,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 20,
-		"knockouts": 14,
-		"submissions": 4,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 13,
-		"knockouts": 0,
-		"submissions": 10,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Johny Hendricks",
-	"age": 31.25570776255707,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 8,
-		"submissions": 1,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Henry Cejudo",
-	"age": 27.861187214611874,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 7,
-		"knockouts": 3,
-		"submissions": 1,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 0,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Chris Cariaso",
-	"age": 33.35970319634703,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 17,
-		"knockouts": 3,
-		"submissions": 2,
-		"decisions": 12,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 1,
-		"submissions": 3,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Beneil Dariush",
-	"age": 25.488470319634708,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 9,
-		"knockouts": 2,
-		"submissions": 5,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Daron Cruickshank",
-	"age": 29.524200913242012,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 17,
-		"knockouts": 9,
-		"submissions": 1,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 2,
-		"submissions": 2,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Beneil Dariush",
-	"age": 25.96792237442923,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 11,
-		"knockouts": 2,
-		"submissions": 6,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Michael Johnson",
-	"age": 28.740639269406397,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 8,
-		"submissions": 1,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 0,
-		"submissions": 5,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Sam Alvey",
-	"age": 29.03093607305936,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 29,
-		"knockouts": 19,
-		"submissions": 2,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 6,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Derek Brunson",
-	"age": 31.096803652968028,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 7,
-		"submissions": 4,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 2,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Ryan LaFlare",
-	"age": 30.225570776255697,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 10,
-		"knockouts": 4,
-		"submissions": 3,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 0,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "John Howard",
-	"age": 30.850228310502274,
-	"height": "",
-	"reach": "",
+	"outcome": "loss",
+	"odds": "-102",
+	"pOdds": 50.495049504950494,
+	"potentWin": 49.01960784313725,
+	"date": "2016-07-08T04:00:00.000Z",
 	"wins": {
 		"total": 22,
-		"knockouts": 9,
-		"submissions": 6,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 2,
-		"submissions": 1,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Ilir Latifi",
-	"age": 32.496803652968026,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 5,
-		"submissions": 5,
+		"knockouts": 11,
+		"submissions": 9,
 		"decisions": 2,
 		"others": 0
 	},
 	"losses": {
-		"total": 4,
-		"knockouts": 2,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-},
-{
-	"name": "Gian Villante",
-	"age": 30.595433789954342,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 9,
-		"submissions": 2,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 3,
-		"submissions": 0,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Justin Salas",
-	"age": 32.36518264840182,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 4,
-		"submissions": 3,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 3,
-		"submissions": 3,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Jason Saggo",
-	"age": 28.882990867579913,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 10,
-		"knockouts": 2,
-		"submissions": 8,
-		"decisions": 0,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "George Sullivan",
-	"age": 32.89406392694063,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 10,
-		"submissions": 0,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 0,
-		"submissions": 2,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-},
-{
-	"name": "Igor Araujo",
-	"age": 33.27488584474885,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 27,
-		"knockouts": 1,
-		"submissions": 18,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 2,
-		"submissions": 1,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Sean Spencer",
-	"age": 26.740525114155254,
-	"height": "",
-	"reach": "",
-	"wins": {
 		"total": 11,
-		"knockouts": 2,
-		"submissions": 2,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 0,
-		"submissions": 2,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Paulo Thiago",
-	"age": 33.36792237442922,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 2,
-		"submissions": 8,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 2,
-		"submissions": 0,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Max Holloway",
-	"age": 23.214611872146122,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 13,
 		"knockouts": 6,
-		"submissions": 1,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 2,
+		"submissions": 5,
+		"decisions": 0,
 		"others": 0
 	},
 	"last_fight_win": true,
 	"ring_rust": false,
 	"b2b_loss": true,
-	"older_32": false
+	"older_32": false,
+	"younger_than_three": true
 },
 {
-	"name": "Cub Swanson",
-	"age": 31.07762557077625,
+	"name": "Cezar Ferreira",
+	"age": 31.187100456621003,
 	"height": "",
 	"reach": "",
 	"wins": {
-		"total": 21,
-		"knockouts": 8,
-		"submissions": 7,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 1,
-		"submissions": 4,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Paige VanZant",
-	"age": 20.67488584474886,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 5,
-		"knockouts": 1,
+		"total": 9,
+		"knockouts": 3,
 		"submissions": 2,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Felice Herrig",
-	"age": 30.252968036529676,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 11,
-		"knockouts": 1,
-		"submissions": 3,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Aljamain Sterling",
-	"age": 24.976141552511418,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 2,
-		"submissions": 5,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Takeya Mizugaki",
-	"age": 30.80353881278538,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 20,
-		"knockouts": 5,
-		"submissions": 1,
-		"decisions": 14,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 2,
-		"submissions": 1,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Frankie Perez",
-	"age": 25.70776255707763,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 10,
-		"knockouts": 1,
-		"submissions": 5,
 		"decisions": 4,
 		"others": 0
 	},
 	"losses": {
-		"total": 3,
-		"knockouts": 1,
+		"total": 4,
+		"knockouts": 4,
 		"submissions": 0,
-		"decisions": 2,
+		"decisions": 0,
 		"others": 0
 	},
-	"last_fight_win": false,
+	"last_fight_win": true,
 	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Anton Kuivanen",
+	"age": 31.40627853881278,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-248",
+	"pOdds": 71.26436781609196,
+	"potentWin": 20.161290322580644,
+	"date": "2015-11-21T05:00:00.000Z",
+	"wins": {
+		"total": 22,
+		"knockouts": 5,
+		"submissions": 8,
+		"decisions": 9,
+		"others": 0
+	},
+	"losses": {
+		"total": 8,
+		"knockouts": 4,
+		"submissions": 3,
+		"decisions": 1,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
 },
 {
-	"name": "Sam Stout",
-	"age": 30.910388127853874,
+	"name": "Thibault Gouti",
+	"age": 28.022831050228312,
 	"height": "",
 	"reach": "",
 	"wins": {
+		"total": 10,
+		"knockouts": 2,
+		"submissions": 6,
+		"decisions": 2,
+		"others": 0
+	},
+	"losses": {
+		"total": 1,
+		"knockouts": 0,
+		"submissions": 0,
+		"decisions": 1,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
+{
+	"name": "Antonio Banuelos",
+	"age": 32.29406392694063,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-325",
+	"pOdds": 76.47058823529412,
+	"potentWin": 15.384615384615385,
+	"date": "2012-09-14T04:00:00.000Z",
+	"wins": {
 		"total": 20,
-		"knockouts": 9,
+		"knockouts": 7,
 		"submissions": 1,
+		"decisions": 12,
+		"others": 0
+	},
+	"losses": {
+		"total": 8,
+		"knockouts": 3,
+		"submissions": 2,
+		"decisions": 3,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": false,
+	"b2b_loss": false,
+	"older_32": true,
+	"younger_than_three": false
+},
+{
+	"name": "Josh Sampo",
+	"age": 28.028196347031955,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 7,
+		"knockouts": 0,
+		"submissions": 4,
+		"decisions": 3,
+		"others": 0
+	},
+	"losses": {
+		"total": 2,
+		"knockouts": 1,
+		"submissions": 0,
+		"decisions": 1,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
+{
+	"name": "Antonio Rodrigo Nogueira",
+	"age": 33.74337899543378,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-110",
+	"pOdds": 52.38095238095239,
+	"potentWin": 45.45454545454545,
+	"date": "2010-02-21T05:00:00.000Z",
+	"wins": {
+		"total": 32,
+		"knockouts": 2,
+		"submissions": 20,
 		"decisions": 10,
 		"others": 0
 	},
 	"losses": {
-		"total": 11,
-		"knockouts": 2,
-		"submissions": 3,
-		"decisions": 6,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Fabio Maldonado",
-	"age": 34.039155251141544,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 18,
-		"knockouts": 11,
-		"submissions": 2,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 1,
-		"submissions": 2,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Stipe Miocic",
-	"age": 31.45844748858447,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 12,
-		"submissions": 1,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Gasan Umalatov",
-	"age": 31.269406392694055,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 2,
-		"submissions": 7,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Paulo Thiago",
-	"age": 32.811872146118716,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 2,
-		"submissions": 8,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
 		"total": 6,
 		"knockouts": 2,
 		"submissions": 0,
@@ -6694,171 +822,20 @@ module.exports = [
 		"others": 0
 	},
 	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Steve Bosse",
-	"age": 33.93504566210045,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 10,
-		"knockouts": 8,
-		"submissions": 1,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 2,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
+	"ring_rust": false,
 	"b2b_loss": false,
-	"older_32": true
+	"older_32": true,
+	"younger_than_three": false
 },
 {
-	"name": "James Te Huna",
-	"age": 32.76792237442922,
+	"name": "Cain Velasquez",
+	"age": 27.58721461187214,
 	"height": "",
 	"reach": "",
 	"wins": {
-		"total": 15,
-		"knockouts": 10,
-		"submissions": 2,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 1,
-		"submissions": 6,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Krzysztof Jotko",
-	"age": 24.798059360730598,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 4,
-		"submissions": 2,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Tor Troeng",
-	"age": 31.502168949771686,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 19,
-		"knockouts": 5,
-		"submissions": 7,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
 		"total": 8,
-		"knockouts": 1,
-		"submissions": 4,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Derek Brunson",
-	"age": 32.15433789954337,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 17,
-		"knockouts": 9,
-		"submissions": 4,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 2,
+		"knockouts": 7,
 		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Uriah Hall",
-	"age": 31.31050228310502,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 11,
-		"submissions": 2,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Thomas Almeida",
-	"age": 23.291324200913245,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 17,
-		"knockouts": 13,
-		"submissions": 3,
 		"decisions": 1,
 		"others": 0
 	},
@@ -6870,786 +847,43 @@ module.exports = [
 		"others": 0
 	},
 	"last_fight_win": true,
-	"ring_rust": true,
+	"ring_rust": false,
 	"b2b_loss": false,
-	"older_32": false
-},
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
 {
-	"name": "Yves Jabouin",
-	"age": 35.06655251141552,
+	"name": "Bobby Voelker",
+	"age": 34.69954337899543,
 	"height": "",
 	"reach": "",
+	"outcome": "loss",
+	"odds": "-105",
+	"pOdds": 51.21951219512195,
+	"potentWin": 47.61904761904762,
+	"date": "2014-06-07T04:00:00.000Z",
 	"wins": {
-		"total": 12,
-		"knockouts": 5,
-		"submissions": 0,
+		"total": 28,
+		"knockouts": 19,
+		"submissions": 4,
+		"decisions": 5,
+		"others": 0
+	},
+	"losses": {
+		"total": 11,
+		"knockouts": 3,
+		"submissions": 1,
 		"decisions": 7,
 		"others": 0
 	},
-	"losses": {
-		"total": 9,
-		"knockouts": 4,
-		"submissions": 3,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Aisling Daly",
-	"age": 26.98721461187215,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 6,
-		"submissions": 8,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Randa Markos",
-	"age": 29.359817351598178,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 10,
-		"knockouts": 1,
-		"submissions": 5,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 5,
-		"knockouts": 0,
-		"submissions": 2,
-		"decisions": 3,
-		"others": 0
-	},
 	"last_fight_win": false,
 	"ring_rust": true,
 	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Chico Camus",
-	"age": 30.398059360730585,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 4,
-		"submissions": 3,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
+	"older_32": true,
+	"younger_than_three": false
 },
-{
-	"name": "Kyoji Horiguchi",
-	"age": 24.551484018264844,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 9,
-		"submissions": 1,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Tim Means",
-	"age": 29.96803652968036,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 21,
-		"knockouts": 14,
-		"submissions": 3,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 1,
-		"submissions": 3,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Neil Magny",
-	"age": 26.518721461187216,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 2,
-		"submissions": 2,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 1,
-		"submissions": 2,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Albert Tumenov",
-	"age": 22.15707762557078,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 8,
-		"submissions": 0,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Anthony Lapsley",
-	"age": 33.781735159817345,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 24,
-		"knockouts": 3,
-		"submissions": 17,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 0,
-		"submissions": 4,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Gabriel Gonzaga",
-	"age": 36.592694063926935,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 17,
-		"knockouts": 7,
-		"submissions": 9,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 10,
-		"knockouts": 8,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Derrick Lewis",
-	"age": 31.01735159817351,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 14,
-		"submissions": 1,
-		"decisions": 0,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 2,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Jan Blachowicz",
-	"age": 32.55148401826483,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 18,
-		"knockouts": 5,
-		"submissions": 7,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 5,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Igor Pokrajac",
-	"age": 36.74874429223744,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 18,
-		"knockouts": 8,
-		"submissions": 8,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 10,
-		"knockouts": 4,
-		"submissions": 2,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Zak Ottow",
-	"age": 29.491210045662104,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 1,
-		"submissions": 10,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Joshua Burkman",
-	"age": 35.67477168949771,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 20,
-		"knockouts": 5,
-		"submissions": 5,
-		"decisions": 10,
-		"others": 0
-	},
-	"losses": {
-		"total": 12,
-		"knockouts": 1,
-		"submissions": 6,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Elizeu Zaleski dos Santos",
-	"age": 29.447374429223746,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 12,
-		"submissions": 2,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 5,
-		"knockouts": 0,
-		"submissions": 2,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Keita Nakamura",
-	"age": 32.16518264840182,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 32,
-		"knockouts": 6,
-		"submissions": 17,
-		"decisions": 9,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Josh Koscheck",
-	"age": 37.27214611872145,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 19,
-		"knockouts": 5,
-		"submissions": 6,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 10,
-		"knockouts": 3,
-		"submissions": 2,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Erick Silva",
-	"age": 30.518721461187205,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 4,
-		"submissions": 10,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 2,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Shayna Baszler",
-	"age": 34.0829908675799,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 0,
-		"submissions": 15,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 10,
-		"knockouts": 4,
-		"submissions": 4,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Amanda Nunes",
-	"age": 26.34600456621005,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 9,
-		"knockouts": 8,
-		"submissions": 1,
-		"decisions": 0,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 2,
-		"submissions": 1,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Akbarh Arreola",
-	"age": 31.877625570776246,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 21,
-		"knockouts": 3,
-		"submissions": 17,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 9,
-		"knockouts": 5,
-		"submissions": 0,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Francisco Trinaldo",
-	"age": 36.0802511415525,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 5,
-		"submissions": 5,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 0,
-		"submissions": 2,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Drew Dober",
-	"age": 26.168036529680368,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 20,
-		"knockouts": 5,
-		"submissions": 11,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 6,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Leandro Silva",
-	"age": 29.011872146118723,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 17,
-		"knockouts": 1,
-		"submissions": 10,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "John Dodson",
-	"age": 30.67477168949771,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 17,
-		"knockouts": 8,
-		"submissions": 2,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 6,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Demetrious Johnson",
-	"age": 28.718607305936075,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 24,
-		"knockouts": 5,
-		"submissions": 10,
-		"decisions": 9,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Piotr Hallmann",
-	"age": 26.189840182648407,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 7,
-		"submissions": 6,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Yves Edwards",
-	"age": 37.1269406392694,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 42,
-		"knockouts": 16,
-		"submissions": 17,
-		"decisions": 9,
-		"others": 0
-	},
-	"losses": {
-		"total": 20,
-		"knockouts": 4,
-		"submissions": 4,
-		"decisions": 12,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Sergio Pettis",
-	"age": 20.452968036529683,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 13,
-		"knockouts": 4,
-		"submissions": 4,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Yaotzin Meza",
-	"age": 32.995433789954326,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 19,
-		"knockouts": 4,
-		"submissions": 7,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 3,
-		"submissions": 3,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
 {
 	"name": "Lance Benoist",
 	"age": 24.091210045662102,
@@ -7672,13 +906,21 @@ module.exports = [
 	"last_fight_win": false,
 	"ring_rust": true,
 	"b2b_loss": true,
-	"older_32": false
-},
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
 {
 	"name": "Bobby Voelker",
-	"age": 34.69954337899543,
+	"age": 34.27751141552511,
 	"height": "",
 	"reach": "",
+	"outcome": "loss",
+	"odds": "-130",
+	"pOdds": 56.52173913043478,
+	"potentWin": 38.46153846153846,
+	"date": "2013-12-28T05:00:00.000Z",
 	"wins": {
 		"total": 28,
 		"knockouts": 19,
@@ -7687,1998 +929,55 @@ module.exports = [
 		"others": 0
 	},
 	"losses": {
-		"total": 11,
-		"knockouts": 3,
-		"submissions": 1,
-		"decisions": 7,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Nate Marquardt",
-	"age": 36.691324200913236,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 34,
-		"knockouts": 10,
-		"submissions": 16,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 15,
-		"knockouts": 4,
-		"submissions": 2,
-		"decisions": 9,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Thiago Santos",
-	"age": 31.946118721461183,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 7,
-		"submissions": 1,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 1,
-		"submissions": 2,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Bryan Caraway",
-	"age": 29.861073059360724,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 21,
-		"knockouts": 3,
-		"submissions": 17,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 1,
-		"submissions": 2,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Raphael Assuncao",
-	"age": 31.62009132420091,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 23,
-		"knockouts": 3,
-		"submissions": 11,
-		"decisions": 9,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Phillipe Nover",
-	"age": 31.872146118721453,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 1,
-		"submissions": 8,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Renan Barao",
-	"age": 29.34600456621005,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 32,
-		"knockouts": 7,
-		"submissions": 15,
-		"decisions": 10,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 2,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Hector Urbina",
-	"age": 28.198173515981736,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 7,
-		"submissions": 7,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
 		"total": 10,
-		"knockouts": 5,
-		"submissions": 2,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Vicente Luque",
-	"age": 24.628196347031967,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 8,
-		"knockouts": 2,
-		"submissions": 5,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 5,
-		"knockouts": 0,
-		"submissions": 2,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Al Iaquinta",
-	"age": 27.776255707762562,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 7,
+		"knockouts": 3,
 		"submissions": 1,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 0,
-		"submissions": 3,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Jorge Masvidal",
-	"age": 29.89394977168949,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 28,
-		"knockouts": 10,
-		"submissions": 2,
-		"decisions": 16,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 1,
-		"submissions": 2,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Mark Hunt",
-	"age": 40.52408675799086,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 10,
-		"knockouts": 7,
-		"submissions": 0,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 2,
-		"submissions": 6,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Fabricio Werdum",
-	"age": 36.74600456621003,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 18,
-		"knockouts": 5,
-		"submissions": 9,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 5,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Kelvin Gastelum",
-	"age": 22.6939497716895,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 13,
-		"knockouts": 4,
-		"submissions": 5,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 0,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Jake Ellenberger",
-	"age": 29.17614155251141,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 30,
-		"knockouts": 19,
-		"submissions": 5,
 		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 2,
-		"submissions": 1,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Leslie Smith",
-	"age": 31.93504566210045,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 20,
-		"knockouts": 10,
-		"submissions": 2,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 10,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 10,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Jessica Eye",
-	"age": 27.595433789954342,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 4,
-		"submissions": 2,
-		"decisions": 9,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Charles Oliveira",
-	"age": 26.880251141552517,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 21,
-		"knockouts": 5,
-		"submissions": 14,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 3,
-		"submissions": 2,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Ricardo Lamas",
-	"age": 34.06381278538812,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 4,
-		"submissions": 4,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 5,
-		"knockouts": 3,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Leon Edwards",
-	"age": 23.22283105022831,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 9,
-		"knockouts": 5,
-		"submissions": 3,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Seth Baczynski",
-	"age": 32.828196347031955,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 19,
-		"knockouts": 7,
-		"submissions": 10,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 12,
-		"knockouts": 3,
-		"submissions": 5,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Jeremy Stephens",
-	"age": 27.68858447488585,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 24,
-		"knockouts": 15,
-		"submissions": 4,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 10,
-		"knockouts": 1,
-		"submissions": 4,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Cub Swanson",
-	"age": 29.69668949771689,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 20,
-		"knockouts": 8,
-		"submissions": 7,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 5,
-		"knockouts": 1,
-		"submissions": 3,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Cody Gibson",
-	"age": 26.46940639269407,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 11,
-		"knockouts": 4,
-		"submissions": 3,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 0,
-		"submissions": 2,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Johnny Bedford",
-	"age": 31.2829908675799,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 20,
-		"knockouts": 7,
-		"submissions": 9,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 10,
-		"knockouts": 1,
-		"submissions": 9,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Shane Howell",
-	"age": 28.321347031963462,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 10,
-		"knockouts": 4,
-		"submissions": 4,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 1,
-		"submissions": 3,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Ray Borg",
-	"age": 20.721347031963475,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 10,
-		"knockouts": 1,
-		"submissions": 8,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Rafael Natal",
-	"age": 33.1214611872146,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 20,
-		"knockouts": 4,
-		"submissions": 8,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 4,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Robert Whittaker",
-	"age": 24.918721461187218,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 7,
-		"submissions": 5,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Dominique Steele",
-	"age": 27.861187214611878,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 19,
-		"knockouts": 9,
-		"submissions": 3,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 4,
-		"submissions": 0,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Danny Roberts",
-	"age": null,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 6,
-		"submissions": 6,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Clint Hester",
-	"age": 28.713127853881282,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 7,
-		"submissions": 1,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 2,
-		"submissions": 3,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Marcos Rogerio de Lima",
-	"age": 30.181621004566214,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 13,
-		"knockouts": 10,
-		"submissions": 2,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Kevin Lee",
-	"age": 23.28584474885845,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 0,
-		"submissions": 6,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Efrain Escudero",
-	"age": 29.869406392694067,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 27,
-		"knockouts": 2,
-		"submissions": 16,
-		"decisions": 9,
-		"others": 0
-	},
-	"losses": {
-		"total": 10,
-		"knockouts": 0,
-		"submissions": 2,
-		"decisions": 8,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Adriano Martins",
-	"age": 32.81997716894976,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 26,
-		"knockouts": 11,
-		"submissions": 3,
-		"decisions": 12,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 2,
-		"submissions": 0,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Leonardo Santos",
-	"age": 35.874885844748846,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 13,
-		"knockouts": 2,
-		"submissions": 9,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Russell Doane",
-	"age": 29.92134703196347,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 6,
-		"submissions": 5,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 0,
-		"submissions": 4,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Mirsad Bektic",
-	"age": 24.299429223744298,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 8,
-		"submissions": 3,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 0,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Urijah Faber",
-	"age": 35.58995433789954,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 31,
-		"knockouts": 7,
-		"submissions": 19,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 3,
-		"submissions": 0,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-},
-{
-	"name": "Frankie Edgar",
-	"age": 33.124200913242,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 18,
-		"knockouts": 5,
-		"submissions": 4,
-		"decisions": 9,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Jon Tuck",
-	"age": 30.102168949771684,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 8,
-		"knockouts": 4,
-		"submissions": 3,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Tae Hyun Bang",
-	"age": 31.187100456621,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 8,
-		"submissions": 0,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 0,
-		"submissions": 2,
-		"decisions": 6,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Diego Sanchez",
-	"age": 32.45559360730593,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 28,
-		"knockouts": 6,
-		"submissions": 11,
-		"decisions": 11,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 6,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Ricardo Lamas",
-	"age": 32.89394977168949,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 4,
-		"submissions": 4,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 3,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Leandro Silva",
-	"age": 29.64463470319635,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 18,
-		"knockouts": 1,
-		"submissions": 10,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Efrain Escudero",
-	"age": 29.428196347031967,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 27,
-		"knockouts": 2,
-		"submissions": 16,
-		"decisions": 9,
-		"others": 0
-	},
-	"losses": {
-		"total": 9,
-		"knockouts": 0,
-		"submissions": 2,
-		"decisions": 7,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Bartosz Fabinski",
-	"age": 28.978881278538815,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 8,
-		"submissions": 0,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Hector Urbina",
-	"age": 27.181735159817354,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 7,
-		"submissions": 7,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 9,
-		"knockouts": 5,
-		"submissions": 2,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Drew Dober",
-	"age": 25.132420091324203,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 19,
-		"knockouts": 5,
-		"submissions": 10,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Nick Hein",
-	"age": 29.814611872146116,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 10,
-		"knockouts": 1,
-		"submissions": 4,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Iuri Alcantara",
-	"age": 33.55707762557077,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 27,
-		"knockouts": 11,
-		"submissions": 11,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 5,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-},
-{
-	"name": "Vaughan Lee",
-	"age": 31.39817351598173,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 3,
-		"submissions": 7,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 9,
-		"knockouts": 2,
-		"submissions": 6,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Maximo Blanco",
-	"age": 30.357077625570767,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 9,
-		"knockouts": 7,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 0,
-		"submissions": 2,
-		"decisions": 2,
 		"others": 0
 	},
 	"last_fight_win": false,
 	"ring_rust": false,
 	"b2b_loss": true,
-	"older_32": false
+	"older_32": true,
+	"younger_than_three": false
 },
 {
-	"name": "Andy Ogle",
-	"age": 25.014611872146123,
+	"name": "William Macario",
+	"age": 21.954223744292236,
 	"height": "",
 	"reach": "",
 	"wins": {
-		"total": 15,
-		"knockouts": 4,
-		"submissions": 5,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
 		"total": 6,
-		"knockouts": 2,
-		"submissions": 2,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Neil Seery",
-	"age": 36.17614155251141,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 6,
-		"submissions": 6,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 9,
-		"knockouts": 1,
-		"submissions": 5,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Kyoji Horiguchi",
-	"age": 24.97340182648402,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 9,
-		"submissions": 1,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Nate Marquardt",
-	"age": 35.21449771689497,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 33,
-		"knockouts": 9,
-		"submissions": 16,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 13,
-		"knockouts": 3,
-		"submissions": 2,
-		"decisions": 8,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Brad Tavares",
-	"age": 26.67203196347032,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 4,
-		"submissions": 2,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Paul Felder",
-	"age": 29.463812785388132,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 10,
-		"knockouts": 6,
-		"submissions": 0,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Danny Castillo",
-	"age": 35.03915525114155,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 17,
-		"knockouts": 6,
-		"submissions": 4,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 2,
-		"submissions": 2,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Jeremy Stephens",
-	"age": 30.030936073059365,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 26,
-		"knockouts": 16,
-		"submissions": 4,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 13,
-		"knockouts": 1,
-		"submissions": 4,
-		"decisions": 8,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Frankie Edgar",
-	"age": 34.754223744292226,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 20,
-		"knockouts": 6,
-		"submissions": 4,
-		"decisions": 10,
-		"others": 0
-	},
-	"losses": {
-		"total": 5,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Michael Johnson",
-	"age": 30.310388127853884,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 17,
-		"knockouts": 9,
-		"submissions": 1,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 9,
-		"knockouts": 0,
-		"submissions": 5,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Khabib Nurmagomedov",
-	"age": 27.589840182648405,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 23,
-		"knockouts": 8,
-		"submissions": 7,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 0,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Alex Caceres",
-	"age": 26.269292237442926,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 10,
-		"knockouts": 2,
-		"submissions": 5,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 0,
-		"submissions": 5,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Francisco Rivera",
-	"age": 33.18447488584474,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 10,
-		"knockouts": 7,
-		"submissions": 0,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 1,
-		"submissions": 2,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Omari Akhmedov",
-	"age": 27.24748858447489,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 6,
-		"submissions": 5,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 0,
-		"submissions": 2,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Brian Ebersole",
-	"age": 33.855593607305934,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 50,
-		"knockouts": 14,
-		"submissions": 20,
-		"decisions": 16,
-		"others": 0
-	},
-	"losses": {
-		"total": 15,
-		"knockouts": 0,
-		"submissions": 9,
-		"decisions": 6,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Justin Edwards",
-	"age": 30.992694063926933,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 3,
-		"submissions": 8,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 2,
-		"submissions": 1,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Joe Proctor",
-	"age": 29.359817351598178,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 3,
-		"submissions": 6,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 5,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Corey Anderson",
-	"age": 25.970662100456625,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 9,
-		"knockouts": 3,
-		"submissions": 0,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Fabio Maldonado",
-	"age": 35.12956621004565,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 19,
-		"knockouts": 12,
-		"submissions": 2,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 2,
-		"submissions": 2,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Urijah Faber",
-	"age": 36.60639269406392,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 32,
-		"knockouts": 7,
-		"submissions": 19,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 3,
-		"submissions": 0,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-},
-{
-	"name": "Dominick Cruz",
-	"age": 30.392694063926946,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 21,
-		"knockouts": 7,
-		"submissions": 1,
-		"decisions": 13,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Bobby Green",
-	"age": 28.22283105022831,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 20,
 		"knockouts": 5,
-		"submissions": 9,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 1,
-		"submissions": 2,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Dustin Poirier",
-	"age": 26.970776255707765,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 20,
-		"knockouts": 9,
-		"submissions": 6,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 1,
 		"submissions": 1,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Clay Guida",
-	"age": 33.93789954337899,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 31,
-		"knockouts": 4,
-		"submissions": 15,
-		"decisions": 12,
-		"others": 0
-	},
-	"losses": {
-		"total": 15,
-		"knockouts": 1,
-		"submissions": 8,
-		"decisions": 6,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Brian Ortega",
-	"age": 24.880365296803653,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 9,
-		"knockouts": 1,
-		"submissions": 4,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 0,
-		"knockouts": 0,
-		"submissions": 0,
 		"decisions": 0,
 		"others": 0
 	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Chico Camus",
-	"age": 29.34326484018264,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 13,
-		"knockouts": 4,
-		"submissions": 3,
-		"decisions": 6,
-		"others": 0
-	},
 	"losses": {
-		"total": 5,
-		"knockouts": 1,
+		"total": 1,
+		"knockouts": 0,
 		"submissions": 1,
-		"decisions": 3,
+		"decisions": 0,
 		"others": 0
 	},
 	"last_fight_win": false,
 	"ring_rust": true,
 	"b2b_loss": false,
-	"older_32": false
-},
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
 {
 	"name": "Brad Pickett",
-	"age": 35.84189497716894,
+	"age": 35.84189497716895,
 	"height": "",
 	"reach": "",
+	"outcome": "loss",
+	"odds": "-175",
+	"pOdds": 63.63636363636363,
+	"potentWin": 28.571428571428573,
+	"date": "2014-11-22T05:00:00.000Z",
 	"wins": {
 		"total": 25,
 		"knockouts": 8,
@@ -9694,1159 +993,262 @@ module.exports = [
 		"others": 0
 	},
 	"last_fight_win": false,
-	"ring_rust": true,
+	"ring_rust": false,
 	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Mark Hunt",
-	"age": 40.67762557077625,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 10,
-		"knockouts": 7,
-		"submissions": 0,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 9,
-		"knockouts": 3,
-		"submissions": 6,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
+	"older_32": true,
+	"younger_than_three": false
 },
 {
-	"name": "Stipe Miocic",
-	"age": 32.34063926940639,
+	"name": "Chico Camus",
+	"age": 29.343264840182645,
 	"height": "",
 	"reach": "",
 	"wins": {
-		"total": 17,
-		"knockouts": 13,
-		"submissions": 1,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Lisa Ellis",
-	"age": 32.09680365296803,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 18,
-		"knockouts": 0,
-		"submissions": 14,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 11,
-		"knockouts": 1,
-		"submissions": 7,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Bec Rawlings",
-	"age": 25.85022831050229,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 5,
-		"knockouts": 1,
+		"total": 13,
+		"knockouts": 4,
 		"submissions": 3,
-		"decisions": 1,
+		"decisions": 6,
 		"others": 0
 	},
 	"losses": {
 		"total": 5,
 		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Bradley Scott",
-	"age": 24.72694063926941,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 8,
-		"knockouts": 4,
-		"submissions": 4,
-		"decisions": 0,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 0,
 		"submissions": 1,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Dylan Andrews",
-	"age": 35.003652968036526,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 19,
-		"knockouts": 12,
-		"submissions": 3,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 4,
-		"submissions": 3,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Francis Carmont",
-	"age": 31.8857305936073,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 22,
-		"knockouts": 6,
-		"submissions": 10,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 1,
-		"submissions": 3,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Ronaldo Souza",
-	"age": 33.76792237442922,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 19,
-		"knockouts": 2,
-		"submissions": 14,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 2,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Takenori Sato",
-	"age": 28.387100456621006,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 17,
-		"knockouts": 3,
-		"submissions": 6,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 5,
-		"submissions": 0,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Erick Silva",
-	"age": 29.321347031963462,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 3,
-		"submissions": 9,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Joe Proctor",
-	"age": 27.34885844748859,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 2,
-		"submissions": 6,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 1,
-		"submissions": 0,
 		"decisions": 3,
 		"others": 0
 	},
 	"last_fight_win": false,
 	"ring_rust": true,
 	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Cristiano Marcello",
-	"age": 35.27214611872146,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 2,
-		"submissions": 10,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 4,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
+	"older_32": false,
+	"younger_than_three": true
 }
 ],
 [
 {
-	"name": "Jim Alers",
-	"age": 28.357077625570778,
+	"name": "Brian Ebersole",
+	"age": 31.589840182648395,
 	"height": "",
 	"reach": "",
+	"outcome": "loss",
+	"odds": "-314",
+	"pOdds": 75.84541062801932,
+	"potentWin": 15.92356687898089,
+	"date": "2012-07-21T04:00:00.000Z",
 	"wins": {
+		"total": 49,
+		"knockouts": 14,
+		"submissions": 20,
+		"decisions": 15,
+		"others": 0
+	},
+	"losses": {
 		"total": 13,
-		"knockouts": 2,
-		"submissions": 9,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 2,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Cole Miller",
-	"age": 30.8255707762557,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 22,
-		"knockouts": 1,
-		"submissions": 18,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 11,
-		"knockouts": 3,
-		"submissions": 1,
-		"decisions": 7,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Ildemar Alcantara",
-	"age": 31.26940639269406,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 20,
-		"knockouts": 10,
-		"submissions": 6,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 2,
-		"submissions": 0,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Kenny Robertson",
-	"age": 30.12408675799086,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 13,
-		"knockouts": 3,
-		"submissions": 9,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Rob Font",
-	"age": 26.85285388127854,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 13,
-		"knockouts": 3,
-		"submissions": 4,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
 		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 2,
+		"submissions": 9,
+		"decisions": 4,
 		"others": 0
 	},
 	"last_fight_win": true,
 	"ring_rust": false,
 	"b2b_loss": false,
-	"older_32": false
+	"older_32": false,
+	"younger_than_three": false
 },
 {
-	"name": "George Roop",
-	"age": 32.45285388127853,
+	"name": "James Head",
+	"age": 28.19805936073059,
 	"height": "",
 	"reach": "",
 	"wins": {
-		"total": 17,
-		"knockouts": 4,
-		"submissions": 4,
-		"decisions": 9,
-		"others": 0
-	},
-	"losses": {
-		"total": 11,
-		"knockouts": 3,
-		"submissions": 5,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Bruno Santos",
-	"age": 26.411872146118725,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 11,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Chris Camozzi",
-	"age": 26.981735159817354,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 19,
-		"knockouts": 5,
-		"submissions": 6,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
 		"total": 7,
-		"knockouts": 0,
-		"submissions": 4,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Sean O'Connell",
-	"age": 32.398173515981725,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 7,
-		"submissions": 3,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
 		"knockouts": 4,
-		"submissions": 3,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Steve Bosse",
-	"age": 34.66381278538812,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 11,
-		"knockouts": 9,
-		"submissions": 1,
+		"submissions": 2,
 		"decisions": 1,
 		"others": 0
 	},
 	"losses": {
 		"total": 2,
-		"knockouts": 2,
-		"submissions": 0,
-		"decisions": 0,
+		"knockouts": 0,
+		"submissions": 1,
+		"decisions": 1,
 		"others": 0
 	},
 	"last_fight_win": true,
 	"ring_rust": true,
 	"b2b_loss": false,
-	"older_32": true
+	"older_32": false,
+	"younger_than_three": true
 }
 ],
 [
 {
-	"name": "Sam Alvey",
-	"age": 29.277511415525115,
+	"name": "Brian Foster",
+	"age": 31.477511415525107,
 	"height": "",
 	"reach": "",
+	"outcome": "loss",
+	"odds": "-235",
+	"pOdds": 70.1492537313433,
+	"potentWin": 21.27659574468085,
+	"date": "2015-11-20T05:00:00.000Z",
 	"wins": {
-		"total": 29,
-		"knockouts": 19,
-		"submissions": 2,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 9,
-		"knockouts": 2,
-		"submissions": 1,
-		"decisions": 6,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Elias Theodorou",
-	"age": 27.546118721461188,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 11,
-		"knockouts": 5,
-		"submissions": 2,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 0,
+		"total": 22,
+		"knockouts": 11,
+		"submissions": 10,
 		"decisions": 1,
 		"others": 0
 	},
-	"last_fight_win": false,
-	"ring_rust": true,
+	"losses": {
+		"total": 7,
+		"knockouts": 1,
+		"submissions": 6,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
 	"b2b_loss": false,
-	"older_32": false
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Joao Zeferino",
+	"age": 29.42819634703196,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 18,
+		"knockouts": 2,
+		"submissions": 13,
+		"decisions": 3,
+		"others": 0
+	},
+	"losses": {
+		"total": 5,
+		"knockouts": 2,
+		"submissions": 0,
+		"decisions": 3,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
 }
 ],
 [
 {
-	"name": "Michael Bisping",
-	"age": 35.50764840182647,
+	"name": "Carlo Prater",
+	"age": 29.230936073059357,
 	"height": "",
 	"reach": "",
+	"outcome": "loss",
+	"odds": "",
+	"potentWin": 0,
+	"date": "2010-10-29T04:00:00.000Z",
 	"wins": {
 		"total": 25,
-		"knockouts": 15,
-		"submissions": 4,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
 		"knockouts": 2,
-		"submissions": 0,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": true
-},
-{
-	"name": "Luke Rockhold",
-	"age": 29.54326484018264,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 3,
-		"submissions": 7,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 2,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Al Iaquinta",
-	"age": 27.370662100456627,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 5,
-		"submissions": 1,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 0,
-		"submissions": 3,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Ross Pearson",
-	"age": 29.907648401826478,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 6,
-		"submissions": 5,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 2,
-		"submissions": 3,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Krzysztof Jotko",
-	"age": 26.850114155251145,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 18,
-		"knockouts": 5,
-		"submissions": 2,
-		"decisions": 11,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Thales Leites",
-	"age": 34.94052511415525,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 27,
-		"knockouts": 4,
-		"submissions": 16,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Nate Marquardt",
-	"age": 35.732420091324194,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 33,
-		"knockouts": 9,
-		"submissions": 16,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 14,
-		"knockouts": 3,
-		"submissions": 2,
-		"decisions": 9,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Kelvin Gastelum",
-	"age": 23.288584474885848,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 4,
-		"submissions": 6,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Jared Rosholt",
-	"age": 29.03093607305936,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 13,
-		"knockouts": 4,
-		"submissions": 3,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 2,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Stefan Struve",
-	"age": 27.469292237442925,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 23,
-		"knockouts": 5,
-		"submissions": 16,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 5,
-		"submissions": 1,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Akbarh Arreola",
-	"age": 32.20353881278538,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 21,
-		"knockouts": 3,
-		"submissions": 17,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 10,
-		"knockouts": 5,
-		"submissions": 0,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Jake Matthews",
-	"age": 20.737785388127854,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 8,
-		"knockouts": 3,
-		"submissions": 4,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Steve Kennedy",
-	"age": 32.31038812785387,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 21,
-		"knockouts": 7,
-		"submissions": 9,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 2,
-		"submissions": 4,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-},
-{
-	"name": "Richard Walsh",
-	"age": 26.261187214611876,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 8,
-		"knockouts": 4,
-		"submissions": 1,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Charles Oliveira",
-	"age": 24.34885844748859,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 17,
-		"knockouts": 5,
-		"submissions": 11,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 2,
-		"submissions": 1,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Hatsu Hioki",
-	"age": 30.642009132420082,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 27,
-		"knockouts": 4,
 		"submissions": 12,
 		"decisions": 11,
 		"others": 0
 	},
 	"losses": {
-		"total": 7,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 7,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Sean O'Connell",
-	"age": 30.641894977168942,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 5,
-		"submissions": 3,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 3,
-		"submissions": 3,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Gian Villante",
-	"age": 28.948744292237446,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 11,
-		"knockouts": 7,
-		"submissions": 2,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 5,
+		"total": 10,
 		"knockouts": 2,
-		"submissions": 0,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Will Brooks",
-	"age": 29.09954337899544,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 17,
-		"knockouts": 5,
-		"submissions": 4,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Ross Pearson",
-	"age": 31.499429223744286,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 18,
-		"knockouts": 7,
-		"submissions": 5,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 11,
-		"knockouts": 3,
 		"submissions": 3,
 		"decisions": 5,
 		"others": 0
 	},
-	"last_fight_win": true,
+	"last_fight_win": false,
 	"ring_rust": false,
 	"b2b_loss": true,
-	"older_32": false
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Reza Madadi",
+	"age": 31.8857305936073,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 8,
+		"knockouts": 1,
+		"submissions": 6,
+		"decisions": 1,
+		"others": 0
+	},
+	"losses": {
+		"total": 2,
+		"knockouts": 0,
+		"submissions": 0,
+		"decisions": 2,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": false
 }
 ],
 [
 {
-	"name": "Anthony Smith",
-	"age": 27.592694063926942,
+	"name": "Carlos Condit",
+	"age": 29.359703196347027,
 	"height": "",
 	"reach": "",
+	"outcome": "loss",
+	"odds": "-180",
+	"pOdds": 64.28571428571429,
+	"potentWin": 27.77777777777778,
+	"date": "2014-03-15T04:00:00.000Z",
 	"wins": {
-		"total": 22,
-		"knockouts": 11,
-		"submissions": 9,
+		"total": 29,
+		"knockouts": 14,
+		"submissions": 13,
 		"decisions": 2,
 		"others": 0
 	},
 	"losses": {
-		"total": 11,
-		"knockouts": 6,
-		"submissions": 5,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Cezar Ferreira",
-	"age": 31.187100456620996,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 9,
-		"knockouts": 3,
-		"submissions": 2,
+		"total": 7,
+		"knockouts": 0,
+		"submissions": 3,
 		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 4,
-		"submissions": 0,
-		"decisions": 0,
 		"others": 0
 	},
 	"last_fight_win": true,
 	"ring_rust": true,
 	"b2b_loss": true,
-	"older_32": false
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Tyron Woodley",
+	"age": 31.60639269406392,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 14,
+		"knockouts": 4,
+		"submissions": 6,
+		"decisions": 4,
+		"others": 0
+	},
+	"losses": {
+		"total": 2,
+		"knockouts": 1,
+		"submissions": 0,
+		"decisions": 1,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": false
 }
 ],
 [
@@ -10855,6 +1257,11 @@ module.exports = [
 	"age": 33.230936073059354,
 	"height": "",
 	"reach": "",
+	"outcome": "loss",
+	"odds": "-115",
+	"pOdds": 53.48837209302325,
+	"potentWin": 43.47826086956522,
+	"date": "2014-11-08T05:00:00.000Z",
 	"wins": {
 		"total": 21,
 		"knockouts": 5,
@@ -10870,9 +1277,10 @@ module.exports = [
 		"others": 0
 	},
 	"last_fight_win": false,
-	"ring_rust": true,
+	"ring_rust": false,
 	"b2b_loss": true,
-	"older_32": true
+	"older_32": true,
+	"younger_than_three": false
 },
 {
 	"name": "Leandro Silva",
@@ -10896,57 +1304,65 @@ module.exports = [
 	"last_fight_win": false,
 	"ring_rust": false,
 	"b2b_loss": false,
-	"older_32": false
+	"older_32": false,
+	"younger_than_three": true
 }
 ],
 [
 {
-	"name": "Omari Akhmedov",
-	"age": 28.53230593607306,
+	"name": "Che Mills",
+	"age": 31.61449771689497,
 	"height": "",
 	"reach": "",
+	"outcome": "loss",
+	"odds": "-293",
+	"pOdds": 74.55470737913485,
+	"potentWin": 17.064846416382252,
+	"date": "2014-09-13T04:00:00.000Z",
 	"wins": {
-		"total": 15,
-		"knockouts": 7,
+		"total": 16,
+		"knockouts": 8,
 		"submissions": 5,
 		"decisions": 3,
 		"others": 0
 	},
 	"losses": {
-		"total": 4,
-		"knockouts": 2,
-		"submissions": 2,
-		"decisions": 0,
+		"total": 7,
+		"knockouts": 3,
+		"submissions": 3,
+		"decisions": 1,
 		"others": 0
 	},
-	"last_fight_win": false,
+	"last_fight_win": true,
 	"ring_rust": true,
 	"b2b_loss": true,
-	"older_32": false
+	"older_32": false,
+	"younger_than_three": false
 },
 {
-	"name": "Kyle Noke",
-	"age": 36.34600456621004,
+	"name": "Jack Marshman",
+	"age": 24.482990867579908,
 	"height": "",
 	"reach": "",
 	"wins": {
-		"total": 22,
-		"knockouts": 8,
-		"submissions": 8,
-		"decisions": 6,
+		"total": 17,
+		"knockouts": 10,
+		"submissions": 4,
+		"decisions": 3,
 		"others": 0
 	},
 	"losses": {
-		"total": 9,
-		"knockouts": 1,
-		"submissions": 3,
-		"decisions": 5,
+		"total": 5,
+		"knockouts": 2,
+		"submissions": 1,
+		"decisions": 2,
 		"others": 0
 	},
-	"last_fight_win": false,
-	"ring_rust": true,
+	"last_fight_win": true,
+	"ring_rust": false,
 	"b2b_loss": true,
-	"older_32": true
+	"older_32": false,
+	"younger_than_three": true
 }
 ],
 [
@@ -10955,6 +1371,11 @@ module.exports = [
 	"age": 29.73230593607306,
 	"height": "",
 	"reach": "",
+	"outcome": "loss",
+	"odds": "-186",
+	"pOdds": 65.03496503496503,
+	"potentWin": 26.881720430107524,
+	"date": "2016-11-26T05:00:00.000Z",
 	"wins": {
 		"total": 24,
 		"knockouts": 7,
@@ -10972,7 +1393,8 @@ module.exports = [
 	"last_fight_win": false,
 	"ring_rust": false,
 	"b2b_loss": true,
-	"older_32": false
+	"older_32": false,
+	"younger_than_three": true
 },
 {
 	"name": "Daniel Kelly",
@@ -10996,10 +1418,496 @@ module.exports = [
 	"last_fight_win": true,
 	"ring_rust": true,
 	"b2b_loss": false,
-	"older_32": true
+	"older_32": true,
+	"younger_than_three": false
 }
 ],
 [
+{
+	"name": "Chris Leben",
+	"age": 31.313127853881273,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-144",
+	"pOdds": 59.01639344262295,
+	"potentWin": 34.72222222222222,
+	"date": "2012-12-29T05:00:00.000Z",
+	"wins": {
+		"total": 26,
+		"knockouts": 14,
+		"submissions": 6,
+		"decisions": 6,
+		"others": 0
+	},
+	"losses": {
+		"total": 10,
+		"knockouts": 4,
+		"submissions": 2,
+		"decisions": 4,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Derek Brunson",
+	"age": 28.641894977168946,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 11,
+		"knockouts": 6,
+		"submissions": 3,
+		"decisions": 2,
+		"others": 0
+	},
+	"losses": {
+		"total": 2,
+		"knockouts": 1,
+		"submissions": 0,
+		"decisions": 1,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Chris Leben",
+	"age": 28.263812785388126,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-106",
+	"pOdds": 51.45631067961165,
+	"potentWin": 47.16981132075472,
+	"date": "2009-08-29T04:00:00.000Z",
+	"wins": {
+		"total": 22,
+		"knockouts": 12,
+		"submissions": 5,
+		"decisions": 5,
+		"others": 0
+	},
+	"losses": {
+		"total": 7,
+		"knockouts": 2,
+		"submissions": 1,
+		"decisions": 4,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Jake Rosholt",
+	"age": 27.014611872146116,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 5,
+		"knockouts": 4,
+		"submissions": 1,
+		"decisions": 0,
+		"others": 0
+	},
+	"losses": {
+		"total": 1,
+		"knockouts": 0,
+		"submissions": 1,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": false,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Chuck Liddell",
+	"age": 38.74874429223744,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-165",
+	"pOdds": 62.264150943396224,
+	"potentWin": 30.303030303030305,
+	"date": "2009-04-18T04:00:00.000Z",
+	"wins": {
+		"total": 21,
+		"knockouts": 13,
+		"submissions": 1,
+		"decisions": 7,
+		"others": 0
+	},
+	"losses": {
+		"total": 6,
+		"knockouts": 4,
+		"submissions": 1,
+		"decisions": 1,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": true,
+	"younger_than_three": false
+},
+{
+	"name": "Mauricio Rua",
+	"age": 27.165296803652964,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 17,
+		"knockouts": 14,
+		"submissions": 1,
+		"decisions": 2,
+		"others": 0
+	},
+	"losses": {
+		"total": 3,
+		"knockouts": 1,
+		"submissions": 2,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
+{
+	"name": "Clay Harvison",
+	"age": 34.50490867579908,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-109",
+	"pOdds": 52.15311004784689,
+	"potentWin": 45.871559633027516,
+	"date": "2015-10-16T04:00:00.000Z",
+	"wins": {
+		"total": 13,
+		"knockouts": 6,
+		"submissions": 3,
+		"decisions": 4,
+		"others": 0
+	},
+	"losses": {
+		"total": 6,
+		"knockouts": 2,
+		"submissions": 3,
+		"decisions": 1,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": true,
+	"younger_than_three": false
+},
+{
+	"name": "Jordan Rinaldi",
+	"age": 27.77340182648402,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 10,
+		"knockouts": 1,
+		"submissions": 5,
+		"decisions": 4,
+		"others": 0
+	},
+	"losses": {
+		"total": 5,
+		"knockouts": 1,
+		"submissions": 2,
+		"decisions": 2,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
+{
+	"name": "Clay Guida",
+	"age": 25.729566210045654,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-113",
+	"pOdds": 53.051643192488264,
+	"potentWin": 44.247787610619476,
+	"date": "2007-12-08T05:00:00.000Z",
+	"wins": {
+		"total": 21,
+		"knockouts": 3,
+		"submissions": 12,
+		"decisions": 6,
+		"others": 0
+	},
+	"losses": {
+		"total": 7,
+		"knockouts": 0,
+		"submissions": 4,
+		"decisions": 3,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Roger Huerta",
+	"age": 24.282990867579905,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 22,
+		"knockouts": 13,
+		"submissions": 5,
+		"decisions": 4,
+		"others": 0
+	},
+	"losses": {
+		"total": 1,
+		"knockouts": 0,
+		"submissions": 1,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Cub Swanson",
+	"age": 31.07762557077625,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-120",
+	"pOdds": 54.54545454545454,
+	"potentWin": 41.66666666666667,
+	"date": "2015-04-18T04:00:00.000Z",
+	"wins": {
+		"total": 21,
+		"knockouts": 8,
+		"submissions": 7,
+		"decisions": 6,
+		"others": 0
+	},
+	"losses": {
+		"total": 6,
+		"knockouts": 1,
+		"submissions": 4,
+		"decisions": 1,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": false,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Max Holloway",
+	"age": 23.214611872146115,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 13,
+		"knockouts": 6,
+		"submissions": 1,
+		"decisions": 6,
+		"others": 0
+	},
+	"losses": {
+		"total": 3,
+		"knockouts": 0,
+		"submissions": 1,
+		"decisions": 2,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
+{
+	"name": "Damien Brown",
+	"age": 28.98721461187214,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "",
+	"potentWin": 0,
+	"date": "2014-03-01T05:00:00.000Z",
+	"wins": {
+		"total": 10,
+		"knockouts": 1,
+		"submissions": 5,
+		"decisions": 4,
+		"others": 0
+	},
+	"losses": {
+		"total": 6,
+		"knockouts": 1,
+		"submissions": 4,
+		"decisions": 1,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Paul Redmond",
+	"age": 27.217351598173515,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 11,
+		"knockouts": 5,
+		"submissions": 3,
+		"decisions": 3,
+		"others": 0
+	},
+	"losses": {
+		"total": 4,
+		"knockouts": 1,
+		"submissions": 3,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Dan Henderson",
+	"age": 38.90764840182648,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-340",
+	"pOdds": 77.27272727272727,
+	"potentWin": 14.705882352941178,
+	"date": "2010-04-17T04:00:00.000Z",
+	"wins": {
+		"total": 25,
+		"knockouts": 10,
+		"submissions": 2,
+		"decisions": 13,
+		"others": 0
+	},
+	"losses": {
+		"total": 7,
+		"knockouts": 0,
+		"submissions": 3,
+		"decisions": 4,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": true,
+	"younger_than_three": false
+},
+{
+	"name": "Jake Shields",
+	"age": 30.850228310502274,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 24,
+		"knockouts": 3,
+		"submissions": 10,
+		"decisions": 11,
+		"others": 0
+	},
+	"losses": {
+		"total": 4,
+		"knockouts": 1,
+		"submissions": 0,
+		"decisions": 3,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
+{
+	"name": "Dan Hooker",
+	"age": 26.11312785388128,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-136",
+	"pOdds": 57.6271186440678,
+	"potentWin": 36.76470588235294,
+	"date": "2016-11-26T05:00:00.000Z",
+	"wins": {
+		"total": 14,
+		"knockouts": 6,
+		"submissions": 6,
+		"decisions": 2,
+		"others": 0
+	},
+	"losses": {
+		"total": 6,
+		"knockouts": 0,
+		"submissions": 2,
+		"decisions": 4,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+},
 {
 	"name": "Jason Knight",
 	"age": 24.04189497716895,
@@ -11022,149 +1930,170 @@ module.exports = [
 	"last_fight_win": true,
 	"ring_rust": true,
 	"b2b_loss": false,
-	"older_32": false
-},
+	"older_32": false,
+	"younger_than_three": false
+}
+],
+[
 {
-	"name": "Dan Hooker",
-	"age": 26.11312785388128,
+	"name": "Dan Spohn",
+	"age": 28.595319634703188,
 	"height": "",
 	"reach": "",
+	"outcome": "loss",
+	"odds": "-230",
+	"pOdds": 69.6969696969697,
+	"potentWin": 21.73913043478261,
+	"date": "2014-07-06T04:00:00.000Z",
 	"wins": {
-		"total": 14,
+		"total": 15,
 		"knockouts": 6,
-		"submissions": 6,
-		"decisions": 2,
+		"submissions": 4,
+		"decisions": 5,
 		"others": 0
 	},
 	"losses": {
 		"total": 6,
-		"knockouts": 0,
+		"knockouts": 2,
 		"submissions": 2,
-		"decisions": 4,
+		"decisions": 2,
 		"others": 0
 	},
 	"last_fight_win": true,
 	"ring_rust": true,
 	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Vitor Belfort",
-	"age": 36.63378995433789,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 24,
-		"knockouts": 17,
-		"submissions": 3,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 10,
-		"knockouts": 3,
-		"submissions": 2,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
+	"older_32": false,
+	"younger_than_three": false
 },
 {
-	"name": "Chris Weidman",
-	"age": 30.06929223744292,
+	"name": "Patrick Walsh",
+	"age": 24.60079908675799,
 	"height": "",
 	"reach": "",
 	"wins": {
-		"total": 12,
-		"knockouts": 5,
-		"submissions": 3,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 0,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Colby Covington",
-	"age": 26.729680365296804,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 7,
-		"knockouts": 0,
-		"submissions": 5,
+		"total": 8,
+		"knockouts": 4,
+		"submissions": 2,
 		"decisions": 2,
 		"others": 0
 	},
 	"losses": {
-		"total": 0,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 0,
+		"total": 3,
+		"knockouts": 1,
+		"submissions": 1,
+		"decisions": 1,
 		"others": 0
 	},
 	"last_fight_win": true,
 	"ring_rust": true,
 	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Mike Pyle",
-	"age": 38.95696347031963,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 26,
-		"knockouts": 6,
-		"submissions": 16,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 10,
-		"knockouts": 5,
-		"submissions": 4,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
+	"older_32": false,
+	"younger_than_three": true
 }
 ],
 [
 {
-	"name": "Andrei Arlovski",
-	"age": 36.609018264840174,
+	"name": "Daniel Pineda",
+	"age": 28.05011415525114,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-210",
+	"pOdds": 67.74193548387096,
+	"potentWin": 23.80952380952381,
+	"date": "2014-03-15T04:00:00.000Z",
+	"wins": {
+		"total": 15,
+		"knockouts": 4,
+		"submissions": 11,
+		"decisions": 0,
+		"others": 0
+	},
+	"losses": {
+		"total": 8,
+		"knockouts": 1,
+		"submissions": 4,
+		"decisions": 3,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Robert Whiteford",
+	"age": 30.562442922374423,
 	"height": "",
 	"reach": "",
 	"wins": {
-		"total": 25,
-		"knockouts": 17,
-		"submissions": 3,
+		"total": 12,
+		"knockouts": 6,
+		"submissions": 1,
 		"decisions": 5,
 		"others": 0
 	},
 	"losses": {
-		"total": 10,
-		"knockouts": 7,
+		"total": 2,
+		"knockouts": 1,
+		"submissions": 1,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": false,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Danny Martinez",
+	"age": 29.00079908675799,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-111",
+	"pOdds": 52.60663507109005,
+	"potentWin": 45.04504504504504,
+	"date": "2015-06-27T04:00:00.000Z",
+	"wins": {
+		"total": 17,
+		"knockouts": 8,
+		"submissions": 4,
+		"decisions": 5,
+		"others": 0
+	},
+	"losses": {
+		"total": 7,
+		"knockouts": 0,
+		"submissions": 1,
+		"decisions": 6,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Sirwan Kakai",
+	"age": 25.093949771689495,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 11,
+		"knockouts": 4,
+		"submissions": 6,
+		"decisions": 1,
+		"others": 0
+	},
+	"losses": {
+		"total": 3,
+		"knockouts": 0,
 		"submissions": 0,
 		"decisions": 3,
 		"others": 0
@@ -11172,18 +2101,221 @@ module.exports = [
 	"last_fight_win": true,
 	"ring_rust": true,
 	"b2b_loss": true,
-	"older_32": true
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
+{
+	"name": "Danny Castillo",
+	"age": 35.039155251141544,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-244",
+	"pOdds": 70.93023255813954,
+	"potentWin": 20.491803278688526,
+	"date": "2015-01-03T05:00:00.000Z",
+	"wins": {
+		"total": 17,
+		"knockouts": 6,
+		"submissions": 4,
+		"decisions": 7,
+		"others": 0
+	},
+	"losses": {
+		"total": 7,
+		"knockouts": 2,
+		"submissions": 2,
+		"decisions": 3,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": true,
+	"younger_than_three": false
 },
 {
-	"name": "Stipe Miocic",
-	"age": 32.74600456621004,
+	"name": "Paul Felder",
+	"age": 29.46381278538813,
 	"height": "",
 	"reach": "",
 	"wins": {
-		"total": 18,
-		"knockouts": 14,
+		"total": 10,
+		"knockouts": 6,
+		"submissions": 0,
+		"decisions": 4,
+		"others": 0
+	},
+	"losses": {
+		"total": 1,
+		"knockouts": 0,
 		"submissions": 1,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
+{
+	"name": "Dante Rivera",
+	"age": 35.87751141552511,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "",
+	"potentWin": 0,
+	"date": "2013-04-04T04:00:00.000Z",
+	"wins": {
+		"total": 17,
+		"knockouts": 3,
+		"submissions": 9,
+		"decisions": 5,
+		"others": 0
+	},
+	"losses": {
+		"total": 7,
+		"knockouts": 1,
+		"submissions": 1,
+		"decisions": 5,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": true,
+	"younger_than_three": false
+},
+{
+	"name": "Lyman Good",
+	"age": 27.535159817351598,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 14,
+		"knockouts": 7,
+		"submissions": 1,
+		"decisions": 6,
+		"others": 0
+	},
+	"losses": {
+		"total": 3,
+		"knockouts": 0,
+		"submissions": 0,
 		"decisions": 3,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": false,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
+{
+	"name": "David Heath",
+	"age": 33.96244292237442,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-115",
+	"pOdds": 53.48837209302325,
+	"potentWin": 43.47826086956522,
+	"date": "2010-11-12T05:00:00.000Z",
+	"wins": {
+		"total": 13,
+		"knockouts": 6,
+		"submissions": 6,
+		"decisions": 1,
+		"others": 0
+	},
+	"losses": {
+		"total": 6,
+		"knockouts": 1,
+		"submissions": 3,
+		"decisions": 2,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": true,
+	"younger_than_three": false
+},
+{
+	"name": "Rodney Wallace",
+	"age": 28.72956621004566,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 9,
+		"knockouts": 1,
+		"submissions": 2,
+		"decisions": 6,
+		"others": 0
+	},
+	"losses": {
+		"total": 3,
+		"knockouts": 0,
+		"submissions": 0,
+		"decisions": 3,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
+{
+	"name": "Denis Kang",
+	"age": 31.60627853881278,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-115",
+	"pOdds": 53.48837209302325,
+	"potentWin": 43.47826086956522,
+	"date": "2009-11-14T05:00:00.000Z",
+	"wins": {
+		"total": 32,
+		"knockouts": 12,
+		"submissions": 15,
+		"decisions": 5,
+		"others": 0
+	},
+	"losses": {
+		"total": 11,
+		"knockouts": 2,
+		"submissions": 7,
+		"decisions": 2,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Michael Bisping",
+	"age": 30.387100456621,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 17,
+		"knockouts": 11,
+		"submissions": 4,
+		"decisions": 2,
 		"others": 0
 	},
 	"losses": {
@@ -11193,223 +2325,395 @@ module.exports = [
 		"decisions": 1,
 		"others": 0
 	},
-	"last_fight_win": true,
+	"last_fight_win": false,
 	"ring_rust": true,
 	"b2b_loss": false,
-	"older_32": true
+	"older_32": false,
+	"younger_than_three": false
 }
 ],
 [
 {
-	"name": "Brian Ortega",
-	"age": 24.304908675799087,
+	"name": "Denis Kang",
+	"age": 30.132305936073053,
 	"height": "",
 	"reach": "",
+	"outcome": "loss",
+	"odds": "-200",
+	"pOdds": 66.66666666666666,
+	"potentWin": 25,
+	"date": "2008-04-29T04:00:00.000Z",
 	"wins": {
-		"total": 8,
-		"knockouts": 1,
-		"submissions": 3,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 0,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Diego Brandao",
-	"age": 28.35422374429224,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 18,
+		"total": 29,
 		"knockouts": 10,
-		"submissions": 4,
+		"submissions": 15,
 		"decisions": 4,
 		"others": 0
 	},
 	"losses": {
 		"total": 9,
-		"knockouts": 5,
-		"submissions": 1,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Masanori Kanehara",
-	"age": 32.6775114155251,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 25,
-		"knockouts": 8,
-		"submissions": 10,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 11,
-		"knockouts": 4,
-		"submissions": 3,
-		"decisions": 4,
+		"knockouts": 2,
+		"submissions": 5,
+		"decisions": 2,
 		"others": 0
 	},
 	"last_fight_win": false,
 	"ring_rust": true,
 	"b2b_loss": true,
-	"older_32": true
+	"older_32": false,
+	"younger_than_three": false
 },
 {
-	"name": "Michael McDonald",
-	"age": 22.929680365296807,
+	"name": "Gegard Mousasi",
+	"age": 22.60091324200913,
 	"height": "",
 	"reach": "",
 	"wins": {
-		"total": 15,
-		"knockouts": 9,
-		"submissions": 4,
+		"total": 20,
+		"knockouts": 13,
+		"submissions": 5,
 		"decisions": 2,
 		"others": 0
 	},
 	"losses": {
-		"total": 3,
-		"knockouts": 1,
+		"total": 2,
+		"knockouts": 0,
 		"submissions": 2,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
+{
+	"name": "Denis Kang",
+	"age": 29.49954337899543,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-280",
+	"pOdds": 73.68421052631578,
+	"potentWin": 17.857142857142858,
+	"date": "2007-10-28T04:00:00.000Z",
+	"wins": {
+		"total": 29,
+		"knockouts": 10,
+		"submissions": 15,
+		"decisions": 4,
+		"others": 0
+	},
+	"losses": {
+		"total": 8,
+		"knockouts": 1,
+		"submissions": 5,
+		"decisions": 2,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Yoshihiro Akiyama",
+	"age": 31.447488584474883,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 9,
+		"knockouts": 4,
+		"submissions": 5,
+		"decisions": 0,
+		"others": 0
+	},
+	"losses": {
+		"total": 1,
+		"knockouts": 1,
+		"submissions": 0,
 		"decisions": 0,
 		"others": 0
 	},
 	"last_fight_win": false,
 	"ring_rust": true,
 	"b2b_loss": false,
-	"older_32": false
+	"older_32": false,
+	"younger_than_three": false
 }
 ],
 [
 {
-	"name": "Alex Morono",
-	"age": 25.318721461187216,
+	"name": "Donny Walker",
+	"age": 30.937899543378986,
 	"height": "",
 	"reach": "",
+	"outcome": "loss",
+	"odds": "-170",
+	"pOdds": 62.96296296296296,
+	"potentWin": 29.411764705882355,
+	"date": "2011-07-02T04:00:00.000Z",
 	"wins": {
-		"total": 12,
+		"total": 15,
 		"knockouts": 4,
-		"submissions": 6,
-		"decisions": 2,
+		"submissions": 8,
+		"decisions": 3,
 		"others": 0
 	},
 	"losses": {
-		"total": 3,
+		"total": 6,
 		"knockouts": 1,
-		"submissions": 0,
+		"submissions": 4,
+		"decisions": 1,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Jeff Hougland",
+	"age": 32.80353881278538,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 8,
+		"knockouts": 1,
+		"submissions": 7,
+		"decisions": 0,
+		"others": 0
+	},
+	"losses": {
+		"total": 4,
+		"knockouts": 1,
+		"submissions": 3,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": true,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Drew Fickett",
+	"age": 28.64463470319634,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "",
+	"potentWin": 0,
+	"date": "2008-10-02T04:00:00.000Z",
+	"wins": {
+		"total": 35,
+		"knockouts": 3,
+		"submissions": 24,
+		"decisions": 8,
+		"others": 0
+	},
+	"losses": {
+		"total": 6,
+		"knockouts": 2,
+		"submissions": 2,
 		"decisions": 2,
 		"others": 0
 	},
 	"last_fight_win": true,
 	"ring_rust": false,
 	"b2b_loss": false,
-	"older_32": false
+	"older_32": false,
+	"younger_than_three": false
 },
 {
-	"name": "Kyle Noke",
-	"age": 35.68310502283104,
+	"name": "Jesse Taylor",
+	"age": 24.562442922374423,
 	"height": "",
 	"reach": "",
 	"wins": {
-		"total": 22,
-		"knockouts": 8,
-		"submissions": 8,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 1,
-		"submissions": 2,
+		"total": 10,
+		"knockouts": 3,
+		"submissions": 3,
 		"decisions": 4,
 		"others": 0
 	},
-	"last_fight_win": true,
+	"losses": {
+		"total": 3,
+		"knockouts": 0,
+		"submissions": 3,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": false,
 	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": true
 }
 ],
 [
 {
-	"name": "Diego Brandao",
-	"age": 26.609132420091328,
+	"name": "Evan Tanner",
+	"age": 37.07762557077625,
 	"height": "",
 	"reach": "",
+	"outcome": "loss",
+	"odds": "-145",
+	"pOdds": 59.183673469387756,
+	"potentWin": 34.48275862068966,
+	"date": "2008-06-21T04:00:00.000Z",
 	"wins": {
-		"total": 16,
+		"total": 32,
 		"knockouts": 8,
-		"submissions": 4,
-		"decisions": 4,
+		"submissions": 21,
+		"decisions": 3,
 		"others": 0
 	},
 	"losses": {
-		"total": 8,
-		"knockouts": 4,
+		"total": 7,
+		"knockouts": 6,
 		"submissions": 1,
-		"decisions": 3,
+		"decisions": 0,
 		"others": 0
 	},
 	"last_fight_win": false,
 	"ring_rust": true,
 	"b2b_loss": true,
-	"older_32": false
+	"older_32": true,
+	"younger_than_three": false
 },
 {
-	"name": "Conor McGregor",
-	"age": 25.110388127853884,
+	"name": "Kendall Grove",
+	"age": 25.203652968036522,
 	"height": "",
 	"reach": "",
 	"wins": {
-		"total": 15,
-		"knockouts": 13,
-		"submissions": 1,
+		"total": 9,
+		"knockouts": 1,
+		"submissions": 7,
 		"decisions": 1,
+		"others": 0
+	},
+	"losses": {
+		"total": 5,
+		"knockouts": 4,
+		"submissions": 1,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
+{
+	"name": "Fabricio Camoes",
+	"age": 35.03926940639269,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-105",
+	"pOdds": 51.21951219512195,
+	"potentWin": 47.61904761904762,
+	"date": "2014-10-25T04:00:00.000Z",
+	"wins": {
+		"total": 13,
+		"knockouts": 4,
+		"submissions": 6,
+		"decisions": 3,
+		"others": 0
+	},
+	"losses": {
+		"total": 8,
+		"knockouts": 2,
+		"submissions": 4,
+		"decisions": 2,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": true,
+	"younger_than_three": false
+},
+{
+	"name": "Tony Martin",
+	"age": 24.715867579908675,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 10,
+		"knockouts": 2,
+		"submissions": 6,
+		"decisions": 2,
 		"others": 0
 	},
 	"losses": {
 		"total": 2,
 		"knockouts": 0,
-		"submissions": 2,
-		"decisions": 0,
+		"submissions": 1,
+		"decisions": 1,
 		"others": 0
 	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
+	"last_fight_win": false,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": true
 }
 ],
 [
 {
-	"name": "Ian McCall",
-	"age": 29.099429223744288,
+	"name": "Francis Carmont",
+	"age": 32.57614155251141,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-192",
+	"pOdds": 65.75342465753424,
+	"potentWin": 26.041666666666668,
+	"date": "2014-08-23T04:00:00.000Z",
+	"wins": {
+		"total": 22,
+		"knockouts": 6,
+		"submissions": 10,
+		"decisions": 6,
+		"others": 0
+	},
+	"losses": {
+		"total": 8,
+		"knockouts": 1,
+		"submissions": 3,
+		"decisions": 4,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": true,
+	"younger_than_three": false
+},
+{
+	"name": "Thales Leites",
+	"age": 32.61723744292237,
 	"height": "",
 	"reach": "",
 	"wins": {
-		"total": 12,
-		"knockouts": 4,
-		"submissions": 3,
-		"decisions": 5,
+		"total": 24,
+		"knockouts": 3,
+		"submissions": 14,
+		"decisions": 7,
 		"others": 0
 	},
 	"losses": {
@@ -11420,165 +2724,989 @@ module.exports = [
 		"others": 0
 	},
 	"last_fight_win": true,
-	"ring_rust": true,
+	"ring_rust": false,
 	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Brad Pickett",
-	"age": 35.47762557077625,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 25,
-		"knockouts": 8,
-		"submissions": 10,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 1,
-		"submissions": 4,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
+	"older_32": true,
+	"younger_than_three": false
 }
 ],
 [
 {
-	"name": "Naoyuki Kotani",
-	"age": 32.233789954337894,
+	"name": "Frank Shamrock",
+	"age": 34.55970319634702,
 	"height": "",
 	"reach": "",
+	"outcome": "loss",
+	"odds": "-175",
+	"pOdds": 63.63636363636363,
+	"potentWin": 28.571428571428573,
+	"date": "2008-03-29T04:00:00.000Z",
 	"wins": {
-		"total": 33,
-		"knockouts": 5,
-		"submissions": 25,
+		"total": 19,
+		"knockouts": 2,
+		"submissions": 14,
 		"decisions": 3,
 		"others": 0
 	},
 	"losses": {
-		"total": 10,
-		"knockouts": 5,
-		"submissions": 1,
-		"decisions": 4,
+		"total": 7,
+		"knockouts": 2,
+		"submissions": 2,
+		"decisions": 3,
 		"others": 0
 	},
 	"last_fight_win": true,
 	"ring_rust": true,
 	"b2b_loss": true,
-	"older_32": true
+	"older_32": true,
+	"younger_than_three": false
 },
 {
-	"name": "Norman Parke",
-	"age": 27.269292237442926,
+	"name": "Cung Le",
+	"age": 35.502283105022826,
 	"height": "",
 	"reach": "",
 	"wins": {
-		"total": 19,
+		"total": 5,
+		"knockouts": 5,
+		"submissions": 0,
+		"decisions": 0,
+		"others": 0
+	},
+	"losses": {
+		"total": 0,
+		"knockouts": 0,
+		"submissions": 0,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": false,
+	"older_32": true,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "George Roop",
+	"age": 32.45285388127853,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-185",
+	"pOdds": 64.91228070175438,
+	"potentWin": 27.027027027027025,
+	"date": "2014-07-05T04:00:00.000Z",
+	"wins": {
+		"total": 17,
+		"knockouts": 4,
+		"submissions": 4,
+		"decisions": 9,
+		"others": 0
+	},
+	"losses": {
+		"total": 11,
 		"knockouts": 3,
-		"submissions": 12,
-		"decisions": 4,
+		"submissions": 5,
+		"decisions": 3,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": true,
+	"younger_than_three": false
+},
+{
+	"name": "Rob Font",
+	"age": 26.85285388127854,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 13,
+		"knockouts": 3,
+		"submissions": 4,
+		"decisions": 6,
 		"others": 0
 	},
 	"losses": {
 		"total": 2,
 		"knockouts": 0,
+		"submissions": 0,
+		"decisions": 2,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
+{
+	"name": "Ildemar Alcantara",
+	"age": 32.2283105022831,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-115",
+	"pOdds": 53.48837209302325,
+	"potentWin": 43.47826086956522,
+	"date": "2015-07-15T04:00:00.000Z",
+	"wins": {
+		"total": 21,
+		"knockouts": 10,
+		"submissions": 6,
+		"decisions": 5,
+		"others": 0
+	},
+	"losses": {
+		"total": 7,
+		"knockouts": 2,
+		"submissions": 0,
+		"decisions": 5,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": true,
+	"younger_than_three": false
+},
+{
+	"name": "Kevin Casey",
+	"age": 33.07751141552511,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 9,
+		"knockouts": 3,
+		"submissions": 4,
+		"decisions": 2,
+		"others": 0
+	},
+	"losses": {
+		"total": 5,
+		"knockouts": 4,
+		"submissions": 0,
+		"decisions": 1,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": true,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Ildemar Alcantara",
+	"age": 31.26940639269406,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-123",
+	"pOdds": 55.15695067264574,
+	"potentWin": 40.65040650406504,
+	"date": "2014-07-05T04:00:00.000Z",
+	"wins": {
+		"total": 20,
+		"knockouts": 10,
+		"submissions": 6,
+		"decisions": 4,
+		"others": 0
+	},
+	"losses": {
+		"total": 6,
+		"knockouts": 2,
+		"submissions": 0,
+		"decisions": 4,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Kenny Robertson",
+	"age": 30.124086757990863,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 13,
+		"knockouts": 3,
+		"submissions": 9,
+		"decisions": 1,
+		"others": 0
+	},
+	"losses": {
+		"total": 3,
+		"knockouts": 1,
+		"submissions": 0,
+		"decisions": 2,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Ivan Menjivar",
+	"age": 30.759817351598173,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-125",
+	"pOdds": 55.55555555555556,
+	"potentWin": 40,
+	"date": "2013-09-21T04:00:00.000Z",
+	"wins": {
+		"total": 23,
+		"knockouts": 7,
+		"submissions": 10,
+		"decisions": 6,
+		"others": 0
+	},
+	"losses": {
+		"total": 9,
+		"knockouts": 1,
 		"submissions": 2,
+		"decisions": 6,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Wilson Reis",
+	"age": 27.940639269406386,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 16,
+		"knockouts": 0,
+		"submissions": 8,
+		"decisions": 8,
+		"others": 0
+	},
+	"losses": {
+		"total": 4,
+		"knockouts": 2,
+		"submissions": 0,
+		"decisions": 2,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Ivan Menjivar",
+	"age": 29.735159817351594,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-110",
+	"pOdds": 52.38095238095239,
+	"potentWin": 45.45454545454545,
+	"date": "2012-07-07T04:00:00.000Z",
+	"wins": {
+		"total": 22,
+		"knockouts": 7,
+		"submissions": 9,
+		"decisions": 6,
+		"others": 0
+	},
+	"losses": {
+		"total": 7,
+		"knockouts": 1,
+		"submissions": 1,
+		"decisions": 5,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Mike Easton",
+	"age": 28.006392694063923,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 12,
+		"knockouts": 4,
+		"submissions": 2,
+		"decisions": 6,
+		"others": 0
+	},
+	"losses": {
+		"total": 0,
+		"knockouts": 0,
+		"submissions": 0,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Jake Ellenberger",
+	"age": 27.19805936073059,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-290",
+	"pOdds": 74.35897435897436,
+	"potentWin": 17.24137931034483,
+	"date": "2012-10-05T04:00:00.000Z",
+	"wins": {
+		"total": 28,
+		"knockouts": 18,
+		"submissions": 5,
+		"decisions": 5,
+		"others": 0
+	},
+	"losses": {
+		"total": 6,
+		"knockouts": 1,
+		"submissions": 1,
+		"decisions": 4,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": false,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": true
+},
+{
+	"name": "Jay Hieron",
+	"age": 35.98162100456621,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 23,
+		"knockouts": 6,
+		"submissions": 7,
+		"decisions": 10,
+		"others": 0
+	},
+	"losses": {
+		"total": 5,
+		"knockouts": 3,
+		"submissions": 0,
+		"decisions": 2,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": false,
+	"older_32": true,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "James Krause",
+	"age": 28.335045662100455,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-175",
+	"pOdds": 63.63636363636363,
+	"potentWin": 28.571428571428573,
+	"date": "2015-02-28T05:00:00.000Z",
+	"wins": {
+		"total": 17,
+		"knockouts": 6,
+		"submissions": 9,
+		"decisions": 2,
+		"others": 0
+	},
+	"losses": {
+		"total": 7,
+		"knockouts": 2,
+		"submissions": 2,
+		"decisions": 3,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Valmir Lazaro",
+	"age": 29.041894977168948,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 12,
+		"knockouts": 9,
+		"submissions": 0,
+		"decisions": 3,
+		"others": 0
+	},
+	"losses": {
+		"total": 3,
+		"knockouts": 1,
+		"submissions": 1,
+		"decisions": 1,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "James Te Huna",
+	"age": 32.76792237442922,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-241",
+	"pOdds": 70.67448680351906,
+	"potentWin": 20.746887966804977,
+	"date": "2016-03-19T04:00:00.000Z",
+	"wins": {
+		"total": 15,
+		"knockouts": 10,
+		"submissions": 2,
+		"decisions": 3,
+		"others": 0
+	},
+	"losses": {
+		"total": 7,
+		"knockouts": 1,
+		"submissions": 6,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": true,
+	"younger_than_three": false
+},
+{
+	"name": "Steve Bosse",
+	"age": 33.93504566210045,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 10,
+		"knockouts": 8,
+		"submissions": 1,
+		"decisions": 1,
+		"others": 0
+	},
+	"losses": {
+		"total": 2,
+		"knockouts": 2,
+		"submissions": 0,
 		"decisions": 0,
 		"others": 0
 	},
 	"last_fight_win": false,
 	"ring_rust": true,
 	"b2b_loss": false,
-	"older_32": false
+	"older_32": true,
+	"younger_than_three": false
 }
 ],
 [
 {
-	"name": "Trevor Smith",
-	"age": 33.2857305936073,
+	"name": "Jason Day",
+	"age": 30.241894977168947,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "",
+	"potentWin": 0,
+	"date": "2010-02-05T05:00:00.000Z",
+	"wins": {
+		"total": 18,
+		"knockouts": 8,
+		"submissions": 8,
+		"decisions": 2,
+		"others": 0
+	},
+	"losses": {
+		"total": 9,
+		"knockouts": 5,
+		"submissions": 4,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Jesse Taylor",
+	"age": 25.863926940639264,
 	"height": "",
 	"reach": "",
 	"wins": {
-		"total": 11,
-		"knockouts": 1,
-		"submissions": 9,
-		"decisions": 1,
+		"total": 17,
+		"knockouts": 4,
+		"submissions": 8,
+		"decisions": 5,
 		"others": 0
 	},
 	"losses": {
 		"total": 5,
-		"knockouts": 3,
-		"submissions": 1,
+		"knockouts": 0,
+		"submissions": 4,
 		"decisions": 1,
 		"others": 0
 	},
 	"last_fight_win": false,
 	"ring_rust": false,
 	"b2b_loss": true,
-	"older_32": true
-},
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
 {
-	"name": "Tor Troeng",
-	"age": 30.630936073059356,
+	"name": "Jens Pulver",
+	"age": 33.51038812785388,
 	"height": "",
 	"reach": "",
+	"outcome": "loss",
+	"odds": "-161",
+	"pOdds": 61.68582375478927,
+	"potentWin": 31.05590062111801,
+	"date": "2008-11-05T05:00:00.000Z",
 	"wins": {
-		"total": 19,
-		"knockouts": 5,
-		"submissions": 7,
-		"decisions": 7,
+		"total": 22,
+		"knockouts": 13,
+		"submissions": 3,
+		"decisions": 6,
 		"others": 0
 	},
 	"losses": {
-		"total": 7,
-		"knockouts": 1,
-		"submissions": 4,
-		"decisions": 2,
+		"total": 9,
+		"knockouts": 5,
+		"submissions": 3,
+		"decisions": 1,
 		"others": 0
 	},
 	"last_fight_win": false,
 	"ring_rust": true,
 	"b2b_loss": true,
-	"older_32": false
+	"older_32": true,
+	"younger_than_three": false
+},
+{
+	"name": "Leonard Garcia",
+	"age": 28.606392694063924,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 11,
+		"knockouts": 2,
+		"submissions": 9,
+		"decisions": 0,
+		"others": 0
+	},
+	"losses": {
+		"total": 2,
+		"knockouts": 0,
+		"submissions": 0,
+		"decisions": 2,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": true
 }
 ],
 [
 {
-	"name": "Lorenz Larkin",
-	"age": 29.351598173515985,
+	"name": "Jeremy Horn",
+	"age": 35.31872146118721,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "",
+	"potentWin": 0,
+	"date": "2011-04-30T04:00:00.000Z",
+	"wins": {
+		"total": 87,
+		"knockouts": 16,
+		"submissions": 59,
+		"decisions": 12,
+		"others": 0
+	},
+	"losses": {
+		"total": 20,
+		"knockouts": 2,
+		"submissions": 8,
+		"decisions": 10,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": true,
+	"younger_than_three": false
+},
+{
+	"name": "Thales Leites",
+	"age": 29.16518264840182,
 	"height": "",
 	"reach": "",
 	"wins": {
-		"total": 16,
-		"knockouts": 10,
-		"submissions": 0,
-		"decisions": 6,
+		"total": 19,
+		"knockouts": 2,
+		"submissions": 13,
+		"decisions": 4,
+		"others": 0
+	},
+	"losses": {
+		"total": 4,
+		"knockouts": 0,
+		"submissions": 1,
+		"decisions": 3,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
+{
+	"name": "Jim Wallhead",
+	"age": 32.093949771689495,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-112",
+	"pOdds": 52.83018867924528,
+	"potentWin": 44.64285714285714,
+	"date": "2016-09-03T04:00:00.000Z",
+	"wins": {
+		"total": 28,
+		"knockouts": 11,
+		"submissions": 10,
+		"decisions": 7,
+		"others": 0
+	},
+	"losses": {
+		"total": 9,
+		"knockouts": 2,
+		"submissions": 3,
+		"decisions": 4,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": true,
+	"younger_than_three": false
+},
+{
+	"name": "Jessin Ayari",
+	"age": 23.8939497716895,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 15,
+		"knockouts": 3,
+		"submissions": 8,
+		"decisions": 4,
+		"others": 0
+	},
+	"losses": {
+		"total": 3,
+		"knockouts": 2,
+		"submissions": 1,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
+{
+	"name": "Joe Lauzon",
+	"age": 24.732420091324197,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-280",
+	"pOdds": 73.68421052631578,
+	"potentWin": 17.857142857142858,
+	"date": "2010-01-02T05:00:00.000Z",
+	"wins": {
+		"total": 21,
+		"knockouts": 5,
+		"submissions": 15,
+		"decisions": 1,
+		"others": 0
+	},
+	"losses": {
+		"total": 8,
+		"knockouts": 2,
+		"submissions": 3,
+		"decisions": 3,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Sam Stout",
+	"age": 25.003538812785386,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 14,
+		"knockouts": 8,
+		"submissions": 1,
+		"decisions": 5,
+		"others": 0
+	},
+	"losses": {
+		"total": 5,
+		"knockouts": 0,
+		"submissions": 2,
+		"decisions": 3,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Joey Beltran",
+	"age": 29.850114155251138,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-170",
+	"pOdds": 62.96296296296296,
+	"potentWin": 29.411764705882355,
+	"date": "2012-01-28T05:00:00.000Z",
+	"wins": {
+		"total": 13,
+		"knockouts": 11,
+		"submissions": 1,
+		"decisions": 1,
+		"others": 0
+	},
+	"losses": {
+		"total": 6,
+		"knockouts": 0,
+		"submissions": 1,
+		"decisions": 5,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": true
+},
+{
+	"name": "Lavar Johnson",
+	"age": 34.30764840182648,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 15,
+		"knockouts": 13,
+		"submissions": 2,
+		"decisions": 0,
 		"others": 0
 	},
 	"losses": {
 		"total": 5,
 		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 4,
+		"submissions": 4,
+		"decisions": 0,
 		"others": 0
 	},
 	"last_fight_win": false,
 	"ring_rust": true,
 	"b2b_loss": true,
-	"older_32": false
-},
+	"older_32": true,
+	"younger_than_three": false
+}
+],
+[
 {
-	"name": "Jorge Masvidal",
-	"age": 31.063926940639263,
+	"name": "John Kolosci",
+	"age": 34.81997716894977,
 	"height": "",
 	"reach": "",
+	"outcome": "loss",
+	"odds": "",
+	"potentWin": 0,
+	"date": "2009-11-07T05:00:00.000Z",
+	"wins": {
+		"total": 12,
+		"knockouts": 2,
+		"submissions": 5,
+		"decisions": 5,
+		"others": 0
+	},
+	"losses": {
+		"total": 7,
+		"knockouts": 1,
+		"submissions": 5,
+		"decisions": 1,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": true,
+	"younger_than_three": false
+},
+{
+	"name": "Shamar Bailey",
+	"age": 26.918607305936064,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 9,
+		"knockouts": 4,
+		"submissions": 1,
+		"decisions": 4,
+		"others": 0
+	},
+	"losses": {
+		"total": 1,
+		"knockouts": 1,
+		"submissions": 0,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
+{
+	"name": "John Maguire",
+	"age": 30.80639269406392,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-208",
+	"pOdds": 67.53246753246754,
+	"potentWin": 24.038461538461537,
+	"date": "2014-03-22T04:00:00.000Z",
+	"wins": {
+		"total": 16,
+		"knockouts": 2,
+		"submissions": 8,
+		"decisions": 6,
+		"others": 0
+	},
+	"losses": {
+		"total": 7,
+		"knockouts": 1,
+		"submissions": 0,
+		"decisions": 6,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Damir Hadzovic",
+	"age": 27.269406392694066,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 6,
+		"knockouts": 2,
+		"submissions": 3,
+		"decisions": 1,
+		"others": 0
+	},
+	"losses": {
+		"total": 2,
+		"knockouts": 0,
+		"submissions": 0,
+		"decisions": 2,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
+{
+	"name": "Jorge Masvidal",
+	"age": 31.063926940639266,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-110",
+	"pOdds": 52.38095238095239,
+	"potentWin": 45.45454545454545,
+	"date": "2016-05-29T04:00:00.000Z",
 	"wins": {
 		"total": 29,
 		"knockouts": 11,
@@ -11596,670 +3724,589 @@ module.exports = [
 	"last_fight_win": false,
 	"ring_rust": true,
 	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Paul Felder",
-	"age": 30.751598173515987,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 7,
-		"submissions": 1,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
+	"older_32": false,
+	"younger_than_three": false
 },
 {
-	"name": "Joshua Burkman",
-	"age": 35.36529680365297,
+	"name": "Lorenz Larkin",
+	"age": 29.35159817351598,
 	"height": "",
 	"reach": "",
 	"wins": {
-		"total": 20,
-		"knockouts": 5,
-		"submissions": 5,
-		"decisions": 10,
-		"others": 0
-	},
-	"losses": {
-		"total": 11,
-		"knockouts": 1,
-		"submissions": 6,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Matt Mitrione",
-	"age": 36.16792237442922,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 8,
-		"knockouts": 7,
+		"total": 16,
+		"knockouts": 10,
 		"submissions": 0,
-		"decisions": 1,
+		"decisions": 6,
 		"others": 0
 	},
 	"losses": {
-		"total": 3,
+		"total": 5,
 		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 1,
+		"submissions": 0,
+		"decisions": 4,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Jorge Masvidal",
+	"age": 29.893949771689496,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-105",
+	"pOdds": 51.21951219512195,
+	"potentWin": 47.61904761904762,
+	"date": "2015-04-04T04:00:00.000Z",
+	"wins": {
+		"total": 28,
+		"knockouts": 10,
+		"submissions": 2,
+		"decisions": 16,
+		"others": 0
+	},
+	"losses": {
+		"total": 8,
+		"knockouts": 1,
+		"submissions": 2,
+		"decisions": 5,
 		"others": 0
 	},
 	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
+	"ring_rust": false,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": false
 },
 {
-	"name": "Gabriel Gonzaga",
-	"age": 34.71598173515981,
+	"name": "Al Iaquinta",
+	"age": 27.776255707762555,
 	"height": "",
 	"reach": "",
 	"wins": {
 		"total": 16,
 		"knockouts": 7,
-		"submissions": 9,
+		"submissions": 1,
+		"decisions": 8,
+		"others": 0
+	},
+	"losses": {
+		"total": 3,
+		"knockouts": 0,
+		"submissions": 3,
 		"decisions": 0,
 		"others": 0
 	},
-	"losses": {
-		"total": 8,
-		"knockouts": 6,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Nicholas Musoke",
-	"age": 27.211757990867582,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 10,
-		"knockouts": 4,
-		"submissions": 4,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 2,
-		"others": 0
-	},
 	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Alessio Sakara",
-	"age": 31.231050228310494,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 7,
-		"submissions": 2,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 9,
-		"knockouts": 4,
-		"submissions": 2,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
+	"ring_rust": false,
 	"b2b_loss": true,
-	"older_32": false
+	"older_32": false,
+	"younger_than_three": false
 }
 ],
 [
 {
-	"name": "Alexis Davis",
-	"age": 30.57614155251141,
+	"name": "Josh Barnett",
+	"age": 35.830936073059355,
 	"height": "",
 	"reach": "",
+	"outcome": "loss",
+	"odds": "-135",
+	"pOdds": 57.446808510638306,
+	"potentWin": 37.03703703703704,
+	"date": "2013-12-28T05:00:00.000Z",
 	"wins": {
-		"total": 17,
-		"knockouts": 2,
-		"submissions": 8,
-		"decisions": 7,
+		"total": 32,
+		"knockouts": 8,
+		"submissions": 20,
+		"decisions": 4,
 		"others": 0
 	},
 	"losses": {
 		"total": 6,
-		"knockouts": 3,
-		"submissions": 0,
+		"knockouts": 1,
+		"submissions": 2,
 		"decisions": 3,
 		"others": 0
 	},
 	"last_fight_win": true,
 	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
+	"b2b_loss": true,
+	"older_32": true,
+	"younger_than_three": false
 },
 {
-	"name": "Sara McMann",
-	"age": 35.70216894977168,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 11,
-		"knockouts": 2,
-		"submissions": 3,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Ryan Hall",
-	"age": 30.82009132420091,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 6,
-		"knockouts": 1,
-		"submissions": 4,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Gray Maynard",
-	"age": 36.86655251141552,
+	"name": "Travis Browne",
+	"age": 31.107648401826477,
 	"height": "",
 	"reach": "",
 	"wins": {
 		"total": 15,
+		"knockouts": 11,
+		"submissions": 2,
+		"decisions": 2,
+		"others": 0
+	},
+	"losses": {
+		"total": 1,
+		"knockouts": 1,
+		"submissions": 0,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
+{
+	"name": "Josh Neer",
+	"age": 29.230936073059357,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-280",
+	"pOdds": 73.68421052631578,
+	"potentWin": 17.857142857142858,
+	"date": "2012-10-05T04:00:00.000Z",
+	"wins": {
+		"total": 40,
+		"knockouts": 22,
+		"submissions": 14,
+		"decisions": 4,
+		"others": 0
+	},
+	"losses": {
+		"total": 11,
+		"knockouts": 2,
+		"submissions": 4,
+		"decisions": 5,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Justin Edwards",
+	"age": 28.795319634703187,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 11,
 		"knockouts": 3,
+		"submissions": 7,
+		"decisions": 1,
+		"others": 0
+	},
+	"losses": {
+		"total": 5,
+		"knockouts": 1,
 		"submissions": 1,
+		"decisions": 3,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Josh Neer",
+	"age": 25.896803652968035,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-200",
+	"pOdds": 66.66666666666666,
+	"potentWin": 25,
+	"date": "2009-08-08T04:00:00.000Z",
+	"wins": {
+		"total": 32,
+		"knockouts": 17,
+		"submissions": 11,
+		"decisions": 4,
+		"others": 0
+	},
+	"losses": {
+		"total": 7,
+		"knockouts": 1,
+		"submissions": 3,
+		"decisions": 3,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": true
+},
+{
+	"name": "Kurt Pellegrino",
+	"age": 29.778995433789948,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 17,
+		"knockouts": 3,
+		"submissions": 9,
+		"decisions": 5,
+		"others": 0
+	},
+	"losses": {
+		"total": 4,
+		"knockouts": 0,
+		"submissions": 3,
+		"decisions": 1,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Keith Jardine",
+	"age": 33.37351598173515,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-125",
+	"pOdds": 55.55555555555556,
+	"potentWin": 40,
+	"date": "2009-08-29T04:00:00.000Z",
+	"wins": {
+		"total": 15,
+		"knockouts": 7,
+		"submissions": 2,
+		"decisions": 6,
+		"others": 0
+	},
+	"losses": {
+		"total": 6,
+		"knockouts": 3,
+		"submissions": 0,
+		"decisions": 3,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": true,
+	"b2b_loss": false,
+	"older_32": true,
+	"younger_than_three": false
+},
+{
+	"name": "Thiago Silva",
+	"age": 26.239269406392687,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 12,
+		"knockouts": 9,
+		"submissions": 2,
+		"decisions": 1,
+		"others": 0
+	},
+	"losses": {
+		"total": 1,
+		"knockouts": 1,
+		"submissions": 0,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": true,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
+{
+	"name": "Kendall Grove",
+	"age": 28.080365296803645,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-125",
+	"pOdds": 55.55555555555556,
+	"potentWin": 40,
+	"date": "2011-05-28T04:00:00.000Z",
+	"wins": {
+		"total": 13,
+		"knockouts": 2,
+		"submissions": 8,
+		"decisions": 3,
+		"others": 0
+	},
+	"losses": {
+		"total": 8,
+		"knockouts": 5,
+		"submissions": 1,
+		"decisions": 2,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Tim Boetsch",
+	"age": 29.831050228310495,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 12,
+		"knockouts": 6,
+		"submissions": 5,
+		"decisions": 1,
+		"others": 0
+	},
+	"losses": {
+		"total": 4,
+		"knockouts": 1,
+		"submissions": 1,
+		"decisions": 2,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": false,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Leonard Garcia",
+	"age": 32.258333333333326,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-125",
+	"pOdds": 55.55555555555556,
+	"potentWin": 40,
+	"date": "2012-06-08T04:00:00.000Z",
+	"wins": {
+		"total": 15,
+		"knockouts": 3,
+		"submissions": 9,
+		"decisions": 3,
+		"others": 0
+	},
+	"losses": {
+		"total": 7,
+		"knockouts": 0,
+		"submissions": 2,
+		"decisions": 5,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": true,
+	"younger_than_three": false
+},
+{
+	"name": "Matt Grice",
+	"age": 29.929566210045657,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 13,
+		"knockouts": 6,
+		"submissions": 3,
+		"decisions": 4,
+		"others": 0
+	},
+	"losses": {
+		"total": 4,
+		"knockouts": 2,
+		"submissions": 2,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Lyoto Machida",
+	"age": 36.91038812785388,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-160",
+	"pOdds": 61.53846153846154,
+	"potentWin": 31.25,
+	"date": "2015-06-27T04:00:00.000Z",
+	"wins": {
+		"total": 22,
+		"knockouts": 9,
+		"submissions": 2,
 		"decisions": 11,
 		"others": 0
 	},
 	"losses": {
 		"total": 6,
-		"knockouts": 4,
-		"submissions": 1,
+		"knockouts": 1,
+		"submissions": 2,
+		"decisions": 3,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": true,
+	"younger_than_three": false
+},
+{
+	"name": "Yoel Romero",
+	"age": 37.43641552511415,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 9,
+		"knockouts": 8,
+		"submissions": 0,
 		"decisions": 1,
 		"others": 0
 	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Devin Clark",
-	"age": null,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 10,
-		"knockouts": 6,
-		"submissions": 2,
-		"decisions": 2,
-		"others": 0
-	},
 	"losses": {
-		"total": 2,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Josh Stansbury",
-	"age": 31.65559360730593,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 18,
-		"knockouts": 7,
-		"submissions": 8,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 4,
-		"submissions": 2,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Erik Koch",
-	"age": 24.924086757990867,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 13,
-		"knockouts": 3,
-		"submissions": 7,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
+		"total": 1,
 		"knockouts": 1,
 		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Rafaello Oliveira",
-	"age": 31.46381278538812,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 4,
-		"submissions": 5,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 3,
-		"submissions": 2,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Jeremy Stephens",
-	"age": 29.14600456621005,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 25,
-		"knockouts": 16,
-		"submissions": 4,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 12,
-		"knockouts": 1,
-		"submissions": 4,
-		"decisions": 7,
+		"decisions": 0,
 		"others": 0
 	},
 	"last_fight_win": true,
 	"ring_rust": true,
+	"b2b_loss": false,
+	"older_32": true,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Mark Hominick",
+	"age": 29.77066210045661,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-272",
+	"pOdds": 73.11827956989248,
+	"potentWin": 18.38235294117647,
+	"date": "2012-11-17T05:00:00.000Z",
+	"wins": {
+		"total": 20,
+		"knockouts": 8,
+		"submissions": 8,
+		"decisions": 4,
+		"others": 0
+	},
+	"losses": {
+		"total": 11,
+		"knockouts": 3,
+		"submissions": 5,
+		"decisions": 3,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": true,
 	"b2b_loss": true,
-	"older_32": false
+	"older_32": false,
+	"younger_than_three": false
 },
 {
-	"name": "Max Holloway",
-	"age": 23.73504566210046,
+	"name": "Pablo Garza",
+	"age": 28.65559360730593,
 	"height": "",
 	"reach": "",
 	"wins": {
-		"total": 15,
-		"knockouts": 7,
-		"submissions": 2,
-		"decisions": 6,
+		"total": 11,
+		"knockouts": 2,
+		"submissions": 7,
+		"decisions": 2,
 		"others": 0
 	},
 	"losses": {
 		"total": 3,
 		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Evan Dunham",
-	"age": 31.935159817351593,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 3,
-		"submissions": 6,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 4,
+		"submissions": 2,
+		"decisions": 1,
 		"others": 0
 	},
 	"last_fight_win": false,
 	"ring_rust": true,
 	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Edson Barboza",
-	"age": 28.261073059360736,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 13,
-		"knockouts": 9,
-		"submissions": 1,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Amanda Nunes",
-	"age": 27.78447488584475,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 9,
-		"submissions": 2,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 2,
-		"submissions": 1,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Miesha Tate",
-	"age": 29.568036529680366,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 20,
-		"knockouts": 3,
-		"submissions": 9,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 3,
-		"submissions": 2,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
+	"older_32": false,
+	"younger_than_three": false
 }
 ],
 [
 {
 	"name": "Mark Hunt",
-	"age": 42.019977168949765,
+	"age": 35.20079908675798,
 	"height": "",
 	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 9,
-		"submissions": 0,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 10,
-		"knockouts": 4,
-		"submissions": 6,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Brock Lesnar",
-	"age": 34.49132420091323,
-	"height": "",
-	"reach": "",
+	"outcome": "loss",
+	"odds": "-169",
+	"pOdds": 62.825278810408925,
+	"potentWin": 29.585798816568047,
+	"date": "2010-09-25T04:00:00.000Z",
 	"wins": {
 		"total": 5,
-		"knockouts": 2,
-		"submissions": 2,
-		"decisions": 1,
+		"knockouts": 3,
+		"submissions": 0,
+		"decisions": 2,
 		"others": 0
 	},
 	"losses": {
-		"total": 3,
-		"knockouts": 2,
-		"submissions": 1,
+		"total": 6,
+		"knockouts": 1,
+		"submissions": 5,
 		"decisions": 0,
 		"others": 0
 	},
 	"last_fight_win": false,
 	"ring_rust": true,
 	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Anderson Silva",
-	"age": 40.90228310502282,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 33,
-		"knockouts": 20,
-		"submissions": 6,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 2,
-		"submissions": 2,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
+	"older_32": true,
+	"younger_than_three": false
 },
 {
-	"name": "Daniel Cormier",
-	"age": 36.565182648401816,
+	"name": "Sean McCorkle",
+	"age": 33.8857305936073,
 	"height": "",
 	"reach": "",
 	"wins": {
-		"total": 17,
-		"knockouts": 6,
-		"submissions": 5,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Igor Pokrajac",
-	"age": 34.79543378995433,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 6,
-		"submissions": 7,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
 		"total": 9,
-		"knockouts": 3,
-		"submissions": 2,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Marcos Rogerio de Lima",
-	"age": 28.951484018264843,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 9,
-		"submissions": 2,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Renato Carneiro",
-	"age": 25.178881278538817,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 8,
-		"knockouts": 0,
+		"knockouts": 4,
 		"submissions": 4,
-		"decisions": 4,
+		"decisions": 1,
 		"others": 0
 	},
 	"losses": {
@@ -12270,746 +4317,53 @@ module.exports = [
 		"others": 0
 	},
 	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Tom Niinimaki",
-	"age": 32.10216894977168,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 18,
-		"knockouts": 4,
-		"submissions": 8,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 1,
-		"submissions": 4,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
 	"ring_rust": false,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Sean O'Connell",
-	"age": 32.81723744292237,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 7,
-		"submissions": 3,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 9,
-		"knockouts": 4,
-		"submissions": 3,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Corey Anderson",
-	"age": 26.66107305936073,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 11,
-		"knockouts": 3,
-		"submissions": 0,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
 	"b2b_loss": false,
-	"older_32": false
+	"older_32": true,
+	"younger_than_three": false
 }
 ],
 [
 {
-	"name": "Ashley Yoder",
-	"age": 29.102283105022835,
+	"name": "Marvin Eastman",
+	"age": 38.2912100456621,
 	"height": "",
 	"reach": "",
-	"wins": {
-		"total": 6,
-		"knockouts": 0,
-		"submissions": 4,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Justine Kish",
-	"age": 27.740639269406394,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 6,
-		"knockouts": 0,
-		"submissions": 3,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 0,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Trevor Smith",
-	"age": 35.60901826484018,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 1,
-		"submissions": 9,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 4,
-		"submissions": 1,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Andrew Sanchez",
-	"age": 28.269292237442926,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 10,
-		"knockouts": 6,
-		"submissions": 2,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Thomas Almeida",
-	"age": 23.751484018264843,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 18,
-		"knockouts": 14,
-		"submissions": 3,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 0,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Brad Pickett",
-	"age": 36.187214611872136,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 25,
-		"knockouts": 8,
-		"submissions": 10,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 10,
-		"knockouts": 1,
-		"submissions": 4,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Alex Garcia",
-	"age": 27.129566210045667,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 5,
-		"submissions": 5,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Mike Swick",
-	"age": 33.49680365296803,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 8,
-		"submissions": 3,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 2,
-		"submissions": 2,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Louis Smolka",
-	"age": 23.329680365296806,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 10,
-		"knockouts": 4,
-		"submissions": 5,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Neil Seery",
-	"age": 35.428310502283104,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 6,
-		"submissions": 5,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 1,
-		"submissions": 5,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Sam Sicilia",
-	"age": 29.469292237442925,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 17,
-		"knockouts": 9,
-		"submissions": 5,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 1,
-		"submissions": 4,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Doo Ho Choi",
-	"age": 23.6365296803653,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 9,
-		"submissions": 1,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Danny Castillo",
-	"age": 34.693949771689496,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 17,
-		"knockouts": 6,
-		"submissions": 4,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 2,
-		"submissions": 2,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Tony Ferguson",
-	"age": 30.29942922374429,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 18,
-		"knockouts": 12,
-		"submissions": 4,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Shayna Baszler",
-	"age": 32.43378995433789,
-	"height": "",
-	"reach": "",
+	"outcome": "loss",
+	"odds": "-105",
+	"pOdds": 51.21951219512195,
+	"potentWin": 47.61904761904762,
+	"date": "2009-10-02T04:00:00.000Z",
 	"wins": {
 		"total": 16,
-		"knockouts": 0,
-		"submissions": 15,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 9,
-		"knockouts": 3,
-		"submissions": 4,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Bethe Correia",
-	"age": 30.866552511415517,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 8,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 0,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Alexander Yakovlev",
-	"age": 31.557077625570773,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 21,
-		"knockouts": 7,
-		"submissions": 8,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 0,
+		"knockouts": 4,
 		"submissions": 3,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Kamaru Usman",
-	"age": 27.62557077625571,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 7,
-		"knockouts": 5,
-		"submissions": 1,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Dennis Siver",
-	"age": 35.74874429223743,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 22,
-		"knockouts": 5,
-		"submissions": 9,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 9,
-		"knockouts": 2,
-		"submissions": 5,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Conor McGregor",
-	"age": 26.22271689497717,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 17,
-		"knockouts": 15,
-		"submissions": 1,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 0,
-		"submissions": 2,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Ron Stallings",
-	"age": 31.704908675799082,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 11,
-		"knockouts": 5,
-		"submissions": 6,
-		"decisions": 0,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 2,
-		"submissions": 1,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Uriah Hall",
-	"age": 29.94874429223744,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 13,
-		"knockouts": 8,
-		"submissions": 2,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Lorenz Larkin",
-	"age": 28.009018264840186,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 8,
-		"submissions": 0,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "John Howard",
-	"age": 31.598059360730584,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 22,
-		"knockouts": 9,
-		"submissions": 6,
-		"decisions": 7,
+		"decisions": 9,
 		"others": 0
 	},
 	"losses": {
 		"total": 10,
-		"knockouts": 2,
-		"submissions": 1,
-		"decisions": 7,
+		"knockouts": 5,
+		"submissions": 2,
+		"decisions": 3,
 		"others": 0
 	},
 	"last_fight_win": false,
-	"ring_rust": true,
+	"ring_rust": false,
 	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
+	"older_32": true,
+	"younger_than_three": false
+},
 {
-	"name": "Chris Wade",
-	"age": 26.93504566210046,
+	"name": "Ryan Jimmo",
+	"age": 27.482990867579904,
 	"height": "",
 	"reach": "",
 	"wins": {
 		"total": 9,
-		"knockouts": 0,
-		"submissions": 3,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Lipeng Zhang",
-	"age": 24.472031963470325,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 7,
-		"knockouts": 1,
-		"submissions": 3,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 0,
-		"submissions": 5,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Joby Sanchez",
-	"age": 23.181621004566214,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 7,
 		"knockouts": 4,
-		"submissions": 3,
-		"decisions": 0,
+		"submissions": 2,
+		"decisions": 3,
 		"others": 0
 	},
 	"losses": {
@@ -13019,746 +4373,1305 @@ module.exports = [
 		"decisions": 1,
 		"others": 0
 	},
-	"last_fight_win": false,
-	"ring_rust": false,
+	"last_fight_win": true,
+	"ring_rust": true,
 	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Tateki Matsuda",
-	"age": 28.54052511415525,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 10,
-		"knockouts": 4,
-		"submissions": 1,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 6,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": false,
-	"b2b_loss": true,
-	"older_32": false
+	"older_32": false,
+	"younger_than_three": true
 }
 ],
 [
 {
-	"name": "Justin Edwards",
-	"age": 30.609018264840177,
+	"name": "Matt Hughes",
+	"age": 34.233789954337894,
 	"height": "",
 	"reach": "",
+	"outcome": "loss",
+	"odds": "-190",
+	"pOdds": 65.51724137931035,
+	"potentWin": 26.315789473684212,
+	"date": "2008-06-07T04:00:00.000Z",
 	"wins": {
-		"total": 12,
-		"knockouts": 3,
-		"submissions": 8,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 2,
-		"submissions": 1,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Ramsey Nijem",
-	"age": 25.3953196347032,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 10,
-		"knockouts": 3,
-		"submissions": 4,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 2,
-		"submissions": 2,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Drew Dober",
-	"age": 27.91312785388128,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 22,
-		"knockouts": 6,
-		"submissions": 11,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 6,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Olivier Aubin-Mercier",
-	"age": 27.33504566210046,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 8,
-		"knockouts": 0,
-		"submissions": 7,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Viviane Pereira",
-	"age": 22.956963470319636,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 11,
-		"knockouts": 4,
-		"submissions": 2,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 0,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Valerie Letourneau",
-	"age": 33.162442922374424,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 8,
-		"knockouts": 4,
-		"submissions": 1,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 2,
-		"submissions": 1,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Charles Oliveira",
-	"age": 25.170776255707768,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 19,
-		"knockouts": 5,
-		"submissions": 12,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 2,
-		"submissions": 1,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Nik Lentz",
-	"age": 29.759703196347026,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 25,
-		"knockouts": 6,
-		"submissions": 10,
+		"total": 42,
+		"knockouts": 16,
+		"submissions": 17,
 		"decisions": 9,
 		"others": 0
 	},
 	"losses": {
 		"total": 6,
 		"knockouts": 2,
+		"submissions": 4,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": true,
+	"younger_than_three": false
+},
+{
+	"name": "Thiago Alves",
+	"age": 24.515867579908672,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 15,
+		"knockouts": 10,
 		"submissions": 1,
-		"decisions": 3,
+		"decisions": 4,
+		"others": 0
+	},
+	"losses": {
+		"total": 5,
+		"knockouts": 1,
+		"submissions": 3,
+		"decisions": 1,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
+{
+	"name": "Michael Johnson",
+	"age": 28.74063926940639,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-134",
+	"pOdds": 57.26495726495726,
+	"potentWin": 37.31343283582089,
+	"date": "2015-08-08T04:00:00.000Z",
+	"wins": {
+		"total": 16,
+		"knockouts": 8,
+		"submissions": 1,
+		"decisions": 7,
+		"others": 0
+	},
+	"losses": {
+		"total": 7,
+		"knockouts": 0,
+		"submissions": 5,
+		"decisions": 2,
 		"others": 0
 	},
 	"last_fight_win": true,
 	"ring_rust": true,
 	"b2b_loss": true,
-	"older_32": false
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Beneil Dariush",
+	"age": 25.96792237442922,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 11,
+		"knockouts": 2,
+		"submissions": 6,
+		"decisions": 3,
+		"others": 0
+	},
+	"losses": {
+		"total": 1,
+		"knockouts": 1,
+		"submissions": 0,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Michael Johnson",
+	"age": 26.58995433789954,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-240",
+	"pOdds": 70.58823529411765,
+	"potentWin": 20.833333333333336,
+	"date": "2013-04-06T04:00:00.000Z",
+	"wins": {
+		"total": 12,
+		"knockouts": 7,
+		"submissions": 1,
+		"decisions": 4,
+		"others": 0
+	},
+	"losses": {
+		"total": 6,
+		"knockouts": 0,
+		"submissions": 4,
+		"decisions": 2,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": true
+},
+{
+	"name": "Reza Madadi",
+	"age": 34.34052511415524,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 11,
+		"knockouts": 1,
+		"submissions": 7,
+		"decisions": 3,
+		"others": 0
+	},
+	"losses": {
+		"total": 3,
+		"knockouts": 0,
+		"submissions": 0,
+		"decisions": 3,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": true,
+	"b2b_loss": false,
+	"older_32": true,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Mike Massenzio",
+	"age": 29.222831050228304,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-125",
+	"pOdds": 55.55555555555556,
+	"potentWin": 40,
+	"date": "2012-05-05T04:00:00.000Z",
+	"wins": {
+		"total": 13,
+		"knockouts": 2,
+		"submissions": 6,
+		"decisions": 5,
+		"others": 0
+	},
+	"losses": {
+		"total": 6,
+		"knockouts": 2,
+		"submissions": 3,
+		"decisions": 1,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Karlos Vemola",
+	"age": 26.137785388127853,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 8,
+		"knockouts": 4,
+		"submissions": 4,
+		"decisions": 0,
+		"others": 0
+	},
+	"losses": {
+		"total": 2,
+		"knockouts": 0,
+		"submissions": 0,
+		"decisions": 2,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": true,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
+{
+	"name": "Nate Marquardt",
+	"age": 33.25833333333333,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-310",
+	"pOdds": 75.60975609756098,
+	"potentWin": 16.129032258064516,
+	"date": "2013-01-12T05:00:00.000Z",
+	"wins": {
+		"total": 32,
+		"knockouts": 9,
+		"submissions": 15,
+		"decisions": 8,
+		"others": 0
+	},
+	"losses": {
+		"total": 10,
+		"knockouts": 1,
+		"submissions": 2,
+		"decisions": 7,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": false,
+	"older_32": true,
+	"younger_than_three": false
+},
+{
+	"name": "Tarec Saffiedine",
+	"age": 25.96792237442922,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 13,
+		"knockouts": 1,
+		"submissions": 5,
+		"decisions": 7,
+		"others": 0
+	},
+	"losses": {
+		"total": 3,
+		"knockouts": 0,
+		"submissions": 0,
+		"decisions": 3,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
+{
+	"name": "Nate Marquardt",
+	"age": 31.42819634703196,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-190",
+	"pOdds": 65.51724137931035,
+	"potentWin": 26.315789473684212,
+	"date": "2010-11-13T05:00:00.000Z",
+	"wins": {
+		"total": 30,
+		"knockouts": 8,
+		"submissions": 15,
+		"decisions": 7,
+		"others": 0
+	},
+	"losses": {
+		"total": 9,
+		"knockouts": 1,
+		"submissions": 2,
+		"decisions": 6,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Yushin Okami",
+	"age": 29.050114155251137,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 26,
+		"knockouts": 10,
+		"submissions": 5,
+		"decisions": 11,
+		"others": 0
+	},
+	"losses": {
+		"total": 5,
+		"knockouts": 1,
+		"submissions": 0,
+		"decisions": 4,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Nate Marquardt",
+	"age": 28.809132420091323,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-206",
+	"pOdds": 67.3202614379085,
+	"potentWin": 24.271844660194173,
+	"date": "2008-06-07T04:00:00.000Z",
+	"wins": {
+		"total": 26,
+		"knockouts": 4,
+		"submissions": 15,
+		"decisions": 7,
+		"others": 0
+	},
+	"losses": {
+		"total": 7,
+		"knockouts": 1,
+		"submissions": 2,
+		"decisions": 4,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Thales Leites",
+	"age": 25.9843607305936,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 13,
+		"knockouts": 2,
+		"submissions": 9,
+		"decisions": 2,
+		"others": 0
+	},
+	"losses": {
+		"total": 1,
+		"knockouts": 0,
+		"submissions": 0,
+		"decisions": 1,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Pat Barry",
+	"age": 33.96518264840182,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-170",
+	"pOdds": 62.96296296296296,
+	"potentWin": 29.411764705882355,
+	"date": "2013-12-06T05:00:00.000Z",
+	"wins": {
+		"total": 8,
+		"knockouts": 7,
+		"submissions": 0,
+		"decisions": 1,
+		"others": 0
+	},
+	"losses": {
+		"total": 6,
+		"knockouts": 3,
+		"submissions": 3,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": true,
+	"younger_than_three": false
+},
+{
+	"name": "Soa Palelei",
+	"age": 35.756963470319626,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 19,
+		"knockouts": 15,
+		"submissions": 4,
+		"decisions": 0,
+		"others": 0
+	},
+	"losses": {
+		"total": 3,
+		"knockouts": 1,
+		"submissions": 2,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": false,
+	"older_32": true,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Patrick Cote",
+	"age": 32.10764840182648,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-180",
+	"pOdds": 64.28571428571429,
+	"potentWin": 27.77777777777778,
+	"date": "2012-07-07T04:00:00.000Z",
+	"wins": {
+		"total": 19,
+		"knockouts": 8,
+		"submissions": 3,
+		"decisions": 8,
+		"others": 0
+	},
+	"losses": {
+		"total": 7,
+		"knockouts": 1,
+		"submissions": 3,
+		"decisions": 3,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": true,
+	"younger_than_three": true
+},
+{
+	"name": "Cung Le",
+	"age": 39.51324200913241,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 7,
+		"knockouts": 7,
+		"submissions": 0,
+		"decisions": 0,
+		"others": 0
+	},
+	"losses": {
+		"total": 2,
+		"knockouts": 2,
+		"submissions": 0,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": true,
+	"b2b_loss": false,
+	"older_32": true,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Patrick Cote",
+	"age": 30.209018264840175,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-170",
+	"pOdds": 62.96296296296296,
+	"potentWin": 29.411764705882355,
+	"date": "2010-10-23T04:00:00.000Z",
+	"wins": {
+		"total": 15,
+		"knockouts": 6,
+		"submissions": 3,
+		"decisions": 6,
+		"others": 0
+	},
+	"losses": {
+		"total": 6,
+		"knockouts": 1,
+		"submissions": 3,
+		"decisions": 2,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Tom Lawlor",
+	"age": 27.000799086757986,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 7,
+		"knockouts": 2,
+		"submissions": 4,
+		"decisions": 1,
+		"others": 0
+	},
+	"losses": {
+		"total": 3,
+		"knockouts": 1,
+		"submissions": 1,
+		"decisions": 1,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
+{
+	"name": "Paulo Thiago",
+	"age": 32.811872146118716,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-175",
+	"pOdds": 63.63636363636363,
+	"potentWin": 28.571428571428573,
+	"date": "2014-05-31T04:00:00.000Z",
+	"wins": {
+		"total": 15,
+		"knockouts": 2,
+		"submissions": 8,
+		"decisions": 5,
+		"others": 0
+	},
+	"losses": {
+		"total": 6,
+		"knockouts": 2,
+		"submissions": 0,
+		"decisions": 4,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": true,
+	"younger_than_three": false
+},
+{
+	"name": "Gasan Umalatov",
+	"age": 31.26940639269406,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 14,
+		"knockouts": 2,
+		"submissions": 7,
+		"decisions": 5,
+		"others": 0
+	},
+	"losses": {
+		"total": 3,
+		"knockouts": 0,
+		"submissions": 0,
+		"decisions": 3,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": true,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Quinton Jackson",
+	"age": 33.2857305936073,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-145",
+	"pOdds": 59.183673469387756,
+	"potentWin": 34.48275862068966,
+	"date": "2012-02-25T05:00:00.000Z",
+	"wins": {
+		"total": 32,
+		"knockouts": 14,
+		"submissions": 7,
+		"decisions": 11,
+		"others": 0
+	},
+	"losses": {
+		"total": 8,
+		"knockouts": 3,
+		"submissions": 2,
+		"decisions": 3,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": false,
+	"b2b_loss": false,
+	"older_32": true,
+	"younger_than_three": false
+},
+{
+	"name": "Ryan Bader",
+	"age": 28.472146118721458,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 16,
+		"knockouts": 7,
+		"submissions": 4,
+		"decisions": 5,
+		"others": 0
+	},
+	"losses": {
+		"total": 2,
+		"knockouts": 0,
+		"submissions": 2,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
+{
+	"name": "Quinton Jackson",
+	"age": 30.73515981735159,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-109",
+	"pOdds": 52.15311004784689,
+	"potentWin": 45.871559633027516,
+	"date": "2010-05-29T04:00:00.000Z",
+	"wins": {
+		"total": 30,
+		"knockouts": 14,
+		"submissions": 7,
+		"decisions": 9,
+		"others": 0
+	},
+	"losses": {
+		"total": 6,
+		"knockouts": 3,
+		"submissions": 1,
+		"decisions": 2,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Rashad Evans",
+	"age": 30.294063926940634,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 16,
+		"knockouts": 5,
+		"submissions": 1,
+		"decisions": 10,
+		"others": 0
+	},
+	"losses": {
+		"total": 1,
+		"knockouts": 1,
+		"submissions": 0,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Ramiro Hernandez",
+	"age": 29.814497716894977,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "",
+	"potentWin": 0,
+	"date": "2016-06-24T04:00:00.000Z",
+	"wins": {
+		"total": 17,
+		"knockouts": 5,
+		"submissions": 5,
+		"decisions": 7,
+		"others": 0
+	},
+	"losses": {
+		"total": 8,
+		"knockouts": 1,
+		"submissions": 1,
+		"decisions": 6,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Rick Glenn",
+	"age": 26.95422374429224,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 17,
+		"knockouts": 10,
+		"submissions": 5,
+		"decisions": 2,
+		"others": 0
+	},
+	"losses": {
+		"total": 3,
+		"knockouts": 0,
+		"submissions": 2,
+		"decisions": 1,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Rich Clementi",
+	"age": 35.044634703196344,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "",
+	"potentWin": 0,
+	"date": "2011-04-30T04:00:00.000Z",
+	"wins": {
+		"total": 41,
+		"knockouts": 9,
+		"submissions": 24,
+		"decisions": 8,
+		"others": 0
+	},
+	"losses": {
+		"total": 17,
+		"knockouts": 3,
+		"submissions": 7,
+		"decisions": 7,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": true,
+	"younger_than_three": false
+},
+{
+	"name": "Reza Madadi",
+	"age": 32.3816210045662,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 9,
+		"knockouts": 1,
+		"submissions": 6,
+		"decisions": 2,
+		"others": 0
+	},
+	"losses": {
+		"total": 2,
+		"knockouts": 0,
+		"submissions": 0,
+		"decisions": 2,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": false,
+	"older_32": true,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Rich Franklin",
+	"age": 37.74326484018265,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-360",
+	"pOdds": 78.26086956521739,
+	"potentWin": 13.88888888888889,
+	"date": "2012-11-10T05:00:00.000Z",
+	"wins": {
+		"total": 29,
+		"knockouts": 15,
+		"submissions": 10,
+		"decisions": 4,
+		"others": 0
+	},
+	"losses": {
+		"total": 7,
+		"knockouts": 5,
+		"submissions": 0,
+		"decisions": 2,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": false,
+	"older_32": true,
+	"younger_than_three": false
+},
+{
+	"name": "Cung Le",
+	"age": 40.14600456621004,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 8,
+		"knockouts": 7,
+		"submissions": 0,
+		"decisions": 1,
+		"others": 0
+	},
+	"losses": {
+		"total": 2,
+		"knockouts": 2,
+		"submissions": 0,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": false,
+	"older_32": true,
+	"younger_than_three": false
 }
 ],
 [
 {
 	"name": "Robbie Lawler",
-	"age": 31.683105022831047,
+	"age": 33.811872146118716,
 	"height": "",
 	"reach": "",
+	"outcome": "loss",
+	"odds": "-117",
+	"pOdds": 53.91705069124424,
+	"potentWin": 42.73504273504274,
+	"date": "2016-07-30T04:00:00.000Z",
 	"wins": {
-		"total": 23,
-		"knockouts": 19,
-		"submissions": 1,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 9,
-		"knockouts": 1,
-		"submissions": 5,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Johny Hendricks",
-	"age": 30.200913242009126,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 8,
+		"total": 28,
+		"knockouts": 21,
 		"submissions": 1,
 		"decisions": 6,
 		"others": 0
 	},
 	"losses": {
-		"total": 2,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Tyron Woodley",
-	"age": 31.606392694063917,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 4,
-		"submissions": 6,
+		"total": 10,
+		"knockouts": 1,
+		"submissions": 5,
 		"decisions": 4,
 		"others": 0
 	},
+	"last_fight_win": true,
+	"ring_rust": true,
+	"b2b_loss": true,
+	"older_32": true,
+	"younger_than_three": false
+},
+{
+	"name": "Tyron Woodley",
+	"age": 32.814611872146116,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 17,
+		"knockouts": 6,
+		"submissions": 6,
+		"decisions": 5,
+		"others": 0
+	},
 	"losses": {
-		"total": 2,
+		"total": 3,
 		"knockouts": 1,
 		"submissions": 0,
-		"decisions": 1,
+		"decisions": 2,
 		"others": 0
 	},
 	"last_fight_win": true,
 	"ring_rust": true,
 	"b2b_loss": false,
-	"older_32": false
+	"older_32": true,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Ross Pearson",
+	"age": 29.907648401826478,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-130",
+	"pOdds": 56.52173913043478,
+	"potentWin": 38.46153846153846,
+	"date": "2014-11-07T05:00:00.000Z",
+	"wins": {
+		"total": 15,
+		"knockouts": 6,
+		"submissions": 5,
+		"decisions": 4,
+		"others": 0
+	},
+	"losses": {
+		"total": 8,
+		"knockouts": 2,
+		"submissions": 3,
+		"decisions": 3,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
 },
 {
-	"name": "Carlos Condit",
-	"age": 29.359703196347024,
+	"name": "Al Iaquinta",
+	"age": 27.37066210045662,
 	"height": "",
 	"reach": "",
 	"wins": {
-		"total": 29,
-		"knockouts": 14,
-		"submissions": 13,
+		"total": 14,
+		"knockouts": 5,
+		"submissions": 1,
+		"decisions": 8,
+		"others": 0
+	},
+	"losses": {
+		"total": 3,
+		"knockouts": 0,
+		"submissions": 3,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Roy Nelson",
+	"age": 36.877511415525106,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-260",
+	"pOdds": 72.22222222222221,
+	"potentWin": 19.23076923076923,
+	"date": "2013-06-15T04:00:00.000Z",
+	"wins": {
+		"total": 19,
+		"knockouts": 12,
+		"submissions": 5,
 		"decisions": 2,
 		"others": 0
 	},
 	"losses": {
 		"total": 7,
-		"knockouts": 0,
-		"submissions": 3,
-		"decisions": 4,
+		"knockouts": 1,
+		"submissions": 0,
+		"decisions": 6,
 		"others": 0
 	},
 	"last_fight_win": true,
-	"ring_rust": true,
+	"ring_rust": false,
 	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
+	"older_32": true,
+	"younger_than_three": false
+},
 {
-	"name": "Myles Jury",
-	"age": 24.907648401826485,
+	"name": "Stipe Miocic",
+	"age": 30.13504566210045,
 	"height": "",
 	"reach": "",
 	"wins": {
-		"total": 20,
-		"knockouts": 9,
-		"submissions": 8,
-		"decisions": 3,
+		"total": 14,
+		"knockouts": 12,
+		"submissions": 1,
+		"decisions": 1,
 		"others": 0
 	},
 	"losses": {
 		"total": 1,
-		"knockouts": 0,
+		"knockouts": 1,
 		"submissions": 0,
-		"decisions": 1,
+		"decisions": 0,
 		"others": 0
 	},
-	"last_fight_win": true,
+	"last_fight_win": false,
 	"ring_rust": true,
 	"b2b_loss": false,
-	"older_32": false
-},
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
 {
-	"name": "Diego Sanchez",
-	"age": 31.822716894977162,
+	"name": "Scott Jorgensen",
+	"age": 30.59257990867579,
 	"height": "",
 	"reach": "",
+	"outcome": "loss",
+	"odds": "-220",
+	"pOdds": 68.75,
+	"potentWin": 22.727272727272727,
+	"date": "2013-12-14T05:00:00.000Z",
 	"wins": {
-		"total": 27,
-		"knockouts": 6,
-		"submissions": 11,
-		"decisions": 10,
+		"total": 14,
+		"knockouts": 2,
+		"submissions": 5,
+		"decisions": 7,
 		"others": 0
 	},
 	"losses": {
-		"total": 6,
+		"total": 7,
 		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 5,
+		"submissions": 2,
+		"decisions": 4,
 		"others": 0
 	},
 	"last_fight_win": false,
 	"ring_rust": true,
 	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
+	"older_32": false,
+	"younger_than_three": false
+},
 {
-	"name": "Hector Lombard",
-	"age": 35.73504566210045,
+	"name": "Zach Makovsky",
+	"age": 31.42009132420091,
 	"height": "",
 	"reach": "",
 	"wins": {
-		"total": 33,
-		"knockouts": 19,
-		"submissions": 7,
-		"decisions": 7,
+		"total": 16,
+		"knockouts": 1,
+		"submissions": 6,
+		"decisions": 9,
 		"others": 0
 	},
 	"losses": {
 		"total": 4,
 		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 4,
+		"submissions": 3,
+		"decisions": 1,
 		"others": 0
 	},
 	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Steven Siler",
+	"age": 27.11860730593607,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-210",
+	"pOdds": 67.74193548387096,
+	"potentWin": 23.80952380952381,
+	"date": "2014-07-26T04:00:00.000Z",
+	"wins": {
+		"total": 23,
+		"knockouts": 3,
+		"submissions": 13,
+		"decisions": 7,
+		"others": 0
+	},
+	"losses": {
+		"total": 12,
+		"knockouts": 5,
+		"submissions": 5,
+		"decisions": 2,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
 },
 {
-	"name": "Jake Shields",
-	"age": 34.77340182648401,
+	"name": "Noad Lahat",
+	"age": 29.809018264840173,
 	"height": "",
 	"reach": "",
 	"wins": {
-		"total": 29,
-		"knockouts": 3,
-		"submissions": 10,
+		"total": 7,
+		"knockouts": 2,
+		"submissions": 4,
+		"decisions": 1,
+		"others": 0
+	},
+	"losses": {
+		"total": 1,
+		"knockouts": 1,
+		"submissions": 0,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": true,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": false
+}
+],
+[
+{
+	"name": "Terry Martin",
+	"age": 28.135159817351592,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-205",
+	"pOdds": 67.21311475409836,
+	"potentWin": 24.390243902439025,
+	"date": "2009-02-14T05:00:00.000Z",
+	"wins": {
+		"total": 16,
+		"knockouts": 11,
+		"submissions": 5,
+		"decisions": 0,
+		"others": 0
+	},
+	"losses": {
+		"total": 7,
+		"knockouts": 5,
+		"submissions": 0,
+		"decisions": 2,
+		"others": 0
+	},
+	"last_fight_win": false,
+	"ring_rust": false,
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
+},
+{
+	"name": "Zak Cummings",
+	"age": 24.335159817351595,
+	"height": "",
+	"reach": "",
+	"wins": {
+		"total": 6,
+		"knockouts": 2,
+		"submissions": 2,
+		"decisions": 2,
+		"others": 0
+	},
+	"losses": {
+		"total": 0,
+		"knockouts": 0,
+		"submissions": 0,
+		"decisions": 0,
+		"others": 0
+	},
+	"last_fight_win": true,
+	"ring_rust": false,
+	"b2b_loss": false,
+	"older_32": false,
+	"younger_than_three": true
+}
+],
+[
+{
+	"name": "Travis Wiuff",
+	"age": 30.905022831050225,
+	"height": "",
+	"reach": "",
+	"outcome": "loss",
+	"odds": "-160",
+	"pOdds": 61.53846153846154,
+	"potentWin": 31.25,
+	"date": "2009-05-02T04:00:00.000Z",
+	"wins": {
+		"total": 52,
+		"knockouts": 18,
+		"submissions": 18,
 		"decisions": 16,
 		"others": 0
 	},
 	"losses": {
-		"total": 6,
-		"knockouts": 2,
-		"submissions": 0,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Rick Story",
-	"age": 29.23926940639269,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 4,
-		"submissions": 3,
-		"decisions": 9,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 6,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Kelvin Gastelum",
-	"age": 21.861073059360734,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 11,
-		"knockouts": 4,
-		"submissions": 5,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 0,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Robert Whiteford",
-	"age": 30.56244292237442,
-	"height": "",
-	"reach": "",
-	"wins": {
 		"total": 12,
-		"knockouts": 6,
-		"submissions": 1,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Daniel Pineda",
-	"age": 28.050114155251144,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 4,
-		"submissions": 11,
-		"decisions": 0,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 1,
-		"submissions": 4,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Ryan Hall",
-	"age": 29.288470319634698,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 5,
-		"knockouts": 1,
-		"submissions": 4,
-		"decisions": 0,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Artem Lobov",
-	"age": 28.494063926940644,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 17,
-		"knockouts": 7,
-		"submissions": 4,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 12,
-		"knockouts": 1,
-		"submissions": 2,
-		"decisions": 9,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Mike Pierce",
-	"age": 33.12682648401826,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 19,
-		"knockouts": 10,
-		"submissions": 1,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": true
-},
-{
-	"name": "Ryan LaFlare",
-	"age": 31.49121004566209,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 11,
-		"knockouts": 4,
-		"submissions": 3,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Abner Lloveras",
-	"age": 32.62271689497716,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 20,
 		"knockouts": 5,
-		"submissions": 6,
-		"decisions": 9,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 2,
-		"submissions": 1,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Chris Gruetzemacher",
-	"age": 27.80353881278539,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 7,
-		"submissions": 3,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Derrick Lewis",
-	"age": 31.192579908675793,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 15,
-		"submissions": 1,
-		"decisions": 0,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 2,
-		"submissions": 0,
+		"submissions": 5,
 		"decisions": 2,
 		"others": 0
 	},
 	"last_fight_win": true,
 	"ring_rust": false,
-	"b2b_loss": false,
-	"older_32": false
+	"b2b_loss": true,
+	"older_32": false,
+	"younger_than_three": false
 },
 {
-	"name": "Roy Nelson",
-	"age": 39.65844748858447,
+	"name": "Stanislav Nedkov",
+	"age": 27.25570776255707,
 	"height": "",
 	"reach": "",
 	"wins": {
-		"total": 21,
-		"knockouts": 13,
-		"submissions": 5,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 12,
-		"knockouts": 2,
-		"submissions": 0,
-		"decisions": 10,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Alberto Mina",
-	"age": 33.59817351598173,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 5,
-		"submissions": 6,
+		"total": 8,
+		"knockouts": 4,
+		"submissions": 3,
 		"decisions": 1,
 		"others": 0
 	},
@@ -13772,881 +5685,64 @@ module.exports = [
 	"last_fight_win": true,
 	"ring_rust": true,
 	"b2b_loss": false,
-	"older_32": true
-},
-{
-	"name": "Mike Pyle",
-	"age": 40.41461187214612,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 27,
-		"knockouts": 7,
-		"submissions": 16,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 11,
-		"knockouts": 5,
-		"submissions": 4,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
+	"older_32": false,
+	"younger_than_three": true
 }
 ],
 [
 {
-	"name": "Pedro Munhoz",
-	"age": 29.18721461187215,
+	"name": "Rani Yahya",
+	"age": 28.669292237442917,
 	"height": "",
 	"reach": "",
+	"outcome": "loss",
+	"odds": "-105",
+	"pOdds": 51.21951219512195,
+	"potentWin": 47.61904761904762,
+	"date": "2013-11-30T05:00:00.000Z",
 	"wins": {
-		"total": 11,
-		"knockouts": 2,
-		"submissions": 6,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
+		"total": 16,
 		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Russell Doane",
-	"age": 28.93230593607306,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 6,
-		"submissions": 5,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 0,
-		"submissions": 3,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Charles Oliveira",
-	"age": 24.713127853881282,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 18,
-		"knockouts": 5,
 		"submissions": 12,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 2,
-		"submissions": 1,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Jeremy Stephens",
-	"age": 28.110388127853884,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 24,
-		"knockouts": 15,
-		"submissions": 4,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 11,
-		"knockouts": 1,
-		"submissions": 4,
-		"decisions": 6,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Angela Magana",
-	"age": 30.118607305936067,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 11,
-		"knockouts": 2,
-		"submissions": 6,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 1,
-		"submissions": 4,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Tecia Torres",
-	"age": 24.32694063926941,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 12,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 10,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Michael Chiesa",
-	"age": 27.34326484018265,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 18,
-		"knockouts": 2,
-		"submissions": 10,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 1,
-		"submissions": 2,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Jim Miller",
-	"age": 31.92408675799086,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 25,
-		"knockouts": 3,
-		"submissions": 14,
-		"decisions": 8,
+		"decisions": 4,
 		"others": 0
 	},
 	"losses": {
 		"total": 6,
-		"knockouts": 1,
+		"knockouts": 2,
 		"submissions": 1,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Johnny Eduardo",
-	"age": 33.78984018264839,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 25,
-		"knockouts": 5,
-		"submissions": 13,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 9,
-		"knockouts": 0,
-		"submissions": 7,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Aljamain Sterling",
-	"age": 25.73230593607306,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 13,
-		"knockouts": 2,
-		"submissions": 6,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Nick Diaz",
-	"age": 29.641894977168942,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 26,
-		"knockouts": 13,
-		"submissions": 8,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 9,
-		"knockouts": 2,
-		"submissions": 0,
-		"decisions": 7,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Anderson Silva",
-	"age": 38.73515981735159,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 33,
-		"knockouts": 20,
-		"submissions": 6,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 5,
-		"knockouts": 2,
-		"submissions": 2,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Al Iaquinta",
-	"age": 27.543378995433795,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 6,
-		"submissions": 1,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 0,
-		"submissions": 3,
-		"decisions": 0,
+		"decisions": 3,
 		"others": 0
 	},
 	"last_fight_win": true,
 	"ring_rust": false,
 	"b2b_loss": true,
-	"older_32": false
+	"older_32": false,
+	"younger_than_three": false
 },
 {
-	"name": "Joe Lauzon",
-	"age": 30.31038812785387,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 27,
-		"knockouts": 6,
-		"submissions": 19,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 13,
-		"knockouts": 3,
-		"submissions": 4,
-		"decisions": 6,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Tim Boetsch",
-	"age": 33.570662100456616,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 18,
-		"knockouts": 8,
-		"submissions": 5,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 2,
-		"submissions": 2,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Thales Leites",
-	"age": 32.9843607305936,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 25,
-		"knockouts": 4,
-		"submissions": 14,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Derek Brunson",
-	"age": 30.674771689497707,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 14,
-		"knockouts": 6,
-		"submissions": 4,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 3,
-		"knockouts": 2,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Ed Herman",
-	"age": 33.62545662100456,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 28,
-		"knockouts": 7,
-		"submissions": 17,
-		"decisions": 4,
-		"others": 0
-	},
-	"losses": {
-		"total": 11,
-		"knockouts": 1,
-		"submissions": 6,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Zach Makovsky",
-	"age": 32.918607305936064,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 19,
-		"knockouts": 1,
-		"submissions": 6,
-		"decisions": 12,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 0,
-		"submissions": 3,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Joseph Benavidez",
-	"age": 31.195319634703193,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 23,
-		"knockouts": 6,
-		"submissions": 9,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 4,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Alex White",
-	"age": 26.140639269406392,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 11,
-		"knockouts": 5,
-		"submissions": 5,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Artem Lobov",
-	"age": 29.354337899543385,
+	"name": "Tom Niinimaki",
+	"age": 31.181621004566203,
 	"height": "",
 	"reach": "",
 	"wins": {
 		"total": 17,
-		"knockouts": 7,
-		"submissions": 4,
-		"decisions": 6,
-		"others": 0
-	},
-	"losses": {
-		"total": 13,
-		"knockouts": 1,
-		"submissions": 2,
-		"decisions": 10,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Naoyuki Kotani",
-	"age": 32.63367579908675,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 33,
-		"knockouts": 5,
-		"submissions": 25,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 11,
-		"knockouts": 6,
-		"submissions": 1,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-},
-{
-	"name": "Yan Cabral",
-	"age": 31.014497716894972,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 11,
-		"knockouts": 0,
-		"submissions": 10,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 0,
-		"submissions": 0,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Wilson Reis",
-	"age": 29.647374429223742,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 18,
-		"knockouts": 0,
+		"knockouts": 4,
 		"submissions": 8,
-		"decisions": 10,
+		"decisions": 5,
 		"others": 0
 	},
 	"losses": {
 		"total": 5,
-		"knockouts": 2,
-		"submissions": 0,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Scott Jorgensen",
-	"age": 31.743264840182643,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 2,
-		"submissions": 5,
-		"decisions": 8,
-		"others": 0
-	},
-	"losses": {
-		"total": 9,
 		"knockouts": 1,
-		"submissions": 3,
-		"decisions": 5,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Andre Fili",
-	"age": 23.85285388127854,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 13,
-		"knockouts": 7,
-		"submissions": 3,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Felipe Arantes",
-	"age": 26.036529680365298,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 16,
-		"knockouts": 7,
-		"submissions": 4,
-		"decisions": 5,
-		"others": 0
-	},
-	"losses": {
-		"total": 6,
-		"knockouts": 0,
 		"submissions": 2,
-		"decisions": 4,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-}
-],
-[
-{
-	"name": "Tony Martin",
-	"age": 24.71586757990868,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 10,
-		"knockouts": 2,
-		"submissions": 6,
-		"decisions": 2,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 0,
-		"submissions": 1,
-		"decisions": 1,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": false
-},
-{
-	"name": "Fabricio Camoes",
-	"age": 35.039269406392684,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 13,
-		"knockouts": 4,
-		"submissions": 6,
-		"decisions": 3,
-		"others": 0
-	},
-	"losses": {
-		"total": 8,
-		"knockouts": 2,
-		"submissions": 4,
-		"decisions": 2,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-],
-[
-{
-	"name": "Ruslan Magomedov",
-	"age": 28.009132420091326,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 13,
-		"knockouts": 4,
-		"submissions": 2,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 1,
-		"knockouts": 1,
-		"submissions": 0,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": true,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Shawn Jordan",
-	"age": 30.644634703196342,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 18,
-		"knockouts": 15,
-		"submissions": 2,
-		"decisions": 1,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 5,
-		"submissions": 0,
 		"decisions": 2,
 		"others": 0
 	},
 	"last_fight_win": true,
-	"ring_rust": true,
+	"ring_rust": false,
 	"b2b_loss": true,
-	"older_32": false
+	"older_32": false,
+	"younger_than_three": false
 }
 ],
-[
-{
-	"name": "Sergio Pettis",
-	"age": 21.584360730593612,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 15,
-		"knockouts": 4,
-		"submissions": 4,
-		"decisions": 7,
-		"others": 0
-	},
-	"losses": {
-		"total": 2,
-		"knockouts": 1,
-		"submissions": 1,
-		"decisions": 0,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": false,
-	"older_32": false
-},
-{
-	"name": "Chris Cariaso",
-	"age": 33.81997716894976,
-	"height": "",
-	"reach": "",
-	"wins": {
-		"total": 17,
-		"knockouts": 3,
-		"submissions": 2,
-		"decisions": 12,
-		"others": 0
-	},
-	"losses": {
-		"total": 7,
-		"knockouts": 1,
-		"submissions": 3,
-		"decisions": 3,
-		"others": 0
-	},
-	"last_fight_win": false,
-	"ring_rust": true,
-	"b2b_loss": true,
-	"older_32": true
-}
-]
-]
