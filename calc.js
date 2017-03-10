@@ -39,20 +39,28 @@ for (var d=0; d<bfo.length; d++) {
 // bet = bet amt
 function calcTotal(f1, f2, outcome, odds1, odds2, dateTime, bet) {
    winner = calculatePrediction(f1, f2, outcome, odds1, odds2, dateTime)
+   //betPrediction(winner.odds, winner.outcome)
+   betChanceOverOdds(winner.wChance, winner.pOdds, winner.odds, winner.outcome)
+
    // Bet winning prediction
-   if (winner.outcome === "win") {
-      if (Number(winner.odds) < 0) {
-         score.mWin += (-bet/(Number(winner.odds)/100))
-         score.win += 1
-      }
-      else {
-        score.mWin += (bet*(Number(winner.odds)/100))
-        score.win += 1
-      }
-   }
-   else if(winner.outcome === "loss") {
-         score.mLose += bet
-         score.lose += 1
+   function betPrediction(odds, outcome) {
+   	if (outcome === "win") {
+   		if (Number(odds) < 0) {
+			score.mWin += (-bet/(Number(odds)/100))
+			score.win += 1
+		}
+		else {
+			score.mWin += (bet*(Number(winner.odds)/100))
+			score.win += 1
+		}
+   	}
+   	else if (outcome === "loss") {
+   		score.mLose += bet
+   		score.lose += 1
+   	}
+   	else {
+   		score.noBet += 1
+   	}
    }
 
    // Bet if win chance is greater than odds
