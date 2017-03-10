@@ -64,34 +64,34 @@ function calcTotal(f1, f2, outcome, odds1, odds2, dateTime, bet) {
    }
 
    // Bet if win chance is greater than odds
-   function betChanceOverOdds(chance, percentOdds, odds, outcome) {
-   		if (outcome === "win") {
-   			if (chance > percentOdds) {
-   				if (Number(odds) < 0) {
-   					score.mWin += (-bet/(Number(winner.odds)/100))
-   					score.win += 1
-   				}
-   				else {
-   					score.mWin += (bet*(Number(winner.odds)/ 100))
-   					score.win += 1
-   				}
-   			}
-   			else {
-   				score.noBet += 1
-   			}
-   		}
-   		else if (winner.outcome === "loss") {
-   			if (chance > percentOdds) {
-   				score.mLose += bet
-   				score.lose += 1
-   			}
-   			else {
-   				score.noBet += 1
-   			}
-   		}
-   }
-   console.log(winner)
-   console.log(score)
+  function betChanceOverOdds(chance, percentOdds, odds, outcome) {
+    if (outcome === "win") {
+      if (chance > percentOdds) {
+        if (Number(odds) < 0) {
+          score.mWin += (-bet/(Number(winner.odds)/100))
+          score.win += 1
+        }
+        else {
+          score.mWin += (bet*(Number(winner.odds)/ 100))
+          score.win += 1
+        }
+      }
+      else {
+      score.noBet += 1
+      }
+    }
+    else if (winner.outcome === "loss") {
+      if (chance > percentOdds) {
+        score.mLose += bet
+        score.lose += 1
+      }
+      else {
+        score.noBet += 1
+      }
+    }
+  }
+console.log(winner)
+console.log(score)
 }
 
 function calculatePrediction(f1, f2, outcome, odds1, odds2, dateTime) {
@@ -116,7 +116,7 @@ function calculatePrediction(f1, f2, outcome, odds1, odds2, dateTime) {
       outcome2 = "win"
    }
 
-   if (f1.wins.total != 0 && f2.wins.total != 0) {
+   if (f1.wins.total !== 0 && f2.wins.total !== 0) {
       wChance = calcWinChance(statCombo, f1, f2) 
    }
    else {
@@ -174,12 +174,12 @@ function calcWinChance(sc, f1, f2) {
 
    // 1--- Older Than 32 Will Likely Lose (62%)
    if (sc[0] === 1) {
-      if (f1.older_32 === true && f2.older_32 != true) {
+      if (f1.older_32 === true && f2.older_32 !== true) {
          totalWeight.f2.totalFights += sWeight.totalF.s1
          totalWeight.f2.singleFights += sWeight.singleF.s1
          totalWeight.f1.totalFights += sWeight.totalF.s1
       }
-      if (f2.older_32 === true && f1.older_32 != true) {
+      if (f2.older_32 === true && f1.older_32 !== true) {
          totalWeight.f1.totalFights += sWeight.totalF.s1
          totalWeight.f1.singleFights += sWeight.singleF.s1
          totalWeight.f2.totalFights += sWeight.totalF.s1
@@ -231,10 +231,10 @@ function calcWinChance(sc, f1, f2) {
 }
 
 function oddsToPercent(odds) {
-   if (Number(odds) != 0 && Number(odds) < 0) {
+   if (Number(odds) !== 0 && Number(odds) < 0) {
       pOdds = ((-1*Number(odds)) / ((-1*(Number(odds)))+100))*100
    }
-   else if (Number(odds) != 0) {
+   else if (Number(odds) !== 0) {
       pOdds = (100 / (Number(odds)+ 100))*100
    }
    return pOdds
