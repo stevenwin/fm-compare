@@ -1,28 +1,233 @@
-
-var fm_list = require('./helpers/fm_list.js')
 var sherdogData = require('./helpers/sherdogdata.js')
-var fights = require('./helpers/fights.js')
-var fm_api = require('./api/fm_api.js')
-var manual_test = require('./api/manual_test.js')
 var bfo = require('./bfoUniqueFights.js')
-
-const async = require('async')
-const fs = require('fs')
+var fs = require('fs')
 var today = new Date()
-// Have:
-// f1, f2, odds, date, outcome
-// 
-// Want:
-// relevant sherdog data based on date
 
-function calculatePrediction(fighter1, fighter2, outcome, odds1, odds2, dateTime) {
-   f1 = getFighterStat(fighter1, dateTime)
-   f2 = getFighterStat(fighter2, dateTime)
+// parameter statCombo is an Array of integers representing the stats to activate 1-4
+// 1--- Older Than 32 Will Likely Lose (62%)
+// 2--- 6+ Losses more Likely to Lose (60%)
+// 3--- 15+ win and 50% of Opponent Losses Likely Win (78%)
+// 4--- 3x Decisions Wins of Opponent (60%)
+var statCombo = [1, 2, null, null]
+var err_count = 0
+var score = {
+   mWin: 0,
+   mLose: 0,
+   win: 0,
+   lose: 0,
+   noBet: 0
+}
+
+for (var d=0; d<bfo.length; d++) {
+   try {
+      calcTotal(bfo[d].fighterOne.fighterName, bfo[d].fighterTwo.fighterName, bfo[d].fighterOne.outcome, bfo[d].fighterOne.openOdds, bfo[d].fighterTwo.openOdds, bfo[d].eventDate, 100)
+   }
+   catch(e) {
+         err_count += 1
+         //console.log("error: "+err_count)
+         //fs.appendFileSync("./error.js", "error: "+err_count+"\n")
+      }
+}
+
+//calcTotal("Anderson Silva", "Chris Weidman", "loss", "-175", "+145", "2013-12-28T05:00:00.000Z", 50)
+
+// calculate win/loss ratio and dollar amount
+// f1 = fighter1
+// f2 = fighter2
+// outcome = fighter1's fight outcome
+// odds1 = fighter1 odds
+// odds2 = fighter2 odds
+// dateTime = date of event
+// bet = bet amt
+function calcTotal(f1, f2, outcome, odds1, odds2, dateTime, bet) {
+   winner = calculatePrediction(f1, f2, outcome, odds1, odds2, dateTime)
+   // Bet winning prediction
+   if (winner.outcome === "win") {
+      if (Number(winner.odds) < 0) {
+         score.mWin += (-bet/(Number(winner.odds)/100))
+         score.win += 1
+      }
+      else {
+        score.mWin += (bet*(Number(winner.odds)/100))
+        score.win += 1
+      }
+   }
+   else if(winner.outcome === "loss") {
+         score.mLose += bet
+         score.lose += 1
+   }
+
+   // Bet if win chance is greater than odds
+   /*if (winner.outcome === "win") {
+      if (winner.wChance > pOdds) {
+         if (Number(winner.odds) < 0) {
+            score.mWin += (-bet/(Number(winner.odds)/100))
+            score.win += 1
+         }
+         else {
+           score.mWin += (bet*(Number(winner.odds)/100))
+           score.win += 1
+         }
+      }
+      else {
+         score.noBet += 1
+      }
+   }
+   else if (winner.outcome === "loss") {
+      if (winner.wChance > pOdds) {
+         score.mLose += bet
+         score.lose += 1
+      }
+      else {
+         score.noBet += 1
+      }
+   }*/
+
+   console.log(winner)
+   console.log(score)
+}
+
+function calculatePrediction(f1, f2, outcome, odds1, odds2, dateTime) {
+   f1 = getFighterStat(f1, dateTime)
+   f2 = getFighterStat(f2, dateTime)
+   pOdds1 = oddsToPercent(odds1)
+   pOdds2 = oddsToPercent(odds2)
+   winner = {
+      name: "",
+      opponent: "",
+      wChance: "",
+      odds: "",
+      pOdds: "",
+      outcome: ""
+   }
+
+   if (outcome === "win") {
+      outcome2 = "loss"
+   }
+   else {
+      outcome2 = "win"
+   }
+
+   if (f1.wins.total != 0 && f2.wins.total != 0) {
+      wChance = calcWinChance(statCombo, f1, f2) 
+   }
+   else {
+      return //console.log("SherdogData error for fight between "+f1.name+" and "+f2.name)
+   }
+
+   if (wChance[0] > wChance[1] ) {
+      winner.name = f1.name
+      winner.opponent = f2.name
+      winner.wChance = wChance[0]
+      winner.odds = odds1
+      winner.pOdds = pOdds1
+      winner.outcome = outcome
+   }
+   else if (wChance[1] > wChance[0]) {
+      winner.name = f2.name
+      winner.opponent = f1.name
+      winner.wChance = wChance[1]
+      winner.odds = odds2
+      winner.pOdds = pOdds2
+      winner.outcome = outcome2
+   }
+   return winner
+}
 
 
+function calcWinChance(sc, f1, f2) {
+   var wChance = []
+   var totalWeight = {
+      f1: {
+         totalFights: 0,
+         singleFights: 0
+      },
+      f2: {
+         totalFights: 0,
+         singleFights: 0
+      }
+   }
+   var sWeight = {
+      totalF: {
+         s1: 277,
+         s2: 291,
+         s3: 307,
+         s4: 235
+      },
+      singleF: {
+         s1: 173,
+         s2: 172,
+         s3: 239,
+         s4: 142
+      }
+   }
 
+   // 1--- Older Than 32 Will Likely Lose (62%)
+   if (sc[0] === 1) {
+      if (f1.older_32 === true && f2.older_32 != true) {
+         totalWeight.f2.totalFights += sWeight.totalF.s1
+         totalWeight.f2.singleFights += sWeight.singleF.s1
+         totalWeight.f1.totalFights += sWeight.totalF.s1
+      }
+      if (f2.older_32 === true && f1.older_32 != true) {
+         totalWeight.f1.totalFights += sWeight.totalF.s1
+         totalWeight.f1.singleFights += sWeight.singleF.s1
+         totalWeight.f2.totalFights += sWeight.totalF.s1
+      }
+   }
+   // 2--- 6+ Losses more Likely to Lose (60%)
+   if (sc[1] === 2) {
+      if (f1.losses.total >= 6) {
+         totalWeight.f2.totalFights += sWeight.totalF.s2
+         totalWeight.f2.singleFights += sWeight.singleF.s2
+         totalWeight.f1.totalFights += sWeight.totalF.s2
+      }
+      if (f2.losses.total >= 6) {
+         totalWeight.f1.totalFights += sWeight.totalF.s2
+         totalWeight.f1.singleFights += sWeight.singleF.s2
+         totalWeight.f2.totalFights += sWeight.totalF.s2
+      }
+   }
+   // 3--- 15+ win and 50% of Opponent Losses Likely Win (78%)
+   if (sc[2] === 3) {
+      if (f1.wins.total > 14 && f2.losses.total/f1.losses.total >= 2) {
+         totalWeight.f1.totalFights += sWeight.totalF.s3
+         totalWeight.f1.singleFights += sWeight.singleF.s3
+         totalWeight.f2.totalFights += sWeight.totalF.s3
+      }
+      if (f2.wins.total > 14 && f1.losses.total/f2.losses.total >= 2) {
+         totalWeight.f2.totalFights += sWeight.totalF.s3
+         totalWeight.f2.singleFights += sWeight.singleF.s3
+         totalWeight.f1.totalFights += sWeight.totalF.s3
+      }
+   }
+   // 4--- 3x Decisions Wins of Opponent (60%)
+   if (sc[3] === 4) {
+      if (f1.wins.decisions/f2.wins.decisions >= 3) {
+         totalWeight.f1.totalFights += sWeight.totalF.s4
+         totalWeight.f1.singleFights += sWeight.singleF.s4
+         totalWeight.f2.totalFights += sWeight.totalF.s4
+      }
+      if (f2.wins.decisions/f1.wins.decisions >= 3) {
+         totalWeight.f2.totalFights += sWeight.totalF.s4
+         totalWeight.f2.singleFights += sWeight.singleF.s4
+         totalWeight.f1.totalFights += sWeight.totalF.s4
+      }
+   }
+   wChance[0] = (totalWeight.f1.singleFights/totalWeight.f1.totalFights)*100
+   wChance[1] = (totalWeight.f2.singleFights/totalWeight.f2.totalFights)*100
 
-console.log(f1)
+   return wChance
+}
+
+function oddsToPercent(odds) {
+   if (Number(odds) != 0 && Number(odds) < 0) {
+      pOdds = ((-1*Number(odds)) / ((-1*(Number(odds)))+100))*100
+   }
+   else if (Number(odds) != 0) {
+      pOdds = (100 / (Number(odds)+ 100))*100
+   }
+   return pOdds
 }
 
 // function to get fighter stats into an object
@@ -31,7 +236,7 @@ function getFighterStat(fName, dateTime) {
    var year = dateToYear(dateTime)
    var relevantBucket = []
    var fighter = {
-      name: "",
+      name: fName,
       age: "",
       date: "",
 
@@ -54,8 +259,6 @@ function getFighterStat(fName, dateTime) {
       b2b_loss: false,
       older_32: false
    }
-
-   fighter.name = fName
    
    for (var i=0;i<sherdogData.length;i++) {
       for (var k in sherdogData[i]) {
@@ -117,7 +320,6 @@ function getFighterStat(fName, dateTime) {
             if (dateToYear(sherdogData[i].birthday) - dateToYear(relevantBucket[0].date) > 32) {
                fighter.older_32 = true
             }
-
 
             // calculate ring rust
             if (dateToDay(relevantBucket[0].date) - date >= 300) {
