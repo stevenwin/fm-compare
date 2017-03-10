@@ -8,7 +8,7 @@ var today = new Date()
 // 2--- 6+ Losses more Likely to Lose (60%)
 // 3--- 15+ win and 50% of Opponent Losses Likely Win (78%)
 // 4--- 3x Decisions Wins of Opponent (60%)
-var statCombo = [1, 2, null, null]
+var statCombo = [1, null, null, null]
 var err_count = 0
 var score = {
    mWin: 0,
@@ -28,8 +28,6 @@ for (var d=0; d<bfo.length; d++) {
          //fs.appendFileSync("./error.js", "error: "+err_count+"\n")
       }
 }
-
-//calcTotal("Anderson Silva", "Chris Weidman", "loss", "-175", "+145", "2013-12-28T05:00:00.000Z", 50)
 
 // calculate win/loss ratio and dollar amount
 // f1 = fighter1
@@ -58,31 +56,32 @@ function calcTotal(f1, f2, outcome, odds1, odds2, dateTime, bet) {
    }
 
    // Bet if win chance is greater than odds
-   /*if (winner.outcome === "win") {
-      if (winner.wChance > pOdds) {
-         if (Number(winner.odds) < 0) {
-            score.mWin += (-bet/(Number(winner.odds)/100))
-            score.win += 1
-         }
-         else {
-           score.mWin += (bet*(Number(winner.odds)/100))
-           score.win += 1
-         }
-      }
-      else {
-         score.noBet += 1
-      }
+   function betChanceOverOdds(chance, percentOdds, odds, outcome) {
+   		if (outcome === "win") {
+   			if (chance > percentOdds) {
+   				if (Number(odds) < 0) {
+   					score.mWin += (-bet/(Number(winner.odds)/100))
+   					score.win += 1
+   				}
+   				else {
+   					score.mWin += (bet*(Number(winner.odds)/ 100))
+   					score.win += 1
+   				}
+   			}
+   			else {
+   				score.noBet += 1
+   			}
+   		}
+   		else if (winner.outcome === "loss") {
+   			if (chance > percentOdds) {
+   				score.mLose += bet
+   				score.lose += 1
+   			}
+   			else {
+   				score.noBet += 1
+   			}
+   		}
    }
-   else if (winner.outcome === "loss") {
-      if (winner.wChance > pOdds) {
-         score.mLose += bet
-         score.lose += 1
-      }
-      else {
-         score.noBet += 1
-      }
-   }*/
-
    console.log(winner)
    console.log(score)
 }
@@ -95,6 +94,7 @@ function calculatePrediction(f1, f2, outcome, odds1, odds2, dateTime) {
    winner = {
       name: "",
       opponent: "",
+      opponentChance: "",
       wChance: "",
       odds: "",
       pOdds: "",
@@ -118,6 +118,7 @@ function calculatePrediction(f1, f2, outcome, odds1, odds2, dateTime) {
    if (wChance[0] > wChance[1] ) {
       winner.name = f1.name
       winner.opponent = f2.name
+      winner.opponentChance = wChance[1]
       winner.wChance = wChance[0]
       winner.odds = odds1
       winner.pOdds = pOdds1
@@ -126,6 +127,7 @@ function calculatePrediction(f1, f2, outcome, odds1, odds2, dateTime) {
    else if (wChance[1] > wChance[0]) {
       winner.name = f2.name
       winner.opponent = f1.name
+      winner.opponentChance = wChance[0]
       winner.wChance = wChance[1]
       winner.odds = odds2
       winner.pOdds = pOdds2
