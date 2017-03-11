@@ -8,7 +8,8 @@ var today = new Date()
 // 2--- 6+ Losses more Likely to Lose (60%)
 // 3--- 15+ win and 50% of Opponent Losses Likely Win (78%)
 // 4--- 3x Decisions Wins of Opponent (60%)
-var statCombo = [1, null, null, null]
+// 5-- Ring Rust 210+ Days Likely to Lose (59%)
+var statCombo = [1, 2, 3, null, null]
 var err_count = 0
 var score = {
    mWin: 0,
@@ -39,8 +40,8 @@ for (var d=0; d<bfo.length; d++) {
 // bet = bet amt
 function calcTotal(f1, f2, outcome, odds1, odds2, dateTime, bet) {
    winner = calculatePrediction(f1, f2, outcome, odds1, odds2, dateTime)
-   betPrediction(winner.odds, winner.outcome)
-   //betChanceOverOdds(winner.wChance, winner.pOdds, winner.odds, winner.outcome)
+   //betPrediction(winner.odds, winner.outcome)
+   betChanceOverOdds(winner.wChance, winner.pOdds, winner.odds, winner.outcome)
 
    // Bet winning prediction
    function betPrediction(odds, outcome) {
@@ -162,13 +163,15 @@ function calcWinChance(sc, f1, f2) {
          s1: 277,
          s2: 291,
          s3: 307,
-         s4: 235
+         s4: 235,
+         s5: 276
       },
       singleF: {
          s1: 173,
          s2: 172,
          s3: 239,
-         s4: 142
+         s4: 142,
+         s5: 162
       }
    }
 
@@ -178,24 +181,28 @@ function calcWinChance(sc, f1, f2) {
          totalWeight.f2.totalFights += sWeight.totalF.s1
          totalWeight.f2.singleFights += sWeight.singleF.s1
          totalWeight.f1.totalFights += sWeight.totalF.s1
+         totalWeight.f1.singleFights += sWeight.totalF.s1 - sWeight.singleF.s1
       }
       if (f2.older_32 === true && f1.older_32 !== true) {
          totalWeight.f1.totalFights += sWeight.totalF.s1
          totalWeight.f1.singleFights += sWeight.singleF.s1
          totalWeight.f2.totalFights += sWeight.totalF.s1
+         totalWeight.f2.singleFights += sWeight.totalF.s1 - sWeight.singleF.s1
       }
    }
    // 2--- 6+ Losses more Likely to Lose (60%)
    if (sc[1] === 2) {
-      if (f1.losses.total >= 6) {
+      if (f1.losses.total >= 6 && f2.losses.total < 6) {
          totalWeight.f2.totalFights += sWeight.totalF.s2
          totalWeight.f2.singleFights += sWeight.singleF.s2
          totalWeight.f1.totalFights += sWeight.totalF.s2
+         totalWeight.f1.singleFights += sWeight.totalF.s2 - sWeight.singleF.s2
       }
-      if (f2.losses.total >= 6) {
+      if (f2.losses.total >= 6 && f1.losses.total < 6) {
          totalWeight.f1.totalFights += sWeight.totalF.s2
          totalWeight.f1.singleFights += sWeight.singleF.s2
          totalWeight.f2.totalFights += sWeight.totalF.s2
+         totalWeight.f2.singleFights += sWeight.totalF.s2 - sWeight.singleF.s2
       }
    }
    // 3--- 15+ win and 50% of Opponent Losses Likely Win (78%)
@@ -204,11 +211,13 @@ function calcWinChance(sc, f1, f2) {
          totalWeight.f1.totalFights += sWeight.totalF.s3
          totalWeight.f1.singleFights += sWeight.singleF.s3
          totalWeight.f2.totalFights += sWeight.totalF.s3
+         totalWeight.f2.singleFights += sWeight.totalF.s3 - sWeight.singleF.s3
       }
       if (f2.wins.total > 14 && f1.losses.total/f2.losses.total >= 2) {
          totalWeight.f2.totalFights += sWeight.totalF.s3
          totalWeight.f2.singleFights += sWeight.singleF.s3
          totalWeight.f1.totalFights += sWeight.totalF.s3
+         totalWeight.f1.singleFights += sWeight.totalF.s3 - sWeight.singleF.s3
       }
    }
    // 4--- 3x Decisions Wins of Opponent (60%)
@@ -217,13 +226,31 @@ function calcWinChance(sc, f1, f2) {
          totalWeight.f1.totalFights += sWeight.totalF.s4
          totalWeight.f1.singleFights += sWeight.singleF.s4
          totalWeight.f2.totalFights += sWeight.totalF.s4
+         totalWeight.f2.singleFights += sWeight.totalF.s4 - sWeight.singleF.s4
       }
       if (f2.wins.decisions/f1.wins.decisions >= 3) {
          totalWeight.f2.totalFights += sWeight.totalF.s4
          totalWeight.f2.singleFights += sWeight.singleF.s4
          totalWeight.f1.totalFights += sWeight.totalF.s4
+         totalWeight.f1.singleFights += sWeight.totalF.s4 - sWeight.singleF.s4
       }
    }
+   // 5--- Ring Rust 210+ Days Likely to Lose (59%)
+   if (sc[4] === 5) {
+         if (f1.ring_rust === true && f2.ring_rust === false) {
+            totalWeight.f2.totalFights += sWeight.totalF.s5
+            totalWeight.f2.singleFights += sWeight.singleF.s5
+            totalWeight.f1.totalFights += sWeight.totalF.s5
+            totalWeight.f1.singleFights += sWeight.totalF.s5 - sWeight.singleF.s5
+         }
+         if (f2.ring_rust === true && f1.ring_rust === false) {
+            totalWeight.f1.totalFights += sWeight.totalF.s5
+            totalWeight.f1.singleFights += sWeight.singleF.s5
+            totalWeight.f2.totalFights += sWeight.totalF.s5
+            totalWeight.f2.singleFights += sWeight.totalF.s5 - sWeight.singleF.s5
+         }
+   }
+
    wChance[0] = (totalWeight.f1.singleFights/totalWeight.f1.totalFights)*100
    wChance[1] = (totalWeight.f2.singleFights/totalWeight.f2.totalFights)*100
 
