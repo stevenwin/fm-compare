@@ -39,8 +39,8 @@ for (var d=0; d<bfo.length; d++) {
 // bet = bet amt
 function calcTotal(f1, f2, outcome, odds1, odds2, dateTime, bet) {
    winner = calculatePrediction(f1, f2, outcome, odds1, odds2, dateTime)
-   //betPrediction(winner.odds, winner.outcome)
-   betChanceOverOdds(winner.wChance, winner.pOdds, winner.odds, winner.outcome)
+   betPrediction(winner.odds, winner.outcome)
+   //betChanceOverOdds(winner.wChance, winner.pOdds, winner.odds, winner.outcome)
 
    // Bet winning prediction
    function betPrediction(odds, outcome) {
