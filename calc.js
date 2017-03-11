@@ -8,8 +8,11 @@ var today = new Date()
 // 2--- 6+ Losses more Likely to Lose (60%)
 // 3--- 15+ win and 50% of Opponent Losses Likely Win (78%)
 // 4--- 3x Decisions Wins of Opponent (60%)
-// 5-- Ring Rust 210+ Days Likely to Lose (59%)
-var statCombo = [1, 2, 3, null, null]
+// 5 -- Ring Rust 210+ Days Likely to Lose (59%)
+// 6 --- More Sub Losses Than Oppoenent Likely Lose (57%)
+// 7--- Younger Than 3 (58%)
+// 8--- 2x More wins and Opponent Lose Last Fight (68%)
+var statCombo = [null, null, 3, 4, null, 6, 7, 8]
 var err_count = 0
 var score = {
    mWin: 0,
@@ -40,8 +43,8 @@ for (var d=0; d<bfo.length; d++) {
 // bet = bet amt
 function calcTotal(f1, f2, outcome, odds1, odds2, dateTime, bet) {
    winner = calculatePrediction(f1, f2, outcome, odds1, odds2, dateTime)
-   //betPrediction(winner.odds, winner.outcome)
-   betChanceOverOdds(winner.wChance, winner.pOdds, winner.odds, winner.outcome)
+   betPrediction(winner.odds, winner.outcome)
+   //betChanceOverOdds(winner.wChance, winner.pOdds, winner.odds, winner.outcome)
 
    // Bet winning prediction
    function betPrediction(odds, outcome) {
@@ -164,14 +167,21 @@ function calcWinChance(sc, f1, f2) {
          s2: 291,
          s3: 307,
          s4: 235,
-         s5: 276
+         s5: 276,
+         s6: 522,
+         s7: 566,
+         s8: 1049
+
       },
       singleF: {
          s1: 173,
          s2: 172,
          s3: 239,
          s4: 142,
-         s5: 162
+         s5: 162,
+         s6: 295,
+         s7: 324,
+         s8: 709
       }
    }
 
@@ -250,6 +260,51 @@ function calcWinChance(sc, f1, f2) {
             totalWeight.f2.singleFights += sWeight.totalF.s5 - sWeight.singleF.s5
          }
    }
+   // 6--- More Sub Losses Than Oppoenent Likely Lose (57%)
+   if (sc[5] === 6) {
+         if (f1.losses.submissions < f2.losses.submissions) {
+            totalWeight.f1.totalFights += sWeight.totalF.s6
+            totalWeight.f1.singleFights += sWeight.singleF.s6
+            totalWeight.f2.totalFights += sWeight.totalF.s6
+            totalWeight.f2.singleFights += sWeight.totalF.s6 - sWeight.singleF.s6
+         }
+         if (f2.losses.submissions < f1.losses.submissions) {
+            totalWeight.f2.totalFights += sWeight.totalF.s6
+            totalWeight.f2.singleFights += sWeight.singleF.s6
+            totalWeight.f1.totalFights += sWeight.totalF.s6
+            totalWeight.f1.singleFights += sWeight.totalF.s6 - sWeight.singleF.s6
+         }
+      }
+   // 7--- Younger Than 3 (58%)
+   if (sc[6] === 7) {
+         if (f1.age - f2.age > 2) {
+            totalWeight.f2.totalFights += sWeight.totalF.s7
+            totalWeight.f2.singleFights += sWeight.singleF.s7
+            totalWeight.f1.totalFights += sWeight.totalF.s7
+            totalWeight.f1.singleFights += sWeight.totalF.s7 - sWeight.singleF.s7
+         }
+         if (f2.age - f1.age > 2) {
+            totalWeight.f1.totalFights += sWeight.totalF.s7
+            totalWeight.f1.singleFights += sWeight.singleF.s7
+            totalWeight.f2.totalFights += sWeight.totalF.s7
+            totalWeight.f2.singleFights += sWeight.totalF.s7 - sWeight.singleF.s7
+         }
+      }
+   // 8--- 2x More wins and Opponent Lose Last Fight (68%)   
+   if (sc[7] === 8) {
+         if (f1.wins.total/f2.wins.total >= 2 && f2.last_fight_win === false) {
+            totalWeight.f1.totalFights += sWeight.totalF.s8
+            totalWeight.f1.singleFights += sWeight.singleF.s8
+            totalWeight.f2.totalFights += sWeight.totalF.s8
+            totalWeight.f2.singleFights += sWeight.totalF.s8 - sWeight.singleF.s8
+         }
+         if (f2.wins.total/f1.wins.total >= 2 && f1.last_fight_win === false) {
+            totalWeight.f2.totalFights += sWeight.totalF.s8
+            totalWeight.f2.singleFights += sWeight.singleF.s8
+            totalWeight.f1.totalFights += sWeight.totalF.s8
+            totalWeight.f1.singleFights += sWeight.totalF.s8 - sWeight.singleF.s8
+         }
+      }
 
    wChance[0] = (totalWeight.f1.singleFights/totalWeight.f1.totalFights)*100
    wChance[1] = (totalWeight.f2.singleFights/totalWeight.f2.totalFights)*100
