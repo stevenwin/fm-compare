@@ -2412,6 +2412,26 @@ module.exports = [
    "url": "/fighter/Pawel-Pawlak-65543"
  },
  {
+   "name": "Mike De La Torre",
+   "url": "/fighter/Mike-de-la-Torre-17915"
+ },
+ {
+   "name": "Desmond Green",
+   "url": "/fighter/Desmond-Green-89993"
+ },
+ {
+   "name": "Magomed Bibulatov",
+   "url": "/fighter/Magomed-Bibulatov-141553"
+ },
+ {
+   "name": "Lucie Pudilova",
+   "url": "/fighter/Lucie-Pudilova-159569"
+ },
+ {
+   "name": "Timothy Johnson",
+   "url": "/fighter/Timothy-Johnson-72706"
+ },
+ {
    "name": "Pedro Munhoz",
    "url": "/fighter/Pedro-Munhoz-52407"
  },

@@ -5,18 +5,19 @@ var fighter_url = require('../helpers/sherdogurl.js')
 var fm_list = require('../helpers/fm_list.js')
 var fighterMissing = []
 var eventURL = [
-{"name1":"Vitor Belfort","name2":"Kelvin Gastelum"},
-{"name1":"Maurício Rua","name2":"Gian Villante"},
-{"name1":"Edson Barboza","name2":"Beneil Dariush"},
-{"name1":"Jussier Formiga","name2":"Ray Borg"},
-{"name1":"Bethe Correia","name2":"Marion Reneau"},
-{"name1":"Alex Oliveira","name2":"Tim Means"},
-{"name1":"Francisco Trinaldo","name2":"Kevin Lee"},
-{"name1":"Sergio Moraes","name2":"Davi Ramos"},
-{"name1":"Rani Yahya","name2":"Joe Soto"},
-{"name1":"Michel Prazeres","name2":"Josh Burkman"},
-{"name1":"Rony Jason","name2":"Jeremy Kennedy"},
-{"name1":"Garreth McLellan","name2":"Paulo Henrique Costa"}
+{"name1":"Anthony Johnson","name2":"Daniel Cormier"},
+{"name1":"Gegard Mousasi","name2":"Chris Weidman"},
+{"name1":"Thiago Alves","name2":"Patrick Cote"},
+{"name1":"Charles Oliveira","name2":"Will Brooks"},
+{"name1":"Myles Jury","name2":"Mike De La Torre"},
+{"name1":"Kamaru Usman","name2":"Sean Strickland"},
+{"name1":"Charles Rosa","name2":"Shane Burgos"},
+{"name1":"Jan Blachowicz","name2":"Patrick Cummins"},
+{"name1":"Andrew Holbrook","name2":"Gregor Gillespie"},
+{"name1":"Desmond Green","name2":"Josh Emmett"},
+{"name1":"Irene Aldana","name2":"Katlyn Chookagian"},
+{"name1":"Magomed Bibulatov","name2":"Jenel Lausa"},
+
 
 ]
 
